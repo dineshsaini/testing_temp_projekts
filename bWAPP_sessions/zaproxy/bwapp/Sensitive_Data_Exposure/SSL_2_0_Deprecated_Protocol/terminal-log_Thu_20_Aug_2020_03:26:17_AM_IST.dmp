@@ -1,0 +1,2370 @@
+Script started on 2020-08-20 03:26:17+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap[K[K[K[Klocate .nse | grep ssl
+/usr/share/nmap/scripts/rmi-vuln-classloader.nse
+/usr/share/nmap/scripts/ssl-ccs-injection.nse
+/usr/share/nmap/scripts/ssl-cert-intaddr.nse
+/usr/share/nmap/scripts/ssl-cert.nse
+/usr/share/nmap/scripts/ssl-date.nse
+/usr/share/nmap/scripts/ssl-dh-params.nse
+/usr/share/nmap/scripts/ssl-enum-ciphers.nse
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+/usr/share/nmap/scripts/ssl-known-key.nse
+/usr/share/nmap/scripts/ssl-poodle.nse
+/usr/share/nmap/scripts/sslv2-drown.nse
+/usr/share/nmap/scripts/sslv2.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nms[Kp[Kap -p443,8443,9443 10.10.10.6 --script sslv2.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:27 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0021s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+8443/tcp open  https-alt
+9443/tcp open  tungsten-https
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+
+Nmap done: 1 IP address (1 host up) scanned in 13.61 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap -p443,8443,9443 10.10.10.6 --script sslv2.nse[C[C[C[K[K[K[K[K[K[K[K[Ksslv2-drown.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:27 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0019s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+|_sslv2-drown: ERROR: Script execution failed (use -d to debug)
+8443/tcp open  https-alt
+|_sslv2-drown: 
+9443/tcp open  tungsten-https
+|_sslv2-drown: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.38 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap -p443,8443,9443 10.10.10.6 --script sslv2-drown.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-ccs-injection.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:28 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0015s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|       http://www.cvedetails.com/cve/2014-0224
+|_      http://www.openssl.org/news/secadv_20140605.txt
+8443/tcp open  https-alt
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|       http://www.cvedetails.com/cve/2014-0224
+|_      http://www.openssl.org/news/secadv_20140605.txt
+9443/tcp open  tungsten-https
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|       http://www.cvedetails.com/cve/2014-0224
+|_      http://www.openssl.org/news/secadv_20140605.txt
+
+Nmap done: 1 IP address (1 host up) scanned in 14.69 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap -p443,8443,9443 10.10.10.6 --script ssl-ccs-injection.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-known-key.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:29 IST
+Stats: 0:00:24 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 0.00% done
+Verbosity Increased to 1.
+Verbosity Increased to 2.
+Verbosity Increased to 3.
+Verbosity Decreased to 2.
+NSE Timing: About 33.33% done; ETC: 03:31 (0:01:22 remaining)
+NSE Timing: About 66.67% done; ETC: 03:31 (0:00:35 remaining)
+Verbosity Increased to 3.
+Verbosity Decreased to 2.
+Verbosity Decreased to 1.
+Completed NSE at 03:31, 90.09s elapsed
+Nmap scan report for 10.10.10.6
+Host is up (0.0015s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+8443/tcp open  https-alt
+9443/tcp open  tungsten-https
+
+NSE: Script Post-scanning.
+Initiating NSE at 03:31
+Completed NSE at 03:31, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 103.42 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap -p443,8443,9443 10.10.10.6 --script ssl-known-key.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-poodle.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:31 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0016s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3566  BID:70574
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.securityfocus.com/bid/70574
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+8443/tcp open  https-alt
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3566  BID:70574
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.securityfocus.com/bid/70574
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+9443/tcp open  tungsten-https
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3566  BID:70574
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.securityfocus.com/bid/70574
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+
+Nmap done: 1 IP address (1 host up) scanned in 13.35 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ !l
+locate .nse | grep ssl
+/usr/share/nmap/scripts/rmi-vuln-classloader.nse
+/usr/share/nmap/scripts/ssl-ccs-injection.nse
+/usr/share/nmap/scripts/ssl-cert-intaddr.nse
+/usr/share/nmap/scripts/ssl-cert.nse
+/usr/share/nmap/scripts/ssl-date.nse
+/usr/share/nmap/scripts/ssl-dh-params.nse
+/usr/share/nmap/scripts/ssl-enum-ciphers.nse
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+/usr/share/nmap/scripts/ssl-known-key.nse
+/usr/share/nmap/scripts/ssl-poodle.nse
+/usr/share/nmap/scripts/sslv2-drown.nse
+/usr/share/nmap/scripts/sslv2.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ locate .nse | grep sslnmap -p443,8443,9443 10.10.10.6 --script ssl-poodle.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-enum-ciphers.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:32 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0032s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA - E
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D
+|       TLS_RSA_EXPORT_WITH_DES40_CBC_SHA - E
+|       TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 - E
+|       TLS_RSA_EXPORT_WITH_RC4_40_MD5 - E
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES40 vulnerable to SWEET32 attack
+|       64-bit block cipher RC2 vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Ciphersuite uses MD5 for message integrity
+|       Weak certificate signature: SHA1
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA - E
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D
+|       TLS_RSA_EXPORT_WITH_DES40_CBC_SHA - E
+|       TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 - E
+|       TLS_RSA_EXPORT_WITH_RC4_40_MD5 - E
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES40 vulnerable to SWEET32 attack
+|       64-bit block cipher RC2 vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|       Weak certificate signature: SHA1
+|_  least strength: E
+8443/tcp open  https-alt
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - D
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Weak certificate signature: SHA1
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - D
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Weak certificate signature: SHA1
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - D
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Weak certificate signature: SHA1
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - D
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Weak certificate signature: SHA1
+|_  least strength: D
+9443/tcp open  tungsten-https
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|     compressors: 
+|       DEFLATE
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Ciphersuite uses MD5 for message integrity
+|       Forward Secrecy not supported by any cipher
+|       Weak certificate signature: SHA1
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|     compressors: 
+|       DEFLATE
+|       NULL
+|     cipher preference: client
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|       Forward Secrecy not supported by any cipher
+|       Weak certificate signature: SHA1
+|_  least strength: D
+
+Nmap done: 1 IP address (1 host up) scanned in 14.09 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ !l
+locate .nse | grep ssl
+/usr/share/nmap/scripts/rmi-vuln-classloader.nse
+/usr/share/nmap/scripts/ssl-ccs-injection.nse
+/usr/share/nmap/scripts/ssl-cert-intaddr.nse
+/usr/share/nmap/scripts/ssl-cert.nse
+/usr/share/nmap/scripts/ssl-date.nse
+/usr/share/nmap/scripts/ssl-dh-params.nse
+/usr/share/nmap/scripts/ssl-enum-ciphers.nse
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+/usr/share/nmap/scripts/ssl-known-key.nse
+/usr/share/nmap/scripts/ssl-poodle.nse
+/usr/share/nmap/scripts/sslv2-drown.nse
+/usr/share/nmap/scripts/sslv2.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ locate .nse | grep ssl[Knmap -p443,8443,9443 10.10.10.6 --script ssl-enum-ciphers.nse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[39Plocate .nse | grep sslnmap -p443,8443,9443 10.10.10.6 --script ssl-enum-ciphers.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-dh-params.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:33 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0014s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)
+|     State: VULNERABLE
+|     IDs:  BID:74733  CVE:CVE-2015-4000
+|       The Transport Layer Security (TLS) protocol contains a flaw that is
+|       triggered when handling Diffie-Hellman key exchanges defined with
+|       the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker
+|       to downgrade the security of a TLS session to 512-bit export-grade
+|       cryptography, which is significantly weaker, allowing the attacker
+|       to more easily break the encryption and monitor or tamper with
+|       the encrypted stream.
+|     Disclosure date: 2015-5-19
+|     Check results:
+|       EXPORT-GRADE DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.2.x/512-bit MODP group with safe prime modulus
+|             Modulus Length: 512
+|             Generator Length: 8
+|             Public Key Length: 512
+|     References:
+|       https://weakdh.org
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000
+|       https://www.securityfocus.com/bid/74733
+|   
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.2.x/1024-bit MODP group with safe prime modulus
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+8443/tcp open  https-alt
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+|             Modulus Type: Safe prime
+|             Modulus Source: nginx/1024-bit MODP group with safe prime modulus
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+9443/tcp open  tungsten-https
+
+Nmap done: 1 IP address (1 host up) scanned in 13.55 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ !l
+locate .nse | grep ss
+/usr/share/nmap/scripts/address-info.nse
+/usr/share/nmap/scripts/cassandra-brute.nse
+/usr/share/nmap/scripts/cassandra-info.nse
+/usr/share/nmap/scripts/eppc-enum-processes.nse
+/usr/share/nmap/scripts/firewall-bypass.nse
+/usr/share/nmap/scripts/http-cross-domain-policy.nse
+/usr/share/nmap/scripts/http-dombased-xss.nse
+/usr/share/nmap/scripts/http-domino-enum-passwords.nse
+/usr/share/nmap/scripts/http-passwd.nse
+/usr/share/nmap/scripts/http-phpself-xss.nse
+/usr/share/nmap/scripts/http-stored-xss.nse
+/usr/share/nmap/scripts/http-wordpress-brute.nse
+/usr/share/nmap/scripts/http-wordpress-enum.nse
+/usr/share/nmap/scripts/http-wordpress-users.nse
+/usr/share/nmap/scripts/http-xssed.nse
+/usr/share/nmap/scripts/impress-remote-discover.nse
+/usr/share/nmap/scripts/ldap-novell-getpass.nse
+/usr/share/nmap/scripts/ms-sql-empty-password.nse
+/usr/share/nmap/scripts/ms-sql-hasdbaccess.nse
+/usr/share/nmap/scripts/mysql-empty-password.nse
+/usr/share/nmap/scripts/nessus-brute.nse
+/usr/share/nmap/scripts/nessus-xmlrpc-brute.nse
+/usr/share/nmap/scripts/netbus-auth-bypass.nse
+/usr/share/nmap/scripts/nje-pass-brute.nse
+/usr/share/nmap/scripts/pjl-ready-message.nse
+/usr/share/nmap/scripts/realvnc-auth-bypass.nse
+/usr/share/nmap/scripts/rmi-vuln-classloader.nse
+/usr/share/nmap/scripts/smb-enum-processes.nse
+/usr/share/nmap/scripts/smb-enum-sessions.nse
+/usr/share/nmap/scripts/snmp-processes.nse
+/usr/share/nmap/scripts/ssh-auth-methods.nse
+/usr/share/nmap/scripts/ssh-brute.nse
+/usr/share/nmap/scripts/ssh-hostkey.nse
+/usr/share/nmap/scripts/ssh-publickey-acceptance.nse
+/usr/share/nmap/scripts/ssh-run.nse
+/usr/share/nmap/scripts/ssh2-enum-algos.nse
+/usr/share/nmap/scripts/sshv1.nse
+/usr/share/nmap/scripts/ssl-ccs-injection.nse
+/usr/share/nmap/scripts/ssl-cert-intaddr.nse
+/usr/share/nmap/scripts/ssl-cert.nse
+/usr/share/nmap/scripts/ssl-date.nse
+/usr/share/nmap/scripts/ssl-dh-params.nse
+/usr/share/nmap/scripts/ssl-enum-ciphers.nse
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+/usr/share/nmap/scripts/ssl-known-key.nse
+/usr/share/nmap/scripts/ssl-poodle.nse
+/usr/share/nmap/scripts/sslv2-drown.nse
+/usr/share/nmap/scripts/sslv2.nse
+/usr/share/nmap/scripts/sstp-discover.nse
+/usr/share/nmap/scripts/x11-access.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ locate .nse | grep ssl
+/usr/share/nmap/scripts/rmi-vuln-classloader.nse
+/usr/share/nmap/scripts/ssl-ccs-injection.nse
+/usr/share/nmap/scripts/ssl-cert-intaddr.nse
+/usr/share/nmap/scripts/ssl-cert.nse
+/usr/share/nmap/scripts/ssl-date.nse
+/usr/share/nmap/scripts/ssl-dh-params.nse
+/usr/share/nmap/scripts/ssl-enum-ciphers.nse
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+/usr/share/nmap/scripts/ssl-known-key.nse
+/usr/share/nmap/scripts/ssl-poodle.nse
+/usr/share/nmap/scripts/sslv2-drown.nse
+/usr/share/nmap/scripts/sslv2.nse
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ locate .nse | grep ssl[Knmap -p443,8443,9443 10.10.10.6 --script ssl-dh-params.nse[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssl-date.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:35 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0018s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+|_ssl-date: 2020-08-19T22:05:39+00:00; +1s from scanner time.
+8443/tcp open  https-alt
+|_ssl-date: 2020-08-19T22:05:39+00:00; +1s from scanner time.
+9443/tcp open  tungsten-https
+|_ssl-date: 2020-08-19T22:05:39+00:00; +1s from scanner time.
+
+Nmap done: 1 IP address (1 host up) scanned in 13.35 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ nmap -p443,8443,9443 10.10.10.6 --script ssl-date.nse[K[K[K[K[K[K[K[K[K[K[Ksl-cert-intaddr.nse
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-20 03:35 IST
+Nmap scan report for 10.10.10.6
+Host is up (0.0015s latency).
+
+PORT     STATE SERVICE
+443/tcp  open  https
+8443/tcp open  https-alt
+9443/tcp open  tungsten-https
+
+Nmap done: 1 IP address (1 host up) scanned in 13.34 seconds
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslyze --[K[K-h | less
+[?1049h[22;0;0t[?1h=Usage: sslyze [options] target1.com target2.com:443 target3.com:443{ip} etc...
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --regular             Regular HTTPS scan; shortcut for --sslv2 --sslv3
+                        --tlsv1 --tlsv1_1 --tlsv1_2 --tlsv1_3 --reneg --resum
+                        --certinfo --hide_rejected_ciphers --compression
+                        --heartbleed --openssl_ccs --fallback --robot
+
+  Trust stores options:
+    --update_trust_stores
+                        Update the default trust stores used by SSLyze. The
+                        latest stores will be downloaded from https://github.c
+                        om/nabla-c0d3/trust_stores_observatory. This option is
+                        meant to be used separately, and will silence any
+                        other command line option supplied to SSLyze.
+
+  Client certificate options:
+    --cert=CERT         Client certificate chain filename. The certificates
+                        must be in PEM format and must be sorted starting with
+                        the subject's client certificate, followed by
+                        intermediate CA certificates if applicable.
+    --key=KEY           Client private key filename.
+    --keyform=KEYFORM   Client private key format. DER or PEM (default).
+    --pass=KEYPASS      Client private key passphrase.
+
+  Input and output options:
+    --json_out=JSON_FILE
+                        Write the scan results as a JSON document to the file
+                        JSON_FILE. If JSON_FILE is set to "-", the JSON output
+                        will instead be printed to stdout. The resulting JSON
+                        file is a serialized version of the ScanResult objects
+:[K[K [KESCESC[KOO[KBB[K                        described in SSLyze's Python API: the nodes and
+:[K[K [KESCESC[KOO[KBB[K                        attributes will be the same. See https://nabla-c0d3.gi
+:[K[K [KESCESC[KOO[KBB[K                        thub.io/sslyze/documentation/available-scan-
+:[K[K [KESCESC[KOO[KBB[K                        commands.html for more details.
+:[K[K [KESCESC[KOO[KBB[K    --targets_in=TARGETS_IN
+:[K[K [KESCESC[KOO[KBB[K                        Read the list of targets to scan from the file
+:[K[K [KESCESC[KOO[KBB[K                        TARGETS_IN. It should contain one host:port per line.
+:[K[K [KESCESC[KOO[KBB[K    --quiet             Do not output anything to stdout; useful when using
+:[K[K [KESCESC[KOO[KBB[K                        --json_out.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K  Connectivity options:
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslyze --targh | less
+[?1049h[22;0;0t[?1h=Usage: sslyze [options] target1.com target2.com:443 target3.com:443{ip} etc...
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --regular             Regular HTTPS scan; shortcut for --sslv2 --sslv3
+                        --tlsv1 --tlsv1_1 --tlsv1_2 --tlsv1_3 --reneg --resum
+                        --certinfo --hide_rejected_ciphers --compression
+                        --heartbleed --openssl_ccs --fallback --robot
+
+  Trust stores options:
+    --update_trust_stores
+                        Update the default trust stores used by SSLyze. The
+                        latest stores will be downloaded from https://github.c
+                        om/nabla-c0d3/trust_stores_observatory. This option is
+                        meant to be used separately, and will silence any
+                        other command line option supplied to SSLyze.
+
+  Client certificate options:
+    --cert=CERT         Client certificate chain filename. The certificates
+                        must be in PEM format and must be sorted starting with
+                        the subject's client certificate, followed by
+                        intermediate CA certificates if applicable.
+    --key=KEY           Client private key filename.
+    --keyform=KEYFORM   Client private key format. DER or PEM (default).
+    --pass=KEYPASS      Client private key passphrase.
+
+  Input and output options:
+    --json_out=JSON_FILE
+                        Write the scan results as a JSON document to the file
+                        JSON_FILE. If JSON_FILE is set to "-", the JSON output
+                        will instead be printed to stdout. The resulting JSON
+                        file is a serialized version of the ScanResult objects
+:[K[K [KESCESC[KOO[KBB[K                        described in SSLyze's Python API: the nodes and
+:[K[K [KESCESC[KOO[KBB[K                        attributes will be the same. See https://nabla-c0d3.gi
+:[K[K [KESCESC[KOO[KBB[K                        thub.io/sslyze/documentation/available-scan-
+:[K[K [KESCESC[KOO[KBB[K                        commands.html for more details.
+:[K[K [KESCESC[KOO[KBB[K    --targets_in=TARGETS_IN
+:[K[K [KESCESC[KOO[KBB[K                        Read the list of targets to scan from the file
+:[K[K [KESCESC[KOO[KBB[K                        TARGETS_IN. It should contain one host:port per line.
+:[K[K [KESCESC[KOO[KBB[K    --quiet             Do not output anything to stdout; useful when using
+:[K[K [KESCESC[KOO[KBB[K                        --json_out.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K  Connectivity options:
+:[K[K [KESCESC[KOO[KBB[K    --slow_connection   Greatly reduce the number of concurrent connections
+:[K[K [KESCESC[KOO[KBB[K                        initiated by SSLyze. This will make the scans slower
+:[K[K [KESCESC[KOO[KBB[K                        but more reliable if the connection between your host
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslyze --targets_in=ta[K[K tar[K[K[K^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ vim targetx[Ks.txt
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;34r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[34;1H"targets.txt" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[4m[38;5;130m  1 [m[4m                                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[2;1H[94m~                                                                                                                                      [3;1H~                                                                                                                                      [4;1H~                                                                                                                                      [5;1H~                                                                                                                                      [6;1H~                                                                                                                                      [7;1H~                                                                                                                                      [8;1H~                                                                                                                                      [9;1H~                                                                                                                                      [10;1H~                                                                                                                                      [11;1H~                                                                                                                                      [12;1H~                                                                                                                                      [13;1H~                                                                                                                                      [14;1H~                                                                                                                                      [15;1H~                                                                                                                                      [16;1H~                                                                                                                                      [17;1H~                                                                                                                                      [18;1H~                                                                                                                                      [19;1H~                                                                                                                                      [20;1H~                                                                                                                                      [21;1H~                                                                                                                                      [22;1H~                                                                                                                                      [23;1H~                                                                                                                                      [24;1H~                                                                                                                                      [25;1H~                                                                                                                                      [26;1H~                                                                                                                                      [27;1H~                                                                                                                                      [28;1H~                                                                                                                                      [29;1H~                                                                                                                                      [30;1H~                                                                                                                                      [31;1H~                                                                                                                                      [32;1H~                                                                                                                                      [33;1H~                                                                                                                                      [m[34;118H0,0-1[9CAll[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[4m[93m  1 [m[4m                                                                               [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[2;1H[94m~                                                                                                                                      [3;1H~                                                                                                                                      [4;1H~                                                                                                                                      [5;1H~                                                                                                                                      [6;1H~                                                                                                                                      [7;1H~                                                                                                                                      [8;1H~                                                                                                                                      [9;1H~                                                                                                                                      [10;1H~                                                                                                                                      [11;1H~                                                                                                                                      [12;1H~                                                                                                                                      [13;1H~                                                                                                                                      [14;1H~                                                                                                                                      [15;1H~                                                                                                                                      [16;1H~                                                                                                                                      [17;1H~                                                                                                                                      [18;1H~                                                                                                                                      [19;1H~                                                                                                                                      [20;1H~                                                                                                                                      [21;1H~                                                                                                                                      [22;1H~                                                                                                                                      [23;1H~                                                                                                                                      [24;1H~                                                                                                                                      [25;1H~                                                                                                                                      [26;1H~                                                                                                                                      [27;1H~                                                                                                                                      [28;1H~                                                                                                                                      [29;1H~                                                                                                                                      [30;1H~                                                                                                                                      [31;1H~                                                                                                                                      [32;1H~                                                                                                                                      [33;1H~                                                                                                                                      [m[34;118H0,0-1[9CAll"targets.txt" [New File][1;5H[?25h[?25l[34;1H[1m-- INSERT --[m[34;13H[K[34;118H0,1[11CAll[1;5H[?25h[?25l[4m1[m[34;118H1,2[1;6H[?25h[?25l[4m0[m[34;120H3[1;7H[?25h[?25l[4m.[m[34;120H4[1;8H[?25h[?25l[4m1[m[34;120H5[1;9H[?25h[?25l[4m0[m[34;120H6[1;10H[?25h[?25l[4m.[m[34;120H7[1;11H[?25h[?25l[4m1[m[34;120H8[1;12H[?25h[?25l[4m0[m[34;120H9[1;13H[?25h[?25l[4m.[m[34;120H10[1;14H[?25h[?25l[4m6[m[34;121H1[1;15H[?25h[?25l[4m:[m[34;121H2[1;16H[?25h[?25l[4m8[m[34;121H3[1;17H[?25h[?25l[4m4[m[34;121H4[1;18H[?25h[?25l[4m4[m[34;121H5[1;19H[?25h[?25l[4m3[m[34;121H6[1;20H[?25h[34;1H[K[1;19H[?25l[34;118H1,15[10CAll[1;19H[?25h[?25l[93m  1 [m10.10.10.6:8443                                                                [1m[31m[48;5;121m [m[1;85H[K[2;1H[4m[93m  2 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[34;118H2,1 [2;5H[?25h[?25l[93m  2 [m10.10.10.6:8443                                                                [1m[31m[48;5;121m [m[2;85H[K[3;1H[4m[93m  3 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[34;118H3[3;5H[?25h[?25l[2;1H[4m[93m  2 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[3;1H[93m  3 [m10.10.10.6:8443                                                                [1m[31m[48;5;121m [m[3;85H[K[34;118H2[2;5H[?25h[?25l[34;121H5[2;19H[?25h[?25l[34;121H4[2;18H[?25h[?25l[34;121H3[2;17H[?25h[?25l[34;121H2[2;16H[?25h[?25l[93m  2 [m10.10.10.6:8443                                                                [1m[31m[48;5;121m [m[2;85H[K[3;1H[4m[93m  3 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[34;118H3[3;16H[?25h[?25l[4m9[?25h[?25l[m[2;1H[4m[93m  2 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[3;1H[93m  3 [m10.10.10.6:9443                                                                [1m[31m[48;5;121m [m[3;85H[K[34;118H2[2;16H[?25h[?25l[1;1H[4m[93m  1 [m[4m10.10.10.6:8443                                                                [m[1m[4m[31m[48;5;121m [m[4m                                                   [m[2;1H[93m  2 [m10.10.10.6:8443                                                                [1m[31m[48;5;121m [m[2;85H[K[34;118H1[1;16H[?25h[?25l[4m443 [?25h[?25l[m[34;118H[K[34;1H:[?2004h[?25hx[?25l[?2004l"targets.txt" [New] 3L, 47C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ cat targets.txt r[K
+10.10.10.6:443
+10.10.10.6:8443
+10.10.10.6:9443
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslys[Kze --targets_in- [K[K= targets.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C --json_out=sslyze_out.txt --regulr[Kar
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   10.10.10.6:8443                      => 10.10.10.6 
+   10.10.10.6:443                       => 10.10.10.6 
+   10.10.10.6:9443                      => 10.10.10.6 
+
+
+
+
+ SCAN RESULTS FOR 10.10.10.6:8443 - 10.10.10.6
+ ---------------------------------------------
+
+ * TLS 1.1 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 13 cipher suites:
+        TLS_RSA_WITH_CAMELLIA_256_CBC_SHA                 256                      
+        TLS_RSA_WITH_CAMELLIA_128_CBC_SHA                 128                      
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA               168       ECDH: prime256v1 (256 bits)
+        TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA             256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA             128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               OK - Not Supported
+
+     The server has no preferred cipher suite.
+
+
+ * Deflate Compression:
+                                          OK - Compression disabled
+
+ * TLS 1.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 13 cipher suites:
+        TLS_RSA_WITH_CAMELLIA_256_CBC_SHA                 256                      
+        TLS_RSA_WITH_CAMELLIA_128_CBC_SHA                 128                      
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA               168       ECDH: prime256v1 (256 bits)
+        TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA             256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA             128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               OK - Not Supported
+
+     The server has no preferred cipher suite.
+
+
+ * SSL 2.0 Cipher suites:
+     Attempted to connect using 7 cipher suites; the server rejected all cipher suites.
+
+ * TLS 1.2 Cipher suites:
+     Attempted to connect using 158 cipher suites.
+
+     The server accepted the following 26 cipher suites:
+        TLS_RSA_WITH_CAMELLIA_256_CBC_SHA                 256                      
+        TLS_RSA_WITH_CAMELLIA_128_CBC_SHA                 128                      
+        TLS_RSA_WITH_AES_256_GCM_SHA384                   256                      
+        TLS_RSA_WITH_AES_256_CBC_SHA256                   256                      
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_GCM_SHA256                   128                      
+        TLS_RSA_WITH_AES_128_CBC_SHA256                   128                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384             256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384             256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256             128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256             128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA               168       ECDH: prime256v1 (256 bits)
+        TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA             256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA             128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_GCM_SHA384               256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA256               256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_GCM_SHA256               128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA256               128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               OK - Not Supported
+
+     The server has no preferred cipher suite.
+
+
+ * Session Renegotiation:
+       Client-initiated Renegotiation:    OK - Rejected
+       Secure Renegotiation:              OK - Supported
+
+ * OpenSSL Heartbleed:
+                                          VULNERABLE - Server is vulnerable to Heartbleed
+
+ * TLS 1.3 Cipher suites:
+     Attempted to connect using 5 cipher suites; the server rejected all cipher suites.
+
+ * SSL 3.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 13 cipher suites:
+        TLS_RSA_WITH_CAMELLIA_256_CBC_SHA                 256                      
+        TLS_RSA_WITH_CAMELLIA_128_CBC_SHA                 128                      
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                256       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                128       ECDH: prime256v1 (256 bits)
+        TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA               168       ECDH: prime256v1 (256 bits)
+        TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA             256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA             128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               OK - Not Supported
+
+     The server has no preferred cipher suite.
+
+
+ * Downgrade Attacks:
+       TLS_FALLBACK_SCSV:                 VULNERABLE - Signaling cipher suite not supported
+
+ * OpenSSL CCS Injection:
+                                          VULNERABLE - Server is vulnerable to OpenSSL CCS injection
+
+ * TLS 1.2 Session Resumption Support:
+      With Session IDs: NOT SUPPORTED (0 successful resumptions out of 5 attempts).
+      With TLS Tickets: OK - Supported.
+
+ * Certificates Information:
+       Hostname sent for SNI:             10.10.10.6
+       Number of certificates detected:   1
+
+
+     Certificate #0 ( _RSAPublicKey )
+       SHA1 Fingerprint:                  ae5fb7be864a78e168318fc1c96a4bd242c4e6c3
+       Common Name:                       bee-box.bwapp.local
+       Issuer:                            bee-box.bwapp.local
+       Serial Number:                     15617680085524193115
+       Not Before:                        2013-04-14
+       Not After:                         2018-04-13
+       Signature Algorithm:               sha1
+       Public Key Algorithm:              _RSAPublicKey
+       Key Size:                          1024
+       Exponent:                          65537
+       DNS Subject Alternative Names:     []
+
+     Certificate #0 - Trust
+       Hostname Validation:               FAILED - Certificate does NOT match server hostname
+       Android CA Store (9.0.0_r9):       FAILED - Certificate is NOT Trusted: self signed certificate
+       Apple CA Store (iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13):FAILED - Certificate is NOT Trusted: self signed certificate
+       Java CA Store (jdk-13.0.2):        FAILED - Certificate is NOT Trusted: self signed certificate
+       Mozilla CA Store (2019-11-28):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Windows CA Store (2020-05-04):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Symantec 2018 Deprecation:         ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain:                    bee-box.bwapp.local
+       Verified Chain:                    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Contains Anchor:    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Order:              OK - Order is valid
+       Verified Chain contains SHA1:      ERROR - Could not build verified chain (certificate untrusted?)
+
+     Certificate #0 - Extensions
+       OCSP Must-Staple:                  NOT SUPPORTED - Extension not found
+       Certificate Transparency:          NOT SUPPORTED - Extension not found
+
+     Certificate #0 - OCSP Stapling
+                                          NOT SUPPORTED - Server did not send back an OCSP response
+
+ * ROBOT Attack:
+                                          OK - Not vulnerable.
+
+
+ SCAN RESULTS FOR 10.10.10.6:443 - 10.10.10.6
+ --------------------------------------------
+
+ * TLS 1.1 Cipher suites:
+     Attempted to connect using 80 cipher suites; the server rejected all cipher suites.
+
+ * Deflate Compression:
+                                          OK - Compression disabled
+
+ * TLS 1.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 14 cipher suites:
+        TLS_RSA_WITH_RC4_128_SHA                          128                      
+        TLS_RSA_WITH_RC4_128_MD5                          128                      
+        TLS_RSA_WITH_DES_CBC_SHA                          56                       
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_RSA_EXPORT_WITH_RC4_40_MD5                    40                       
+        TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5                40                       
+        TLS_RSA_EXPORT_WITH_DES40_CBC_SHA                 40                       
+        TLS_DHE_RSA_WITH_DES_CBC_SHA                      56        DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+        TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA             40        DH (512 bits)  
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * SSL 2.0 Cipher suites:
+     Attempted to connect using 7 cipher suites.
+
+     The server accepted the following 6 cipher suites:
+        SSL_CK_RC4_128_WITH_MD5                           128                      
+        SSL_CK_RC4_128_EXPORT40_WITH_MD5                  40                       
+        SSL_CK_RC2_128_CBC_WITH_MD5                       128                      
+        SSL_CK_RC2_128_CBC_EXPORT40_WITH_MD5              40                       
+        SSL_CK_DES_64_CBC_WITH_MD5                        56                       
+        SSL_CK_DES_192_EDE3_CBC_WITH_MD5                  168                      
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    INSECURE - Not Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * TLS 1.2 Cipher suites:
+     Attempted to connect using 158 cipher suites; the server rejected all cipher suites.
+
+ * Session Renegotiation:
+       Client-initiated Renegotiation:    OK - Rejected
+       Secure Renegotiation:              OK - Supported
+
+ * TLS 1.3 Cipher suites:
+     Attempted to connect using 5 cipher suites; the server rejected all cipher suites.
+
+ * SSL 3.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 14 cipher suites:
+        TLS_RSA_WITH_RC4_128_SHA                          128                      
+        TLS_RSA_WITH_RC4_128_MD5                          128                      
+        TLS_RSA_WITH_DES_CBC_SHA                          56                       
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+        TLS_RSA_EXPORT_WITH_RC4_40_MD5                    40                       
+        TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5                40                       
+        TLS_RSA_EXPORT_WITH_DES40_CBC_SHA                 40                       
+        TLS_DHE_RSA_WITH_DES_CBC_SHA                      56        DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA                  256       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA                  128       DH (1024 bits) 
+        TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA                 168       DH (1024 bits) 
+        TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA             40        DH (512 bits)  
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    OK - Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * Downgrade Attacks:
+       TLS_FALLBACK_SCSV:                 VULNERABLE - Signaling cipher suite not supported
+
+ * OpenSSL CCS Injection:
+                                          OK - Not vulnerable to OpenSSL CCS injection
+
+ * TLS 1.2 Session Resumption Support:
+      With Session IDs: OK - Supported (5 successful resumptions out of 5 attempts).
+      With TLS Tickets: OK - Supported.
+
+ * Certificates Information:
+       Hostname sent for SNI:             10.10.10.6
+       Number of certificates detected:   1
+
+
+     Certificate #0 ( _RSAPublicKey )
+       SHA1 Fingerprint:                  ae5fb7be864a78e168318fc1c96a4bd242c4e6c3
+       Common Name:                       bee-box.bwapp.local
+       Issuer:                            bee-box.bwapp.local
+       Serial Number:                     15617680085524193115
+       Not Before:                        2013-04-14
+       Not After:                         2018-04-13
+       Signature Algorithm:               sha1
+       Public Key Algorithm:              _RSAPublicKey
+       Key Size:                          1024
+       Exponent:                          65537
+       DNS Subject Alternative Names:     []
+
+     Certificate #0 - Trust
+       Hostname Validation:               FAILED - Certificate does NOT match server hostname
+       Android CA Store (9.0.0_r9):       FAILED - Certificate is NOT Trusted: self signed certificate
+       Apple CA Store (iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13):FAILED - Certificate is NOT Trusted: self signed certificate
+       Java CA Store (jdk-13.0.2):        FAILED - Certificate is NOT Trusted: self signed certificate
+       Mozilla CA Store (2019-11-28):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Windows CA Store (2020-05-04):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Symantec 2018 Deprecation:         ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain:                    bee-box.bwapp.local
+       Verified Chain:                    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Contains Anchor:    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Order:              OK - Order is valid
+       Verified Chain contains SHA1:      ERROR - Could not build verified chain (certificate untrusted?)
+
+     Certificate #0 - Extensions
+       OCSP Must-Staple:                  NOT SUPPORTED - Extension not found
+       Certificate Transparency:          NOT SUPPORTED - Extension not found
+
+     Certificate #0 - OCSP Stapling
+                                          NOT SUPPORTED - Server did not send back an OCSP response
+
+ * OpenSSL Heartbleed:
+                                          OK - Not vulnerable to Heartbleed
+
+ * ROBOT Attack:
+                                          OK - Not vulnerable.
+
+
+ SCAN RESULTS FOR 10.10.10.6:9443 - 10.10.10.6
+ ---------------------------------------------
+
+ * TLS 1.1 Cipher suites:
+     Attempted to connect using 80 cipher suites; the server rejected all cipher suites.
+
+ * Deflate Compression:
+                                          VULNERABLE - Server supports Deflate compression
+
+ * TLS 1.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 6 cipher suites:
+        TLS_RSA_WITH_RC4_128_SHA                          128                      
+        TLS_RSA_WITH_RC4_128_MD5                          128                      
+        TLS_RSA_WITH_DES_CBC_SHA                          56                       
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    INSECURE - Not Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * SSL 2.0 Cipher suites:
+     Attempted to connect using 7 cipher suites.
+
+     The server accepted the following 6 cipher suites:
+        SSL_CK_RC4_128_WITH_MD5                           128                      
+        SSL_CK_RC4_128_EXPORT40_WITH_MD5                  40                       
+        SSL_CK_RC2_128_CBC_WITH_MD5                       128                      
+        SSL_CK_RC2_128_CBC_EXPORT40_WITH_MD5              40                       
+        SSL_CK_DES_64_CBC_WITH_MD5                        56                       
+        SSL_CK_DES_192_EDE3_CBC_WITH_MD5                  168                      
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    INSECURE - Not Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * TLS 1.2 Cipher suites:
+     Attempted to connect using 158 cipher suites; the server rejected all cipher suites.
+
+ * Session Renegotiation:
+       Client-initiated Renegotiation:    VULNERABLE - Server honors client-initiated renegotiations
+       Secure Renegotiation:              OK - Supported
+
+ * TLS 1.3 Cipher suites:
+     Attempted to connect using 5 cipher suites; the server rejected all cipher suites.
+
+ * SSL 3.0 Cipher suites:
+     Attempted to connect using 80 cipher suites.
+
+     The server accepted the following 6 cipher suites:
+        TLS_RSA_WITH_RC4_128_SHA                          128                      
+        TLS_RSA_WITH_RC4_128_MD5                          128                      
+        TLS_RSA_WITH_DES_CBC_SHA                          56                       
+        TLS_RSA_WITH_AES_256_CBC_SHA                      256                      
+        TLS_RSA_WITH_AES_128_CBC_SHA                      128                      
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA                     168                      
+
+     The group of cipher suites supported by the server has the following properties:
+       Forward Secrecy                    INSECURE - Not Supported
+       Legacy RC4 Algorithm               INSECURE - Supported
+
+     The server has no preferred cipher suite.
+
+
+ * Downgrade Attacks:
+       TLS_FALLBACK_SCSV:                 VULNERABLE - Signaling cipher suite not supported
+
+ * OpenSSL CCS Injection:
+                                          OK - Not vulnerable to OpenSSL CCS injection
+
+ * TLS 1.2 Session Resumption Support:
+      With Session IDs: OK - Supported (5 successful resumptions out of 5 attempts).
+      With TLS Tickets: OK - Supported.
+
+ * Certificates Information:
+       Hostname sent for SNI:             10.10.10.6
+       Number of certificates detected:   1
+
+
+     Certificate #0 ( _RSAPublicKey )
+       SHA1 Fingerprint:                  ae5fb7be864a78e168318fc1c96a4bd242c4e6c3
+       Common Name:                       bee-box.bwapp.local
+       Issuer:                            bee-box.bwapp.local
+       Serial Number:                     15617680085524193115
+       Not Before:                        2013-04-14
+       Not After:                         2018-04-13
+       Signature Algorithm:               sha1
+       Public Key Algorithm:              _RSAPublicKey
+       Key Size:                          1024
+       Exponent:                          65537
+       DNS Subject Alternative Names:     []
+
+     Certificate #0 - Trust
+       Hostname Validation:               FAILED - Certificate does NOT match server hostname
+       Android CA Store (9.0.0_r9):       FAILED - Certificate is NOT Trusted: self signed certificate
+       Apple CA Store (iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13):FAILED - Certificate is NOT Trusted: self signed certificate
+       Java CA Store (jdk-13.0.2):        FAILED - Certificate is NOT Trusted: self signed certificate
+       Mozilla CA Store (2019-11-28):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Windows CA Store (2020-05-04):     FAILED - Certificate is NOT Trusted: self signed certificate
+       Symantec 2018 Deprecation:         ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain:                    bee-box.bwapp.local
+       Verified Chain:                    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Contains Anchor:    ERROR - Could not build verified chain (certificate untrusted?)
+       Received Chain Order:              OK - Order is valid
+       Verified Chain contains SHA1:      ERROR - Could not build verified chain (certificate untrusted?)
+
+     Certificate #0 - Extensions
+       OCSP Must-Staple:                  NOT SUPPORTED - Extension not found
+       Certificate Transparency:          NOT SUPPORTED - Extension not found
+
+     Certificate #0 - OCSP Stapling
+                                          NOT SUPPORTED - Server did not send back an OCSP response
+
+ * OpenSSL Heartbleed:
+                                          OK - Not vulnerable to Heartbleed
+
+ * ROBOT Attack:
+                                          OK - Not vulnerable.
+
+
+ SCAN COMPLETED IN 25.77 S
+ -------------------------
+
+       Wrote JSON output to "/home/dinesh/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol/sslyze_out.txt".
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslyze --targets_in=targets.txt  --json_out=sslyze_out.txt --regular[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ ll
+total 752
+-rw-r--r-- 1 dinesh dinesh 680747 Aug 20 03:38 sslyze_out.txt
+-rw-r--r-- 1 dinesh dinesh     47 Aug 20 03:37 targets.txt
+-rw-r--r-- 1 dinesh dinesh  77824 Aug 20 03:38 terminal-log_Thu_20_Aug_2020_03:26:17_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ cat sslyze_out.txt | grep vulnerable
+                    "is_vulnerable_to_heartbleed": true
+                    "is_vulnerable_to_ccs_injection": true
+                    "is_vulnerable_to_heartbleed": false
+                    "is_vulnerable_to_ccs_injection": false
+                    "is_vulnerable_to_heartbleed": false
+                    "is_vulnerable_to_ccs_injection": false
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ cat sslyze_out.txt | grep vulnerable -i 
+                    "is_vulnerable_to_heartbleed": true
+                    "is_vulnerable_to_ccs_injection": true
+                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+                    "is_vulnerable_to_heartbleed": false
+                    "is_vulnerable_to_ccs_injection": false
+                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+                    "is_vulnerable_to_heartbleed": false
+                    "is_vulnerable_to_ccs_injection": false
+                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ ;[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ less 
+sslyze_out.txt                                    terminal-log_Thu_20_Aug_2020_03:26:17_AM_IST.dmp
+targets.txt                                       
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ less sslyze_out.txt [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ less sslyze_out.txt 
+[?1049h[22;0;0t[?1h={
+    "server_connectivity_errors": [],
+    "server_scan_results": [
+        {
+            "scan_commands": [
+                "robot",
+                "tls_1_1_cipher_suites",
+                "tls_compression",
+                "tls_1_0_cipher_suites",
+                "ssl_2_0_cipher_suites",
+                "tls_1_2_cipher_suites",
+                "session_renegotiation",
+                "heartbleed",
+                "tls_1_3_cipher_suites",
+                "ssl_3_0_cipher_suites",
+                "tls_fallback_scsv",
+                "openssl_ccs_injection",
+                "session_resumption",
+                "certificate_info"
+            ],
+            "scan_commands_errors": {},
+            "scan_commands_extra_arguments": {},
+            "scan_commands_results": {
+                "certificate_info": {
+                    "certificate_deployments": [
+                        {
+                            "leaf_certificate_has_must_staple_extension": false,
+                            "leaf_certificate_is_ev": false,
+                            "leaf_certificate_signed_certificate_timestamps_count": 0,
+                            "leaf_certificate_subject_matches_hostname": false,
+                            "ocsp_response": null,
+                            "ocsp_response_is_trusted": null,
+                            "path_validation_results": [
+[7msslyze_out.txt[27m[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Android",
+:[K[K [KESCESC[KOO[KAA[K[HM            "scan_commands": [
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM        {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    "server_scan_results": [
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    "server_connectivity_errors": [],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM{
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Android",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kgoogle_aosp.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "9.0.0_r9"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Apple",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kapple.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Java",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Koracle_java.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "jdk-13.0.2"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": [
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.2.276.0.44.1.1.1.4",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K/[Kvv[Kuu[Kll[Knn[Kee[Krr[K[1;1H                                    "verified_certificate_chain": null
+[2;1H                                },
+[3;1H                                {
+[4;1H                                    "openssl_error_string": "self signed certificate",
+[5;1H                                    "trust_store": {
+[6;1H                                        "ev_oids": null,
+[7;1H                                        "name": "Apple",
+[8;1H                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ [9;1Happle.pem",
+[10;1H                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+[11;1H                                    },
+[12;1H                                    "verified_certificate_chain": null
+[13;1H                                },
+[14;1H                                {
+[15;1H                                    "openssl_error_string": "self signed certificate",
+[16;1H                                    "trust_store": {
+[17;1H                                        "ev_oids": null,
+[18;1H                                        "name": "Java",
+[19;1H                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ [20;1Horacle_java.pem",
+[21;1H                                        "version": "jdk-13.0.2"
+[22;1H                                    },
+[23;1H                                    "verified_certificate_chain": null
+[24;1H                                },
+[25;1H                                {
+[26;1H                                    "openssl_error_string": "self signed certificate",
+[27;1H                                    "trust_store": {
+[28;1H                                        "ev_oids": [
+[29;1H                                            {
+[30;1H                                                "dotted_string": "1.2.276.0.44.1.1.1.4",
+[31;1H                                                "name": "Unknown OID"
+[32;1H                                            },
+[33;1H                                            {
+[34;1H[1;1H                                    "verified_certificate_chain": null
+[2;1H                                },
+[3;1H                                {
+[4;1H                                    "openssl_error_string": "self signed certificate",
+[5;1H                                    "trust_store": {
+[6;1H                                        "ev_oids": null,
+[7;1H                                        "name": "Apple",
+[8;1H                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ [9;1Happle.pem",
+[10;1H                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+[11;1H                                    },
+[12;1H                                    "verified_certificate_chain": null
+[13;1H                                },
+[14;1H                                {
+[15;1H                                    "openssl_error_string": "self signed certificate",
+[16;1H                                    "trust_store": {
+[17;1H                                        "ev_oids": null,
+[18;1H                                        "name": "Java",
+[19;1H                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ [20;1Horacle_java.pem",
+[21;1H                                        "version": "jdk-13.0.2"
+[22;1H                                    },
+[23;1H                                    "verified_certificate_chain": null
+[24;1H                                },
+[25;1H                                {
+[26;1H                                    "openssl_error_string": "self signed certificate",
+[27;1H                                    "trust_store": {
+[28;1H                                        "ev_oids": [
+[29;1H                                            {
+[30;1H                                                "dotted_string": "1.2.276.0.44.1.1.1.4",
+[31;1H                                                "name": "Unknown OID"
+[32;1H                                            },
+[33;1H                                            {
+[34;1H...skipping...
+                    "is_[7mvulner[27mable_to_heartbleed": true
+                },
+                "openssl_ccs_injection": {
+                    "is_[7mvulner[27mable_to_ccs_injection": true
+                },
+                "robot": {
+                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+                },
+                "session_renegotiation": {
+                    "accepts_client_renegotiation": false,
+                    "supports_secure_renegotiation": true
+                },
+                "session_resumption": {
+                    "attempted_session_id_resumptions_count": 5,
+                    "successful_session_id_resumptions_count": 0,
+                    "tls_ticket_resumption_result": "SUCCEEDED"
+                },
+                "ssl_2_0_cipher_suites": {
+                    "accepted_cipher_suites": [],
+                    "cipher_suite_preferred_by_server": null,
+                    "rejected_cipher_suites": [
+                        {
+                            "cipher_suite": {
+                                "is_anonymous": false,
+                                "key_size": 128,
+                                "name": "SSL_CK_RC4_128_WITH_MD5",
+                                "openssl_name": "RC4-MD5"
+                            },
+                            "error_message": "Server rejected the connection"
+                        },
+                        {
+                            "cipher_suite": {
+                                "is_anonymous": false,
+:[K[K[H[2J[HM                            "path_validation_results": [
+[HM                            "ocsp_response_is_trusted": null,
+[HM                            "ocsp_response": null,
+[HM                            "leaf_certificate_subject_matches_hostname": false,
+[HM                            "leaf_certificate_signed_certificate_timestamps_count": 0,
+[HM                            "leaf_certificate_is_ev": false,
+[HM                            "leaf_certificate_has_must_staple_extension": false,
+[HM                        {
+[HM                    "certificate_deployments": [
+[HM                "certificate_info": {
+[HM            "scan_commands_results": {
+[HM            "scan_commands_extra_arguments": {},
+[HM            "scan_commands_errors": {},
+[HM            ],
+[HM                "certificate_info"
+[HM                "session_resumption",
+[HM                "openssl_ccs_injection",
+[HM                "tls_fallback_scsv",
+[HM                "ssl_3_0_cipher_suites",
+[HM                "tls_1_3_cipher_suites",
+[HM                "heartbleed",
+[HM                "session_renegotiation",
+[HM                "tls_1_2_cipher_suites",
+[HM                "ssl_2_0_cipher_suites",
+[HM                "tls_1_0_cipher_suites",
+[HM                "tls_compression",
+[HM                "tls_1_1_cipher_suites",
+[HM                "robot",
+[HM            "scan_commands": [
+[HM        {
+[HM    "server_scan_results": [
+[HM    "server_connectivity_errors": [],
+[HM{
+[34;1H[K:[K[K/[K...skipping...
+                    "is_[7mvulner[27mable_to_heartbleed": true
+                },
+                "openssl_ccs_injection": {
+                    "is_[7mvulner[27mable_to_ccs_injection": true
+                },
+                "robot": {
+                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+                },
+                "session_renegotiation": {
+                    "accepts_client_renegotiation": false,
+                    "supports_secure_renegotiation": true
+                },
+                "session_resumption": {
+                    "attempted_session_id_resumptions_count": 5,
+                    "successful_session_id_resumptions_count": 0,
+                    "tls_ticket_resumption_result": "SUCCEEDED"
+                },
+                "ssl_2_0_cipher_suites": {
+                    "accepted_cipher_suites": [],
+                    "cipher_suite_preferred_by_server": null,
+                    "rejected_cipher_suites": [
+                        {
+                            "cipher_suite": {
+                                "is_anonymous": false,
+                                "key_size": 128,
+                                "name": "SSL_CK_RC4_128_WITH_MD5",
+                                "openssl_name": "RC4-MD5"
+                            },
+                            "error_message": "Server rejected the connection"
+                        },
+                        {
+                            "cipher_suite": {
+                                "is_anonymous": false,
+:[K[K [KESCESC[KOO[KAA[K[HM                "heartbleed": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                    "hostname_used_for_server_name_indication": "10.10.10.6"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                    ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                        }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            "verified_chain_has_sha1_signature": null
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            "verified_chain_has_legacy_symantec_anchor": null,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            "received_chain_has_valid_order": true,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            "received_chain_contains_anchor_certificate": null,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "DNS": []
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "subjectAlternativeName": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM.9.1=bwapp@itsecgames.com"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "rfc4514_string": "C=BE,ST=Flanders,L=Menen,O=MME,OU=IT,CN=bee-box.bwapp.local,1.2.840.113549.1[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "parsing_error": null,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "bwapp@itsecgames.com"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "1.2.840.113549.1.9.1=bwapp@itsecgames.com",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "emailAddress"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "1.2.840.113549.1.9.1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "bee-box.bwapp.local"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "CN=bee-box.bwapp.local",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "commonName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.3",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "IT"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "OU=IT",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "organizationalUnitName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.11",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "MME"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "O=MME",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "organizationName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.10",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "Menen"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "L=Menen",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "localityName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.7",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "Flanders"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "ST=Flanders",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "stateOrProvinceName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.8",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "BE"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "C=BE",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "countryName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.6",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "attributes": [
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "subject": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "signatureAlgorithm": "sha1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "serialNumber": "15617680085524193115",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "size": "1024"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "exponent": "65537",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "algorithm": "_RSAPublicKey",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "publicKey": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "notBefore": "2013-04-14T18:11:32",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "notAfter": "2018-04-13T18:11:32",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM.9.1=bwapp@itsecgames.com"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "rfc4514_string": "C=BE,ST=Flanders,L=Menen,O=MME,OU=IT,CN=bee-box.bwapp.local,1.2.840.113549.1[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "parsing_error": null,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "bwapp@itsecgames.com"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "1.2.840.113549.1.9.1=bwapp@itsecgames.com",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "emailAddress"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "1.2.840.113549.1.9.1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "bee-box.bwapp.local"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "CN=bee-box.bwapp.local",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "commonName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.3",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "IT"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "OU=IT",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "organizationalUnitName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.11",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "MME"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "O=MME",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "organizationName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.10",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "Menen"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "L=Menen",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "localityName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.7",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "Flanders"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "ST=Flanders",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "stateOrProvinceName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.8",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "value": "BE"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "rfc4514_string": "C=BE",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "name": "countryName"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                    "dotted_string": "2.5.4.6",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "oid": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "attributes": [
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "issuer": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "hpkp_pin": "iA6fl8Dt2RTIy04UEvJFJBV7xDxIrOjGhjSEguFikFc=",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMhwqwQ/uiMEUEwPXO20wN0dOq2z8+nG7xDL4eM5AWAbO4=\n-----END CERTIFICATE-----\n",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMgYEAd+DlGErtouGz0qCAjStyvMDi2i5D1LOuFzHDSsu2tbkALSzbrol2\nlHYGi6hlywZD6wFwVOxsUgjzmlUUowBxmLD+Cam+Df5Xm/yNWqHvmahUQ6VSISYF\no2i69SuuTgh[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMwJ+Z/hnA3skSVDUtegJm+1B9YKcqt1UJk+7B8pk464x9N2RdsfQD3fmyMOP\nvaufGuEsq1d26kRQdwJXVrYwli82S5VV57ZjkbsG5vQRAgMBAAEwDQYJKoZIhvcN\nAQEFBQAD[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMdhcHBAaXRzZWNnYW1lcy5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB\nAJfjajlZst552/tC9fvBSGCoAqy/Y+hNMK42EXJOanzL6ijx9qU3ahd2ECSczij8\nRrNZg[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMnYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMDTU1FMQswCQYDVQQLEwJJ\nVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEjMCEGCSqGSIb3DQEJARYU\nYn[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEj\nMCEGCSqGSIb3DQEJARYUYndhcHBAaXRzZWNnYW1lcy5jb20wHhcNMTMwNDE0MTgx\nMTMyWhcNMTgwNDEzMTgxMTMyWjCBjjELMAkGA1UEBhMCQkUxETAPBgNVBAgTCEZs\[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMEBhMC\nQkUxETAPBgNVBAgTCEZsYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMD\nTU1FMQswCQYDVQQLEwJJVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbD[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "as_pem": "-----BEGIN CERTIFICATE-----\nMIIClTCCAf4CCQDYvSVKsVyfWzANBgkqhkiG9w0BAQUFADCBjjELMAkGA1U[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            "received_certificate_chain": [
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                            ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "verified_certificate_chain": null
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "version": "2020-05-04"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMmicrosoft_windows.pem",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "name": "Windows",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "ev_oids": null,
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "trust_store": {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "openssl_error_string": "self signed certificate",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    "verified_certificate_chain": null
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                    },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "version": "2019-11-28"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMmozilla_nss.pem",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        "name": "Mozilla",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                        ],
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            }
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114414.1.7.24.3",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114414.1.7.23.3",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114413.1.7.23.3",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114412.2.1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114404.1.1.2.4.1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114171.500.9",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.114028.10.1.2",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            },
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "name": "Unknown OID"
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                                "dotted_string": "2.16.840.1.113733.1.7.48.1",
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                                            {
+[34;1H[K:[K[K [KESCESC[KOO[KHH[K[H[2J[HM                            "path_validation_results": [
+[HM                            "ocsp_response_is_trusted": null,
+[HM                            "ocsp_response": null,
+[HM                            "leaf_certificate_subject_matches_hostname": false,
+[HM                            "leaf_certificate_signed_certificate_timestamps_count": 0,
+[HM                            "leaf_certificate_is_ev": false,
+[HM                            "leaf_certificate_has_must_staple_extension": false,
+[HM                        {
+[HM                    "certificate_deployments": [
+[HM                "certificate_info": {
+[HM            "scan_commands_results": {
+[HM            "scan_commands_extra_arguments": {},
+[HM            "scan_commands_errors": {},
+[HM            ],
+[HM                "certificate_info"
+[HM                "session_resumption",
+[HM                "openssl_ccs_injection",
+[HM                "tls_fallback_scsv",
+[HM                "ssl_3_0_cipher_suites",
+[HM                "tls_1_3_cipher_suites",
+[HM                "heartbleed",
+[HM                "session_renegotiation",
+[HM                "tls_1_2_cipher_suites",
+[HM                "ssl_2_0_cipher_suites",
+[HM                "tls_1_0_cipher_suites",
+[HM                "tls_compression",
+[HM                "tls_1_1_cipher_suites",
+[HM                "robot",
+[HM            "scan_commands": [
+[HM        {
+[HM    "server_scan_results": [
+[HM    "server_connectivity_errors": [],
+[HM{
+[34;1H[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KHH[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Android",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kgoogle_aosp.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "9.0.0_r9"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Apple",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kapple.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KCC[H[2J[Hsion": false,
+
+mestamps_count": 0,
+ame": false,
+
+
+
+
+igned certificate",
+
+
+
+ist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/google_aosp.pem",
+
+
+ull
+
+
+igned certificate",
+
+
+
+ist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/apple.pem",
+13, macOS 10.15, watchOS 6, and tvOS 13"
+
+ull
+
+
+igned certificate",
+
+
+
+ist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/oracle_java.pem",
+:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KDD[H[2J[H                        {
+                            "leaf_certificate_has_must_staple_extension": false,
+                            "leaf_certificate_is_ev": false,
+                            "leaf_certificate_signed_certificate_timestamps_count": 0,
+                            "leaf_certificate_subject_matches_hostname": false,
+                            "ocsp_response": null,
+                            "ocsp_response_is_trusted": null,
+                            "path_validation_results": [
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+                                        "ev_oids": null,
+                                        "name": "Android",
+                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ google_aosp.pem",
+                                        "version": "9.0.0_r9"
+                                    },
+                                    "verified_certificate_chain": null
+                                },
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+                                        "ev_oids": null,
+                                        "name": "Apple",
+                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ apple.pem",
+                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+                                    },
+                                    "verified_certificate_chain": null
+                                },
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+:[K[K [KESCESC[KOO[KDD[H[2J[H                        {
+                            "leaf_certificate_has_must_staple_extension": false,
+                            "leaf_certificate_is_ev": false,
+                            "leaf_certificate_signed_certificate_timestamps_count": 0,
+                            "leaf_certificate_subject_matches_hostname": false,
+                            "ocsp_response": null,
+                            "ocsp_response_is_trusted": null,
+                            "path_validation_results": [
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+                                        "ev_oids": null,
+                                        "name": "Android",
+                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ google_aosp.pem",
+                                        "version": "9.0.0_r9"
+                                    },
+                                    "verified_certificate_chain": null
+                                },
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+                                        "ev_oids": null,
+                                        "name": "Apple",
+                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ apple.pem",
+                                        "version": "iOS 13, iPadOS 13, macOS 10.15, watchOS 6, and tvOS 13"
+                                    },
+                                    "verified_certificate_chain": null
+                                },
+                                {
+                                    "openssl_error_string": "self signed certificate",
+                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Java",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Koracle_java.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "jdk-13.0.2"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": [
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.2.276.0.44.1.1.1.4",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.2.392.200091.100.721.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.2.40.0.17.1.22",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.2.616.1.113527.2.5.1.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.159.1.17.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.13177.10.1.3.10",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.14370.1.6",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.14777.6.1.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.14777.6.1.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.17326.10.14.2.1.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.17326.10.14.2.2.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.17326.10.8.12.1.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.17326.10.8.12.2.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.22234.2.5.2.3.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.23223.1.1.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.29836.1.10",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.34697.2.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.34697.2.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.34697.2.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.34697.2.4",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.36305.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.40869.1.1.22.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.4146.1.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.4788.2.202.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.6334.1.100.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.6449.1.2.1.5.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.782.1.2.1.8.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.7879.13.24.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "1.3.6.1.4.1.8024.0.2.100.1.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.156.112554.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.528.1.1003.1.2.7",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.578.1.26.1.3.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.756.1.83.21.0",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.756.1.89.1.2.1.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.792.3.0.3.1.1.5",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.792.3.0.4.1.1.4",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.113733.1.7.23.6",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.113733.1.7.48.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114028.10.1.2",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114171.500.9",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114404.1.1.2.4.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114412.2.1",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114413.1.7.23.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114414.1.7.23.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "dotted_string": "2.16.840.1.114414.1.7.24.3",
+:[K[K [KESCESC[KOO[KBB[K                                                "name": "Unknown OID"
+:[K[K [KESCESC[KOO[KBB[K                                            }
+:[K[K [KESCESC[KOO[KBB[K                                        ],
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Mozilla",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kmozilla_nss.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "2019-11-28"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                },
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "openssl_error_string": "self signed certificate",
+:[K[K [KESCESC[KOO[KBB[K                                    "trust_store": {
+:[K[K [KESCESC[KOO[KBB[K                                        "ev_oids": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "name": "Windows",
+:[K[K [KESCESC[KOO[KBB[K                                        "path": "/usr/lib/python3/dist-packages/sslyze/plugins/certificate_info/trust_stores/pem_files/ :[K[K [KESCESC[KOO[KBB[Kmicrosoft_windows.pem",
+:[K[K [KESCESC[KOO[KBB[K                                        "version": "2020-05-04"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "verified_certificate_chain": null
+:[K[K [KESCESC[KOO[KBB[K                                }
+:[K[K [KESCESC[KOO[KBB[K                            ],
+:[K[K [KESCESC[KOO[KBB[K                            "received_certificate_chain": [
+:[K[K [KESCESC[KOO[KBB[K                                {
+:[K[K [KESCESC[KOO[KBB[K                                    "as_pem": "-----BEGIN CERTIFICATE-----\nMIIClTCCAf4CCQDYvSVKsVyfWzANBgkqhkiG9w0BAQUFADCBjjELMAkGA1U :[K[K [KESCESC[KOO[KBB[KEBhMC\nQkUxETAPBgNVBAgTCEZsYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMD\nTU1FMQswCQYDVQQLEwJJVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbD :[K[K [KESCESC[KOO[KBB[KEj\nMCEGCSqGSIb3DQEJARYUYndhcHBAaXRzZWNnYW1lcy5jb20wHhcNMTMwNDE0MTgx\nMTMyWhcNMTgwNDEzMTgxMTMyWjCBjjELMAkGA1UEBhMCQkUxETAPBgNVBAgTCEZs\ :[K[K [KESCESC[KOO[KBB[KnYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMDTU1FMQswCQYDVQQLEwJJ\nVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEjMCEGCSqGSIb3DQEJARYU\nYn :[K[K [KESCESC[KOO[KBB[KdhcHBAaXRzZWNnYW1lcy5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB\nAJfjajlZst552/tC9fvBSGCoAqy/Y+hNMK42EXJOanzL6ijx9qU3ahd2ECSczij8\nRrNZg :[K[K [KESCESC[KOO[KBB[KwJ+Z/hnA3skSVDUtegJm+1B9YKcqt1UJk+7B8pk464x9N2RdsfQD3fmyMOP\nvaufGuEsq1d26kRQdwJXVrYwli82S5VV57ZjkbsG5vQRAgMBAAEwDQYJKoZIhvcN\nAQEFBQAD :[K[K [KESCESC[KOO[KBB[KgYEAd+DlGErtouGz0qCAjStyvMDi2i5D1LOuFzHDSsu2tbkALSzbrol2\nlHYGi6hlywZD6wFwVOxsUgjzmlUUowBxmLD+Cam+Df5Xm/yNWqHvmahUQ6VSISYF\no2i69SuuTgh :[K[K [KESCESC[KOO[KBB[KhwqwQ/uiMEUEwPXO20wN0dOq2z8+nG7xDL4eM5AWAbO4=\n-----END CERTIFICATE-----\n",
+:[K[K [KESCESC[KOO[KBB[K                                    "hpkp_pin": "iA6fl8Dt2RTIy04UEvJFJBV7xDxIrOjGhjSEguFikFc=",
+:[K[K [KESCESC[KOO[KBB[K                                    "issuer": {
+:[K[K [KESCESC[KOO[KBB[K                                        "attributes": [
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.6",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "countryName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "C=BE",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "BE"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.8",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "stateOrProvinceName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "ST=Flanders",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "Flanders"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.7",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "localityName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "L=Menen",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "Menen"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.10",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "organizationName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "O=MME",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "MME"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.11",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "organizationalUnitName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "OU=IT",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "IT"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.3",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "commonName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "CN=bee-box.bwapp.local",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "bee-box.bwapp.local"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "1.2.840.113549.1.9.1",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "emailAddress"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "1.2.840.113549.1.9.1=bwapp@itsecgames.com",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "bwapp@itsecgames.com"
+:[K[K [KESCESC[KOO[KBB[K                                            }
+:[K[K [KESCESC[KOO[KBB[K                                        ],
+:[K[K [KESCESC[KOO[KBB[K                                        "parsing_error": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "rfc4514_string": "C=BE,ST=Flanders,L=Menen,O=MME,OU=IT,CN=bee-box.bwapp.local,1.2.840.113549.1 :[K[K [KESCESC[KOO[KBB[K.9.1=bwapp@itsecgames.com"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "notAfter": "2018-04-13T18:11:32",
+:[K[K [KESCESC[KOO[KBB[K                                    "notBefore": "2013-04-14T18:11:32",
+:[K[K [KESCESC[KOO[KBB[K                                    "publicKey": {
+:[K[K [KESCESC[KOO[KBB[K                                        "algorithm": "_RSAPublicKey",
+:[K[K [KESCESC[KOO[KBB[K                                        "exponent": "65537",
+:[K[K [KESCESC[KOO[KBB[K                                        "size": "1024"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "serialNumber": "15617680085524193115",
+:[K[K [KESCESC[KOO[KBB[K                                    "signatureAlgorithm": "sha1",
+:[K[K [KESCESC[KOO[KBB[K                                    "subject": {
+:[K[K [KESCESC[KOO[KBB[K                                        "attributes": [
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.6",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "countryName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "C=BE",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "BE"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.8",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "stateOrProvinceName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "ST=Flanders",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "Flanders"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.7",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "localityName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "L=Menen",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "Menen"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.10",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "organizationName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "O=MME",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "MME"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.11",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "organizationalUnitName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "OU=IT",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "IT"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "2.5.4.3",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "commonName"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "CN=bee-box.bwapp.local",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "bee-box.bwapp.local"
+:[K[K [KESCESC[KOO[KBB[K                                            },
+:[K[K [KESCESC[KOO[KBB[K                                            {
+:[K[K [KESCESC[KOO[KBB[K                                                "oid": {
+:[K[K [KESCESC[KOO[KBB[K                                                    "dotted_string": "1.2.840.113549.1.9.1",
+:[K[K [KESCESC[KOO[KBB[K                                                    "name": "emailAddress"
+:[K[K [KESCESC[KOO[KBB[K                                                },
+:[K[K [KESCESC[KOO[KBB[K                                                "rfc4514_string": "1.2.840.113549.1.9.1=bwapp@itsecgames.com",
+:[K[K [KESCESC[KOO[KBB[K                                                "value": "bwapp@itsecgames.com"
+:[K[K [KESCESC[KOO[KBB[K                                            }
+:[K[K [KESCESC[KOO[KBB[K                                        ],
+:[K[K [KESCESC[KOO[KBB[K                                        "parsing_error": null,
+:[K[K [KESCESC[KOO[KBB[K                                        "rfc4514_string": "C=BE,ST=Flanders,L=Menen,O=MME,OU=IT,CN=bee-box.bwapp.local,1.2.840.113549.1 :[K[K [KESCESC[KOO[KBB[K.9.1=bwapp@itsecgames.com"
+:[K[K [KESCESC[KOO[KBB[K                                    },
+:[K[K [KESCESC[KOO[KBB[K                                    "subjectAlternativeName": {
+:[K[K [KESCESC[KOO[KBB[K                                        "DNS": []
+:[K[K [KESCESC[KOO[KBB[K                                    }
+:[K[K [KESCESC[KOO[KBB[K                                }
+:[K[K [KESCESC[KOO[KBB[K                            ],
+:[K[K [KESCESC[KOO[KBB[K                            "received_chain_contains_anchor_certificate": null,
+:[K[K [KESCESC[KOO[KBB[K                            "received_chain_has_valid_order": true,
+:[K[K [KESCESC[KOO[KBB[K                            "verified_chain_has_legacy_symantec_anchor": null,
+:[K[K [KESCESC[KOO[KBB[K                            "verified_chain_has_sha1_signature": null
+:[K[K [KESCESC[KOO[KBB[K                        }
+:[K[K [KESCESC[KOO[KBB[K                    ],
+:[K[K [KESCESC[KOO[KBB[K                    "hostname_used_for_server_name_indication": "10.10.10.6"
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "heartbleed": {
+:[K[K [KESCESC[KOO[KBB[K                    "is_[7mvulner[27mable_to_heartbleed": true
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "openssl_ccs_injection": {
+:[K[K [KESCESC[KOO[KBB[K                    "is_[7mvulner[27mable_to_ccs_injection": true
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "robot": {
+:[K[K [KESCESC[KOO[KBB[K                    "robot_result": "NOT_VULNERABLE_NO_ORACLE"
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "session_renegotiation": {
+:[K[K [KESCESC[KOO[KBB[K                    "accepts_client_renegotiation": false,
+:[K[K [KESCESC[KOO[KBB[K                    "supports_secure_renegotiation": true
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "session_resumption": {
+:[K[K [KESCESC[KOO[KBB[K                    "attempted_session_id_resumptions_count": 5,
+:[K[K [KESCESC[KOO[KBB[K                    "successful_session_id_resumptions_count": 0,
+:[K[K [KESCESC[KOO[KBB[K                    "tls_ticket_resumption_result": "SUCCEEDED"
+:[K[K [KESCESC[KOO[KBB[K                },
+:[K[K [KESCESC[KOO[KBB[K                "ssl_2_0_cipher_suites": {
+:[K[K [KESCESC[KOO[KBB[K                    "accepted_cipher_suites": [],
+:[K[K [KESCESC[KOO[KBB[K                    "cipher_suite_preferred_by_server": null,
+:[K[K [KESCESC[KOO[KBB[K                    "rejected_cipher_suites": [
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ pdw[K[Kwd
+/home/dinesh/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ ssc[Klc[Kscan --targets=ta[K[K targets.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C> ssc[Klscan_out.txt &; tail -f sslscan_out.txt[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash: syntax error near unexpected token `;'
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ sslscan --targets=targets.txt > sslscan_out.txt & ; tail -f sslscan_out.txt[1P
+bash: syntax error near unexpected token `;'
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ ;[Kll
+total 844
+-rw-r--r-- 1 dinesh dinesh 680747 Aug 20 03:38 sslyze_out.txt
+-rw-r--r-- 1 dinesh dinesh     47 Aug 20 03:37 targets.txt
+-rw-r--r-- 1 dinesh dinesh 172032 Aug 20 03:41 terminal-log_Thu_20_Aug_2020_03:26:17_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ llsslscan --targets=targets.txt > sslscan_out.txt &; tail -f sslscan_out.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[1] 10010
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ tail -f sslscan_out.txt
+Signature Algorithm: [31msha1WithRSAEncryption[0m
+RSA Key Strength:    [31m1024[0m
+
+Subject:  bee-box.bwapp.local
+Issuer:   [31mbee-box.bwapp.local[0m
+
+Not valid before: [32mApr 14 18:11:32 2013 GMT[0m
+Not valid after:  [31mApr 13 18:11:32 2018 GMT[0m
+
+
+^C[1]+  Done                    sslscan --targets=targets.txt > sslscan_out.txt
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ cat sslscan_out.txt 
+Version: [32m2.0.0-static[0m
+OpenSSL 1.1.1h-dev  xx XXX xxxx
+[0m
+[32mConnected to 10.10.10.6[0m
+
+Testing SSL server [32m10.10.10.6[0m on port [32m443[0m using SNI name [32m[0m
+
+  [1;34mSSL/TLS Protocols:[0m
+SSLv2     [31menabled[0m
+SSLv3     [31menabled[0m
+TLSv1.0   [32mdisabled[0m
+TLSv1.1   disabled
+TLSv1.2   disabled
+TLSv1.3   [33mdisabled[0m
+
+  [1;34mTLS Fallback SCSV:[0m
+Server [31mdoes not[0m support TLS Fallback SCSV
+
+  [1;34mTLS renegotiation:[0m
+[32mSecure[0m session renegotiation supported
+
+  [1;34mTLS Compression:[0m
+Compression [32mdisabled[0m
+
+  [1;34mHeartbleed:[0m
+
+  [1;34mSupported Server Cipher(s):[0m
+
+  [1;34mSSL Certificate:[0m
+Signature Algorithm: [31msha1WithRSAEncryption[0m
+RSA Key Strength:    [31m1024[0m
+
+Subject:  bee-box.bwapp.local
+Issuer:   [31mbee-box.bwapp.local[0m
+
+Not valid before: [32mApr 14 18:11:32 2013 GMT[0m
+Not valid after:  [31mApr 13 18:11:32 2018 GMT[0m
+
+
+[32mConnected to 10.10.10.6[0m
+
+Testing SSL server [32m10.10.10.6[0m on port [32m8443[0m using SNI name [32m[0m
+
+  [1;34mSSL/TLS Protocols:[0m
+SSLv2     [32mdisabled[0m
+SSLv3     [31menabled[0m
+TLSv1.0   [32mdisabled[0m
+TLSv1.1   disabled
+TLSv1.2   disabled
+TLSv1.3   [33mdisabled[0m
+
+  [1;34mTLS Fallback SCSV:[0m
+Server [31mdoes not[0m support TLS Fallback SCSV
+
+  [1;34mTLS renegotiation:[0m
+[32mSecure[0m session renegotiation supported
+
+  [1;34mTLS Compression:[0m
+Compression [32mdisabled[0m
+
+  [1;34mHeartbleed:[0m
+
+  [1;34mSupported Server Cipher(s):[0m
+
+  [1;34mSSL Certificate:[0m
+Signature Algorithm: [31msha1WithRSAEncryption[0m
+RSA Key Strength:    [31m1024[0m
+
+Subject:  bee-box.bwapp.local
+Issuer:   [31mbee-box.bwapp.local[0m
+
+Not valid before: [32mApr 14 18:11:32 2013 GMT[0m
+Not valid after:  [31mApr 13 18:11:32 2018 GMT[0m
+
+
+[32mConnected to 10.10.10.6[0m
+
+Testing SSL server [32m10.10.10.6[0m on port [32m9443[0m using SNI name [32m[0m
+
+  [1;34mSSL/TLS Protocols:[0m
+SSLv2     [31menabled[0m
+SSLv3     [31menabled[0m
+TLSv1.0   [32mdisabled[0m
+TLSv1.1   disabled
+TLSv1.2   disabled
+TLSv1.3   [33mdisabled[0m
+
+  [1;34mTLS Fallback SCSV:[0m
+Server [31mdoes not[0m support TLS Fallback SCSV
+
+  [1;34mTLS renegotiation:[0m
+[32mSecure[0m session renegotiation supported
+
+  [1;34mTLS Compression:[0m
+Compression [31menabled[0m (CRIME)
+
+  [1;34mHeartbleed:[0m
+
+  [1;34mSupported Server Cipher(s):[0m
+
+  [1;34mSSL Certificate:[0m
+Signature Algorithm: [31msha1WithRSAEncryption[0m
+RSA Key Strength:    [31m1024[0m
+
+Subject:  bee-box.bwapp.local
+Issuer:   [31mbee-box.bwapp.local[0m
+
+Not valid before: [32mApr 14 18:11:32 2013 GMT[0m
+Not valid after:  [31mApr 13 18:11:32 2018 GMT[0m
+
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ cat sslscan_out.txt  |less
+[?1049h[22;0;0t[?1h=Version: [7mESC[27m[32m2.0.0-static[7mESC[27m[0m
+OpenSSL 1.1.1h-dev  xx XXX xxxx
+[7mESC[27m[0m
+[7mESC[27m[32mConnected to 10.10.10.6[7mESC[27m[0m
+
+Testing SSL server [7mESC[27m[32m10.10.10.6[7mESC[27m[0m on port [7mESC[27m[32m443[7mESC[27m[0m using SNI name [7mESC[27m[32m[7mESC[27m[0m
+
+  [7mESC[27m[1;34mSSL/TLS Protocols:[7mESC[27m[0m
+SSLv2     [7mESC[27m[31menabled[7mESC[27m[0m
+SSLv3     [7mESC[27m[31menabled[7mESC[27m[0m
+TLSv1.0   [7mESC[27m[32mdisabled[7mESC[27m[0m
+TLSv1.1   disabled
+TLSv1.2   disabled
+TLSv1.3   [7mESC[27m[33mdisabled[7mESC[27m[0m
+
+  [7mESC[27m[1;34mTLS Fallback SCSV:[7mESC[27m[0m
+Server [7mESC[27m[31mdoes not[7mESC[27m[0m support TLS Fallback SCSV
+
+  [7mESC[27m[1;34mTLS renegotiation:[7mESC[27m[0m
+[7mESC[27m[32mSecure[7mESC[27m[0m session renegotiation supported
+
+  [7mESC[27m[1;34mTLS Compression:[7mESC[27m[0m
+Compression [7mESC[27m[32mdisabled[7mESC[27m[0m
+
+  [7mESC[27m[1;34mHeartbleed:[7mESC[27m[0m
+
+  [7mESC[27m[1;34mSupported Server Cipher(s):[7mESC[27m[0m
+
+  [7mESC[27m[1;34mSSL Certificate:[7mESC[27m[0m
+Signature Algorithm: [7mESC[27m[31msha1WithRSAEncryption[7mESC[27m[0m
+RSA Key Strength:    [7mESC[27m[31m1024[7mESC[27m[0m
+
+Subject:  bee-box.bwapp.local
+:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Sensitive_Data_Exposure/SSL_2_0_Deprecated_Protocol[01;31mdinesh@evil[00m: [[01;34mSSL_2_0_Deprecated_Protocol[00m] $ exit
+
+Script done on 2020-08-20 03:43:35+05:30 [COMMAND_EXIT_CODE="130"]
