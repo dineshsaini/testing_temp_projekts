@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 f94008f801fceb8833a30fe56a8b26976347edcf Nanne Baars <nanne.baars@owasp.org> 1502944804 +0200	commit (initial): First version of WebGoat Cloud website
+f94008f801fceb8833a30fe56a8b26976347edcf ac937c7aab89e042ca32efeb00d4ca08a95b50d6 Nanne Baars <nanne.baars@owasp.org> 1502944869 +0200	commit: Removed hardcoded key
+ac937c7aab89e042ca32efeb00d4ca08a95b50d6 2e29cacb85ce5066b8d011bb9769b666812b2fd9 Nanne Baars <nanne.baars@owasp.org> 1502944892 +0200	commit: Updated copyright to 2017
